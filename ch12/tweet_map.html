@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1fae02ea8d974cb5ab25f398c7b89578 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1fae02ea8d974cb5ab25f398c7b89578" ></div>
+        
+</body>
+<script>    
+    
+            var map_1fae02ea8d974cb5ab25f398c7b89578 = L.map(
+                "map_1fae02ea8d974cb5ab25f398c7b89578",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    detectRetina: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d5094ebb97842b08c66fc20d364a8e1 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+            var marker_cba8d6c5d315408987a20c329b230d1f = L.marker(
+                [50.338466, -4.7882104],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_fe406081328a48d9a20f86779f934141 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b2795d2242f4a8993cf2ace4d016d1d = $(`<div id="html_4b2795d2242f4a8993cf2ace4d016d1d" style="width: 100.0%; height: 100.0%;">PaulBourtonFS: Enjoyable game to watch, real pleasure to see some great football being played on a glorious afternoon. Congratulat… https://t.co/vglOWYJi1Z</div>`)[0];
+            popup_fe406081328a48d9a20f86779f934141.setContent(html_4b2795d2242f4a8993cf2ace4d016d1d);
+        
+
+        marker_cba8d6c5d315408987a20c329b230d1f.bindPopup(popup_fe406081328a48d9a20f86779f934141)
+        ;
+
+        
+    
+    
+            var marker_b0579051ff3a46d6af0c691c3a4db473 = L.marker(
+                [9.0643305, 7.4892974],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_0d5131f49b42460bb6209f779da40e02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfc6431424784103abe065830026e82d = $(`<div id="html_cfc6431424784103abe065830026e82d" style="width: 100.0%; height: 100.0%;">aurorastun: @Crhedrys I can do this 😂😂😂. I hate Barcelona football club with passion</div>`)[0];
+            popup_0d5131f49b42460bb6209f779da40e02.setContent(html_cfc6431424784103abe065830026e82d);
+        
+
+        marker_b0579051ff3a46d6af0c691c3a4db473.bindPopup(popup_0d5131f49b42460bb6209f779da40e02)
+        ;
+
+        
+    
+    
+            var marker_3ab1814dcfeb4109a4bd8dc4b0e56991 = L.marker(
+                [41.9429134, -83.9460166],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_eda380b405ae4cb3bb9b2c251f31ccc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e419ca0e28f043eea2fe99ed9e5fb2e1 = $(`<div id="html_e419ca0e28f043eea2fe99ed9e5fb2e1" style="width: 100.0%; height: 100.0%;">TerryBaas1: @MsAvaArmstrong I'm sure my picking on her gets old!  But, just remember what my old football coach said, Ava "the… https://t.co/1G8zw9zQps</div>`)[0];
+            popup_eda380b405ae4cb3bb9b2c251f31ccc3.setContent(html_e419ca0e28f043eea2fe99ed9e5fb2e1);
+        
+
+        marker_3ab1814dcfeb4109a4bd8dc4b0e56991.bindPopup(popup_eda380b405ae4cb3bb9b2c251f31ccc3)
+        ;
+
+        
+    
+    
+            var marker_b2a184d00bd74b279133cf03d44d05b3 = L.marker(
+                [34.0922335, -117.435048],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_536792cdf9cd4b1f98c7ce8849041849 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2885356bcca4831bca78ddf58fe0508 = $(`<div id="html_a2885356bcca4831bca78ddf58fe0508" style="width: 100.0%; height: 100.0%;">KiMamaaz: I love football, anime, &amp; collecting comic books marry me . Lmaoo</div>`)[0];
+            popup_536792cdf9cd4b1f98c7ce8849041849.setContent(html_a2885356bcca4831bca78ddf58fe0508);
+        
+
+        marker_b2a184d00bd74b279133cf03d44d05b3.bindPopup(popup_536792cdf9cd4b1f98c7ce8849041849)
+        ;
+
+        
+    
+    
+            var marker_cd7874d5d8104d46a3acb2eb56db70fe = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_fb0bdc53dbb44c8398f1ea771536e5d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9120fc6d64f64324b7590136099938a6 = $(`<div id="html_9120fc6d64f64324b7590136099938a6" style="width: 100.0%; height: 100.0%;">t2wracingtips3: Fancy some free Tips  Every day we offer free football tips at a click of a button  Come and take a look.… https://t.co/T40EBSMeD6</div>`)[0];
+            popup_fb0bdc53dbb44c8398f1ea771536e5d9.setContent(html_9120fc6d64f64324b7590136099938a6);
+        
+
+        marker_cd7874d5d8104d46a3acb2eb56db70fe.bindPopup(popup_fb0bdc53dbb44c8398f1ea771536e5d9)
+        ;
+
+        
+    
+    
+            var marker_5a8c51e7c2c34923836190d5ad7304fb = L.marker(
+                [52.2928116, -3.73893],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_3c447510d3eb4b109ae74aafeaa1186c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_545bde140b364f7c86234ca301608c27 = $(`<div id="html_545bde140b364f7c86234ca301608c27" style="width: 100.0%; height: 100.0%;">rocketfrogz: @nickycorns6 @Coral Nah.. Scottish football is pish.. Standard is appalling.. Connahs Quay part timers beating Kill… https://t.co/EJe3jHdapi</div>`)[0];
+            popup_3c447510d3eb4b109ae74aafeaa1186c.setContent(html_545bde140b364f7c86234ca301608c27);
+        
+
+        marker_5a8c51e7c2c34923836190d5ad7304fb.bindPopup(popup_3c447510d3eb4b109ae74aafeaa1186c)
+        ;
+
+        
+    
+    
+            var marker_2ee24466849e4524881bf7e9c15bd79e = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_e062b9f6f65b4e8d8fcd223dba5930eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68951391baa34840a9bbc3f82d19c814 = $(`<div id="html_68951391baa34840a9bbc3f82d19c814" style="width: 100.0%; height: 100.0%;">t2wracingtips1: Fancy some free Tips  Every day we offer free football tips at a click of a button  Come and take a look.… https://t.co/lZctA7XUnv</div>`)[0];
+            popup_e062b9f6f65b4e8d8fcd223dba5930eb.setContent(html_68951391baa34840a9bbc3f82d19c814);
+        
+
+        marker_2ee24466849e4524881bf7e9c15bd79e.bindPopup(popup_e062b9f6f65b4e8d8fcd223dba5930eb)
+        ;
+
+        
+    
+    
+            var marker_eb47b87dc90f40b584091a706c56c18b = L.marker(
+                [40.8, -96.667821],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_4eddc24ff8fc44f385fdd0e55af2f727 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cda1accf518f4f948d99b45aaf9c8648 = $(`<div id="html_cda1accf518f4f948d99b45aaf9c8648" style="width: 100.0%; height: 100.0%;">beccadaubney: I have seriously missed the football season. I have not missed the Sunday night Eventbrite stress for away tickets.</div>`)[0];
+            popup_4eddc24ff8fc44f385fdd0e55af2f727.setContent(html_cda1accf518f4f948d99b45aaf9c8648);
+        
+
+        marker_eb47b87dc90f40b584091a706c56c18b.bindPopup(popup_4eddc24ff8fc44f385fdd0e55af2f727)
+        ;
+
+        
+    
+    
+            var marker_beb3263ea2944f928dee8b974c160e0d = L.marker(
+                [53.3497645, -6.2602732],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_63c3358295f845fcab96a34e3905aa4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df7199cd997240908c93fc72c8921f1e = $(`<div id="html_df7199cd997240908c93fc72c8921f1e" style="width: 100.0%; height: 100.0%;">KevBeirne: Football doesn’t really know what to do with someone as good as Bale who isn’t from a major footballing nation and… https://t.co/Vp3OobfeC1</div>`)[0];
+            popup_63c3358295f845fcab96a34e3905aa4c.setContent(html_df7199cd997240908c93fc72c8921f1e);
+        
+
+        marker_beb3263ea2944f928dee8b974c160e0d.bindPopup(popup_63c3358295f845fcab96a34e3905aa4c)
+        ;
+
+        
+    
+    
+            var marker_73599addffb845ebb631f5ef38249129 = L.marker(
+                [55.856656, -4.2435817],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_8ad380d94d2c4181a3b7528844b67698 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e1910a7532f47e9bce76bb713fef12a = $(`<div id="html_8e1910a7532f47e9bce76bb713fef12a" style="width: 100.0%; height: 100.0%;">_joegardner: Here to see the best left back in world football 🔴 @andrewrobertso5  @LFC https://t.co/nF9aekcWgv</div>`)[0];
+            popup_8ad380d94d2c4181a3b7528844b67698.setContent(html_8e1910a7532f47e9bce76bb713fef12a);
+        
+
+        marker_73599addffb845ebb631f5ef38249129.bindPopup(popup_8ad380d94d2c4181a3b7528844b67698)
+        ;
+
+        
+    
+    
+            var marker_dbcd8154382445e195d322b4f95c8133 = L.marker(
+                [36.5565161, 44.3497809],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_6f24a16a97734ed891e46960d7231ceb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_566f7d2a2aa74ad0b72e372c1dc7dc01 = $(`<div id="html_566f7d2a2aa74ad0b72e372c1dc7dc01" style="width: 100.0%; height: 100.0%;">_yungclutch: One spot opened up in my fantasy football league. $20 buy in &amp; $240 in prize, hmu if you’re interested</div>`)[0];
+            popup_6f24a16a97734ed891e46960d7231ceb.setContent(html_566f7d2a2aa74ad0b72e372c1dc7dc01);
+        
+
+        marker_dbcd8154382445e195d322b4f95c8133.bindPopup(popup_6f24a16a97734ed891e46960d7231ceb)
+        ;
+
+        
+    
+    
+            var marker_d0af739fd966423aa289651fe19c182a = L.marker(
+                [25.7742658, -80.1936589],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_b00f4ee4d04c415788cc37362d88eabc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7abf7619f71d4c108a0636cb12378265 = $(`<div id="html_7abf7619f71d4c108a0636cb12378265" style="width: 100.0%; height: 100.0%;">HeraldSports: School and church services announced for FIU football player Emmanuel Lubin https://t.co/ETvcnBMdPM</div>`)[0];
+            popup_b00f4ee4d04c415788cc37362d88eabc.setContent(html_7abf7619f71d4c108a0636cb12378265);
+        
+
+        marker_d0af739fd966423aa289651fe19c182a.bindPopup(popup_b00f4ee4d04c415788cc37362d88eabc)
+        ;
+
+        
+    
+    
+            var marker_d81f72c66f8e4fd0acc4ae02b0b9c6a1 = L.marker(
+                [-33.928992, 18.417396],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_68504c9ee66a4c8da0ac1438a12252ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_961982c94f4847afb0a2ca8dd89149f5 = $(`<div id="html_961982c94f4847afb0a2ca8dd89149f5" style="width: 100.0%; height: 100.0%;">Blom4Sure: @DeetheMatador @David_Minchella Football is a game of opinions, I can't wait to hear yours.</div>`)[0];
+            popup_68504c9ee66a4c8da0ac1438a12252ba.setContent(html_961982c94f4847afb0a2ca8dd89149f5);
+        
+
+        marker_d81f72c66f8e4fd0acc4ae02b0b9c6a1.bindPopup(popup_68504c9ee66a4c8da0ac1438a12252ba)
+        ;
+
+        
+    
+    
+            var marker_2e84d45efc6a4f68aa47d6f7633baa11 = L.marker(
+                [29.7589382, -95.3676974],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_4a7aebf18d2a4d5a9c7bb5fa5eebe557 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8446852f234475bb2181eecb372f9c5 = $(`<div id="html_c8446852f234475bb2181eecb372f9c5" style="width: 100.0%; height: 100.0%;">TheTexansWire: Pro Football Focus shows Texans could use a pass-catching running back https://t.co/7apg9rWJQm</div>`)[0];
+            popup_4a7aebf18d2a4d5a9c7bb5fa5eebe557.setContent(html_c8446852f234475bb2181eecb372f9c5);
+        
+
+        marker_2e84d45efc6a4f68aa47d6f7633baa11.bindPopup(popup_4a7aebf18d2a4d5a9c7bb5fa5eebe557)
+        ;
+
+        
+    
+    
+            var marker_cc444ab36bde491188cd3fffd93bf365 = L.marker(
+                [36.1622296, -86.7743531],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_546c72cb1a15451dabdc6b4895055296 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67eaeeea2b404ec09fd3b3cbd1cdc6e9 = $(`<div id="html_67eaeeea2b404ec09fd3b3cbd1cdc6e9" style="width: 100.0%; height: 100.0%;">BallinKAli: I can smell football 😤</div>`)[0];
+            popup_546c72cb1a15451dabdc6b4895055296.setContent(html_67eaeeea2b404ec09fd3b3cbd1cdc6e9);
+        
+
+        marker_cc444ab36bde491188cd3fffd93bf365.bindPopup(popup_546c72cb1a15451dabdc6b4895055296)
+        ;
+
+        
+    
+    
+            var marker_5f150bc40b7142b0a27ec9bf0b567cbd = L.marker(
+                [26.1482449, -80.3288859410087],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_3feaa81f9253458c8d1a2c55ad847189 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01a18526122f4c4a9e4eb90500d384e9 = $(`<div id="html_01a18526122f4c4a9e4eb90500d384e9" style="width: 100.0%; height: 100.0%;">GameDayBlog1: Fantasy Football 2019: Draft advice for Packers at each position https://t.co/LXAVI4ZLkq</div>`)[0];
+            popup_3feaa81f9253458c8d1a2c55ad847189.setContent(html_01a18526122f4c4a9e4eb90500d384e9);
+        
+
+        marker_5f150bc40b7142b0a27ec9bf0b567cbd.bindPopup(popup_3feaa81f9253458c8d1a2c55ad847189)
+        ;
+
+        
+    
+    
+            var marker_b144ddab0e864680bc152d935d55a6c3 = L.marker(
+                [-1.8859597, 30.1296751],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_2e1615d50102433f89552536b3531198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a098ac42f069447cbf9e15513a55149c = $(`<div id="html_a098ac42f069447cbf9e15513a55149c" style="width: 100.0%; height: 100.0%;">NewTimesRwanda: DID YOU KNOW? : Scandinavia are the first team to win the women national football league’s title — other than AS Ki… https://t.co/PdfydTFlPV</div>`)[0];
+            popup_2e1615d50102433f89552536b3531198.setContent(html_a098ac42f069447cbf9e15513a55149c);
+        
+
+        marker_b144ddab0e864680bc152d935d55a6c3.bindPopup(popup_2e1615d50102433f89552536b3531198)
+        ;
+
+        
+    
+    
+            var marker_ded61f833299499e8375efe85ca009e4 = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_2a073747ca9b4848b7d2c35f8473933f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfc60f8090004554ad0fb7765eb75550 = $(`<div id="html_dfc60f8090004554ad0fb7765eb75550" style="width: 100.0%; height: 100.0%;">TheNewAlexEra: Hearing Moley Football deactivated??? https://t.co/vONyGbocBM</div>`)[0];
+            popup_2a073747ca9b4848b7d2c35f8473933f.setContent(html_dfc60f8090004554ad0fb7765eb75550);
+        
+
+        marker_ded61f833299499e8375efe85ca009e4.bindPopup(popup_2a073747ca9b4848b7d2c35f8473933f)
+        ;
+
+        
+    
+    
+            var marker_4e5d24fce2bb4e3d99729c93798ecd3a = L.marker(
+                [51.7967047, 0.579338882096011],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_99a8fe2746ec404fa1fa23e86c5d95aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e031cceb90946cc9e44e4c8f91996b8 = $(`<div id="html_0e031cceb90946cc9e44e4c8f91996b8" style="width: 100.0%; height: 100.0%;">GVP44: @nigelrudd @FootballGrf @phil_w888 Perfectly said nigel. I am sick of the pure ignirance about vaping and putting v… https://t.co/of8GmRjlmr</div>`)[0];
+            popup_99a8fe2746ec404fa1fa23e86c5d95aa.setContent(html_0e031cceb90946cc9e44e4c8f91996b8);
+        
+
+        marker_4e5d24fce2bb4e3d99729c93798ecd3a.bindPopup(popup_99a8fe2746ec404fa1fa23e86c5d95aa)
+        ;
+
+        
+    
+    
+            var marker_72a0e6e95cb64663a64ac216cd7dc621 = L.marker(
+                [40.2253569, -82.6881395],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_60047541754b4be5a8e93cb5a733d932 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ab8c399eb1144ddb7745a4b68b3717e = $(`<div id="html_5ab8c399eb1144ddb7745a4b68b3717e" style="width: 100.0%; height: 100.0%;">bmaas18: It's called "Football" https://t.co/7zmgF4CIQS</div>`)[0];
+            popup_60047541754b4be5a8e93cb5a733d932.setContent(html_5ab8c399eb1144ddb7745a4b68b3717e);
+        
+
+        marker_72a0e6e95cb64663a64ac216cd7dc621.bindPopup(popup_60047541754b4be5a8e93cb5a733d932)
+        ;
+
+        
+    
+    
+            var marker_2420428e59494df29fbffcd2d76d269e = L.marker(
+                [-35.2829763, 149.1256408],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_f40f9d9dc99f41558c681f2fc96460db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34f6385dd20e4ceb99e0bb9cfc00f28b = $(`<div id="html_34f6385dd20e4ceb99e0bb9cfc00f28b" style="width: 100.0%; height: 100.0%;">benjaminakahi: @WiebeB_Africa @pillarsfc @NigerTornadoes @thenff @ColinUdoh @sommbonu @iambolar 👏 the man with the Nigerian football history 🔥 the Boer!!!</div>`)[0];
+            popup_f40f9d9dc99f41558c681f2fc96460db.setContent(html_34f6385dd20e4ceb99e0bb9cfc00f28b);
+        
+
+        marker_2420428e59494df29fbffcd2d76d269e.bindPopup(popup_f40f9d9dc99f41558c681f2fc96460db)
+        ;
+
+        
+    
+    
+            var marker_4fdba2b4ef6a48beb0a6f4fd3127518f = L.marker(
+                [30.3321838, -81.655651],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_490f853b26e7429dab33a9e213aee10d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d317ccfba7f045e49c41acd0c1531325 = $(`<div id="html_d317ccfba7f045e49c41acd0c1531325" style="width: 100.0%; height: 100.0%;">OG_Sosa1: I ready for football season</div>`)[0];
+            popup_490f853b26e7429dab33a9e213aee10d.setContent(html_d317ccfba7f045e49c41acd0c1531325);
+        
+
+        marker_4fdba2b4ef6a48beb0a6f4fd3127518f.bindPopup(popup_490f853b26e7429dab33a9e213aee10d)
+        ;
+
+        
+    
+    
+            var marker_9b4fc520217c424c8210cbbc97f7df3c = L.marker(
+                [30.687111, -88.072339],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_05fbfb77829141d6b76262b0b330a619 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc15bd360475463e86b4ce21d1b966a4 = $(`<div id="html_cc15bd360475463e86b4ce21d1b966a4" style="width: 100.0%; height: 100.0%;">WalshLaw15: @CoachKurtHines 7on7 has as much of a connection to real football as flag football.  Both are played with a football.  That’s about it.</div>`)[0];
+            popup_05fbfb77829141d6b76262b0b330a619.setContent(html_cc15bd360475463e86b4ce21d1b966a4);
+        
+
+        marker_9b4fc520217c424c8210cbbc97f7df3c.bindPopup(popup_05fbfb77829141d6b76262b0b330a619)
+        ;
+
+        
+    
+    
+            var marker_6701a6e1edf54b799b8d04b098efd252 = L.marker(
+                [33.436188, -111.586066176293],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_577047786f3746cc8d87ccd35d72c1dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62b85d014d8c4850b1bf1c9f8ee5bcdb = $(`<div id="html_62b85d014d8c4850b1bf1c9f8ee5bcdb" style="width: 100.0%; height: 100.0%;">martinramakery1: @TheoAsh1 Its bullshit, football is a game and should be fun..... https://t.co/0bHLBEgXKX</div>`)[0];
+            popup_577047786f3746cc8d87ccd35d72c1dd.setContent(html_62b85d014d8c4850b1bf1c9f8ee5bcdb);
+        
+
+        marker_6701a6e1edf54b799b8d04b098efd252.bindPopup(popup_577047786f3746cc8d87ccd35d72c1dd)
+        ;
+
+        
+    
+    
+            var marker_0c29899a9ce640d6b3865af2a18612ba = L.marker(
+                [53.7500837, -1.75359688452812],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_2f1fc0e254bd4ee688c1e4b6b2403f63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d3b6f64c06c4d9a8aa71eb72668b5fc = $(`<div id="html_2d3b6f64c06c4d9a8aa71eb72668b5fc" style="width: 100.0%; height: 100.0%;">ThatJohnnyD: Fed up of Love Island?! Thank goodness Football returns, and what a belter we have to kick off the new… https://t.co/57b38jk3oD</div>`)[0];
+            popup_2f1fc0e254bd4ee688c1e4b6b2403f63.setContent(html_2d3b6f64c06c4d9a8aa71eb72668b5fc);
+        
+
+        marker_0c29899a9ce640d6b3865af2a18612ba.bindPopup(popup_2f1fc0e254bd4ee688c1e4b6b2403f63)
+        ;
+
+        
+    
+    
+            var marker_8da847fdd7ec4dd588ffd518f599723b = L.marker(
+                [52.7954791, -0.540240286617432],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_8fb73df5b3924fc580a02bc13dc5293c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d964ce3ecba4dfe92436c3724b24500 = $(`<div id="html_2d964ce3ecba4dfe92436c3724b24500" style="width: 100.0%; height: 100.0%;">kingkong987654: @TheKopHQ Plenty of cocks out there, modern day football fan</div>`)[0];
+            popup_8fb73df5b3924fc580a02bc13dc5293c.setContent(html_2d964ce3ecba4dfe92436c3724b24500);
+        
+
+        marker_8da847fdd7ec4dd588ffd518f599723b.bindPopup(popup_8fb73df5b3924fc580a02bc13dc5293c)
+        ;
+
+        
+    
+    
+            var marker_a9105b72fd8b491f8debcf16e78f3bcc = L.marker(
+                [39.755942, -104.993178895507],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_c02686a4b04643f1bb17ad79af8c5178 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b47fa03f88144f3b812b973096930d1 = $(`<div id="html_9b47fa03f88144f3b812b973096930d1" style="width: 100.0%; height: 100.0%;">KJD_3: @vicbandzz_ Yes bruh 💯 real asf 😂 if he never woulda went to Jail he’d be the goat in football history</div>`)[0];
+            popup_c02686a4b04643f1bb17ad79af8c5178.setContent(html_9b47fa03f88144f3b812b973096930d1);
+        
+
+        marker_a9105b72fd8b491f8debcf16e78f3bcc.bindPopup(popup_c02686a4b04643f1bb17ad79af8c5178)
+        ;
+
+        
+    
+    
+            var marker_d21e1e63a25d4ceb813c71a14774d92e = L.marker(
+                [25.2232283, 55.1594933008754],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_48e35029bf604384a98c390771392a7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a5eda838fd14a74ae16784cad895d66 = $(`<div id="html_1a5eda838fd14a74ae16784cad895d66" style="width: 100.0%; height: 100.0%;">footballpitchuk: Artificial Football Pitches Builders in Upper Hambleton #Sports #Pitch #Builders #Upper #Hambleton</div>`)[0];
+            popup_48e35029bf604384a98c390771392a7b.setContent(html_1a5eda838fd14a74ae16784cad895d66);
+        
+
+        marker_d21e1e63a25d4ceb813c71a14774d92e.bindPopup(popup_48e35029bf604384a98c390771392a7b)
+        ;
+
+        
+    
+    
+            var marker_73443c772d614a9ab86160c42d9e50f0 = L.marker(
+                [36.1622296, -86.7743531],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_ff91be80e7864c0da81a12fe91dac675 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0dedeb3a5784e8da18b790307eb7a54 = $(`<div id="html_c0dedeb3a5784e8da18b790307eb7a54" style="width: 100.0%; height: 100.0%;">BlueWolfRacing1: We will break from football to cut the grass and do my 2nd oil change on the Rav4 https://t.co/NyuPQvsdiU</div>`)[0];
+            popup_ff91be80e7864c0da81a12fe91dac675.setContent(html_c0dedeb3a5784e8da18b790307eb7a54);
+        
+
+        marker_73443c772d614a9ab86160c42d9e50f0.bindPopup(popup_ff91be80e7864c0da81a12fe91dac675)
+        ;
+
+        
+    
+    
+            var marker_d90e922c2fc9463bb95941acff754724 = L.marker(
+                [25.2232283, 55.1594933008754],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_1a74b31b71b249808aab13fb1070d751 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6de3d7d15f4e42a4a469c989c9549698 = $(`<div id="html_6de3d7d15f4e42a4a469c989c9549698" style="width: 100.0%; height: 100.0%;">footballpitchuk: Artificial Football Pitch Dimensions in Thulston #Artificial #Football #Pitch #Dimensions #Thulston</div>`)[0];
+            popup_1a74b31b71b249808aab13fb1070d751.setContent(html_6de3d7d15f4e42a4a469c989c9549698);
+        
+
+        marker_d90e922c2fc9463bb95941acff754724.bindPopup(popup_1a74b31b71b249808aab13fb1070d751)
+        ;
+
+        
+    
+    
+            var marker_a7bf1aeeb74b4ebf89cc43664dc4517c = L.marker(
+                [41.1536674, -81.357886],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_c5e9f9b2f325462281a780606d8ce30f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c068be04927f4fea8daa4208cf2cf2be = $(`<div id="html_c068be04927f4fea8daa4208cf2cf2be" style="width: 100.0%; height: 100.0%;">Tom_Nader: The 2019 high school football schedule for the Crestwood Red Devils! Best of luck this season! https://t.co/u1DQnWygYS</div>`)[0];
+            popup_c5e9f9b2f325462281a780606d8ce30f.setContent(html_c068be04927f4fea8daa4208cf2cf2be);
+        
+
+        marker_a7bf1aeeb74b4ebf89cc43664dc4517c.bindPopup(popup_c5e9f9b2f325462281a780606d8ce30f)
+        ;
+
+        
+    
+    
+            var marker_4061257930fa46259b67b88cdf69017e = L.marker(
+                [9.6000359, 7.9999721],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_56292260b5e44a95ac11abb6cfda6823 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7ac5b5c96ef41eaa97097d799d8aa1c = $(`<div id="html_f7ac5b5c96ef41eaa97097d799d8aa1c" style="width: 100.0%; height: 100.0%;">davidoghe: Alomo4Alomo ... I was so raw then, all I tweet about was highness, football and street life not until politics took over 😥</div>`)[0];
+            popup_56292260b5e44a95ac11abb6cfda6823.setContent(html_f7ac5b5c96ef41eaa97097d799d8aa1c);
+        
+
+        marker_4061257930fa46259b67b88cdf69017e.bindPopup(popup_56292260b5e44a95ac11abb6cfda6823)
+        ;
+
+        
+    
+    
+            var marker_51f0a398da8a48af8612d1a8092ca242 = L.marker(
+                [51.46426255, -0.651714721140142],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_a9df43b49f9e462b97edc7f7ebc0d982 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cf264c9a2bb4a7fbbf93a626dc6ebe3 = $(`<div id="html_1cf264c9a2bb4a7fbbf93a626dc6ebe3" style="width: 100.0%; height: 100.0%;">MattTHFC1: @AFCGally Would be a very good signing. As a football fan  would be great to see him in the prem as a spurs fan plz dont sign him.</div>`)[0];
+            popup_a9df43b49f9e462b97edc7f7ebc0d982.setContent(html_1cf264c9a2bb4a7fbbf93a626dc6ebe3);
+        
+
+        marker_51f0a398da8a48af8612d1a8092ca242.bindPopup(popup_a9df43b49f9e462b97edc7f7ebc0d982)
+        ;
+
+        
+    
+    
+            var marker_61d5eb3dc068492d8aea54a50c17b699 = L.marker(
+                [-26.205, 28.049722],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_14c42d0a4de54760b28f8eb60a628bf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a339cc2fc5e445cdaf79de31c5e38864 = $(`<div id="html_a339cc2fc5e445cdaf79de31c5e38864" style="width: 100.0%; height: 100.0%;">afro_insider: Herve Renard Reportedly Reaches Deal to Coach Saudi Arabia Football Team https://t.co/acmjsFMups</div>`)[0];
+            popup_14c42d0a4de54760b28f8eb60a628bf4.setContent(html_a339cc2fc5e445cdaf79de31c5e38864);
+        
+
+        marker_61d5eb3dc068492d8aea54a50c17b699.bindPopup(popup_14c42d0a4de54760b28f8eb60a628bf4)
+        ;
+
+        
+    
+    
+            var marker_df85ce45854b4319afa37c56502c46a3 = L.marker(
+                [50.9025349, -1.404189],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_6d27ff4b86d8442d817a96e7cf34942d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_832cdf3ecf014840b149f694b57dbcfc = $(`<div id="html_832cdf3ecf014840b149f694b57dbcfc" style="width: 100.0%; height: 100.0%;">_euanito: Not clowning anyone again about football because in believing Liverpool would stengthen from a winning position, I am the clown</div>`)[0];
+            popup_6d27ff4b86d8442d817a96e7cf34942d.setContent(html_832cdf3ecf014840b149f694b57dbcfc);
+        
+
+        marker_df85ce45854b4319afa37c56502c46a3.bindPopup(popup_6d27ff4b86d8442d817a96e7cf34942d)
+        ;
+
+        
+    
+    
+            var marker_ff6e2f7c737e42e0baed633276ffc6a1 = L.marker(
+                [59.3251172, 18.0710935],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_5a16f968749b4b02b3b7e2b0ee44103a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d48a5c9ad85454e9050c0e08c5abb85 = $(`<div id="html_6d48a5c9ad85454e9050c0e08c5abb85" style="width: 100.0%; height: 100.0%;">MangoindaHood: @neilrkaye Outdoors for boys, kick the can, dont touch the ground. Football. Indoors -&gt;6yr old, card game Uno? -&gt;4… https://t.co/xr3P60Bn83</div>`)[0];
+            popup_5a16f968749b4b02b3b7e2b0ee44103a.setContent(html_6d48a5c9ad85454e9050c0e08c5abb85);
+        
+
+        marker_ff6e2f7c737e42e0baed633276ffc6a1.bindPopup(popup_5a16f968749b4b02b3b7e2b0ee44103a)
+        ;
+
+        
+    
+    
+            var marker_6995a86f8cdd48a1b102a1c6e5ae0b79 = L.marker(
+                [54.715139, -6.2192038],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_83c6036e7d30462eb8301505baf614f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2822f9f3766346f080eca675b0042053 = $(`<div id="html_2822f9f3766346f080eca675b0042053" style="width: 100.0%; height: 100.0%;">markfee1978: @P8712864180 I won a signed northern Ireland football 😁😁</div>`)[0];
+            popup_83c6036e7d30462eb8301505baf614f5.setContent(html_2822f9f3766346f080eca675b0042053);
+        
+
+        marker_6995a86f8cdd48a1b102a1c6e5ae0b79.bindPopup(popup_83c6036e7d30462eb8301505baf614f5)
+        ;
+
+        
+    
+    
+            var marker_85a11b52dc4d4a6598de2d7bf8847a77 = L.marker(
+                [35.2270869, -80.8431268],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_ee41336aec8e44269519dfbbaa42f0b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dba2ca2e50341c381c8f9fb0baf96b1 = $(`<div id="html_1dba2ca2e50341c381c8f9fb0baf96b1" style="width: 100.0%; height: 100.0%;">TateM704: Tell me the Niners won’t quietly have one of the best defenses in football this year... https://t.co/NO9ViwYt0U</div>`)[0];
+            popup_ee41336aec8e44269519dfbbaa42f0b8.setContent(html_1dba2ca2e50341c381c8f9fb0baf96b1);
+        
+
+        marker_85a11b52dc4d4a6598de2d7bf8847a77.bindPopup(popup_ee41336aec8e44269519dfbbaa42f0b8)
+        ;
+
+        
+    
+    
+            var marker_89a506b4944c4268bbf8326bfea3c769 = L.marker(
+                [56.9493977, 24.1051846],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_e8d29f5d4dbb4f81b96490e290a387ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15937daaff07412499f549e1362c769a = $(`<div id="html_15937daaff07412499f549e1362c769a" style="width: 100.0%; height: 100.0%;">Melnichenko_99: Stay focused... #spartaks #selsport #safehands #cleansheet #teamselsport #teamselsport #wearespartaks #football… https://t.co/lwxHEGoXJY</div>`)[0];
+            popup_e8d29f5d4dbb4f81b96490e290a387ee.setContent(html_15937daaff07412499f549e1362c769a);
+        
+
+        marker_89a506b4944c4268bbf8326bfea3c769.bindPopup(popup_e8d29f5d4dbb4f81b96490e290a387ee)
+        ;
+
+        
+    
+    
+            var marker_393d51f3102343a89bff100673218c06 = L.marker(
+                [32.7762719, -96.7968559],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_a664bdf4abfd45f6967cb4108b6b261d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caedc6b42bfb4bc6a0467f4f786d4e7a = $(`<div id="html_caedc6b42bfb4bc6a0467f4f786d4e7a" style="width: 100.0%; height: 100.0%;">cayyyco: Just ready for football Sundays</div>`)[0];
+            popup_a664bdf4abfd45f6967cb4108b6b261d.setContent(html_caedc6b42bfb4bc6a0467f4f786d4e7a);
+        
+
+        marker_393d51f3102343a89bff100673218c06.bindPopup(popup_a664bdf4abfd45f6967cb4108b6b261d)
+        ;
+
+        
+    
+    
+            var marker_912709a63c914a478c467d8bded87510 = L.marker(
+                [32.2218917, -110.9262353],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_947072b9458f43f684ad8b46328a8357 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da5e41ed7ca94f3bb84fa98057f0a21c = $(`<div id="html_da5e41ed7ca94f3bb84fa98057f0a21c" style="width: 100.0%; height: 100.0%;">FootballMediaAZ: I'm always doing my research and discovering things. There are 167 Division II schools that have football programs.… https://t.co/LKcq0igCX2</div>`)[0];
+            popup_947072b9458f43f684ad8b46328a8357.setContent(html_da5e41ed7ca94f3bb84fa98057f0a21c);
+        
+
+        marker_912709a63c914a478c467d8bded87510.bindPopup(popup_947072b9458f43f684ad8b46328a8357)
+        ;
+
+        
+    
+    
+            var marker_6e9b4d7b01bd4b7b9902876dfd00a6e9 = L.marker(
+                [53.5457188, -2.6264624],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_40d8ad87fdad46d1b85de0e3398152e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa7c32bb0c3640099d67e2767f132b6c = $(`<div id="html_fa7c32bb0c3640099d67e2767f132b6c" style="width: 100.0%; height: 100.0%;">Shelby94x: Wish it was acceptable to wear football kits as an adult👀 suppose I’ll have to make do with being excited for new k… https://t.co/Gk8YSiBOUO</div>`)[0];
+            popup_40d8ad87fdad46d1b85de0e3398152e4.setContent(html_fa7c32bb0c3640099d67e2767f132b6c);
+        
+
+        marker_6e9b4d7b01bd4b7b9902876dfd00a6e9.bindPopup(popup_40d8ad87fdad46d1b85de0e3398152e4)
+        ;
+
+        
+    
+    
+            var marker_b8a84dbee64544ed92c80413f3fea3c6 = L.marker(
+                [36.6258085, -121.817035888794],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_de586b2cce424dd7bd2a91dd43c349d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c613047b07a40eabb7f3732ea78acc4 = $(`<div id="html_8c613047b07a40eabb7f3732ea78acc4" style="width: 100.0%; height: 100.0%;">jaybohanna1: It’s just sum ab them football niggas😰😰😰😰😰 the way they look in a uniform I stg 🥵</div>`)[0];
+            popup_de586b2cce424dd7bd2a91dd43c349d1.setContent(html_8c613047b07a40eabb7f3732ea78acc4);
+        
+
+        marker_b8a84dbee64544ed92c80413f3fea3c6.bindPopup(popup_de586b2cce424dd7bd2a91dd43c349d1)
+        ;
+
+        
+    
+    
+            var marker_2a82b6d0575240ef83c3d4aecb2a2b8d = L.marker(
+                [53.8245483, -3.03731999502197],
+                {}
+            ).addTo(map_1fae02ea8d974cb5ab25f398c7b89578);
+        
+    
+        var popup_799747351da741398cfa81b1db176112 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15ed88d1de9a45258058ef4ebf4c042a = $(`<div id="html_15ed88d1de9a45258058ef4ebf4c042a" style="width: 100.0%; height: 100.0%;">CW04359131: What can you fatties do??? You keep eating and they will keep playing football</div>`)[0];
+            popup_799747351da741398cfa81b1db176112.setContent(html_15ed88d1de9a45258058ef4ebf4c042a);
+        
+
+        marker_2a82b6d0575240ef83c3d4aecb2a2b8d.bindPopup(popup_799747351da741398cfa81b1db176112)
+        ;
+
+        
+    
+</script>
