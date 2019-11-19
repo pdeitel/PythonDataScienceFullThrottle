@@ -13304,10 +13304,8 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="12.5-What&#8217;s-in-a-Tweet?">12.5 What&#8217;s in a Tweet?<a class="anchor-link" href="#12.5-What&#8217;s-in-a-Tweet?">&#182;</a></h1><ul>
 <li>Twitter API returns <strong>JSON (JavaScript Object Notation)</strong> objects</li>
-<li>Text-based <strong>data-interchange format</strong> </li>
+<li>Text-based, human and computer readable</li>
 <li>Like Python <strong>dictionaries</strong></li>
-<li>Common in <strong>web services</strong></li>
-<li>Human and computer readable</li>
 <li><strong>JSON object format</strong> &mdash; <strong>all strings in double quotes (")</strong><blockquote><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">propertyName1</span><span class="p">:</span> <span class="n">value1</span><span class="p">,</span> <span class="n">propertyName2</span><span class="p">:</span> <span class="n">value2</span><span class="p">}</span>
 </pre></div>
 </blockquote>
@@ -13721,7 +13719,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nasa</span><span class="o">.</span><span class="n">name</span>  <span class="c1"># name associated with the user’s account</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nasa</span><span class="o">.</span><span class="n">screen_name</span>  <span class="c1"># user’s Twitter handle</span>
 </pre></div>
 
     </div>
@@ -13754,7 +13752,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nasa</span><span class="o">.</span><span class="n">screen_name</span>  <span class="c1"># user’s Twitter handle</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nasa</span><span class="o">.</span><span class="n">description</span>  <span class="c1"># description from the user’s profile</span>
 </pre></div>
 
     </div>
@@ -13773,7 +13771,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;NASA&#39;</pre>
+<pre>&#39;Explore the universe and discover our home planet with @NASA. We usually post in EST (UTC-4)&#39;</pre>
 </div>
 
 </div>
@@ -13782,38 +13780,15 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nasa</span><span class="o">.</span><span class="n">description</span>  <span class="c1"># description from the user’s profile</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;Explore the universe and discover our home planet with @NASA. We usually post in EDT (UTC-4)&#39;</pre>
-</div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Lots of additional attributes, like <code>name</code>, <code>description</code>, <code>followers_count</code>, <code>friends_count</code>, etc.</li>
+</ul>
 
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13835,7 +13810,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nasa</span><span class="o">.</span><span class="n">status</span><span class="o">.</span><span class="n">text</span>  <span class="c1"># most recent tweet&#39;s text</span>
@@ -13851,13 +13826,13 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#34;Did you know that all 50 states are helping us explore space? It&#39;s true! From universities to #smallbiz in towns fr… https://t.co/glgWooSvBI&#34;</pre>
+<pre>&#39;RT @Astro_Christina: Unfathomable science &amp;amp; teamwork. The Alpha Magnetic Spectrometer is an instrument seeking to unlock the mystery of dar…&#39;</pre>
 </div>
 
 </div>
@@ -13877,86 +13852,6 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr style="height:2px; border:none; color:#000; background-color:#000;">
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Getting-the-Number-of-Followers-and-Friends">Getting the Number of Followers and Friends<a class="anchor-link" href="#Getting-the-Number-of-Followers-and-Friends">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nasa</span><span class="o">.</span><span class="n">followers_count</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[13]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>32064923</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nasa</span><span class="o">.</span><span class="n">friends_count</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[14]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>297</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14030,7 +13925,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">followers</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># for storing followers&#39; User objects</span>
@@ -14043,7 +13938,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cursor</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">Cursor</span><span class="p">(</span><span class="n">api</span><span class="o">.</span><span class="n">followers</span><span class="p">,</span> <span class="n">screen_name</span><span class="o">=</span><span class="s1">&#39;nasa&#39;</span><span class="p">)</span>
@@ -14084,7 +13979,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">account</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>  <span class="c1"># request only 10 results</span>
@@ -14098,11 +13993,10 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Followers:&#39;</span><span class="p">,</span> 
-      <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">followers</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">())))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">followers</span>
 </pre></div>
 
     </div>
@@ -14115,13 +14009,24 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Followers: _JDcastillo85 AcordovaNH828 ChloeDe81966684 DwaipayanHira FlavioGonzagaD2 joe_lubz nnurin12 PreetiS45917319 Rahul49187740 starjynskyy
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Fabianyil&#39;,
+ &#39;chaymae30764934&#39;,
+ &#39;greensoulgoddes&#39;,
+ &#39;AJThegamer1&#39;,
+ &#39;filipvolon&#39;,
+ &#39;danielleadamek&#39;,
+ &#39;Joseph_Uyango&#39;,
+ &#39;Jose_Ramos_&#39;,
+ &#39;Uzairpa75891421&#39;,
+ &#39;kaynippers&#39;]</pre>
 </div>
+
 </div>
 
 </div>
@@ -14163,7 +14068,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="12.10-Searching-Recent-Tweets-with-Tweepy-API-method-search">12.10 Searching Recent Tweets with Tweepy <code>API</code> method <strong><code>search</code></strong><a class="anchor-link" href="#12.10-Searching-Recent-Tweets-with-Tweepy-API-method-search">&#182;</a></h1><ul>
-<li><strong>Tweets API</strong>—Search <strong>past tweets</strong>, access <strong>live tweet streams</strong> and more</li>
+<li><strong>Tweets API</strong>—Search <strong>past 7 days' tweets</strong>, access <strong>live tweet streams</strong> and more</li>
 <li>Returns tweets that <strong>match a query string</strong></li>
 <li>Only for the <strong>previous seven days’ tweets</strong></li>
 <li><strong>Not guaranteed to return all matching tweets</strong></li>
@@ -14190,7 +14095,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tweetutilities</span> <span class="k">import</span> <span class="n">print_tweets</span>
@@ -14241,10 +14146,10 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweets</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="s1">&#39;Mars rover&#39;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweets</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="s1">&#39;football&#39;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14254,7 +14159,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">print_tweets</span><span class="p">(</span><span class="n">tweets</span><span class="p">)</span>
@@ -14274,17 +14179,9 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>centralchicken1: RT @NASA: It&#39;s not too late to send your name to Mars! 🤖 
+<pre>devywarehouse: RT @Rotoworld_Draft: Oklahoma WR Lamb (head) questionable Sat. https://t.co/nOEbCu6TWY
 
-Our #Mars2020 Rover is gearing up for its seven-month journey to the Red Planet…
-
-plfactory: 
-  ORIGINAL: RT @CienciaGob: Ya está integrada la contribución española en el rover de la misión #Mars2020 que se lanzará en julio de 2020. 
-
-España apo…
-TRANSLATED: RT @CienciaGob: The Spanish contribution is already integrated in the rover of mission # Mars2020 that will be launched in July 2020.
-
-Spain apo…
+sadgirlnat_: RT @Kirsten_TV: #BREAKING: Fresno Police say at least 9 people have been shot &amp;amp; “several” people are dead in a shooting near Peach &amp;amp; Olive.…
 
 </pre>
 </div>
@@ -14308,6 +14205,9 @@ Spain apo…
 <li>Use <strong>Twitter search operators</strong> to refine search results</li>
 <li>The following table shows several Twitter search operators. </li>
 <li><a href="https://twitter.com/search-home">For all the operators, click the <code>operators</code> link here</a></li>
+<li><div class="highlight"><pre><span></span><span class="n">tweets</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="s1">&#39;from:nasa since:2019-11-15&#39;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</li>
 </ul>
 <table>
 <thead><tr>
@@ -14372,74 +14272,6 @@ Spain apo…
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Searching-with-Twitter-Search-Operators-(2-of-2)">Searching with Twitter Search Operators (2 of 2)<a class="anchor-link" href="#Searching-with-Twitter-Search-Operators-(2-of-2)">&#182;</a></h3><ul>
-<li>Can receive tweets only from <strong>last 7 days</strong></li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweets</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="s1">&#39;from:nasa since:2019-07-24&#39;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">print_tweets</span><span class="p">(</span><span class="n">tweets</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>NASA: Did you know that all 50 states are helping us explore space? It&#39;s true! From universities to #smallbiz in towns fr… https://t.co/glgWooSvBI
-
-NASA: RT @Dr_ThomasZ: #ICYMI, watch the latest episode of #NASAScience Live that highlights #Apollo50th &amp;amp; the crew’s return to Earth. It was broa…
-
-NASA: It&#39;s not too late to send your name to Mars! 🤖 
-
-Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.co/qfB9pXKO4v
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr style="height:2px; border:none; color:#000; background-color:#000;">
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="12.11-Spotting-Trends:-Twitter-Trends-API">12.11 Spotting Trends: Twitter Trends API<a class="anchor-link" href="#12.11-Spotting-Trends:-Twitter-Trends-API">&#182;</a></h1><ul>
 <li><strong>“Going viral”</strong> &mdash; thousands or millions of people tweeting at once </li>
 <li>Twitter maintains a list of <strong>trending topics</strong> worldwide </li>
@@ -14470,7 +14302,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trends_available</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">trends_available</span><span class="p">()</span>
@@ -14483,7 +14315,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">trends_available</span><span class="p">)</span>
@@ -14499,7 +14331,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14526,7 +14358,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trends_available</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -14542,7 +14374,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14565,7 +14397,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trends_available</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -14581,7 +14413,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14690,7 +14522,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">world_trends</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">trends_place</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># list containing one dictionary</span>
@@ -14713,7 +14545,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trends_list</span> <span class="o">=</span> <span class="n">world_trends</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;trends&#39;</span><span class="p">]</span>
@@ -14743,7 +14575,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trends_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -14759,17 +14591,17 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;name&#39;: &#39;#GermanGP&#39;,
- &#39;url&#39;: &#39;http://twitter.com/search?q=%23GermanGP&#39;,
+<pre>{&#39;name&#39;: &#39;#benimderdim&#39;,
+ &#39;url&#39;: &#39;http://twitter.com/search?q=%23benimderdim&#39;,
  &#39;promoted_content&#39;: None,
- &#39;query&#39;: &#39;%23GermanGP&#39;,
- &#39;tweet_volume&#39;: 232843}</pre>
+ &#39;query&#39;: &#39;%23benimderdim&#39;,
+ &#39;tweet_volume&#39;: None}</pre>
 </div>
 
 </div>
@@ -14798,7 +14630,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trends_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">trends_list</span> <span class="k">if</span> <span class="n">t</span><span class="p">[</span><span class="s1">&#39;tweet_volume&#39;</span><span class="p">]]</span>
@@ -14811,7 +14643,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">operator</span> <span class="k">import</span> <span class="n">itemgetter</span> 
@@ -14824,7 +14656,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trends_list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">itemgetter</span><span class="p">(</span><span class="s1">&#39;tweet_volume&#39;</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
@@ -14837,7 +14669,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">trend</span> <span class="ow">in</span> <span class="n">trends_list</span><span class="p">[:</span><span class="mi">5</span><span class="p">]:</span>  <span class="c1"># show top 5 trending topics</span>
@@ -14858,11 +14690,11 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>#ITZY_COMEBACK
-#GermanGP
-#IdolPHGrandWinner
-レース
-#あなたの番です
+<pre>#GetWellSoonSCOUPS
+#あなたの石田彰はどこから
+#FelizLunes
+#BighitAddTranslations
+#LoveOnTour2020
 </pre>
 </div>
 </div>
@@ -14971,7 +14803,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">preprocessor</span> <span class="k">as</span> <span class="nn">p</span>  <span class="c1"># p recommended by docs</span>
@@ -14984,7 +14816,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">OPT</span><span class="o">.</span><span class="n">URL</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">OPT</span><span class="o">.</span><span class="n">RESERVED</span><span class="p">)</span>  <span class="c1"># specify what to clean</span>
@@ -14997,7 +14829,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_text</span> <span class="o">=</span> <span class="s1">&#39;RT A sample retweet with a URL https://nasa.gov&#39;</span>
@@ -15010,7 +14842,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span><span class="o">.</span><span class="n">clean</span><span class="p">(</span><span class="n">tweet_text</span><span class="p">)</span>
@@ -15026,7 +14858,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -15081,7 +14913,6 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 <li><strong>Notified</strong> when each <strong>new tweet</strong> or other <strong>Twitter message</strong> <strong>arrives</strong></li>
 <li>Each message results in a call to a <strong><code>StreamListener</code> method</strong></li>
 <li><strong>Override</strong> only the <strong>methods you need</strong></li>
-<li><a href="https://github.com/tweepy/tweepy/blob/master/tweepy/streaming.py">Additional <code>StreamListener</code> methods</a>  </li>
 </ul>
 </li>
 </ul>
@@ -15099,7 +14930,10 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="StreamListener-Methods"><code>StreamListener</code> Methods<a class="anchor-link" href="#StreamListener-Methods">&#182;</a></h3><table>
+<h3 id="StreamListener-Methods"><code>StreamListener</code> Methods<a class="anchor-link" href="#StreamListener-Methods">&#182;</a></h3><ul>
+<li><a href="https://github.com/tweepy/tweepy/blob/master/tweepy/streaming.py"><code>StreamListener</code> methods</a>  </li>
+</ul>
+<table>
 <thead><tr>
 <th style="text-align:left">Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
 <th style="text-align:left">Called when...</th>
@@ -15187,7 +15021,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
         <span class="sd">&quot;&quot;&quot;Called when Twitter pushes a new tweet to you.&quot;&quot;&quot;</span>
         <span class="c1"># get the tweet text</span>
         <span class="k">try</span><span class="p">:</span>  
-            <span class="n">tweet_text</span> <span class="o">=</span> <span class="n">status</span><span class="o">.</span><span class="n">extended_tweet</span><span class="o">.</span><span class="n">full_text</span>
+            <span class="n">tweet_text</span> <span class="o">=</span> <span class="n">status</span><span class="o">.</span><span class="n">extended_tweet</span><span class="p">[</span><span class="s2">&quot;full_text&quot;</span><span class="p">]</span>
         <span class="k">except</span><span class="p">:</span> 
             <span class="n">tweet_text</span> <span class="o">=</span> <span class="n">status</span><span class="o">.</span><span class="n">text</span>
 
@@ -15224,7 +15058,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tweetlistener</span> <span class="k">import</span> <span class="n">TweetListener</span>
@@ -15237,7 +15071,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_listener</span> <span class="o">=</span> <span class="n">TweetListener</span><span class="p">(</span><span class="n">api</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -15267,7 +15101,7 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_stream</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">Stream</span><span class="p">(</span><span class="n">auth</span><span class="o">=</span><span class="n">api</span><span class="o">.</span><span class="n">auth</span><span class="p">,</span> <span class="n">listener</span><span class="o">=</span><span class="n">tweet_listener</span><span class="p">)</span>
@@ -15300,10 +15134,10 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_stream</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">track</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;NFL&#39;</span><span class="p">])</span>  <span class="c1">#, is_async=True) </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_stream</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">track</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;football&#39;</span><span class="p">])</span>  <span class="c1">#, is_async=True) </span>
 </pre></div>
 
     </div>
@@ -15322,25 +15156,28 @@ Our #Mars2020 Rover is gearing up for its seven-month journey to t… https://t.
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Connection successful
 
-Screen name: BryanNgati:
+Screen name: baggio_22975:
    Language: en
-     Status: RT @BryanBroaddus: I learned this approach from Ron Wolf and this guy. New coaches will dump good players. https://t.co/PKv0BkdpP9
+     Status: RT @iam_wilsons: I&#39;m finally leaving Twitter. I can’t take all the football, political, tribal banter &amp;amp; the nasty things people say here an…
 
-Screen name: EricGillis8:
+Screen name: kingboy941:
    Language: en
-     Status: @86chuckd @HandyMilonakis @biggamejames36 @CjWilson850 @Pdub80 @fifthquarterfsu Honestly it&#39;s all just trash talk.… https://t.co/yotoLKjkdL
+     Status: RT @RSherman_25: Someone get me in contact with the person running the show here please.  I respect good football but I respect the 3.1 min…
 
-Screen name: ChitheWop:
-   Language: und
-     Status: @NickFoles @Jaguars @NFL https://t.co/VSJ1AHSU8z
-
-Screen name: AxelLlontop:
+Screen name: WadePage67:
    Language: en
-     Status: RT @Panthers: Keep those votes coming‼️ https://t.co/jaIcW8FRS3 https://t.co/6gVqbM0EDY
+     Status: RT @gata_row: WE’VE GOT OURSELVES A NIGHT GAME!!!
 
-Screen name: griffpr:
+ESPN put their hold on the game time so we will get either a 6:00pm kickoff or a 7:30pm…
+
+Screen name: Le_Blond19:
+   Language: fr
+     Status: RT @ActuFoot_: Thiago Silva dans @francefootball : « Prolonger au PSG, c&#39;est ma volonté (...) On va en discuter prochainement (...) L&#39;idée…
+ Translated: RT @ActuFoot_: Thiago Silva in @francefootball: &#34;To prolong to the PSG, it is my will (...) One will discuss it soon (...) The idea ...
+
+Screen name: burncrashmads:
    Language: en
-     Status: So we are just not gonna talk about Derrick Henry turning into a rattlesnake?
+     Status: RT @meltinforashton: can someone explain to me why is this okay for grown ass men to travel around the world to see football and sports gam…
 
 </pre>
 </div>
@@ -15394,7 +15231,7 @@ Screen name: griffpr:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">run</span> <span class="n">sentimentlistener</span><span class="o">.</span><span class="n">py</span> <span class="n">football</span> <span class="mi">10</span>
@@ -15414,29 +15251,29 @@ Screen name: griffpr:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>  Barragano94: Football &amp;amp; Beer 🍺🙋🏻‍♂️
+<pre>  Coach_Shot21: @Coach_DavisJ BALL HAWK - VERY PHYSICAL FOOTBALL PLAYER @MaxwellAmiyi 😈 😈 2020 Ath-WR-S ATH - Amiyi Maxwell Bob Jones HS 5&#39;10 195lbs GPA:ACT
 
-- ChrisGaspar: @STP43FAN @Patriots I think you tweeted the wrong person. I don&#39;t watch football, and don&#39;t know who Josh Gordon is.
++ SidelinesPBeach: 79cents wings are kickoff and Happy Hour through the Game! Monday Night Football!
 
-  nicthequik: HBO’s Hardknocks training camp is literally just a football version of The Office
+- jduballsports: The potential changes to NHIAA football&#39;s championship Sunday (mentioned by @603SportsMedia) might relate to @UNHMSoccer. The NCAA D-I tourney selection show is today at 1 p.m. and the Wildcats, who are guaranteed to be in the tourney, may host a second round game on Sunday.
 
-+ john_johnnyd: Great football weekend for Ben and Daniel with @Kerry_Official and @milltowncastlemaine 🇳🇬👍👌🏐
++ sdwind125: @fred_guttenberg It’s a never ending cycle. We are still processing the last school shooting and then the football party in Fresno. Now this. Why is there not more outrage? How many more innocent people need to die?
 
-  Jackbuchanan69: @Abdiriz49749137 You not seen him football factory?
+  Aa3Dr_Gamer: @BleacherReport @BleacherReport you watch football or just claps for goals ?? 😂
 
-+ BobbySkinnerNFL: @COOLLANEHERO Halapio is pretty good and 1 on 1’s are a losing battle for O-Line. It’s the most unrealistic drill in football
++ sazmining: Salt Lake City&#39;s Screaming Eagles football team is pioneering a new type of blockchain fantasy football. Now the fans can CALL THE PLAYS @Redskins might as well let this happen as well
 
-  richmondjb: @RossMartin_IC Football guy
+  DylanThe4th: @EA bring back ncaa football and basketball!
 
-+ whoknowswhoser1: @JimWhite Well let’s see how much he wants to play football Jim... I suspect he will now sit warming the bench stro…
+  dorothylee007: Just lowered a bunch of prices online: #collectibles #collectables #vintage #vintagetoys #toys #playsets #toysoldiers #actionfigures #music #movies #books #dolls #sports #comicbooks #wrestling #football #comics #midcenturymodern #records #vinyl
 
-+ TheRamosHeader: @SergiesqueV2 @drkhan1212 @arrizaba1aga But ur not going to have a open net in football lmao. It’s harder to score…
+  JoeCase07177528: @ITVNewsPolitics @itvnews @Peston Are these football or cricket grounds?
 
-+ SBOBET: Put your football and prediction skills to the test! Guess whether it will be a goal or a save and get to win ton…
+  HotchkissRhona: @LeahtheMoon @ebrutif @TheOnlySprout @221Bcrow @babybeginner @JennyMarra Except no-one is attempting to define everything about a person by their biology. My biology does not make me Scottish or a socialist or a football fan or a lover of books and nature - all of which I am - but it does make me a woman.
 
 Tweet sentiment for &#34;football&#34;
-Positive: 5
- Neutral: 4
+Positive: 3
+ Neutral: 6
 Negative: 1
 </pre>
 </div>
@@ -15553,45 +15390,18 @@ Negative: 1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr style="height:2px; border:none; color:#000; background-color:#000;">
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="12.15.1-Getting-and-Mapping-the-Tweets">12.15.1 Getting and Mapping the Tweets<a class="anchor-link" href="#12.15.1-Getting-and-Mapping-the-Tweets">&#182;</a></h2><ul>
-<li>We’ll use utility functions from our <strong><code>tweetutilities.py</code></strong> file and class <strong><code>LocationListener</code></strong> in <strong><code>locationlistener.py</code></strong></li>
-</ul>
-<h3 id="Get-the-Tweepy-API-Object">Get the Tweepy API Object<a class="anchor-link" href="#Get-the-Tweepy-API-Object">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tweetutilities</span> <span class="k">import</span> <span class="n">get_API</span>
-</pre></div>
+<!--<hr style="height:2px; border:none; color:#000; background-color:#000;">
+## 12.15.1 Getting and Mapping the Tweets
+* We’ll use utility functions from our **`tweetutilities.py`** file and class **`LocationListener`** in **`locationlistener.py`**
 
-    </div>
-</div>
-</div>
+### Get the Tweepy API Object
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">api</span> <span class="o">=</span> <span class="n">get_API</span><span class="p">()</span>  <span class="c1"># utility function in tweetutilities.py</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
+# from tweetutilities import get_API--commented out because we have the api object from earlier in notebook
 
+# api = get_API()  # utility function in tweetutilities.py-->
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -15616,7 +15426,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweets</span> <span class="o">=</span> <span class="p">[]</span> 
@@ -15629,7 +15439,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">counts</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;total_tweets&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;locations&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
@@ -15656,7 +15466,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">locationlistener</span> <span class="k">import</span> <span class="n">LocationListener</span>
@@ -15669,7 +15479,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">location_listener</span> <span class="o">=</span> <span class="n">LocationListener</span><span class="p">(</span><span class="n">api</span><span class="p">,</span> <span class="n">counts_dict</span><span class="o">=</span><span class="n">counts</span><span class="p">,</span> 
@@ -15707,7 +15517,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tweepy</span>
@@ -15720,7 +15530,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stream</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">Stream</span><span class="p">(</span><span class="n">auth</span><span class="o">=</span><span class="n">api</span><span class="o">.</span><span class="n">auth</span><span class="p">,</span> <span class="n">listener</span><span class="o">=</span><span class="n">location_listener</span><span class="p">)</span>
@@ -15733,7 +15543,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stream</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">track</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;football&#39;</span><span class="p">],</span> <span class="n">languages</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;en&#39;</span><span class="p">],</span> <span class="n">is_async</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15753,7 +15563,7 @@ Negative: 1
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CW04359131: What can you fatties do??? You keep eating and they will keep playing football
+<pre>stadiumbusiness: #Albania christened its newly-built Arena Kombëtare yesterday as its national football team fell to a 2-0 defeat to France: https://t.co/VynfF46J1P
 
 </pre>
 </div>
@@ -15779,7 +15589,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">counts</span><span class="p">[</span><span class="s1">&#39;total_tweets&#39;</span><span class="p">]</span>
@@ -15795,13 +15605,13 @@ Negative: 1
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[54]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>83</pre>
+<pre>66</pre>
 </div>
 
 </div>
@@ -15812,7 +15622,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">counts</span><span class="p">[</span><span class="s1">&#39;locations&#39;</span><span class="p">]</span>
@@ -15828,7 +15638,7 @@ Negative: 1
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[55]:</div>
+    <div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -15845,7 +15655,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{counts[&quot;locations&quot;] / counts[&quot;total_tweets&quot;]:.1%}&#39;</span><span class="p">)</span>
@@ -15865,7 +15675,7 @@ Negative: 1
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>60.2%
+<pre>75.8%
 </pre>
 </div>
 </div>
@@ -15894,7 +15704,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tweetutilities</span> <span class="k">import</span> <span class="n">get_geocodes</span>
@@ -15907,7 +15717,7 @@ Negative: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bad_locations</span> <span class="o">=</span> <span class="n">get_geocodes</span><span class="p">(</span><span class="n">tweets</span><span class="p">)</span>
@@ -15928,12 +15738,6 @@ Negative: 1
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Getting coordinates for tweet locations...
-OpenMapQuest service timed out. Waiting.
-OpenMapQuest service timed out. Waiting.
-OpenMapQuest service timed out. Waiting.
-OpenMapQuest service timed out. Waiting.
-OpenMapQuest service timed out. Waiting.
-OpenMapQuest service timed out. Waiting.
 Done geocoding
 </pre>
 </div>
@@ -15959,7 +15763,7 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bad_locations</span>
@@ -15975,13 +15779,13 @@ Done geocoding
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[59]:</div>
+    <div class="prompt output_prompt">Out[51]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>6</pre>
+<pre>5</pre>
 </div>
 
 </div>
@@ -15992,7 +15796,7 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{bad_locations / counts[&quot;locations&quot;]:.1%}&#39;</span><span class="p">)</span>
@@ -16012,7 +15816,7 @@ Done geocoding
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>12.0%
+<pre>10.0%
 </pre>
 </div>
 </div>
@@ -16041,7 +15845,7 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -16054,7 +15858,7 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">tweets</span><span class="p">)</span>
@@ -16067,13 +15871,893 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[55]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>latitude</th>
+      <th>location</th>
+      <th>longitude</th>
+      <th>screen_name</th>
+      <th>text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>52.795479</td>
+      <td>North East, England</td>
+      <td>-0.540240</td>
+      <td>ElwinWay</td>
+      <td>@DavidBloomPT Loads of journos getting all tea...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>38.894955</td>
+      <td>Washington, DC</td>
+      <td>-77.036646</td>
+      <td>Cekent</td>
+      <td>Someone send the Dems Peanuts comic strips of ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>39.758948</td>
+      <td>Dayton,Ohio</td>
+      <td>-84.191607</td>
+      <td>TwSizemore313</td>
+      <td>@MikeCallahan25 @SpecSportsOH @OHSAASports @se...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>33.266840</td>
+      <td>Tuscaloosa, AL</td>
+      <td>-87.486218</td>
+      <td>travisreier</td>
+      <td>NOW on SFS presented by @PeterbrookeTusc:\n\n*...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>47.603832</td>
+      <td>Seattle, WA</td>
+      <td>-122.330062</td>
+      <td>ItsAPrimate</td>
+      <td>This is Football 2019 Reaction! https://t.co/v...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>40.550853</td>
+      <td>Fort Collins, Colorado</td>
+      <td>-105.066808</td>
+      <td>CSURAMLEGENDS</td>
+      <td>Former Rams Student-Athletes: This is a great ...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>-32.027227</td>
+      <td>Aquinas College</td>
+      <td>115.862514</td>
+      <td>AquinasPE_Sport</td>
+      <td>Football this week:\n\n1st team no game\n2nd t...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>39.422519</td>
+      <td>Utah, USA</td>
+      <td>-111.714358</td>
+      <td>TySpaced</td>
+      <td>The geniuses on the Wyoming football message b...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>35.204888</td>
+      <td>Arkansas, USA</td>
+      <td>-92.447911</td>
+      <td>Lexi_Ann_14</td>
+      <td>Sucking a football and meth.</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>51.944580</td>
+      <td>Harwich, England</td>
+      <td>1.289852</td>
+      <td>Richard_T_efc</td>
+      <td>@FI_Jerry @Jordolenko @btsportfootball Idiot. ...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>30.445960</td>
+      <td>Baton Rouge, LA</td>
+      <td>-91.187380</td>
+      <td>WVLANBCLocal33</td>
+      <td>NEWSFEED NOW: \nWATCH at 11 a.m.: A deadly sho...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>32.787601</td>
+      <td>Charleston, SC</td>
+      <td>-79.940273</td>
+      <td>Bryce_theIntern</td>
+      <td>@Trey_sammie65 If only you were as good at foo...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>39.952399</td>
+      <td>Philadelphia, PA</td>
+      <td>-75.163590</td>
+      <td>DanteCollinelli</td>
+      <td>I was off Twitter this weekend and missed cove...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>Georgia football-Georgia Tech game time, TV Ne...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>Georgia football kickoff time, TV announced ve...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>WEEK IN PHOTOS: Gregory Alan Isakov, Georgia m...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>Why Ohio State's Justin Fields first committed...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>Historic victories for three rural North Georg...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>39.962260</td>
+      <td>Columbus, OH</td>
+      <td>-83.000707</td>
+      <td>BroMontana34</td>
+      <td>@TheBIGlegume I would say 3-4 games. This kind...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>40.075738</td>
+      <td>New Jersey, USA</td>
+      <td>-74.404162</td>
+      <td>dvond</td>
+      <td>Goff supporters may not want to look  Goff has...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>35.612661</td>
+      <td>Greenville, North Carolina</td>
+      <td>-77.366354</td>
+      <td>PR927FM</td>
+      <td>Breaking&amp;gt; The final game of the year for #E...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>41.875555</td>
+      <td>Chicago, IL</td>
+      <td>-87.624421</td>
+      <td>MattVerderame</td>
+      <td>@ChadVanDam11 If you stop the run, it makes it...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>39.962260</td>
+      <td>Columbus, OH</td>
+      <td>-83.000707</td>
+      <td>BUCKEYESNO1</td>
+      <td>#Buckeyes \n                        Week 13 do...</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>NaN</td>
+      <td>location: I travel</td>
+      <td>NaN</td>
+      <td>RWayneBranch</td>
+      <td>@IiElmore @tayVS_SD @jocktodoc @keanukargr Jim...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>39.783730</td>
+      <td>United States</td>
+      <td>-100.445882</td>
+      <td>DistinctAthlete</td>
+      <td>Vanderbilt Football Mail Bag #9: Call For Subm...</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>35.149022</td>
+      <td>Memphis, TN</td>
+      <td>-90.051629</td>
+      <td>sylamore1</td>
+      <td>I remember when I used to hype these columns b...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>33.258882</td>
+      <td>Alabama</td>
+      <td>-86.829534</td>
+      <td>DaddyGlasgow</td>
+      <td>@SportsCenter So...you are saying a former pro...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>NaN</td>
+      <td>ÜT: 33.9927059,-118.3081962</td>
+      <td>NaN</td>
+      <td>dwill104</td>
+      <td>@PelSainTiger I have football reasons why I be...</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>54.629498</td>
+      <td>Northern Ireland, United Kingdom</td>
+      <td>-6.765442</td>
+      <td>h4rry799</td>
+      <td>Reece James has played 230 of top flight footb...</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>50.822040</td>
+      <td>Brighton, England</td>
+      <td>-0.137406</td>
+      <td>HawksFCOfficial</td>
+      <td>WOW! One of our shirts is at the brand new Nat...</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>NaN</td>
+      <td>Sunny South Hayling, too sunny, gets in the ey...</td>
+      <td>NaN</td>
+      <td>Ben_Bengyman</td>
+      <td>@FederalMerc ive only broken my left arm twice...</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>20.272324</td>
+      <td>Lagos | PH | FT</td>
+      <td>100.415179</td>
+      <td>D_WarEagle</td>
+      <td>Create a list, when it's football time, change...</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>27.770380</td>
+      <td>St Petersburg, FL</td>
+      <td>-82.669509</td>
+      <td>SmithTim49</td>
+      <td>@RCummingsFHCN I root for the 49ers who was my...</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>41.683381</td>
+      <td>South Bend, IN</td>
+      <td>-86.250007</td>
+      <td>ISDUpdate</td>
+      <td>ND Football | Notre Dame Depth Chart: Boston C...</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>-27.468968</td>
+      <td>Brisbane, Australia</td>
+      <td>153.023499</td>
+      <td>9NewsQueensland</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>NaN</td>
+      <td>All over the UK since 1988</td>
+      <td>NaN</td>
+      <td>footballmundial</td>
+      <td>⚽ PROMOTION Introduce another team into any of...</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>30.271129</td>
+      <td>Austin, TX</td>
+      <td>-97.743700</td>
+      <td>thedailytexan</td>
+      <td>Texas Football lost to Iowa State Saturday wit...</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>33.520682</td>
+      <td>Birmingham, Alabama</td>
+      <td>-86.802433</td>
+      <td>CBS_42</td>
+      <td>WATCH: A deadly shooting rampage at a football...</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>53.728609</td>
+      <td>Ewood Park, Blackburn</td>
+      <td>-2.489258</td>
+      <td>Rovers</td>
+      <td>🎸 "I’ve always wanted to learn an instrument, ...</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>33.749099</td>
+      <td>Atlanta, GA</td>
+      <td>-84.390185</td>
+      <td>TheAthleticATL</td>
+      <td>Sack Schultz: Make your picks for Week 13 of t...</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>-33.854816</td>
+      <td>Sydney, Australia</td>
+      <td>151.216454</td>
+      <td>9NewsSyd</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>51.478942</td>
+      <td>SW6</td>
+      <td>-0.200922</td>
+      <td>FulhamishPod</td>
+      <td>"To be blunt, we’ve not been nearly good enoug...</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>-24.776109</td>
+      <td>Australia</td>
+      <td>134.755000</td>
+      <td>9NewsAUS</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>-27.998990</td>
+      <td>Surfers Paradise, Gold Coast</td>
+      <td>153.423980</td>
+      <td>9NewsGoldCoast</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>36.166286</td>
+      <td>Las Vegas</td>
+      <td>-115.149225</td>
+      <td>scottwins</td>
+      <td>Free Monday Night Football: Chiefs v. Chargers...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>-34.927428</td>
+      <td>Adelaide, Australia</td>
+      <td>138.599899</td>
+      <td>9NewsAdel</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>50.822040</td>
+      <td>Brighton, UK</td>
+      <td>-0.137406</td>
+      <td>LatestTVBtn</td>
+      <td>Our weekend football review\n\nhttps://t.co/2K...</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>39.783730</td>
+      <td>United States</td>
+      <td>-100.445882</td>
+      <td>BestUSSportsBet</td>
+      <td>Here are some of our most disappointing teams ...</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>-37.814218</td>
+      <td>Melbourne, Australia</td>
+      <td>144.963161</td>
+      <td>9NewsMelb</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>NaN</td>
+      <td>London, 26-27 November 2019</td>
+      <td>NaN</td>
+      <td>stadiumbusiness</td>
+      <td>#Albania christened its newly-built Arena Komb...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[57]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>latitude</th>
+      <th>location</th>
+      <th>longitude</th>
+      <th>screen_name</th>
+      <th>text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>52.795479</td>
+      <td>North East, England</td>
+      <td>-0.540240</td>
+      <td>ElwinWay</td>
+      <td>@DavidBloomPT Loads of journos getting all tea...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>38.894955</td>
+      <td>Washington, DC</td>
+      <td>-77.036646</td>
+      <td>Cekent</td>
+      <td>Someone send the Dems Peanuts comic strips of ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>39.758948</td>
+      <td>Dayton,Ohio</td>
+      <td>-84.191607</td>
+      <td>TwSizemore313</td>
+      <td>@MikeCallahan25 @SpecSportsOH @OHSAASports @se...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>33.266840</td>
+      <td>Tuscaloosa, AL</td>
+      <td>-87.486218</td>
+      <td>travisreier</td>
+      <td>NOW on SFS presented by @PeterbrookeTusc:\n\n*...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>47.603832</td>
+      <td>Seattle, WA</td>
+      <td>-122.330062</td>
+      <td>ItsAPrimate</td>
+      <td>This is Football 2019 Reaction! https://t.co/v...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>40.550853</td>
+      <td>Fort Collins, Colorado</td>
+      <td>-105.066808</td>
+      <td>CSURAMLEGENDS</td>
+      <td>Former Rams Student-Athletes: This is a great ...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>-32.027227</td>
+      <td>Aquinas College</td>
+      <td>115.862514</td>
+      <td>AquinasPE_Sport</td>
+      <td>Football this week:\n\n1st team no game\n2nd t...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>39.422519</td>
+      <td>Utah, USA</td>
+      <td>-111.714358</td>
+      <td>TySpaced</td>
+      <td>The geniuses on the Wyoming football message b...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>35.204888</td>
+      <td>Arkansas, USA</td>
+      <td>-92.447911</td>
+      <td>Lexi_Ann_14</td>
+      <td>Sucking a football and meth.</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>51.944580</td>
+      <td>Harwich, England</td>
+      <td>1.289852</td>
+      <td>Richard_T_efc</td>
+      <td>@FI_Jerry @Jordolenko @btsportfootball Idiot. ...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>30.445960</td>
+      <td>Baton Rouge, LA</td>
+      <td>-91.187380</td>
+      <td>WVLANBCLocal33</td>
+      <td>NEWSFEED NOW: \nWATCH at 11 a.m.: A deadly sho...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>32.787601</td>
+      <td>Charleston, SC</td>
+      <td>-79.940273</td>
+      <td>Bryce_theIntern</td>
+      <td>@Trey_sammie65 If only you were as good at foo...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>39.952399</td>
+      <td>Philadelphia, PA</td>
+      <td>-75.163590</td>
+      <td>DanteCollinelli</td>
+      <td>I was off Twitter this weekend and missed cove...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>Georgia football-Georgia Tech game time, TV Ne...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>Georgia football kickoff time, TV announced ve...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>WEEK IN PHOTOS: Gregory Alan Isakov, Georgia m...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>Why Ohio State's Justin Fields first committed...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>32.329381</td>
+      <td>Georgia, USA</td>
+      <td>-83.113737</td>
+      <td>DonoEvans</td>
+      <td>Historic victories for three rural North Georg...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>39.962260</td>
+      <td>Columbus, OH</td>
+      <td>-83.000707</td>
+      <td>BroMontana34</td>
+      <td>@TheBIGlegume I would say 3-4 games. This kind...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>40.075738</td>
+      <td>New Jersey, USA</td>
+      <td>-74.404162</td>
+      <td>dvond</td>
+      <td>Goff supporters may not want to look  Goff has...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>35.612661</td>
+      <td>Greenville, North Carolina</td>
+      <td>-77.366354</td>
+      <td>PR927FM</td>
+      <td>Breaking&amp;gt; The final game of the year for #E...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>41.875555</td>
+      <td>Chicago, IL</td>
+      <td>-87.624421</td>
+      <td>MattVerderame</td>
+      <td>@ChadVanDam11 If you stop the run, it makes it...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>39.962260</td>
+      <td>Columbus, OH</td>
+      <td>-83.000707</td>
+      <td>BUCKEYESNO1</td>
+      <td>#Buckeyes \n                        Week 13 do...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>39.783730</td>
+      <td>United States</td>
+      <td>-100.445882</td>
+      <td>DistinctAthlete</td>
+      <td>Vanderbilt Football Mail Bag #9: Call For Subm...</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>35.149022</td>
+      <td>Memphis, TN</td>
+      <td>-90.051629</td>
+      <td>sylamore1</td>
+      <td>I remember when I used to hype these columns b...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>33.258882</td>
+      <td>Alabama</td>
+      <td>-86.829534</td>
+      <td>DaddyGlasgow</td>
+      <td>@SportsCenter So...you are saying a former pro...</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>54.629498</td>
+      <td>Northern Ireland, United Kingdom</td>
+      <td>-6.765442</td>
+      <td>h4rry799</td>
+      <td>Reece James has played 230 of top flight footb...</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>50.822040</td>
+      <td>Brighton, England</td>
+      <td>-0.137406</td>
+      <td>HawksFCOfficial</td>
+      <td>WOW! One of our shirts is at the brand new Nat...</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>20.272324</td>
+      <td>Lagos | PH | FT</td>
+      <td>100.415179</td>
+      <td>D_WarEagle</td>
+      <td>Create a list, when it's football time, change...</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>27.770380</td>
+      <td>St Petersburg, FL</td>
+      <td>-82.669509</td>
+      <td>SmithTim49</td>
+      <td>@RCummingsFHCN I root for the 49ers who was my...</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>41.683381</td>
+      <td>South Bend, IN</td>
+      <td>-86.250007</td>
+      <td>ISDUpdate</td>
+      <td>ND Football | Notre Dame Depth Chart: Boston C...</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>-27.468968</td>
+      <td>Brisbane, Australia</td>
+      <td>153.023499</td>
+      <td>9NewsQueensland</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>30.271129</td>
+      <td>Austin, TX</td>
+      <td>-97.743700</td>
+      <td>thedailytexan</td>
+      <td>Texas Football lost to Iowa State Saturday wit...</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>33.520682</td>
+      <td>Birmingham, Alabama</td>
+      <td>-86.802433</td>
+      <td>CBS_42</td>
+      <td>WATCH: A deadly shooting rampage at a football...</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>53.728609</td>
+      <td>Ewood Park, Blackburn</td>
+      <td>-2.489258</td>
+      <td>Rovers</td>
+      <td>🎸 "I’ve always wanted to learn an instrument, ...</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>33.749099</td>
+      <td>Atlanta, GA</td>
+      <td>-84.390185</td>
+      <td>TheAthleticATL</td>
+      <td>Sack Schultz: Make your picks for Week 13 of t...</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>-33.854816</td>
+      <td>Sydney, Australia</td>
+      <td>151.216454</td>
+      <td>9NewsSyd</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>51.478942</td>
+      <td>SW6</td>
+      <td>-0.200922</td>
+      <td>FulhamishPod</td>
+      <td>"To be blunt, we’ve not been nearly good enoug...</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>-24.776109</td>
+      <td>Australia</td>
+      <td>134.755000</td>
+      <td>9NewsAUS</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>-27.998990</td>
+      <td>Surfers Paradise, Gold Coast</td>
+      <td>153.423980</td>
+      <td>9NewsGoldCoast</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>36.166286</td>
+      <td>Las Vegas</td>
+      <td>-115.149225</td>
+      <td>scottwins</td>
+      <td>Free Monday Night Football: Chiefs v. Chargers...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>-34.927428</td>
+      <td>Adelaide, Australia</td>
+      <td>138.599899</td>
+      <td>9NewsAdel</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>50.822040</td>
+      <td>Brighton, UK</td>
+      <td>-0.137406</td>
+      <td>LatestTVBtn</td>
+      <td>Our weekend football review\n\nhttps://t.co/2K...</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>39.783730</td>
+      <td>United States</td>
+      <td>-100.445882</td>
+      <td>BestUSSportsBet</td>
+      <td>Here are some of our most disappointing teams ...</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>-37.814218</td>
+      <td>Melbourne, Australia</td>
+      <td>144.963161</td>
+      <td>9NewsMelb</td>
+      <td>At least four people have died and six people ...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -16094,7 +16778,7 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
@@ -16107,7 +16791,7 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">usmap</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">39.8283</span><span class="p">,</span> <span class="o">-</span><span class="mf">98.5795</span><span class="p">],</span>  <span class="c1"># center of U.S.</span>
@@ -16155,7 +16839,7 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
@@ -16187,7 +16871,7 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">usmap</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;tweet_map.html&#39;</span><span class="p">)</span>
@@ -16218,11 +16902,10 @@ Done geocoding
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
-<span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s2">&quot;./tweet_map.html&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">450</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">usmap</span>
 </pre></div>
 
     </div>
@@ -16235,20 +16918,12 @@ Done geocoding
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[68]:</div>
+    <div class="prompt output_prompt">Out[62]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-
-        <iframe
-            width="800"
-            height="450"
-            src="./tweet_map.html"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,PCFET0NUWVBFIGh0bWw+CjxoZWFkPiAgICAKICAgIDxtZXRhIGh0dHAtZXF1aXY9ImNvbnRlbnQtdHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04IiAvPgogICAgCiAgICAgICAgPHNjcmlwdD4KICAgICAgICAgICAgTF9OT19UT1VDSCA9IGZhbHNlOwogICAgICAgICAgICBMX0RJU0FCTEVfM0QgPSBmYWxzZTsKICAgICAgICA8L3NjcmlwdD4KICAgIAogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjUuMS9kaXN0L2xlYWZsZXQuanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY29kZS5qcXVlcnkuY29tL2pxdWVyeS0xLjEyLjQubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9qcy9ib290c3RyYXAubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9MZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy8yLjAuMi9sZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy5qcyI+PC9zY3JpcHQ+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjUuMS9kaXN0L2xlYWZsZXQuY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vYm9vdHN0cmFwLzMuMi4wL2Nzcy9ib290c3RyYXAubWluLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9jc3MvYm9vdHN0cmFwLXRoZW1lLm1pbi5jc3MiLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9mb250LWF3ZXNvbWUvNC42LjMvY3NzL2ZvbnQtYXdlc29tZS5taW4uY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL0xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLzIuMC4yL2xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL3Jhd2Nkbi5naXRoYWNrLmNvbS9weXRob24tdmlzdWFsaXphdGlvbi9mb2xpdW0vbWFzdGVyL2ZvbGl1bS90ZW1wbGF0ZXMvbGVhZmxldC5hd2Vzb21lLnJvdGF0ZS5jc3MiLz4KICAgIDxzdHlsZT5odG1sLCBib2R5IHt3aWR0aDogMTAwJTtoZWlnaHQ6IDEwMCU7bWFyZ2luOiAwO3BhZGRpbmc6IDA7fTwvc3R5bGU+CiAgICA8c3R5bGU+I21hcCB7cG9zaXRpb246YWJzb2x1dGU7dG9wOjA7Ym90dG9tOjA7cmlnaHQ6MDtsZWZ0OjA7fTwvc3R5bGU+CiAgICAKICAgICAgICAgICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwKICAgICAgICAgICAgICAgIGluaXRpYWwtc2NhbGU9MS4wLCBtYXhpbXVtLXNjYWxlPTEuMCwgdXNlci1zY2FsYWJsZT1ubyIgLz4KICAgICAgICAgICAgPHN0eWxlPgogICAgICAgICAgICAgICAgI21hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSB7CiAgICAgICAgICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlOwogICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAuMCU7CiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxMDAuMCU7CiAgICAgICAgICAgICAgICAgICAgbGVmdDogMC4wJTsKICAgICAgICAgICAgICAgICAgICB0b3A6IDAuMCU7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIDwvc3R5bGU+CiAgICAgICAgCjwvaGVhZD4KPGJvZHk+ICAgIAogICAgCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZvbGl1bS1tYXAiIGlkPSJtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkiID48L2Rpdj4KICAgICAgICAKPC9ib2R5Pgo8c2NyaXB0PiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5ID0gTC5tYXAoCiAgICAgICAgICAgICAgICAibWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5IiwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICBjZW50ZXI6IFszOS44MjgzLCAtOTguNTc5NV0sCiAgICAgICAgICAgICAgICAgICAgY3JzOiBMLkNSUy5FUFNHMzg1NywKICAgICAgICAgICAgICAgICAgICB6b29tOiA0LAogICAgICAgICAgICAgICAgICAgIHpvb21Db250cm9sOiB0cnVlLAogICAgICAgICAgICAgICAgICAgIHByZWZlckNhbnZhczogZmFsc2UsCiAgICAgICAgICAgICAgICAgICAgZGV0ZWN0UmV0aW5hOiB0cnVlLAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICApOwoKICAgICAgICAgICAgCgogICAgICAgIAogICAgCiAgICAgICAgICAgIHZhciB0aWxlX2xheWVyXzM3ZTg4ODU3NGJjODRlNTNiM2FhNjc2YTljYTQ3N2FiID0gTC50aWxlTGF5ZXIoCiAgICAgICAgICAgICAgICAiaHR0cHM6Ly9zdGFtZW4tdGlsZXMte3N9LmEuc3NsLmZhc3RseS5uZXQvdGVycmFpbi97en0ve3h9L3t5fS5qcGciLAogICAgICAgICAgICAgICAgeyJhdHRyaWJ1dGlvbiI6ICJNYXAgdGlsZXMgYnkgXHUwMDNjYSBocmVmPVwiaHR0cDovL3N0YW1lbi5jb21cIlx1MDAzZVN0YW1lbiBEZXNpZ25cdTAwM2MvYVx1MDAzZSwgdW5kZXIgXHUwMDNjYSBocmVmPVwiaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvMy4wXCJcdTAwM2VDQyBCWSAzLjBcdTAwM2MvYVx1MDAzZS4gRGF0YSBieSBcdTAwMjZjb3B5OyBcdTAwM2NhIGhyZWY9XCJodHRwOi8vb3BlbnN0cmVldG1hcC5vcmdcIlx1MDAzZU9wZW5TdHJlZXRNYXBcdTAwM2MvYVx1MDAzZSwgdW5kZXIgXHUwMDNjYSBocmVmPVwiaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnktc2EvMy4wXCJcdTAwM2VDQyBCWSBTQVx1MDAzYy9hXHUwMDNlLiIsICJkZXRlY3RSZXRpbmEiOiBmYWxzZSwgIm1heE5hdGl2ZVpvb20iOiAxOCwgIm1heFpvb20iOiAxOCwgIm1pblpvb20iOiAwLCAibm9XcmFwIjogZmFsc2UsICJvcGFjaXR5IjogMSwgInN1YmRvbWFpbnMiOiAiYWJjIiwgInRtcyI6IGZhbHNlfQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9lZmE0MDBiMzJjODM0ODQ5YmVmYjU0YmE2NzVjOGE0NCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUyLjc5NTQ3OTEsIC0wLjU0MDI0MDI4NjYxNzQzMl0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfNzA3MTExN2E2YTcwNGI2Mjk1OWJlYjBlMDI4MTI0ZTggPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2Q4MjZhZDI2NmEwZjQ3YTRhOTEwYTFmNzI5M2JiMjlkID0gJChgPGRpdiBpZD0iaHRtbF9kODI2YWQyNjZhMGY0N2E0YTkxMGExZjcyOTNiYjI5ZCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+RWx3aW5XYXk6IEBEYXZpZEJsb29tUFQgTG9hZHMgb2Ygam91cm5vcyBnZXR0aW5nIGFsbCB0ZWFyeSBleWVkIG9uIFR3aXR0ZXIuICAgQWxsIHRoYXQgc2VsZi1kb3VidCB0aGV5IG1pZ2h0IGhhdmUgZmVsdCBpbiB0aGUgd2FrZSBvZiBJcmFxIHN3ZXB0IGF3YXksIGFzIEtvc292YW4gZm9vdGJhbGwgZmFucyBjb25maXJtZWQgZm9yIHRoZW0gdGhhdCBCbGlnaHR5IGlzIGluZGVlZCBhIGxpZ2h0IHVudG8gdGhlIHdvcmxkLiBHYXdkIHNhdmUgdGhlIFF1ZWVuITwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF83MDcxMTE3YTZhNzA0YjYyOTU5YmViMGUwMjgxMjRlOC5zZXRDb250ZW50KGh0bWxfZDgyNmFkMjY2YTBmNDdhNGE5MTBhMWY3MjkzYmIyOWQpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfZWZhNDAwYjMyYzgzNDg0OWJlZmI1NGJhNjc1YzhhNDQuYmluZFBvcHVwKHBvcHVwXzcwNzExMTdhNmE3MDRiNjI5NTliZWIwZTAyODEyNGU4KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzM3ZTdhMzk5MjU3OTQxNzk4OTMwZDY0ZDMxODkzMzkxID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzguODk0OTU0OSwgLTc3LjAzNjY0NTZdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzQyNzE1Y2E4YjIyOTRkOTZhZDY2NWEzMGExZDVkMmM3ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8yZjAxZDJlMTc4MzM0MjU2OTRlYjY3NTM1ZGM4YTg0NiA9ICQoYDxkaXYgaWQ9Imh0bWxfMmYwMWQyZTE3ODMzNDI1Njk0ZWI2NzUzNWRjOGE4NDYiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkNla2VudDogU29tZW9uZSBzZW5kIHRoZSBEZW1zIFBlYW51dHMgY29taWMgc3RyaXBzIG9mIEx1Y3kgeWFua2luZyB0aGUgZm9vdGJhbGwgZnJvbSBDaGFybGllIEJyb3duLjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF80MjcxNWNhOGIyMjk0ZDk2YWQ2NjVhMzBhMWQ1ZDJjNy5zZXRDb250ZW50KGh0bWxfMmYwMWQyZTE3ODMzNDI1Njk0ZWI2NzUzNWRjOGE4NDYpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfMzdlN2EzOTkyNTc5NDE3OTg5MzBkNjRkMzE4OTMzOTEuYmluZFBvcHVwKHBvcHVwXzQyNzE1Y2E4YjIyOTRkOTZhZDY2NWEzMGExZDVkMmM3KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzA1NjY5ZDkwZDZhMjQyZmRiMDZiYzk2MjQ3ZWY1ZGI5ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzkuNzU4OTQ3OCwgLTg0LjE5MTYwNjldLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzU1ZmZhNDQ3NzNhMzQyYWI5NzdlZDZiOWY0YTY3YmM2ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF80YmQ3MGMxMjEzNDg0MzBkOGNkZTE2YmNhNTQ5ZTA4ZiA9ICQoYDxkaXYgaWQ9Imh0bWxfNGJkNzBjMTIxMzQ4NDMwZDhjZGUxNmJjYTU0OWUwOGYiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPlR3U2l6ZW1vcmUzMTM6IEBNaWtlQ2FsbGFoYW4yNSBAU3BlY1Nwb3J0c09IIEBPSFNBQVNwb3J0cyBAc2Voc2F0aGxldGljcyBATWVudG9yQXRobGV0aWNzIEBIb2JhbkF0aGxldGljcyBATWFzc2lsbG9uUHJvdWQgU2F5IHdoYXRldmVyIHlvdSB3YW50IGFib3V0IHRoZSBBUCBwb2xsIHRpdGxlcy4gSSdsbCB0YWtlIHRoZSB3b3JkIGFuZCBhY2NvdW50cyBnaXZlbiBieSBzb21lIG9mIHRoZSBncmVhdGVzdCBmb290YmFsbCBtaW5kcyBldmVyLiBXaGVuIHlvdSBoZWFyIFBCLCBDaHVjayBNYXRoZXIsIExlbyBTdHJhbmcsIEVhcmwgQnJ1Y2UgZXRjLiB0YWxrIGFib3V0IGhvdyBncmVhdCB0aG9zZSBNYXNzaWxsb24gdGVhbXMgd2VyZSwgd2hvIGFtIEkgdG8gcXVlc3Rpb24/PC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzU1ZmZhNDQ3NzNhMzQyYWI5NzdlZDZiOWY0YTY3YmM2LnNldENvbnRlbnQoaHRtbF80YmQ3MGMxMjEzNDg0MzBkOGNkZTE2YmNhNTQ5ZTA4Zik7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8wNTY2OWQ5MGQ2YTI0MmZkYjA2YmM5NjI0N2VmNWRiOS5iaW5kUG9wdXAocG9wdXBfNTVmZmE0NDc3M2EzNDJhYjk3N2VkNmI5ZjRhNjdiYzYpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfYzA1YjE2YzViNDc2NGQ1ZTg0NDU2Y2UwYTI5MGMwMjQgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszMy4yNjY4Mzk4LCAtODcuNDg2MjE4Ml0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfMmEwMWVlYjViNzY2NDcyY2IzY2Y4MjBlZjNmMWVmYjggPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzcwOTBiMDA0MGI1NjRmM2FhNGExMzQxMjcyNTU5MmVkID0gJChgPGRpdiBpZD0iaHRtbF83MDkwYjAwNDBiNTY0ZjNhYTRhMTM0MTI3MjU1OTJlZCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+dHJhdmlzcmVpZXI6IE5PVyBvbiBTRlMgcHJlc2VudGVkIGJ5IEBQZXRlcmJyb29rZVR1c2M6ICAqIFdpbm5lcnMgYW5kIGxvc2VycyBmcm9tIHRoZSBmb290YmFsbCB3ZWVrZW5kLiAgKiBAUHJvRm9vdGJhbGxEb2Mgb24gVHVhJ3MgaW5qdXJ5LCB3aGF0J3MgcG90ZW50aWFsbHkgbmV4dC4gIExJU1RFTjogaHR0cHM6Ly90LmNvLzI0ZnFqN1ZBczQ8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfMmEwMWVlYjViNzY2NDcyY2IzY2Y4MjBlZjNmMWVmYjguc2V0Q29udGVudChodG1sXzcwOTBiMDA0MGI1NjRmM2FhNGExMzQxMjcyNTU5MmVkKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2MwNWIxNmM1YjQ3NjRkNWU4NDQ1NmNlMGEyOTBjMDI0LmJpbmRQb3B1cChwb3B1cF8yYTAxZWViNWI3NjY0NzJjYjNjZjgyMGVmM2YxZWZiOCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl85MmNkZDQwMmNmZTE0ZTcxYjNjNTAwNzA5NzEyOTAwYiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzQ3LjYwMzgzMjEsIC0xMjIuMzMwMDYyNF0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfNjQzMTg2MTJlM2VjNGQ4YTllYWRmOGQ1MWUwMzY5M2IgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzk0YjQzYjM1MmJmNzQyZTBhN2RlYTk3YmVhZTAzNmM0ID0gJChgPGRpdiBpZD0iaHRtbF85NGI0M2IzNTJiZjc0MmUwYTdkZWE5N2JlYWUwMzZjNCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+SXRzQVByaW1hdGU6IFRoaXMgaXMgRm9vdGJhbGwgMjAxOSBSZWFjdGlvbiEgaHR0cHM6Ly90LmNvL3ZxWHJpUnNEb0EgdmlhIEBZb3VUdWJlPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzY0MzE4NjEyZTNlYzRkOGE5ZWFkZjhkNTFlMDM2OTNiLnNldENvbnRlbnQoaHRtbF85NGI0M2IzNTJiZjc0MmUwYTdkZWE5N2JlYWUwMzZjNCk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl85MmNkZDQwMmNmZTE0ZTcxYjNjNTAwNzA5NzEyOTAwYi5iaW5kUG9wdXAocG9wdXBfNjQzMTg2MTJlM2VjNGQ4YTllYWRmOGQ1MWUwMzY5M2IpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfMmI1Y2ZlNDYzYWFmNGNlMWFiMzZjYjAwYzhjMGQxMjAgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs0MC41NTA4NTI3LCAtMTA1LjA2NjgwODVdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2I5ODY3MDVkNzEzZTRiYjM5NzE0Mjk1ZjdkMmMyN2EzID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9mMWU1NmIzNjk5MGE0ZjYxOWI1MDQ4ZmFhOGZiMmRhZiA9ICQoYDxkaXYgaWQ9Imh0bWxfZjFlNTZiMzY5OTBhNGY2MTliNTA0OGZhYThmYjJkYWYiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkNTVVJBTUxFR0VORFM6IEZvcm1lciBSYW1zIFN0dWRlbnQtQXRobGV0ZXM6IFRoaXMgaXMgYSBncmVhdCB3YXkgdG8gam9pbiBSYW0gTGVnZW5kcyBhbmQgaGVscCBDU1UgYmVhdCBXeW8gaW4gdGhpcyBjb21wZXRpdGlvbiBvZiBzY2hvb2wgYW5kIHN0YXRlIHByaWRlISBNYWtlIHlvdXIgJDEwIGdpZnQgYmVmb3JlIGtpY2sgb2ZmIG9mIHRoZSBmb290YmFsbCBnYW1lIHRoaXMgRnJpZGF5OiBodHRwczovL3QuY28vMGdRbzZudGdDRiAgI0JvcmRlcldhckJsaXR6IHwgI0NTVVJhbXMgaHR0cHM6Ly90LmNvL3BZbDlzTUNob2o8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfYjk4NjcwNWQ3MTNlNGJiMzk3MTQyOTVmN2QyYzI3YTMuc2V0Q29udGVudChodG1sX2YxZTU2YjM2OTkwYTRmNjE5YjUwNDhmYWE4ZmIyZGFmKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzJiNWNmZTQ2M2FhZjRjZTFhYjM2Y2IwMGM4YzBkMTIwLmJpbmRQb3B1cChwb3B1cF9iOTg2NzA1ZDcxM2U0YmIzOTcxNDI5NWY3ZDJjMjdhMykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9iYWE5YTM2ODkyYWQ0Njk2ODcxZjFjYWQyZGE0OTA5ZiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWy0zMi4wMjcyMjc0LCAxMTUuODYyNTEzODIwNTY3XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF85NTgyOTViM2UyNWY0MzIzODhhNTA5OWMxZWFlYzMzMCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZTYwODI1NjY2ZDI4NGE1MmExOTAwZWIzZTFkYTRlNDcgPSAkKGA8ZGl2IGlkPSJodG1sX2U2MDgyNTY2NmQyODRhNTJhMTkwMGViM2UxZGE0ZTQ3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5BcXVpbmFzUEVfU3BvcnQ6IEZvb3RiYWxsIHRoaXMgd2VlazogIDFzdCB0ZWFtIG5vIGdhbWUgMm5kIHRlYW0gdiBYYXZlcmlhbiBhdCBob21lICg0RykgIOKave+4jyAjdGVhbWFxdWluYXMg4pq977iPPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzk1ODI5NWIzZTI1ZjQzMjM4OGE1MDk5YzFlYWVjMzMwLnNldENvbnRlbnQoaHRtbF9lNjA4MjU2NjZkMjg0YTUyYTE5MDBlYjNlMWRhNGU0Nyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9iYWE5YTM2ODkyYWQ0Njk2ODcxZjFjYWQyZGE0OTA5Zi5iaW5kUG9wdXAocG9wdXBfOTU4Mjk1YjNlMjVmNDMyMzg4YTUwOTljMWVhZWMzMzApCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfYTMwMmU4OTg3NmI1NGY5ZGE3ZjAxMDVjYmYwMzQxMjggPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszOS40MjI1MTkyLCAtMTExLjcxNDM1ODRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzdiYjQwOGUxMjI4MzQ3OTI5ZTFkYmI3MzZlODdhNTc1ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8yNDViODEzOWMzOTI0NWY0YmQ4ZTA4ZjFiZDBmMDMwNSA9ICQoYDxkaXYgaWQ9Imh0bWxfMjQ1YjgxMzljMzkyNDVmNGJkOGUwOGYxYmQwZjAzMDUiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPlR5U3BhY2VkOiBUaGUgZ2VuaXVzZXMgb24gdGhlIFd5b21pbmcgZm9vdGJhbGwgbWVzc2FnZSBib2FyZCBhcmd1ZSB0aGF0IHRoZXJlIGFyZSAiNTAwLDAwMCBwZW9wbGUgbGl2aW5nIHdpdGhpbiA1MCBtaWxlcyBvZiBVU1UncyBzdGFkaXVtIiBzbyBpdCB3YXMgcGF0aGV0aWMgdGhhdCBvbmx5IDE2LDAwMCBwZW9wbGUgYXR0ZW5kZWQgdGhlIGdhbWUuICAgV2VsbCB3ZSBsb29rZWQgYXQgdGhlIGRhdGEsIGFuZCBpdCB0dXJucyBvdXQsIHRob3NlIG51bWJlcnMuLi5XRVJFIEEgTElFIGh0dHBzOi8vdC5jby95ZWgzOGo2Q2REPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzdiYjQwOGUxMjI4MzQ3OTI5ZTFkYmI3MzZlODdhNTc1LnNldENvbnRlbnQoaHRtbF8yNDViODEzOWMzOTI0NWY0YmQ4ZTA4ZjFiZDBmMDMwNSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9hMzAyZTg5ODc2YjU0ZjlkYTdmMDEwNWNiZjAzNDEyOC5iaW5kUG9wdXAocG9wdXBfN2JiNDA4ZTEyMjgzNDc5MjllMWRiYjczNmU4N2E1NzUpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfZTRjM2QyNDZlMmQ5NGRmZmEzOWQzNTJlZGUzYTk1N2EgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszNS4yMDQ4ODgzLCAtOTIuNDQ3OTEwOF0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfOTI4ZmM3NmFlMDBiNDEwNTkxZmUzZWVjMTdkM2QwNDYgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2Y1ZDA3MTA2MzkwYTRiNTA5NzQ0NGQ4YTMzZDM2ZWEwID0gJChgPGRpdiBpZD0iaHRtbF9mNWQwNzEwNjM5MGE0YjUwOTc0NDRkOGEzM2QzNmVhMCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+TGV4aV9Bbm5fMTQ6IFN1Y2tpbmcgYSBmb290YmFsbCBhbmQgbWV0aC48L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfOTI4ZmM3NmFlMDBiNDEwNTkxZmUzZWVjMTdkM2QwNDYuc2V0Q29udGVudChodG1sX2Y1ZDA3MTA2MzkwYTRiNTA5NzQ0NGQ4YTMzZDM2ZWEwKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2U0YzNkMjQ2ZTJkOTRkZmZhMzlkMzUyZWRlM2E5NTdhLmJpbmRQb3B1cChwb3B1cF85MjhmYzc2YWUwMGI0MTA1OTFmZTNlZWMxN2QzZDA0NikKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9kMGRlZjRkZTdkZDQ0ZjkwOTBkNzZjNTFlZGQ4NzNlNyA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUxLjk0NDU4MDEsIDEuMjg5ODUyMl0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfYWQ3ZjkwMWRlYWI3NDNkNmJjYjhiMjJjM2ViZTVlYTkgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2Y2N2JhNTI0ZDdiMTRiMWFiMTM2ZmU5ZTY2YjM5OWY3ID0gJChgPGRpdiBpZD0iaHRtbF9mNjdiYTUyNGQ3YjE0YjFhYjEzNmZlOWU2NmIzOTlmNyIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+UmljaGFyZF9UX2VmYzogQEZJX0plcnJ5IEBKb3Jkb2xlbmtvIEBidHNwb3J0Zm9vdGJhbGwgSWRpb3QuIE9mIGNvdXJzZSB0aGV5IHdlcmUgaGlzLCBpdOKAmXMgdGhlIHdheSB0aGUgY2x1YiBvcGVyYXRlcyEgSGUgd2FzIERpcmVjdG9yIG9mIEZvb3RiYWxsLiBIZSB3YXMgd29yc2UgdGhhbiBrb2VtYW4uIEFic29sdXRlIGZyYXVkPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2FkN2Y5MDFkZWFiNzQzZDZiY2I4YjIyYzNlYmU1ZWE5LnNldENvbnRlbnQoaHRtbF9mNjdiYTUyNGQ3YjE0YjFhYjEzNmZlOWU2NmIzOTlmNyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9kMGRlZjRkZTdkZDQ0ZjkwOTBkNzZjNTFlZGQ4NzNlNy5iaW5kUG9wdXAocG9wdXBfYWQ3ZjkwMWRlYWI3NDNkNmJjYjhiMjJjM2ViZTVlYTkpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfNDBjMmU0YTU2NzFjNGYxMzkzY2ZmMDE0OGYyN2NiZmUgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszMC40NDU5NTk2LCAtOTEuMTg3MzhdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2FkNTI5MTQyZTU4ODQ0ZDY4NTg4M2MzNzBjODUzZjIzID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9hNzA5YjYyNTYwMzM0MTY1YWNkM2RmNzY3MDU2ZGNiMyA9ICQoYDxkaXYgaWQ9Imh0bWxfYTcwOWI2MjU2MDMzNDE2NWFjZDNkZjc2NzA1NmRjYjMiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPldWTEFOQkNMb2NhbDMzOiBORVdTRkVFRCBOT1c6ICBXQVRDSCBhdCAxMSBhLm0uOiBBIGRlYWRseSBzaG9vdGluZyByYW1wYWdlIGF0IGEgZm9vdGJhbGwgd2F0Y2ggcGFydHksIG9uZSBBcmthbnNhbiB0YWxrcyBhYm91dCBoZXIgam91cm5leSBvbiDigJxUaGUgVm9pY2XigJ0sIGFuZCBkaWV0aW5nIHdpdGggY2hpY2tlbiB3aW5ncy4gTmV3c2ZlZWQgTm93IGlzIHN0cmVhbWluZyBsaXZlLiAgaHR0cHM6Ly90LmNvL0V0VUp1ZzBrMTUgaHR0cHM6Ly90LmNvLzZodGtZb1NmVXI8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfYWQ1MjkxNDJlNTg4NDRkNjg1ODgzYzM3MGM4NTNmMjMuc2V0Q29udGVudChodG1sX2E3MDliNjI1NjAzMzQxNjVhY2QzZGY3NjcwNTZkY2IzKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzQwYzJlNGE1NjcxYzRmMTM5M2NmZjAxNDhmMjdjYmZlLmJpbmRQb3B1cChwb3B1cF9hZDUyOTE0MmU1ODg0NGQ2ODU4ODNjMzcwYzg1M2YyMykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9jNmUxZTRiMDM4ZTE0ZTA1YjBlYWRkYTEyMTU0YTc1NCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzMyLjc4NzYwMTIsIC03OS45NDAyNzI4XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF83MGQzZDBmMTAyNmM0NzI2YjNiZmMwNDU1MWFhMDNmMSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfYmRkZWRlY2UyYjJkNDY5ZDk1NTU3MDNlNDU1ODU3MjkgPSAkKGA8ZGl2IGlkPSJodG1sX2JkZGVkZWNlMmIyZDQ2OWQ5NTU1NzAzZTQ1NTg1NzI5IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5CcnljZV90aGVJbnRlcm46IEBUcmV5X3NhbW1pZTY1IElmIG9ubHkgeW91IHdlcmUgYXMgZ29vZCBhdCBmb290YmFsbCBhcyB5b3UgYXJlIHRlbGxpbmcgam9rZXM8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNzBkM2QwZjEwMjZjNDcyNmIzYmZjMDQ1NTFhYTAzZjEuc2V0Q29udGVudChodG1sX2JkZGVkZWNlMmIyZDQ2OWQ5NTU1NzAzZTQ1NTg1NzI5KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2M2ZTFlNGIwMzhlMTRlMDViMGVhZGRhMTIxNTRhNzU0LmJpbmRQb3B1cChwb3B1cF83MGQzZDBmMTAyNmM0NzI2YjNiZmMwNDU1MWFhMDNmMSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9kZmUxN2VjMzZkYjc0Y2FjOThjMzEwNzQwZWQ3NTEzMCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzM5Ljk1MjM5OTMsIC03NS4xNjM1ODk5XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9hY2RiYjU0MWIwNjQ0NmU2ODQ2MDlmYTIwZThiN2YwNiA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZGUyNDIxZWMzZDdlNDBhMGJiNzMxOWE1NzAxYTA3NTAgPSAkKGA8ZGl2IGlkPSJodG1sX2RlMjQyMWVjM2Q3ZTQwYTBiYjczMTlhNTcwMWEwNzUwIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5EYW50ZUNvbGxpbmVsbGk6IEkgd2FzIG9mZiBUd2l0dGVyIHRoaXMgd2Vla2VuZCBhbmQgbWlzc2VkIGNvdmVyaW5nIFRlbXBsZSdzIGZvb3RiYWxsIGdhbWUgYmVjYXVzZSBvZiBhIHByZXR0eSBiYWQgZmV2ZXIuIEkgZmVlbCBhIGxpdHRsZSBiaXQgYmV0dGVyIHRvZGF5IHRob3VnaCwgc28gSSdsbCBmaXJlIG9mZiBzb21lIHRob3VnaHRzIGZyb20gbGFzdCB3ZWVrZW5kJ3MgZ2FtZXMuPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2FjZGJiNTQxYjA2NDQ2ZTY4NDYwOWZhMjBlOGI3ZjA2LnNldENvbnRlbnQoaHRtbF9kZTI0MjFlYzNkN2U0MGEwYmI3MzE5YTU3MDFhMDc1MCk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9kZmUxN2VjMzZkYjc0Y2FjOThjMzEwNzQwZWQ3NTEzMC5iaW5kUG9wdXAocG9wdXBfYWNkYmI1NDFiMDY0NDZlNjg0NjA5ZmEyMGU4YjdmMDYpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfZWIxZjVlYzExMGViNDU2OWIyYjMyMjc2NzJmOTVmZWUgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszMi4zMjkzODA5LCAtODMuMTEzNzM2Nl0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfOTUxZDI1YzJlNjRiNGM4ZmI4ZjMyMmY4ZjQ3NDQyYjYgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2NhZmI4ZGNmNjE0NjQ1MWU4YTc4NmM4Mjg4NjhiM2Q5ID0gJChgPGRpdiBpZD0iaHRtbF9jYWZiOGRjZjYxNDY0NTFlOGE3ODZjODI4ODY4YjNkOSIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+RG9ub0V2YW5zOiBHZW9yZ2lhIGZvb3RiYWxsLUdlb3JnaWEgVGVjaCBnYW1lIHRpbWUsIFRWIE5ldHdvcmsgZm9yIFdlZWsgMTQgZ2FtZSBhbm5vdW5jZWQgVGhlIEdlb3JnaWEgQnVsbGRvZ3MgY29uY2x1ZGUgdGhlaXIgcmVndWxhciBzZWFzb24gb24gU2F0dXJkYXksIE5vdi4gMzAgYWdhaW5zdCB0aGUgR2VvcmdpYSBUZWNoIFllbGxvdyBKYWNrZXRzLiBUaGUgZ2FtZSBub3cgaGFzIGEgZ2FtZSB0aW1lIC4uLiBodHRwczovL3QuY28vSzE0Vm9GbUNHajwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF85NTFkMjVjMmU2NGI0YzhmYjhmMzIyZjhmNDc0NDJiNi5zZXRDb250ZW50KGh0bWxfY2FmYjhkY2Y2MTQ2NDUxZThhNzg2YzgyODg2OGIzZDkpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfZWIxZjVlYzExMGViNDU2OWIyYjMyMjc2NzJmOTVmZWUuYmluZFBvcHVwKHBvcHVwXzk1MWQyNWMyZTY0YjRjOGZiOGYzMjJmOGY0NzQ0MmI2KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzdlM2FlYWM5MTA1MDRiMjA5ZDViNDE1ODc0ZWM2YjQ5ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzIuMzI5MzgwOSwgLTgzLjExMzczNjZdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2YwYTI5NjZiY2RiZDRkNWZiZTA2ZTQ0ZjljYjQwOGEzID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9kYjU4MWRlNjVlODc0MWNkYjk3NmFhMDk2N2NkOWEyOCA9ICQoYDxkaXYgaWQ9Imh0bWxfZGI1ODFkZTY1ZTg3NDFjZGI5NzZhYTA5NjdjZDlhMjgiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkRvbm9FdmFuczogR2VvcmdpYSBmb290YmFsbCBraWNrb2ZmIHRpbWUsIFRWIGFubm91bmNlZCB2ZXJzdXMgR2VvcmdpYSBUZWNoIFRoZSBHZW9yZ2lhIEJ1bGxkb2dzIHdpbGwgdHJhdmVsIHRvIEdlb3JnaWEgVGVjaCBmb3IgYSBub29uIGtpY2tvZmYgb24gU2F0dXJkYXksIE5vdmVtYmVyIDMwdGguIFRoZSBEYXdncyB3aWxsIGxvb2sgdG8gY29udGludWUgYnVsbHlpbmcgdGhlIFllbGxvdyAuLi4gaHR0cHM6Ly90LmNvL0xYYktCTHI2eGU8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfZjBhMjk2NmJjZGJkNGQ1ZmJlMDZlNDRmOWNiNDA4YTMuc2V0Q29udGVudChodG1sX2RiNTgxZGU2NWU4NzQxY2RiOTc2YWEwOTY3Y2Q5YTI4KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzdlM2FlYWM5MTA1MDRiMjA5ZDViNDE1ODc0ZWM2YjQ5LmJpbmRQb3B1cChwb3B1cF9mMGEyOTY2YmNkYmQ0ZDVmYmUwNmU0NGY5Y2I0MDhhMykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl82Njg2YmQ2YjNkYzM0Y2FjYmFiZGZmZGYzZjNjYjdkOCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzMyLjMyOTM4MDksIC04My4xMTM3MzY2XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF80ZTk1ZDU1N2ExNzM0MTMzYTdjNWFkMWJmNjk3Yjk3ZCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfMjUzZjUyNmFhOGYwNDYyZGE2YTgwNmZlNjlkZmIyYTcgPSAkKGA8ZGl2IGlkPSJodG1sXzI1M2Y1MjZhYThmMDQ2MmRhNmE4MDZmZTY5ZGZiMmE3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5Eb25vRXZhbnM6IFdFRUsgSU4gUEhPVE9TOiBHcmVnb3J5IEFsYW4gSXNha292LCBHZW9yZ2lhIG1lbidzIGJhc2tldGJhbGwgcmVtYWlucyB1bmRlZmVhdGVkLCBHZW9yZ2lhIC4uLiBPdmVyIHRoZSB3ZWVrZW5kLCBHZW9yZ2lhIGZvb3RiYWxsIGRlZmVhdGVkIEF1YnVybiBvbiB0aGUgcm9hZCAyMS0xNCB0byBjbGluY2ggdGhlIFNFQyBFYXN0IGFuZCBzZWN1cmUgaXRzIHNwb3QgaW4gdGhlIFNFQyBDaGFtcGlvbnNoaXAgZ2FtZSwgLi4uIGh0dHBzOi8vdC5jby9zbVFxT0lJbGJrPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzRlOTVkNTU3YTE3MzQxMzNhN2M1YWQxYmY2OTdiOTdkLnNldENvbnRlbnQoaHRtbF8yNTNmNTI2YWE4ZjA0NjJkYTZhODA2ZmU2OWRmYjJhNyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl82Njg2YmQ2YjNkYzM0Y2FjYmFiZGZmZGYzZjNjYjdkOC5iaW5kUG9wdXAocG9wdXBfNGU5NWQ1NTdhMTczNDEzM2E3YzVhZDFiZjY5N2I5N2QpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfNWE2MDQ2N2Y2ZDNhNDE3Y2E1YmIyZGVkOThjNzZhMjUgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszMi4zMjkzODA5LCAtODMuMTEzNzM2Nl0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfY2VlMDE3MjMzN2ZmNGEwMTkzZGQzNGZjZDljYmRjN2IgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzhkODRhMjU1N2M1NjQ4YzFiNTg5Njk3NWMwZmE1ODBmID0gJChgPGRpdiBpZD0iaHRtbF84ZDg0YTI1NTdjNTY0OGMxYjU4OTY5NzVjMGZhNTgwZiIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+RG9ub0V2YW5zOiBXaHkgT2hpbyBTdGF0ZSdzIEp1c3RpbiBGaWVsZHMgZmlyc3QgY29tbWl0dGVkIHRvIFBlbm4gU3RhdGUsIGFuZCB3aHkgaGUgY2hhbmdlZCBoaXMgbWluZCBDT0xVTUJVUywgT2hpbyAtIFJvbiBWZWFsIGtuZXcgSnVzdGluIEZpZWxkcyBiZWZvcmUgdGhlIGNvbGxlZ2UgZm9vdGJhbGwgLi4uIFZlYWwgc2FpZCwgcmVmZXJyaW5nIHRvIHRoZSBGQ1MgRGl2aXNpb24gSSBwcm9ncmFtIGluIE1hY29uLCBHZW9yZ2lhLiBodHRwczovL3QuY28vZEcxRk55c2tPSzwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9jZWUwMTcyMzM3ZmY0YTAxOTNkZDM0ZmNkOWNiZGM3Yi5zZXRDb250ZW50KGh0bWxfOGQ4NGEyNTU3YzU2NDhjMWI1ODk2OTc1YzBmYTU4MGYpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNWE2MDQ2N2Y2ZDNhNDE3Y2E1YmIyZGVkOThjNzZhMjUuYmluZFBvcHVwKHBvcHVwX2NlZTAxNzIzMzdmZjRhMDE5M2RkMzRmY2Q5Y2JkYzdiKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzJhYzg3YmMxY2Q1YjQ1Njg4Njk2OTNiOTE1YjE0YjQ2ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzIuMzI5MzgwOSwgLTgzLjExMzczNjZdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2JkNjBiMzcwODY3YzRhZTc4YTFmMmU4OTNlZGIyYjQxID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8wZjZlZmEzYjUzOGU0Y2JlYjQ5MDA3ZTcyMWJiN2FkYSA9ICQoYDxkaXYgaWQ9Imh0bWxfMGY2ZWZhM2I1MzhlNGNiZWI0OTAwN2U3MjFiYjdhZGEiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkRvbm9FdmFuczogSGlzdG9yaWMgdmljdG9yaWVzIGZvciB0aHJlZSBydXJhbCBOb3J0aCBHZW9yZ2lhIHNjaG9vbHMgUnVyYWwgTm9ydGggR2VvcmdpYSBzaG9uZSBicmlnaHRseSBpbiBhIGZpcnN0IHJvdW5kIG9mIHRoZSBHZW9yZ2lhIGhpZ2ggc2Nob29sICBmb290YmFsbCBwbGF5b2ZmcyBhcyBEYXdzb24gQ291bnR5LCBVbmlvbiBDb3VudHkgYW5kIE1hZGlzb24gQ291bnR5IC4uLiBodHRwczovL3QuY28vQUZhU20wQXY0NzwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9iZDYwYjM3MDg2N2M0YWU3OGExZjJlODkzZWRiMmI0MS5zZXRDb250ZW50KGh0bWxfMGY2ZWZhM2I1MzhlNGNiZWI0OTAwN2U3MjFiYjdhZGEpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfMmFjODdiYzFjZDViNDU2ODg2OTY5M2I5MTViMTRiNDYuYmluZFBvcHVwKHBvcHVwX2JkNjBiMzcwODY3YzRhZTc4YTFmMmU4OTNlZGIyYjQxKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzY0NzhkYzQ5MDg4NzRiZDlhMDliMTA0NWVjYmE5NmZjID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzkuOTYyMjYwMSwgLTgzLjAwMDcwNjVdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzc1N2E1MTk5MTRkMzRjM2Y4Yzg0YTRhNjAyNTUzNzM0ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9jM2VhMmJjZTFkNDA0NWM0YmIxM2RlZmY1MjM5ZDVkNiA9ICQoYDxkaXYgaWQ9Imh0bWxfYzNlYTJiY2UxZDQwNDVjNGJiMTNkZWZmNTIzOWQ1ZDYiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkJyb01vbnRhbmEzNDogQFRoZUJJR2xlZ3VtZSBJIHdvdWxkIHNheSAzLTQgZ2FtZXMuIFRoaXMga2luZGEgc2hpdCBnb2VzIG9uIHdlZWtseSwgbWludXMgdGhlIGhlbG1ldCBzd2luZ2luZy4gSXTigJlzIGp1c3QgdGhhdCBpdCB3YXMgVGh1cnNkYXkgbmlnaHQgZm9vdGJhbGwgYW5kIGV2ZXJ5Ym9keSB3YXMgd2F0Y2hpbmcgc28gaXQgbG9va3MgYmFkLiBJIGFncmVlIHdpdGggdGhlIGRpc2NpcGxpbmUsIEZyZWRkaWUgc2VlbXMgc29mdCB0byBtZSBhdCB0aW1lcywgaGUgc2hvdWxkIGhhdmUgYmVlbiBoYXZpbmcgdGhlbSBydW4gZ2Fzc2VyczwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF83NTdhNTE5OTE0ZDM0YzNmOGM4NGE0YTYwMjU1MzczNC5zZXRDb250ZW50KGh0bWxfYzNlYTJiY2UxZDQwNDVjNGJiMTNkZWZmNTIzOWQ1ZDYpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNjQ3OGRjNDkwODg3NGJkOWEwOWIxMDQ1ZWNiYTk2ZmMuYmluZFBvcHVwKHBvcHVwXzc1N2E1MTk5MTRkMzRjM2Y4Yzg0YTRhNjAyNTUzNzM0KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2ZmZjRlNzZjYTUwYTQyYjRhYWU2ZTExYjlmY2I5OTk1ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNDAuMDc1NzM4NCwgLTc0LjQwNDE2MjJdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2YzMzRjMGRkYWYxZDQ2OWRhMjVlNmE2ZTgxZDU4ZDMxID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF81YWViNDI0NzY1MDY0ZTNkYjVlOWU5NDgzZGNkNGFkMCA9ICQoYDxkaXYgaWQ9Imh0bWxfNWFlYjQyNDc2NTA2NGUzZGI1ZTllOTQ4M2RjZDRhZDAiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPmR2b25kOiBHb2ZmIHN1cHBvcnRlcnMgbWF5IG5vdCB3YW50IHRvIGxvb2sgIEdvZmYgaGFzIHRoZSBsYXJnZXN0IG5lZ2F0aXZlIGdhcCBiZXR3ZWVuIGhpcyBhY3R1YWwgY29tcGxldGlvbiBwZXJjZW50YWdlICg2MC4zJSkgYW5kIGhpcyBleHBlY3RlZCBjb21wbGV0aW9uIHBlcmNlbnRhZ2UgKDY2LjclKSBvZiBhbnkgcXVhcnRlcmJhY2sgaW4gZm9vdGJhbGwgd2l0aCAyMDAgYXR0ZW1wdHMgb3IgbW9yZS4gaHR0cHM6Ly90LmNvL2E2a0lvTU90N1o8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfZjMzNGMwZGRhZjFkNDY5ZGEyNWU2YTZlODFkNThkMzEuc2V0Q29udGVudChodG1sXzVhZWI0MjQ3NjUwNjRlM2RiNWU5ZTk0ODNkY2Q0YWQwKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2ZmZjRlNzZjYTUwYTQyYjRhYWU2ZTExYjlmY2I5OTk1LmJpbmRQb3B1cChwb3B1cF9mMzM0YzBkZGFmMWQ0NjlkYTI1ZTZhNmU4MWQ1OGQzMSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8zY2ExNGFiYjlhMmY0YjA5YTU3YWYwYzYzNjIzNGRkYiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzM1LjYxMjY2MSwgLTc3LjM2NjM1MzhdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzNlODk0MmYxZjQ1ODRiZTc5N2ZmYTQ2OWM1MDlhY2ZjID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF80MWIxYzg1ODEwYjA0YTNjYWNkYzQ4YzRhZWZmYTMxOSA9ICQoYDxkaXYgaWQ9Imh0bWxfNDFiMWM4NTgxMGIwNGEzY2FjZGM0OGM0YWVmZmEzMTkiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPlBSOTI3Rk06IEJyZWFraW5nJmd0OyBUaGUgZmluYWwgZ2FtZSBvZiB0aGUgeWVhciBmb3IgI0VDVSBGb290YmFsbCB2ZXJzdXMgI1R1bHNhIGF0IERvd2R5LUZpY2tsZW4gU3RhZGl1bSBvbiB0aGUgU2F0dXJkYXkgYWZ0ZXIgVGhhbmtzZ2l2aW5nIG5vdyBoYXMgYSBraWNrb2ZmIHRpbWUgLSAxMnBtLiBodHRwczovL3QuY28vaW9QaGh2SktLWDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF8zZTg5NDJmMWY0NTg0YmU3OTdmZmE0NjljNTA5YWNmYy5zZXRDb250ZW50KGh0bWxfNDFiMWM4NTgxMGIwNGEzY2FjZGM0OGM0YWVmZmEzMTkpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfM2NhMTRhYmI5YTJmNGIwOWE1N2FmMGM2MzYyMzRkZGIuYmluZFBvcHVwKHBvcHVwXzNlODk0MmYxZjQ1ODRiZTc5N2ZmYTQ2OWM1MDlhY2ZjKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzc0ZTQ2Zjc3YTBlZTRlZDdhNTk0MjcwMDg0MDBlNDkxID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNDEuODc1NTU0NiwgLTg3LjYyNDQyMTJdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzQ2ODE0NzY5YzMxMjRiNmY5M2NlODM0NDRiMzRmYjM3ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8xMWJiNjBlYjA5OWM0ZWEzOGQ5OWUzODUwMzkzMmEwNSA9ICQoYDxkaXYgaWQ9Imh0bWxfMTFiYjYwZWIwOTljNGVhMzhkOTllMzg1MDM5MzJhMDUiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPk1hdHRWZXJkZXJhbWU6IEBDaGFkVmFuRGFtMTEgSWYgeW91IHN0b3AgdGhlIHJ1biwgaXQgbWFrZXMgaXQgbXVjaCBoYXJkZXIgdG8gcGFzcy4gVGhlIGRpZmZlcmVuY2UgaW4gTkZMIGZvb3RiYWxsIGJldHdlZW4gM3JkIGFuZCA0IGFuZCAzcmQgYW5kIDggaXMgZW5vcm1vdXMuIEVzcGVjaWFsbHkgd2hlbiB0aGUgQ2hhcmdlcnMgYXJlIG1pc3NpbmcgZm91ciBzdGFydGluZyBPTDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF80NjgxNDc2OWMzMTI0YjZmOTNjZTgzNDQ0YjM0ZmIzNy5zZXRDb250ZW50KGh0bWxfMTFiYjYwZWIwOTljNGVhMzhkOTllMzg1MDM5MzJhMDUpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNzRlNDZmNzdhMGVlNGVkN2E1OTQyNzAwODQwMGU0OTEuYmluZFBvcHVwKHBvcHVwXzQ2ODE0NzY5YzMxMjRiNmY5M2NlODM0NDRiMzRmYjM3KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzFlMmU2ZjU1OWRiZDRiYzViOWIwODRhNDI3OTA5ZTAxID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzkuOTYyMjYwMSwgLTgzLjAwMDcwNjVdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2QyNmZkNTY2NDM2ZTQwNzNhYWQ2ZmExYTU3OWM2OGZlID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8yMDkyYzY0MzRmYjI0OTJjOGE5NmM5ZWM2ZjFlZDJhNiA9ICQoYDxkaXYgaWQ9Imh0bWxfMjA5MmM2NDM0ZmIyNDkyYzhhOTZjOWVjNmYxZWQyYTYiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkJVQ0tFWUVTTk8xOiAjQnVja2V5ZXMgICAgICAgICAgICAgICAgICAgICAgICAgIFdlZWsgMTMgZG9lc24ndCBsb29rIGxpa2UgaXQgd2lsbCBiZSB0aGUgbW9zdCBleGNpdGluZyB3ZWVrIGZvciBjb2xsZWdlIGZvb3RiYWxsIGJldHRpbmcgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIENvbGxlZ2UgZm9vdGJhbGwgb2RkcywgbGluZXMsIHNjaGVkdWxlIGZvciBXZWVrIDEzOiBPaGlvIFN0YXRlIGEgaHVnZSBmYXZvcml0ZSBvdmVyIFBlbm4gU3RhdGU8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfZDI2ZmQ1NjY0MzZlNDA3M2FhZDZmYTFhNTc5YzY4ZmUuc2V0Q29udGVudChodG1sXzIwOTJjNjQzNGZiMjQ5MmM4YTk2YzllYzZmMWVkMmE2KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzFlMmU2ZjU1OWRiZDRiYzViOWIwODRhNDI3OTA5ZTAxLmJpbmRQb3B1cChwb3B1cF9kMjZmZDU2NjQzNmU0MDczYWFkNmZhMWE1NzljNjhmZSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl84NGQ2Y2YxMGViMTA0MDIzODU0ZDU5NzdhNTUyMThkMiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzM5Ljc4MzczMDQsIC0xMDAuNDQ1ODgyNV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfNzhjZmU1NjczMTkwNDAwY2E5YjBmMTNkMDIzYzcwNjQgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2UxZGJiMzkxYWM5ZTQ3Y2ZhMDlkZWFlYjhhYmUyNzAwID0gJChgPGRpdiBpZD0iaHRtbF9lMWRiYjM5MWFjOWU0N2NmYTA5ZGVhZWI4YWJlMjcwMCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+RGlzdGluY3RBdGhsZXRlOiBWYW5kZXJiaWx0IEZvb3RiYWxsIE1haWwgQmFnICM5OiBDYWxsIEZvcsKgU3VibWlzc2lvbnMgaHR0cHM6Ly90LmNvLzh1bGdoVGJNT088L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNzhjZmU1NjczMTkwNDAwY2E5YjBmMTNkMDIzYzcwNjQuc2V0Q29udGVudChodG1sX2UxZGJiMzkxYWM5ZTQ3Y2ZhMDlkZWFlYjhhYmUyNzAwKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzg0ZDZjZjEwZWIxMDQwMjM4NTRkNTk3N2E1NTIxOGQyLmJpbmRQb3B1cChwb3B1cF83OGNmZTU2NzMxOTA0MDBjYTliMGYxM2QwMjNjNzA2NCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9kMGViYzhlYjdjZDI0YmM0YTVmNmQ1OWI4NGE1YmNmZCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzM1LjE0OTAyMTUsIC05MC4wNTE2Mjg1XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF81YTNkZGJhMzYxZjg0YTJiYjQwNWY0OTRjNjA3YWI5OCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfNmJmNGFmMDNiNWM2NDVlNDk5MzFjY2QwNDVkNjQ5YzIgPSAkKGA8ZGl2IGlkPSJodG1sXzZiZjRhZjAzYjVjNjQ1ZTQ5OTMxY2NkMDQ1ZDY0OWMyIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5zeWxhbW9yZTE6IEkgcmVtZW1iZXIgd2hlbiBJIHVzZWQgdG8gaHlwZSB0aGVzZSBjb2x1bW5zIGJ5IHNheWluZyAiRnJhbmsgTXVydGF1Z2ggdGhpbmtzIGFib3V0IFRpZ2VyIGZvb3RiYWxsLCBzbyB5b3UgZG9uJ3QgaGF2ZSB0by4iIE5vdCBzbyBtdWNoLCB0aGVzZSBkYXlzLiBUaHJlZSBUaG91Z2h0cyBvbiBUaWdlciBGb290YmFsbDogTWVtcGhpcyBCZWF0cyBIb3VzdG9uIEVkaXRpb24gaHR0cHM6Ly90LmNvL0hrc2duOXNrYko8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNWEzZGRiYTM2MWY4NGEyYmI0MDVmNDk0YzYwN2FiOTguc2V0Q29udGVudChodG1sXzZiZjRhZjAzYjVjNjQ1ZTQ5OTMxY2NkMDQ1ZDY0OWMyKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2QwZWJjOGViN2NkMjRiYzRhNWY2ZDU5Yjg0YTViY2ZkLmJpbmRQb3B1cChwb3B1cF81YTNkZGJhMzYxZjg0YTJiYjQwNWY0OTRjNjA3YWI5OCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8wMzEwOTI3NDU0MjM0OGY4ODNjMzQ0OTEyM2ZkNDA5MCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzMzLjI1ODg4MTcsIC04Ni44Mjk1MzM3XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF8yNjM4ZTcxOTM5ZTA0NTUzYThlMzhiMmY0NmRmODgxNCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfNjRkMGFhNWJlZDgxNGU1ODhiYmFmNWRjNDljMjhhYzcgPSAkKGA8ZGl2IGlkPSJodG1sXzY0ZDBhYTViZWQ4MTRlNTg4YmJhZjVkYzQ5YzI4YWM3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5EYWRkeUdsYXNnb3c6IEBTcG9ydHNDZW50ZXIgU28uLi55b3UgYXJlIHNheWluZyBhIGZvcm1lciBwcm8gZm9vdGJhbGwgcGxheWVyIGNhbiBzdGlsbCB0aHJvdyBhIGZvb3RiYWxsIGR1cmluZyB0aGVpciBlYXJseSAzMOKAmXMuIFdvdy4gU28gY2FuIFVuY2xlIFJpY28uPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzI2MzhlNzE5MzllMDQ1NTNhOGUzOGIyZjQ2ZGY4ODE0LnNldENvbnRlbnQoaHRtbF82NGQwYWE1YmVkODE0ZTU4OGJiYWY1ZGM0OWMyOGFjNyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8wMzEwOTI3NDU0MjM0OGY4ODNjMzQ0OTEyM2ZkNDA5MC5iaW5kUG9wdXAocG9wdXBfMjYzOGU3MTkzOWUwNDU1M2E4ZTM4YjJmNDZkZjg4MTQpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfZmFiOTQ2YjY1MmZkNGZiNzhhOTVhMDI1MmM0YTQxYjAgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs1NC42Mjk0OTgyLCAtNi43NjU0NDE2XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9lNWY5MjkxZjA2ODI0NGYxODU0ZDgwNWFlYmNkMjQzMSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfMzBiMjExYjlkMDUzNGUwZTk5YjgxYzZlYTM5YmVhZGIgPSAkKGA8ZGl2IGlkPSJodG1sXzMwYjIxMWI5ZDA1MzRlMGU5OWI4MWM2ZWEzOWJlYWRiIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5oNHJyeTc5OTogUmVlY2UgSmFtZXMgaGFzIHBsYXllZCAyMzAgb2YgdG9wIGZsaWdodCBmb290YmFsbC48L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfZTVmOTI5MWYwNjgyNDRmMTg1NGQ4MDVhZWJjZDI0MzEuc2V0Q29udGVudChodG1sXzMwYjIxMWI5ZDA1MzRlMGU5OWI4MWM2ZWEzOWJlYWRiKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2ZhYjk0NmI2NTJmZDRmYjc4YTk1YTAyNTJjNGE0MWIwLmJpbmRQb3B1cChwb3B1cF9lNWY5MjkxZjA2ODI0NGYxODU0ZDgwNWFlYmNkMjQzMSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8wNGI5NTk0ZWUxNTI0YmYyYjNhZDVlYmExMDZkYjJlMiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUwLjgyMjAzOTksIC0wLjEzNzQwNjFdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2IyNzM3MWFjOWQyMTQzZGI4NGRkMTE5ZmY3OTMyMWQ4ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9mMDAxYWViMTcyYjc0Y2E1ODRmZmVmZDRhOTcwMWU4MyA9ICQoYDxkaXYgaWQ9Imh0bWxfZjAwMWFlYjE3MmI3NGNhNTg0ZmZlZmQ0YTk3MDFlODMiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkhhd2tzRkNPZmZpY2lhbDogV09XISBPbmUgb2Ygb3VyIHNoaXJ0cyBpcyBhdCB0aGUgYnJhbmQgbmV3IE5hdGlvbmFsICBARm9vdGJhbGxNdXNldW0gRXhoaWJpdGlvbiAtIFNUUklQISBIb3cgRm9vdGJhbGwgR290IFNoaXJ0eSEgQGRhdmlkc2hyaWdsZXkgQGNsYXNzaWNzaGlydHMgQFJhaW5ib3dSb3ZlcnNGQyBAU3BvcnRzTWVkaWFMR0JUICAgIEZ1bGwgc3RvcnkgaGVyZTogaHR0cHM6Ly90LmNvL2o0RzJ1aVlvaVDigKYgICAjdm90ZSBAU3hTcG9ydHNBd2FyZHMgaHR0cHM6Ly90LmNvL0s0NWxDZjd5ZjcgaHR0cHM6Ly90LmNvL3BDVjNURzlTWWU8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfYjI3MzcxYWM5ZDIxNDNkYjg0ZGQxMTlmZjc5MzIxZDguc2V0Q29udGVudChodG1sX2YwMDFhZWIxNzJiNzRjYTU4NGZmZWZkNGE5NzAxZTgzKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzA0Yjk1OTRlZTE1MjRiZjJiM2FkNWViYTEwNmRiMmUyLmJpbmRQb3B1cChwb3B1cF9iMjczNzFhYzlkMjE0M2RiODRkZDExOWZmNzkzMjFkOCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9hYjlhOTQzNmZlNTk0NjZkYjc0MjFhMzgyOTM1MTJkMyA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzIwLjI3MjMyNDIsIDEwMC40MTUxNzk1XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF83ZGVhYjE2MzdkYmQ0YmFjODE5ODZhNGI1ZTk2OTcyZCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfODE1ODFiMmFiY2ZlNDkyZmFmYzkyNTM3Y2EwYjI3OWEgPSAkKGA8ZGl2IGlkPSJodG1sXzgxNTgxYjJhYmNmZTQ5MmZhZmM5MjUzN2NhMGIyNzlhIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5EX1dhckVhZ2xlOiBDcmVhdGUgYSBsaXN0LCB3aGVuIGl0J3MgZm9vdGJhbGwgdGltZSwgY2hhbmdlIHlvdXIgVEwgdG8gdGhlIGxpc3Qgd2l0aCBncmVhdCBtaW5kcyBhY3R1YWxseSBpbnRlcmVzdGVkIGluIHdhdGNoaW5nIGZvb3RiYWxsICZndDsmZ3Q7Jmd0OyZndDsmZ3Q7Jmd0OyZndDsuPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzdkZWFiMTYzN2RiZDRiYWM4MTk4NmE0YjVlOTY5NzJkLnNldENvbnRlbnQoaHRtbF84MTU4MWIyYWJjZmU0OTJmYWZjOTI1MzdjYTBiMjc5YSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9hYjlhOTQzNmZlNTk0NjZkYjc0MjFhMzgyOTM1MTJkMy5iaW5kUG9wdXAocG9wdXBfN2RlYWIxNjM3ZGJkNGJhYzgxOTg2YTRiNWU5Njk3MmQpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfNjgwMjEwNmVmMDNhNGNhOTlhNjQwOGNlNDk5ZGZhYzIgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFsyNy43NzAzNzk2LCAtODIuNjY5NTA4NV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfMWZjN2Y1ODhjN2ZkNGY3MGFiYTdiMzQxNTdiNjIyNDEgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzliYmRlMThhM2Q2MTQxMGRiY2M5ZmFjMDVkZTZkZWJjID0gJChgPGRpdiBpZD0iaHRtbF85YmJkZTE4YTNkNjE0MTBkYmNjOWZhYzA1ZGU2ZGViYyIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+U21pdGhUaW00OTogQFJDdW1taW5nc0ZIQ04gSSByb290IGZvciB0aGUgNDllcnMgd2hvIHdhcyBteSBjaGlsZGhvb2QgdGVhbSBzaW5jZSBJIHN0YXJ0ZWQgd2F0Y2hpbmcgZm9vdGJhbGwgaW4gMTk4MiBhcyBteSBhbHRlcm5hdGUuPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzFmYzdmNTg4YzdmZDRmNzBhYmE3YjM0MTU3YjYyMjQxLnNldENvbnRlbnQoaHRtbF85YmJkZTE4YTNkNjE0MTBkYmNjOWZhYzA1ZGU2ZGViYyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl82ODAyMTA2ZWYwM2E0Y2E5OWE2NDA4Y2U0OTlkZmFjMi5iaW5kUG9wdXAocG9wdXBfMWZjN2Y1ODhjN2ZkNGY3MGFiYTdiMzQxNTdiNjIyNDEpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfMDQ3NjNhZTFiODZiNDc0ZmIyZTMwOGMyNWU2ODUzN2YgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs0MS42ODMzODEzLCAtODYuMjUwMDA2Nl0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfMmQ0ZWM5Y2YyNjUxNDEwMTk0MDg4ZWZkMTUwN2QyMjcgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2FhM2RhNDgwOThmYjQ5ZWE4YjM0ZjI5Y2JiMmI2M2Q2ID0gJChgPGRpdiBpZD0iaHRtbF9hYTNkYTQ4MDk4ZmI0OWVhOGIzNGYyOWNiYjJiNjNkNiIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+SVNEVXBkYXRlOiBORCBGb290YmFsbCB8IE5vdHJlIERhbWUgRGVwdGggQ2hhcnQ6IEJvc3RvbiBDb2xsZWdlIFdlZWsgIFdSIE1pY2FoIEpvbmVzIG1vdmVzIGludG8gdGhlIHR3by1kZWVwLiAgIGh0dHBzOi8vdC5jby83dG5xR05STUZoPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzJkNGVjOWNmMjY1MTQxMDE5NDA4OGVmZDE1MDdkMjI3LnNldENvbnRlbnQoaHRtbF9hYTNkYTQ4MDk4ZmI0OWVhOGIzNGYyOWNiYjJiNjNkNik7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8wNDc2M2FlMWI4NmI0NzRmYjJlMzA4YzI1ZTY4NTM3Zi5iaW5kUG9wdXAocG9wdXBfMmQ0ZWM5Y2YyNjUxNDEwMTk0MDg4ZWZkMTUwN2QyMjcpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfMDBmZmZmYWVhNjA5NDNlMzkyYTI1NDRkY2E0NzM5MTUgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFstMjcuNDY4OTY4MiwgMTUzLjAyMzQ5OTFdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzg0NGYyMmYyNTE4MzQxYjc5OGFhZTg4NDlmNjk2Njk0ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF80NjljZGYyYTdkOTg0YTM1YTE0YTIyODI0MDgwOTc3YyA9ICQoYDxkaXYgaWQ9Imh0bWxfNDY5Y2RmMmE3ZDk4NGEzNWExNGEyMjgyNDA4MDk3N2MiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPjlOZXdzUXVlZW5zbGFuZDogQXQgbGVhc3QgZm91ciBwZW9wbGUgaGF2ZSBkaWVkIGFuZCBzaXggcGVvcGxlIGluanVyZWQgYWZ0ZXIgYSBndW5tYW4gb3BlbmVkIGZpcmUgYXQgYSBmb290YmFsbCB3YXRjaGluZyBwYXJ0eSBpbiBDYWxpZm9ybmlhLiAjOU5ld3MgaHR0cHM6Ly90LmNvL051MWJ5eVl2RkU8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfODQ0ZjIyZjI1MTgzNDFiNzk4YWFlODg0OWY2OTY2OTQuc2V0Q29udGVudChodG1sXzQ2OWNkZjJhN2Q5ODRhMzVhMTRhMjI4MjQwODA5NzdjKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzAwZmZmZmFlYTYwOTQzZTM5MmEyNTQ0ZGNhNDczOTE1LmJpbmRQb3B1cChwb3B1cF84NDRmMjJmMjUxODM0MWI3OThhYWU4ODQ5ZjY5NjY5NCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9mNmYxMWU5NmI3Zjc0YjFjYjVjMjIxYTdlODg5ZGU0YSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzMwLjI3MTEyODYsIC05Ny43NDM2OTk1XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9iM2VkY2ZkZjIxYzI0YmViYjg1YWU1ZjZlZmRhODQ3OSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfMjg2ZmQ2YmY1YjA1NGI4NjhmMDY0ZDQ2MDc2NzYxMjcgPSAkKGA8ZGl2IGlkPSJodG1sXzI4NmZkNmJmNWIwNTRiODY4ZjA2NGQ0NjA3Njc2MTI3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij50aGVkYWlseXRleGFuOiBUZXhhcyBGb290YmFsbCBsb3N0IHRvIElvd2EgU3RhdGUgU2F0dXJkYXkgd2l0aCBhIHNjb3JlIG9mIDIzLTIxLCBtYXJraW5nIHRoZSBlbmQgb2YgYSBsb29rIGF0IHRoZSBCaWcgMTIgQ2hhbXBpb25zaGlwLiAgaHR0cHM6Ly90LmNvL20ybFdwY29pRHg8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfYjNlZGNmZGYyMWMyNGJlYmI4NWFlNWY2ZWZkYTg0Nzkuc2V0Q29udGVudChodG1sXzI4NmZkNmJmNWIwNTRiODY4ZjA2NGQ0NjA3Njc2MTI3KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2Y2ZjExZTk2YjdmNzRiMWNiNWMyMjFhN2U4ODlkZTRhLmJpbmRQb3B1cChwb3B1cF9iM2VkY2ZkZjIxYzI0YmViYjg1YWU1ZjZlZmRhODQ3OSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl85YmY2ZDdjOTk0YzY0MDE0Yjg3OTNjMGUyZTUyM2ZjZiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzMzLjUyMDY4MjQsIC04Ni44MDI0MzI2XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF82MTViMmEwYzY5NGU0NGEzOTljNTZmOTAzN2UyODhmNSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfY2EzZDg4MjRjMjVlNGFhZmFlMDkzYTc3NjU4OTNmYTkgPSAkKGA8ZGl2IGlkPSJodG1sX2NhM2Q4ODI0YzI1ZTRhYWZhZTA5M2E3NzY1ODkzZmE5IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5DQlNfNDI6IFdBVENIOiBBIGRlYWRseSBzaG9vdGluZyByYW1wYWdlIGF0IGEgZm9vdGJhbGwgd2F0Y2ggcGFydHksIG9uZSBBcmthbnNhbiB0YWxrcyBhYm91dCBoZXIgam91cm5leSBvbiDigJxUaGUgVm9pY2XigJ0sIGFuZCBkaWV0aW5nIHdpdGggY2hpY2tlbiB3aW5ncy4gTmV3c2ZlZWQgTm93IGlzIHN0cmVhbWluZyBsaXZlLiAgaHR0cHM6Ly90LmNvL0hVY0MyNnNUOUMgaHR0cHM6Ly90LmNvL3JkVlU4MWNHZDk8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNjE1YjJhMGM2OTRlNDRhMzk5YzU2ZjkwMzdlMjg4ZjUuc2V0Q29udGVudChodG1sX2NhM2Q4ODI0YzI1ZTRhYWZhZTA5M2E3NzY1ODkzZmE5KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzliZjZkN2M5OTRjNjQwMTRiODc5M2MwZTJlNTIzZmNmLmJpbmRQb3B1cChwb3B1cF82MTViMmEwYzY5NGU0NGEzOTljNTZmOTAzN2UyODhmNSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl82ZDllYjc5NWFiY2Y0ZTZlOTVkYmQ1OWNmNzc5NGE0NyA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUzLjcyODYwODk1LCAtMi40ODkyNTgyOTY0NDQzNV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfMjk2MzRlMmE1MzE3NDliOThmNjgwMDgwYzZjNjJjNGQgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzU2MjEwODcxZjZmYzQ4NGZhZTkxNDg3MjlmZDNmYTU0ID0gJChgPGRpdiBpZD0iaHRtbF81NjIxMDg3MWY2ZmM0ODRmYWU5MTQ4NzI5ZmQzZmE1NCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+Um92ZXJzOiDwn464ICJJ4oCZdmUgYWx3YXlzIHdhbnRlZCB0byBsZWFybiBhbiBpbnN0cnVtZW50LCBidXQgYWx0aG91Z2ggd2UgZ2V0IGEgYml0IG9mIGZyZWUgdGltZSBpbiBmb290YmFsbCB5b3XigJlyZSBhbHdheXMgZm9jdXNzZWQgb24gdGhhdCBhbmQgdGhlIHRpbWUgdGlja3MgYXdheS4iICBAQ3VubmluZ2hhbV8xNydzIHJldmVhbGVkIGhvdyBoZSdzIGtlZXBpbmcgaGltc2VsZiBidXN5IGFzIGhlIHdvcmtzIGhpcyB3YXkgYmFjayB0byBmaXRuZXNzLiAgaHR0cHM6Ly90LmNvL0xpeGZKRE0xY2YgaHR0cHM6Ly90LmNvLzFSeGpLcldpT1k8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfMjk2MzRlMmE1MzE3NDliOThmNjgwMDgwYzZjNjJjNGQuc2V0Q29udGVudChodG1sXzU2MjEwODcxZjZmYzQ4NGZhZTkxNDg3MjlmZDNmYTU0KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzZkOWViNzk1YWJjZjRlNmU5NWRiZDU5Y2Y3Nzk0YTQ3LmJpbmRQb3B1cChwb3B1cF8yOTYzNGUyYTUzMTc0OWI5OGY2ODAwODBjNmM2MmM0ZCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9kMmYzYTJjMDk5OGE0ZjBhOTU3ZTVlMWI5YmUxNWMzMSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzMzLjc0OTA5ODcsIC04NC4zOTAxODQ5XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF85OWU3NDA2N2E0MDk0ZDI3YjMxYWFiMjYyZTJjZDY2YSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfNTE4MjEyM2VjOWJiNDUxZmI3NGU5YmY4OWYxZTZiNGIgPSAkKGA8ZGl2IGlkPSJodG1sXzUxODIxMjNlYzliYjQ1MWZiNzRlOWJmODlmMWU2YjRiIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5UaGVBdGhsZXRpY0FUTDogU2FjayBTY2h1bHR6OiBNYWtlIHlvdXIgcGlja3MgZm9yIFdlZWsgMTMgb2YgdGhlIGNvbGxlZ2UgZm9vdGJhbGwgc2Vhc29uICBodHRwczovL3QuY28vbG9aeFFsN1RlczwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF85OWU3NDA2N2E0MDk0ZDI3YjMxYWFiMjYyZTJjZDY2YS5zZXRDb250ZW50KGh0bWxfNTE4MjEyM2VjOWJiNDUxZmI3NGU5YmY4OWYxZTZiNGIpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfZDJmM2EyYzA5OThhNGYwYTk1N2U1ZTFiOWJlMTVjMzEuYmluZFBvcHVwKHBvcHVwXzk5ZTc0MDY3YTQwOTRkMjdiMzFhYWIyNjJlMmNkNjZhKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2E1MzMwMGUxNzRiZTRlNTJiZjU3NDc0OWNhNzMxMDZkID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbLTMzLjg1NDgxNTcsIDE1MS4yMTY0NTM5XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF80OGQ3YTA5YzZkMTA0YWQyYjA4MGVhYTJhZGY5ZTliNCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfNDlmZThlN2Y2YjNiNGVjMmE1Yjg1YjNiNGRhYjA0MDIgPSAkKGA8ZGl2IGlkPSJodG1sXzQ5ZmU4ZTdmNmIzYjRlYzJhNWI4NWIzYjRkYWIwNDAyIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij45TmV3c1N5ZDogQXQgbGVhc3QgZm91ciBwZW9wbGUgaGF2ZSBkaWVkIGFuZCBzaXggcGVvcGxlIGluanVyZWQgYWZ0ZXIgYSBndW5tYW4gb3BlbmVkIGZpcmUgYXQgYSBmb290YmFsbCB3YXRjaGluZyBwYXJ0eSBpbiBDYWxpZm9ybmlhLiAjOU5ld3MgaHR0cHM6Ly90LmNvL3dWVE1hQ0l4aXQ8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNDhkN2EwOWM2ZDEwNGFkMmIwODBlYWEyYWRmOWU5YjQuc2V0Q29udGVudChodG1sXzQ5ZmU4ZTdmNmIzYjRlYzJhNWI4NWIzYjRkYWIwNDAyKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2E1MzMwMGUxNzRiZTRlNTJiZjU3NDc0OWNhNzMxMDZkLmJpbmRQb3B1cChwb3B1cF80OGQ3YTA5YzZkMTA0YWQyYjA4MGVhYTJhZGY5ZTliNCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8wODkwOGVmMzJkZDc0MDljOWFmODNkMDNmZGJlODdmZiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUxLjQ3ODk0MjQxNzg1MzYsIC0wLjIwMDkyMjQyOTQxMzJdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzUyYWNkN2E2YTUzOTRhM2VhYTI5Yjg1MDMyZDlmNzBlID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8wYmNiNWY5NDdiNjk0OTUzYjhjN2NhOGYxNzQxZjdkNCA9ICQoYDxkaXYgaWQ9Imh0bWxfMGJjYjVmOTQ3YjY5NDk1M2I4YzdjYThmMTc0MWY3ZDQiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkZ1bGhhbWlzaFBvZDogIlRvIGJlIGJsdW50LCB3ZeKAmXZlIG5vdCBiZWVuIG5lYXJseSBnb29kIGVub3VnaCB3aGVuIGl0IGNvbWVzIHRvIGZvb3RiYWxs4oCZcyBiYXNpY3MuICIgIE91ciBtYW4gRWFtb24gTGV2aW4gaGFzIHNvbWUgYWR2aWNlIGZvciBTY290dCBQYXJrZXIgaWYgaGUgd2FudHMgdG8gZ2V0IG1vcmUgZnJvbSBvdXIgc3F1YWQuICB8ICAgaHR0cHM6Ly90LmNvL0hXa3ByYXBHa2Y8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNTJhY2Q3YTZhNTM5NGEzZWFhMjliODUwMzJkOWY3MGUuc2V0Q29udGVudChodG1sXzBiY2I1Zjk0N2I2OTQ5NTNiOGM3Y2E4ZjE3NDFmN2Q0KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzA4OTA4ZWYzMmRkNzQwOWM5YWY4M2QwM2ZkYmU4N2ZmLmJpbmRQb3B1cChwb3B1cF81MmFjZDdhNmE1Mzk0YTNlYWEyOWI4NTAzMmQ5ZjcwZSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9mNTQ2YTUzY2E2ZmQ0Njc4OGI5MTk4NGE4ZjdmZWJhZSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWy0yNC43NzYxMDg2LCAxMzQuNzU1XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzg1NmE4YTFiMmNmMjRjYzZiYTYyZWUxNGQwNzVkNzA5KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF84ODlhYTMxNDQ4NDQ0NDVhYmE1Nzg2M2NjMWM4YjEzZCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfMjJhNWZhNjlhZTY3NGI5Mzk2ZDAxMTc5NmVhMDY4ZWUgPSAkKGA8ZGl2IGlkPSJodG1sXzIyYTVmYTY5YWU2NzRiOTM5NmQwMTE3OTZlYTA2OGVlIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij45TmV3c0FVUzogQXQgbGVhc3QgZm91ciBwZW9wbGUgaGF2ZSBkaWVkIGFuZCBzaXggcGVvcGxlIGluanVyZWQgYWZ0ZXIgYSBndW5tYW4gb3BlbmVkIGZpcmUgYXQgYSBmb290YmFsbCB3YXRjaGluZyBwYXJ0eSBpbiBDYWxpZm9ybmlhLiAjOU5ld3MgaHR0cHM6Ly90LmNvL3JXWEVlejlHRjI8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfODg5YWEzMTQ0ODQ0NDQ1YWJhNTc4NjNjYzFjOGIxM2Quc2V0Q29udGVudChodG1sXzIyYTVmYTY5YWU2NzRiOTM5NmQwMTE3OTZlYTA2OGVlKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2Y1NDZhNTNjYTZmZDQ2Nzg4YjkxOTg0YThmN2ZlYmFlLmJpbmRQb3B1cChwb3B1cF84ODlhYTMxNDQ4NDQ0NDVhYmE1Nzg2M2NjMWM4YjEzZCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8xNDRhNTE2MTQ4NmU0M2U0OGQ3YTRmMmVlM2FiNDhmNSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWy0yNy45OTg5ODk5LCAxNTMuNDIzOThdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2QwYzM5OTcxNjA0NjQxZjM4MTY3ZjYzOTRlNzk1ZDg5ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9kZDUyZDJkMzU5ZjQ0YzRlOWE5NmYzNDgyYTQ2OWU0ZSA9ICQoYDxkaXYgaWQ9Imh0bWxfZGQ1MmQyZDM1OWY0NGM0ZTlhOTZmMzQ4MmE0NjllNGUiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPjlOZXdzR29sZENvYXN0OiBBdCBsZWFzdCBmb3VyIHBlb3BsZSBoYXZlIGRpZWQgYW5kIHNpeCBwZW9wbGUgaW5qdXJlZCBhZnRlciBhIGd1bm1hbiBvcGVuZWQgZmlyZSBhdCBhIGZvb3RiYWxsIHdhdGNoaW5nIHBhcnR5IGluIENhbGlmb3JuaWEuICM5TmV3cyBodHRwczovL3QuY28vNjRWZGtheFR4TDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9kMGMzOTk3MTYwNDY0MWYzODE2N2Y2Mzk0ZTc5NWQ4OS5zZXRDb250ZW50KGh0bWxfZGQ1MmQyZDM1OWY0NGM0ZTlhOTZmMzQ4MmE0NjllNGUpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfMTQ0YTUxNjE0ODZlNDNlNDhkN2E0ZjJlZTNhYjQ4ZjUuYmluZFBvcHVwKHBvcHVwX2QwYzM5OTcxNjA0NjQxZjM4MTY3ZjYzOTRlNzk1ZDg5KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzVlMmFmNDYwZmY0YTRiOWM5ZTRlOTIxMGJmYmQ3YWMzID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzYuMTY2Mjg1OSwgLTExNS4xNDkyMjVdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfODU2YThhMWIyY2YyNGNjNmJhNjJlZTE0ZDA3NWQ3MDkpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzYwYzI0YTQ4MzIxNzQ2YmE5ODY2YWYwNTAxMDQwYjRlID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF80ODk0MmY5NmYyY2I0NzQ0OWI5MzU5YjdkNDM2YzlkOCA9ICQoYDxkaXYgaWQ9Imh0bWxfNDg5NDJmOTZmMmNiNDc0NDliOTM1OWI3ZDQzNmM5ZDgiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPnNjb3R0d2luczogRnJlZSBNb25kYXkgTmlnaHQgRm9vdGJhbGw6IENoaWVmcyB2LiBDaGFyZ2VycyBodHRwczovL3QuY28vNW5ONTBnbEdJOCEgVmlkZW9zIHBvc3RlZCBkYWlseSwgNyBkYXlzIGEgd2VlayBieSA1IEFNIEVUIC8gMiBBTSBQVC4gNjUlIENGQi9ORkwgbGFzdCA0IHdlZWtzISAgQERvY3NTcG9ydHMgaHR0cHM6Ly90LmNvL0RjNlp2TEhxYXYuPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzYwYzI0YTQ4MzIxNzQ2YmE5ODY2YWYwNTAxMDQwYjRlLnNldENvbnRlbnQoaHRtbF80ODk0MmY5NmYyY2I0NzQ0OWI5MzU5YjdkNDM2YzlkOCk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl81ZTJhZjQ2MGZmNGE0YjljOWU0ZTkyMTBiZmJkN2FjMy5iaW5kUG9wdXAocG9wdXBfNjBjMjRhNDgzMjE3NDZiYTk4NjZhZjA1MDEwNDBiNGUpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfZTM0ZGI5MTdhYzA3NGEyNjgxZGE1NzViOWQ1YWVlMTIgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFstMzQuOTI3NDI4NCwgMTM4LjU5OTg5OV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfOTk1NmZiMzRjMDQ1NDc1OWJlOTMyMWVlZmY2MWIwYjMgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzkzYjFhOWIwYzcwMjRmZDA4NzMyMzg1NGYyY2RhYmZhID0gJChgPGRpdiBpZD0iaHRtbF85M2IxYTliMGM3MDI0ZmQwODczMjM4NTRmMmNkYWJmYSIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+OU5ld3NBZGVsOiBBdCBsZWFzdCBmb3VyIHBlb3BsZSBoYXZlIGRpZWQgYW5kIHNpeCBwZW9wbGUgaW5qdXJlZCBhZnRlciBhIGd1bm1hbiBvcGVuZWQgZmlyZSBhdCBhIGZvb3RiYWxsIHdhdGNoaW5nIHBhcnR5IGluIENhbGlmb3JuaWEuICM5TmV3cyBodHRwczovL3QuY28vMXM0N3NyZ2NpczwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF85OTU2ZmIzNGMwNDU0NzU5YmU5MzIxZWVmZjYxYjBiMy5zZXRDb250ZW50KGh0bWxfOTNiMWE5YjBjNzAyNGZkMDg3MzIzODU0ZjJjZGFiZmEpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfZTM0ZGI5MTdhYzA3NGEyNjgxZGE1NzViOWQ1YWVlMTIuYmluZFBvcHVwKHBvcHVwXzk5NTZmYjM0YzA0NTQ3NTliZTkzMjFlZWZmNjFiMGIzKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2EyMGRkZjgwYTNhMTQ5ODI4ZjEwZTYyZjRhNTVmMzJmID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNTAuODIyMDM5OSwgLTAuMTM3NDA2MV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfOWZmMjcwYjI4MWQ0NGMyMGE3YzJiZWYyMDFkMzkwYzYgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzdmYzY2NzA4ZGJlMzRlNzFiZDg3ZWU2N2YwMjc4N2I4ID0gJChgPGRpdiBpZD0iaHRtbF83ZmM2NjcwOGRiZTM0ZTcxYmQ4N2VlNjdmMDI3ODdiOCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+TGF0ZXN0VFZCdG46IE91ciB3ZWVrZW5kIGZvb3RiYWxsIHJldmlldyAgaHR0cHM6Ly90LmNvLzJLWmNuMnpDUzc8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfOWZmMjcwYjI4MWQ0NGMyMGE3YzJiZWYyMDFkMzkwYzYuc2V0Q29udGVudChodG1sXzdmYzY2NzA4ZGJlMzRlNzFiZDg3ZWU2N2YwMjc4N2I4KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2EyMGRkZjgwYTNhMTQ5ODI4ZjEwZTYyZjRhNTVmMzJmLmJpbmRQb3B1cChwb3B1cF85ZmYyNzBiMjgxZDQ0YzIwYTdjMmJlZjIwMWQzOTBjNikKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9kYTVkMTM2ODhiYjQ0NWNhYWM3NDFkZDI4MDE3ZWJiMiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzM5Ljc4MzczMDQsIC0xMDAuNDQ1ODgyNV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfNjA0ZmRmNjRkMGM5NDQ3NmEyM2E5ZWVmODBkMDYzNjYgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2Y2YTYxNzg3MTZiNDRlNDg4ODcyOGRkZjIxOWE3MTY5ID0gJChgPGRpdiBpZD0iaHRtbF9mNmE2MTc4NzE2YjQ0ZTQ4ODg3MjhkZGYyMTlhNzE2OSIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+QmVzdFVTU3BvcnRzQmV0OiBIZXJlIGFyZSBzb21lIG9mIG91ciBtb3N0IGRpc2FwcG9pbnRpbmcgdGVhbXMgb2YgdGhlIDIwMTkgY29sbGVnZSBmb290YmFsbCBzZWFzb24uIFdoaWxlIG1hbnkgb2YgdGhlbSB3aWxsIGZpbmlzaCB3aXRoIHdpbm5pbmcgcmVjb3Jkcywgbm9uZSBvZiB0aGUgdGVhbXMgb24gdGhpcyBsaXN0IGNhbiBzYXkgdGhpcyBzZWFzb24gd2FzIGEgc3VjY2Vzc2Z1bCBvbmUuICNDb2xsZWdlRm9vdGJhbGwgaHR0cHM6Ly90LmNvL3F3a1lVU0puWHU8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNjA0ZmRmNjRkMGM5NDQ3NmEyM2E5ZWVmODBkMDYzNjYuc2V0Q29udGVudChodG1sX2Y2YTYxNzg3MTZiNDRlNDg4ODcyOGRkZjIxOWE3MTY5KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2RhNWQxMzY4OGJiNDQ1Y2FhYzc0MWRkMjgwMTdlYmIyLmJpbmRQb3B1cChwb3B1cF82MDRmZGY2NGQwYzk0NDc2YTIzYTllZWY4MGQwNjM2NikKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl82MWJjODVjYzk3MDQ0OWI1YWE3MDlmMGY2OTU5MTVlMyA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWy0zNy44MTQyMTc2LCAxNDQuOTYzMTYwOF0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF84NTZhOGExYjJjZjI0Y2M2YmE2MmVlMTRkMDc1ZDcwOSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfNzkxYTFhOTFmZmM1NGVkNDg5ZjBlYjRjNjc0MjNiNTQgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2EyZWYyYWUzNjZkNTQ1MzY5YzQ3YmFjYTdlNGJmMjU2ID0gJChgPGRpdiBpZD0iaHRtbF9hMmVmMmFlMzY2ZDU0NTM2OWM0N2JhY2E3ZTRiZjI1NiIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+OU5ld3NNZWxiOiBBdCBsZWFzdCBmb3VyIHBlb3BsZSBoYXZlIGRpZWQgYW5kIHNpeCBwZW9wbGUgaW5qdXJlZCBhZnRlciBhIGd1bm1hbiBvcGVuZWQgZmlyZSBhdCBhIGZvb3RiYWxsIHdhdGNoaW5nIHBhcnR5IGluIENhbGlmb3JuaWEuICM5TmV3cyBodHRwczovL3QuY28vV1BVQUlXblQ4eDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF83OTFhMWE5MWZmYzU0ZWQ0ODlmMGViNGM2NzQyM2I1NC5zZXRDb250ZW50KGh0bWxfYTJlZjJhZTM2NmQ1NDUzNjljNDdiYWNhN2U0YmYyNTYpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNjFiYzg1Y2M5NzA0NDliNWFhNzA5ZjBmNjk1OTE1ZTMuYmluZFBvcHVwKHBvcHVwXzc5MWExYTkxZmZjNTRlZDQ4OWYwZWI0YzY3NDIzYjU0KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKPC9zY3JpcHQ+" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
 </div>
 
 </div>
@@ -16256,6 +16931,16 @@ Done geocoding
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!--
+#from IPython.display import IFrame
+#IFrame(src="./tweet_map.html", width=800, height=450)
+-->
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -16267,8 +16952,10 @@ Done geocoding
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Utility-Functions">Utility Functions<a class="anchor-link" href="#Utility-Functions">&#182;</a></h2><ul>
-<li>For details on our utility functions, see our <a href="https://learning.oreilly.com/videos/python-fundamentals/9780135917411/9780135917411-PFLL_Lesson12_26"><strong>Python Fundamentals LiveLessons video</strong> that discusses them</a> or <a href="https://learning.oreilly.com/library/view/python-for-programmers/9780135231364/ch12.xhtml#ch12lev2sec10">Sections 12.5.2-12.5.3 in <strong>Python for Programmers</strong></a></li>
+<h2 id="Utility-Functions">Utility Functions<a class="anchor-link" href="#Utility-Functions">&#182;</a></h2><p>See the following for details:</p>
+<ul>
+<li><a href="https://learning.oreilly.com/videos/python-fundamentals/9780135917411/9780135917411-PFLL_Lesson12_26"><strong>Python Fundamentals LiveLessons video</strong></a> </li>
+<li><a href="https://learning.oreilly.com/library/view/python-for-programmers/9780135231364/ch12.xhtml#ch12lev2sec10">Sections 12.5.2-12.5.3 in <strong>Python for Programmers</strong></a></li>
 </ul>
 <h3 id="get_tweet_content-Utility-Function-(2-of-2)"><code>get_tweet_content</code> Utility Function (2 of 2)<a class="anchor-link" href="#get_tweet_content-Utility-Function-(2-of-2)">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_tweet_content</span><span class="p">(</span><span class="n">tweet</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return dictionary with data from tweet (a Status object).&quot;&quot;&quot;</span>
@@ -16277,7 +16964,7 @@ Done geocoding
 
     <span class="c1"># get the tweet&#39;s text</span>
     <span class="k">try</span><span class="p">:</span>  
-        <span class="n">fields</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tweet</span><span class="o">.</span><span class="n">extended_tweet</span><span class="o">.</span><span class="n">full_text</span>
+        <span class="n">fields</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tweet</span><span class="o">.</span><span class="n">extended_tweet</span><span class="p">[</span><span class="s2">&quot;full_text&quot;</span><span class="p">]</span>
     <span class="k">except</span><span class="p">:</span> 
         <span class="n">fields</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tweet</span><span class="o">.</span><span class="n">text</span>
 
