@@ -10,10 +10,6 @@ The links below will take you to the course page. If you registered/attended tha
 * November 19, 2019: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920322443/
 * December 17, 2019: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920322481/
 
-October
-
-November 19th: https://learning.oreilly.com/live-training/courses/python-r-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920322443
-
 I'll keep this repository up-to-date with any changes I make for future presentations. 
 
 **These files are for your personal use and may not be redistributed or reposted.**
