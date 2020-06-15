@@ -18,7 +18,7 @@ pubnub==4.5.2
 pyaudio==0.2.11
 pydub==0.23.1
 pymongo==3.10.1
-python==3.8.3
+python>=3.7
 scikit-learn==0.23.1
 scipy==1.4.1
 seaborn==0.10.1
