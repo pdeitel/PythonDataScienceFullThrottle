@@ -27,7 +27,7 @@ geographiclib==1.50
 geopy==1.22.0
 ibm-cloud-sdk-core==1.5.1
 ibm-watson==4.5.0
-icu==67.1
+icu
 idna==2.9
 imageio==2.8.0
 importlib-metadata==1.6.1
