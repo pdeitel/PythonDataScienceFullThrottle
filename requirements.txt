@@ -49,17 +49,6 @@ jupyter_nbextensions_configurator==0.4.1
 jupyterlab==2.1.4
 jupyterlab_server==1.1.5
 kiwisolver==1.2.0
-libffi==3.2.1
-libgfortran==4.0.0
-libiconv==1.15
-liblapack==3.8.0
-libopenblas==0.3.9
-libpng==1.6.37
-libsodium==1.0.17
-libtiff==4.1.0
-libwebp-base==1.1.0
-libxml2==2.9.10
-libxslt==1.1.33
 llvm-openmp==10.0.0
 lxml2==4.5.1
 lz4-c==1.9.2
