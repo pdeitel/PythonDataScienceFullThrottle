@@ -16,7 +16,6 @@ chardet==3.0.4
 cryptography==2.9.2
 cycler==0.10.0
 cymem==2.0.3
-cython-blis
 decorator==4.4.2
 defusedxml==0.6.0
 dnspython==1.16.0
