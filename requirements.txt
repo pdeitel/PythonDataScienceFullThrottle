@@ -23,7 +23,6 @@ dweepy==0.3.0
 ecdsa==0.13
 entrypoints==0.3
 folium==0.11.0
-freetype==2.10.2
 geographiclib==1.50
 geopy==1.22.0
 gmp==6.2.0
