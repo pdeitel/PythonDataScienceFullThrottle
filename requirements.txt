@@ -49,7 +49,6 @@ jupyter_nbextensions_configurator==0.4.1
 jupyterlab==2.1.4
 jupyterlab_server==1.1.5
 kiwisolver==1.2.0
-llvm-openmp==10.0.0
 lxml2==4.5.1
 lz4-c==1.9.2
 markupsafe==1.1.1
