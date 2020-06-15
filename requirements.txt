@@ -37,8 +37,8 @@ ipython_genutils==0.2.0
 jedi==0.17.0
 jinja2==2.11.2
 joblib==0.15.1
-json5==5.9.4
-jsonschema==3.2.0
+json5
+jsonschema
 jupyter_client==6.1.3
 jupyter_contrib_core==0.3.3
 jupyter_contrib_nbextensions==0.5.1
