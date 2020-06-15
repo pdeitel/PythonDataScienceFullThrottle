@@ -1,8 +1,6 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: osx-64
-_anaconda_depends=2019.03=py37_0
-_ipyw_jlab_nb_ext_conf=0.1.0=py37_0
 alabaster=0.7.12=py_0
 anaconda=custom=py37_1
 anaconda-client=1.7.2=py_0
@@ -65,7 +63,7 @@ distributed=2.15.0=py37hc8dfbb8_0
 dnspython=1.16.0=py_1
 docutils=0.16=py37hc8dfbb8_1
 dweepy=0.3.0=pypi_0
-ecdsa=0.13=py_0
+ecdsa>=0.13.3
 en-core-web-lg=2.1.0=pypi_0
 en-core-web-md=2.1.0=pypi_0
 en-core-web-sm=2.1.0=pypi_0
@@ -186,7 +184,7 @@ nbconvert=5.6.1=py37hc8dfbb8_1
 nbformat=5.0.6=py_0
 ncurses=6.1=h0a44026_1002
 networkx=2.4=py_1
-nltk=3.4.4=py_0
+nltk>=3.4.5
 nodejs=13.0.0=hfddbe92_1
 nose=1.3.7=py37hc8dfbb8_1004
 notebook=6.0.3=py37_0
@@ -234,9 +232,9 @@ pyaudio=0.2.11=pypi_0
 pycodestyle=2.5.0=py_0
 pycosat=0.6.3=py37h9bfed18_1004
 pycparser=2.20=py_0
-pycrypto=2.6.1=py37h9bfed18_1004
-pycryptodome=3.9.7=py37h51495b9_1
-pycryptodomex=3.8.2=pypi_0
+pycrypto
+pycryptodome
+pycryptodomex
 pycurl=7.43.0.5=py37h75a5311_0
 pydub=0.23.1=pypi_0
 pyflakes=2.2.0=pyh9f0ad1d_0
