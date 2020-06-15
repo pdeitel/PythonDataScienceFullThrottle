@@ -21,9 +21,6 @@ defusedxml==0.6.0
 dnspython==1.16.0
 dweepy==0.3.0
 ecdsa==0.13
-en-core-web-lg==2.2.5
-en-core-web-md==2.2.5
-en-core-web-sm==2.2.5
 entrypoints==0.3
 folium==0.11.0
 freetype==2.10.2
