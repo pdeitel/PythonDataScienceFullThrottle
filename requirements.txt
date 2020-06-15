@@ -37,7 +37,7 @@ ipython_genutils==0.2.0
 jedi==0.17.0
 jinja2==2.11.2
 joblib==0.15.1
-jpeg==9d=h0b31af3_0
+jpeg
 json5==5.9.4
 jsonschema==3.2.0
 jupyter_client==6.1.3
