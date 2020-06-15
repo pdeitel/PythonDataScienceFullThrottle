@@ -25,7 +25,6 @@ entrypoints==0.3
 folium==0.11.0
 geographiclib==1.50
 geopy==1.22.0
-gmp==6.2.0
 ibm-cloud-sdk-core==1.5.1
 ibm-watson==4.5.0
 icu==67.1
