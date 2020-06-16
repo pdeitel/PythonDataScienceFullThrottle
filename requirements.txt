@@ -10,7 +10,7 @@ imageio==2.8.0
 ipython==7.15.0
 jupyterlab==2.1.4
 matplotlib==3.2.1
-nltk==3.4.4
+nltk
 numpy==1.18.5
 pandas==1.0.4
 pip==20.1.1
