@@ -193,7 +193,7 @@ py=1.8.1=py_0
 pycodestyle=2.5.0=py_0
 pycosat=0.6.3=py36h37b9a7d_1004
 pycparser=2.20=py_0
-pycrypto=2.6.1=py36h37b9a7d_1004
+pycrypto
 pycurl=7.43.0.5=py36h75a5311_0
 pydot=1.4.1=py36_1000
 pyflakes=2.2.0=pyh9f0ad1d_0
