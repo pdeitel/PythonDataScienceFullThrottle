@@ -13732,7 +13732,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;Explore the universe and discover our home planet with @NASA. We usually post in EST (UTC-4)&#39;</pre>
+<pre>&#39;Explore the universe and our home planet with NASA 🌎 We usually post in EDT.&#39;</pre>
 </div>
 
 </div>
@@ -13793,7 +13793,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;#Artemis: Twin sister of Apollo, goddess of the Moon and epitome of America’s next chapter in space exploration. 🚀… https://t.co/sit35TiQFE&#39;</pre>
+<pre>&#39;We’re going back to Mars! @NASAPersevere will be launching soon for its seven-month journey to the Red Planet. And… https://t.co/w66I2FTrRG&#39;</pre>
 </div>
 
 </div>
@@ -13824,7 +13824,7 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="12.9-Introduction-to-Tweepy-Cursors:-Getting-an-Account&#8217;s-Followers-and-Friends">12.9 Introduction to Tweepy Cursors: Getting an Account&#8217;s Followers and Friends<a class="anchor-link" href="#12.9-Introduction-to-Tweepy-Cursors:-Getting-an-Account&#8217;s-Followers-and-Friends">&#182;</a></h1><ul>
+<h1 id="12.9-Introduction-to-Tweepy-Cursors:-Getting-an-Account&#8217;s-Followers">12.9 Introduction to Tweepy Cursors: Getting an Account&#8217;s Followers<a class="anchor-link" href="#12.9-Introduction-to-Tweepy-Cursors:-Getting-an-Account&#8217;s-Followers">&#182;</a></h1><ul>
 <li>Twitter API methods often return collections of objects <ul>
 <li>E.g., list of tweets that match specified search criteria </li>
 </ul>
@@ -13972,16 +13972,16 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;DerrickCudjoe2&#39;,
- &#39;eljefferson26&#39;,
- &#39;SwetaMo07359047&#39;,
- &#39;SidObsi&#39;,
- &#39;Emma54287896&#39;,
- &#39;DeezerMageezer&#39;,
- &#39;Efe2704&#39;,
- &#39;Memevillatoro1&#39;,
- &#39;prosteadam&#39;,
- &#39;RojaOfficial1&#39;]</pre>
+<pre>[&#39;Naira45775428&#39;,
+ &#39;AndrewM38400326&#39;,
+ &#39;carlosqd90&#39;,
+ &#39;attila_abreu&#39;,
+ &#39;wdb_andrea&#39;,
+ &#39;mullinax_angel&#39;,
+ &#39;Tomryz1&#39;,
+ &#39;Mrwhateverrrr&#39;,
+ &#39;SavannahCarlos&#39;,
+ &#39;tweetlerLensMi&#39;]</pre>
 </div>
 
 </div>
@@ -14071,13 +14071,13 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 <span class="sd">    user&#39;s screen_name and tweet text. If the language is not</span>
 <span class="sd">    English, translate the text with TextBlob.&quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{tweet.screen_name}</span><span class="s1">:&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">tweet</span><span class="o">.</span><span class="n">screen_name</span><span class="si">}</span><span class="s1">:&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="s1">&#39;en&#39;</span> <span class="ow">in</span> <span class="n">tweet</span><span class="o">.</span><span class="n">lang</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{tweet.text}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">tweet</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="k">elif</span> <span class="s1">&#39;und&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">tweet</span><span class="o">.</span><span class="n">lang</span><span class="p">:</span>  <span class="c1"># translate to English first</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">  ORIGINAL: </span><span class="si">{tweet.text}</span><span class="s1">&#39;</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;TRANSLATED: {TextBlob(tweet.text).translate()}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">  ORIGINAL: </span><span class="si">{</span><span class="n">tweet</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;TRANSLATED: </span><span class="si">{</span><span class="n">TextBlob</span><span class="p">(</span><span class="n">tweet</span><span class="o">.</span><span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">translate</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14136,15 +14136,13 @@ mission, our Parker #SolarProbe spacecraft... https://t.co/xKd6ym8waT'</code></p
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Balorxzinno: RT @RemoStarsSC: Remo Stars FC Player faced Untimely Death in the Hands of SARS Officers
+<pre>cherif_ElWakil: roxi_pop_30: RT @SarawatTineity: Hottest football Players ⚽🔥
+Hottest Couple X BRIGHTWIN
 
-Remo Stars Football Club (RSFC) Assistant Captain…
+Kick meh!! 😂⚽🔥🔥🔥🔥
+#bbrightvc #winmetawin #brightwin #ไบร์ทวิน…
 
-brkygt93: RT @FIFAcom: It&#39;s a day to remember for Galatasaray fans! 🥳🇹🇷
-
-In one of football&#39;s most passionate derbies, they won at rivals @Fenerbahce…
-
-RyanEvans_11: 🚨WHATS GOOD FOOTBALL TWITTER BOYS FORNITE AND KPOP IS SHIT AND ITS THAT TIME AGAIN TO GAIN A BIG FOLLOWING ON YOUR… https://t.co/sbd8yGYwvV
+beebstim: RT @FIFAcom: 🧗 Congratulations to @ManUtd, who began the 2nd half of the season in 8th, on finishing 3rd &amp;amp; securing @ChampionsLeague footba…
 
 </pre>
 </div>
@@ -14372,11 +14370,11 @@ RyanEvans_11: 🚨WHATS GOOD FOOTBALL TWITTER BOYS FORNITE AND KPOP IS SHIT AND 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;name&#39;: &#39;#Galatasaray&#39;,
- &#39;url&#39;: &#39;http://twitter.com/search?q=%23Galatasaray&#39;,
+<pre>{&#39;name&#39;: &#39;#STRON9ER&#39;,
+ &#39;url&#39;: &#39;http://twitter.com/search?q=%23STRON9ER&#39;,
  &#39;promoted_content&#39;: None,
- &#39;query&#39;: &#39;%23Galatasaray&#39;,
- &#39;tweet_volume&#39;: 105100}</pre>
+ &#39;query&#39;: &#39;%23STRON9ER&#39;,
+ &#39;tweet_volume&#39;: 46032}</pre>
 </div>
 
 </div>
@@ -14465,40 +14463,40 @@ RyanEvans_11: 🚨WHATS GOOD FOOTBALL TWITTER BOYS FORNITE AND KPOP IS SHIT AND 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Fenerbahçe
-#FBvGS
-#SEVENPARTY
-#mayıslarbizimdir
-#ISupportKapilMishra
-#Galatasaray
-#MUNWAT
-Ali Koç
-#InnerChildChallenge
-Saka
-Everton
-Ersun Yanal
-#ARSEVE
-#OTDirecto23F
-#HamburgWahl
-Kadıköy&#39;de
-Onyekuru
-#fenerinmacivar
-#TheVoiceKids
-Fatih Terim
-#LQvIU
-#COVID19italia
-EnesBebek HapisteBüyümesin
-Arteta
-#MansplainingIn5Words
-Aziz Yıldırım
-#ENGvIRE
-Leno
-Halil Umut Meler
-#كلنا_خالد_الفيصل
-Auba
+<pre>#BTSISCOMING
+Chelsea
+yuta
+Lingard
+Corinthians
+Olivia de Havilland
+DoğuTürkistana SesVer
+Usher
+Mike Ditka
+#TrumpIsACompleteFailure
+#STRON9ER
+#التحرير_تقمع
+#Uyajola99Sundays
+Meek
+#غسيل_اموال_المشاهير
+#NoSafeSpaceForJewHate
+ICARUS FALLS
+連休明け
+Joe Rogan
+Immobile
+Ederson
+#OrgulloSiempre
+#اسرع_طريق_لقلب_الرجل
+mel maia
 #neveraloneLGBTQ
-Ozan Tufan
-ALLAH BELANIZI VERSİN
+#العداله_مطلب_النصراويين
+Volpi
+Haia
+#YuvandaKalGökhan
+#AdanaDemirspor
+Sabadell
+#PuigdemontTV3
+Verlander
+Helinho
 </pre>
 </div>
 </div>
@@ -14829,12 +14827,12 @@ ALLAH BELANIZI VERSİN
         <span class="k">except</span><span class="p">:</span> 
             <span class="n">tweet_text</span> <span class="o">=</span> <span class="n">status</span><span class="o">.</span><span class="n">text</span>
 
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Screen name: </span><span class="si">{status.user.screen_name}</span><span class="s1">:&#39;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;   Language: </span><span class="si">{status.lang}</span><span class="s1">&#39;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;     Status: </span><span class="si">{tweet_text}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Screen name: </span><span class="si">{</span><span class="n">status</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">screen_name</span><span class="si">}</span><span class="s1">:&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;   Language: </span><span class="si">{</span><span class="n">status</span><span class="o">.</span><span class="n">lang</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;     Status: </span><span class="si">{</span><span class="n">tweet_text</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">status</span><span class="o">.</span><span class="n">lang</span> <span class="o">!=</span> <span class="s1">&#39;en&#39;</span> <span class="ow">and</span> <span class="n">status</span><span class="o">.</span><span class="n">lang</span> <span class="o">!=</span> <span class="s1">&#39;und&#39;</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39; Translated: {TextBlob(tweet_text).translate()}&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39; Translated: </span><span class="si">{</span><span class="n">TextBlob</span><span class="p">(</span><span class="n">tweet_text</span><span class="p">)</span><span class="o">.</span><span class="n">translate</span><span class="p">()</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 
         <span class="nb">print</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">tweet_count</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># track number of tweets processed</span>
@@ -14960,28 +14958,35 @@ ALLAH BELANIZI VERSİN
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Connection successful
 
-Screen name: PigskinUK2:
+Screen name: UKNewsBot1:
    Language: en
-     Status: Big congrats to our latest competition winners @tompurton93 and liz1bee 🎉🤩
-•
-Both winners were selected at random, live on Instagram earlier this evening. They are the lucky recipients of the hand-signed football… https://t.co/8occpNTNkD
+     Status: Frank Lampard discusses Kepa&#39;s Chelsea future amid Jan Oblak transfer links - Evening Standard https://t.co/WNxomNlZt6
 
-Screen name: TolikSony82:
-   Language: ru
-     Status: Дебютный гол Фернандеша в видеообзоре матча Манчестер Юнайтед – Уотфорд – 3:0 https://t.co/bRfVnjeIxk https://t.co/NKM692qiaj
- Translated: Fernandes debut goal in the video review of the match Manchester United - Watford - 3: 0 https://t.co/bRfVnjeIxk https://t.co/NKM692qiaj
+Screen name: ActuSuisse:
+   Language: fr
+     Status: Télé-réalité et football : Couples stars et hauts salaires, qui gagne le match ? 
+https://t.co/HYRWTqjIsv
 
-Screen name: ajhardin_18:
+#Noel #christmas #natale #joyeuxnoel #merrychristmas #buonnatale https://t.co/QDXAgmJ4hb
+ Translated: Reality TV and football: Star couples and high salaries, who wins the match?
+https://t.co/HYRWTqjIsv
+
+#Noel #christmas #natale #joyeuxnoel #merrychristmas #buonnatale https://t.co/QDXAgmJ4hb
+
+Screen name: TecTonic0:
    Language: en
-     Status: RT @xfl2020: Think St. Louis is excited to have football to watch? https://t.co/acGiGWYax5
+     Status: RT @UberCheIseaFC: They said he wasn’t ready.
+They said he wasn’t good enough.
+They said we would finish 10th.
+They said Chelsea would fall…
 
-Screen name: GSvirnovskiy:
+Screen name: UKNewsBot1:
    Language: en
-     Status: FOOTBALL IS BACK IN THE PARIS OF THE MIDWEST AND I AM HERE FOR IT  @xfl2020
+     Status: Bournemouth: Eddie Howe refuses to discuss future after relegation - BBC Sport https://t.co/N493Gt2j27
 
-Screen name: RyanEvans_11:
+Screen name: AntagoniZt_:
    Language: en
-     Status: 🚨WHATS GOOD FOOTBALL TWITTER BOYS FORNITE AND KPOP IS SHIT AND ITS THAT TIME AGAIN TO GAIN A BIG FOLLOWING ON YOUR ACCOUNT SO FOLLOW EVERYONE WHO LIKES THIS TWEET AND WATCH THE FOLLOWERS FLOW IN🚨 #gainszn
+     Status: this transfer window is so important for english football 😂
 
 </pre>
 </div>
@@ -15055,30 +15060,30 @@ Screen name: RyanEvans_11:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>+ PhinsFanInExile: Thoughts and prayers go out to Kacey’s family. He was a true fan. #Football #MakeAWish
+<pre>  YourPavness: An inspiration to any football fan or aspiring manager out there
 
-+ TheFFRealist: With how passionate and excited it seems that St.Louis is to have football back, I think the @XFLBattleHawks are going to be my favorite @xfl2020 team. 🏈
++ DevilUnited2: @Blanco_1_ He was arsenals BEST player at the time lmao 😂😂😂😂 mate do you watch football DKM
 
-+ TaslCan: @Jonatha97947998 @TheGoopyGhost @vrduin @LittleRayBook Thank you so much Jonathan 😊🙏🏻Im good sleep today because I went to pub for derby match and I drunk some beer 😁🍺 the Galatasaray and Fenerbahçe football team played today Galatasaray is won I’m so happy 😊have a great sleep good night Jonathan see you tomorrow 👋
+  freep: Belleville 2021 five-star DT Damon Payne commits to Alabama football; &#39;it felt like home&#39;
 
-+ ilaughatlewis: 🚨WHATS GOOD FOOTBALL TWITTER #GainSZN IFB #GainSZN 🔥🔥🔥🏆🏆🏆
+  BSimmons25: In NC, we “hope” we can start football in September! 🙏🏽 But until then, we will continue to take this thing “1 day at a time”!
 
-  RunReissRun: @nimzzyl You dont even watch football you troll!
+  FSebby8991: Football reimagined, listening to the fans! RT @xflboard: #XFL2020 #Memory Defenders safety Tyree Kinnel rushes the QB in Week 1 against the Seattle Dragons. (Image credit:…
 
-+ sedonsfc: Again @KentFA providing top class officials. Refereed well, fairly &amp;amp; allowed the sideline to enjoy a great game of Football.
+  realsupero: @ArielleOrsuto @coachJJFields @9Preps @CHSAA @RhondaCHSAA It would take some extreme guts for @CHSAA leadership to make any decision different than @GavinNewsom . So, they passed the buck completely to @PolisForCO who has already aligned with California. There is little chance HS Football happens in the fall in CO. Almost zero chance
 
-+ markphillips47: Nice turnout..you think the people of St Louis miss football? @XFLBattleHawks
++ JohnHerndonJr: @JOHNWIC89250665 @BoxingKingdom14 Of course I would. I have fought football players. I am 6’2 and 220lbs. I am not afraid of some muscle bound dude. If it’s a real fight that makes it even easier. Because no rules.
 
-- yo_Jeebs: @ivan_i94 Football Twitter is that stupid?
+  pfcjw96: Shrewsbury 1-0 Pompey. 3/8/19. Football is finally back. Weather is outrageous beautiful, beers and burgers in the pub all ready for the first 3 points of the season.. up steps Ryan Giles and his left foot... was a sign of things to come for the season.
 
-+ AmorexBanks: 🚨WHATS GOOD FOOTBALL TWITTER BOYS KPOP IS SH*T AND IT’S THAT TIME AGAIN TO GAIN A BIG FOLLOWING ON YOUR ACCOUNT SO FOLLOW EVERYONE WHO LIKES THIS TWEET AND WATCH THE FOLLOWERS FLOW IN 100% WORKS🚨 #GainSZN follow Follow for a FB🙂
+  Devin_McNulty: Why do American football coaches look like Mr Krabs and European ones look like Daniel Craig
 
-+ UtdTrezz: 🚨WHATS GOOD FOOTBALL TWITTER ITS YA BOI BACK AT IT AGAIN FOR ANOTHER #GainSZN FOLLOW EVERYONE WHO LIKES THIS TWEET AND WATCH THE FOLLOWERS FLOW IN LIKE ITS NOTHING 100% WORKS UP THE FT🚨
++ MacbethSeath: @GaryLineker @vardy7 @LCFC Isnt he the first? Football didnt exist before 1992 after all
 
 Tweet sentiment for &#34;football&#34;
-Positive: 8
- Neutral: 1
-Negative: 1
+Positive: 3
+ Neutral: 7
+Negative: 0
 </pre>
 </div>
 </div>
@@ -15351,7 +15356,7 @@ Negative: 1
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>IamAl3x_o: Haha look at the cards damn football in turkey
+<pre>KingsleyJr29: @TimGrace1 @RedVic61 @Kotaku What does that have to do with anything? I hope when you have a daughter and she plays football or what ever sport she’s not good and I hope you tell her that but I know you won’t because you won’t have the balls to tell your child that.
 
 </pre>
 </div>
@@ -15399,7 +15404,7 @@ Negative: 1
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>70</pre>
+<pre>78</pre>
 </div>
 
 </div>
@@ -15446,7 +15451,7 @@ Negative: 1
 <div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;{counts[&quot;locations&quot;] / counts[&quot;total_tweets&quot;]:.1%}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="s2">&quot;locations&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">counts</span><span class="p">[</span><span class="s2">&quot;total_tweets&quot;</span><span class="p">]</span><span class="si">:</span><span class="s1">.1%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15463,7 +15468,7 @@ Negative: 1
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>71.4%
+<pre>64.1%
 </pre>
 </div>
 </div>
@@ -15526,9 +15531,6 @@ Negative: 1
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Getting coordinates for tweet locations...
-OpenMapQuest service timed out. Waiting.
-OpenMapQuest service timed out. Waiting.
-OpenMapQuest service timed out. Waiting.
 Done geocoding
 </pre>
 </div>
@@ -15576,7 +15578,7 @@ Done geocoding
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>12</pre>
+<pre>5</pre>
 </div>
 
 </div>
@@ -15590,7 +15592,7 @@ Done geocoding
 <div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;{bad_locations / counts[&quot;locations&quot;]:.1%}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">bad_locations</span> <span class="o">/</span> <span class="n">counts</span><span class="p">[</span><span class="s2">&quot;locations&quot;</span><span class="p">]</span><span class="si">:</span><span class="s1">.1%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15607,7 +15609,7 @@ Done geocoding
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>24.0%
+<pre>10.0%
 </pre>
 </div>
 </div>
@@ -15711,403 +15713,403 @@ Done geocoding
   <tbody>
     <tr>
       <th>0</th>
-      <td>blackdontrump</td>
-      <td>@czabe Look at the response from his teammates...</td>
-      <td>Washington,D.C.</td>
-      <td>36.298852</td>
-      <td>-82.359193</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>iKylerM</td>
-      <td>@MolyneuxLuke Tied on goals with Messi playing...</td>
-      <td>United Kingdom</td>
-      <td>25.223228</td>
-      <td>55.159493</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>JoshuaMLaw</td>
-      <td>It's over a year since 10 teenage boys died in...</td>
-      <td>Sao Paulo, Brazil</td>
-      <td>-23.550651</td>
-      <td>-46.633382</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>BetPro360</td>
-      <td>Follow 👉👉👉 @BetPro360 for your free ODDS daily...</td>
-      <td>World of Sport</td>
-      <td>41.906675</td>
-      <td>-87.663052</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Q_mirami</td>
-      <td>I love the XFL. It’s football!</td>
-      <td>Richmond, VA</td>
-      <td>37.538509</td>
-      <td>-77.434280</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>naijasportscrib</td>
-      <td>Nigeria football community mourns the death of...</td>
-      <td>Canada</td>
-      <td>61.066692</td>
-      <td>-107.991707</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>_sir_shettima</td>
-      <td>Football ❤️</td>
-      <td>Kano,maiduguri, Lagos, Nigeria</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>latifaaaaaaah</td>
-      <td>@ASAPtalal always sticking ur tongue out and b...</td>
-      <td>Kuwait</td>
-      <td>29.273396</td>
-      <td>47.497948</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>David_Dein_FC</td>
-      <td>Auba wants CL football. This explain why Artet...</td>
-      <td>Arsenal</td>
-      <td>51.558428</td>
-      <td>-0.105655</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>DrPeppa_23</td>
-      <td>It’s so great to see football back in St. Loui...</td>
-      <td>Winona, MS</td>
-      <td>33.482068</td>
-      <td>-89.728137</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>YoungPageviews</td>
-      <td>MADNESS!!!! NOT EVEN 2 MINUTES IN.  FOOTBALL I...</td>
-      <td>Manhattan Friedy</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>AFCMet</td>
-      <td>Nicolas Pepe:\n\n6 goals \n8 assists\n\nFor a ...</td>
-      <td>Lewisham, London</td>
-      <td>51.462432</td>
-      <td>-0.010133</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Premierseafoods</td>
-      <td>@BrynLaw What does David do nowadays @BrynLaw ...</td>
-      <td>Riby Street, Grimsby DN31 3HF</td>
-      <td>53.575345</td>
-      <td>-0.067495</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>ilaughatlewis</td>
-      <td>🚨WHATS GOOD FOOTBALL TWITTER #GainSZN IFB #Gai...</td>
-      <td>road to 2000 follower</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>JCPGATA</td>
-      <td>Mike Dean lays cards on table to give Peter Cr...</td>
-      <td>Jacksonville</td>
-      <td>30.332184</td>
-      <td>-81.655651</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>FloydTweet</td>
-      <td>@jaywev90 @Fadumo_oo That’s been done and they...</td>
-      <td>London</td>
-      <td>51.507322</td>
-      <td>-0.127647</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>rosseyboy08</td>
-      <td>@_IbroxLoyal Let’s all get behind the team and...</td>
-      <td>Glasgow, United Kingdom</td>
-      <td>55.856656</td>
-      <td>-4.243582</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>FranklinCharger</td>
-      <td>We always shout out our football alumni, but s...</td>
-      <td>Franklin, MA</td>
-      <td>42.589621</td>
-      <td>-72.611064</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Or1g1nalG</td>
-      <td>@politicallyho14 @ProudFenianTaig @Record_Spor...</td>
+      <td>jthm80</td>
+      <td>@C71Gareth @AaronFraser37 @PantsShaton It’s wh...</td>
       <td>Scotland</td>
       <td>56.786111</td>
       <td>-4.114052</td>
     </tr>
     <tr>
-      <th>19</th>
-      <td>Markwalton85</td>
-      <td>North east football awards with @GatesheadFC h...</td>
-      <td>Gateshead</td>
-      <td>54.958554</td>
-      <td>-1.605700</td>
+      <th>1</th>
+      <td>ANIVERMA10</td>
+      <td>EPL: Tottenham seal Europa League spot with dr...</td>
+      <td>LUCKNOW</td>
+      <td>26.838100</td>
+      <td>80.934600</td>
     </tr>
     <tr>
-      <th>20</th>
-      <td>theazsportsguru</td>
-      <td>@CoachTalley15 congrats on being named new hea...</td>
-      <td>Glendale,\tArizona</td>
-      <td>33.538985</td>
-      <td>-112.185816</td>
+      <th>2</th>
+      <td>Swimmingsolo1</td>
+      <td>@SharperBeing @HarleyVicQuinn @RexChapman @gtc...</td>
+      <td>Galway, Ireland</td>
+      <td>53.274412</td>
+      <td>-9.049063</td>
     </tr>
     <tr>
-      <th>21</th>
-      <td>DicDalewelsh</td>
-      <td>@sportbible Pes all daaay. Make football games...</td>
-      <td>Abit left but not fuckin Right</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>3</th>
+      <td>FergusonMr1</td>
+      <td>@DrWilkinsonSci Enjoy Bill. \nCommiserations o...</td>
+      <td>York/Leeds</td>
+      <td>42.255365</td>
+      <td>-73.902352</td>
     </tr>
     <tr>
-      <th>22</th>
-      <td>Rashid_Coleman</td>
-      <td>@SilveyESP He's like really good at football.</td>
-      <td>Ok... REALLY into football :-)</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>4</th>
+      <td>BWFeldy</td>
+      <td>@HOLLOWAY__52 Bro, I’m pumped for some football!!</td>
+      <td>Southeast Florida</td>
+      <td>57.717972</td>
+      <td>11.887482</td>
     </tr>
     <tr>
-      <th>23</th>
-      <td>efc_guy</td>
-      <td>🚨WHATS GOOD FOOTBALL TWITTER BOYS FORNITE AND ...</td>
-      <td>Wick, England</td>
-      <td>51.453426</td>
-      <td>-2.425321</td>
+      <th>5</th>
+      <td>TODDJon74925517</td>
+      <td>@Wm_Galloway Jim Harbaugh is the most over pai...</td>
+      <td>Cabot, AR</td>
+      <td>-34.433661</td>
+      <td>-58.726126</td>
     </tr>
     <tr>
-      <th>24</th>
-      <td>OrigiRoIe</td>
-      <td>@ilaughatlewis 🚨WHATS GOOD FOOTBALL TWITTER BO...</td>
-      <td>23-1-0</td>
-      <td>41.757032</td>
-      <td>-85.827845</td>
+      <th>6</th>
+      <td>RobbieAlpz</td>
+      <td>@AdamAizer There is something special about a ...</td>
+      <td>Docking Bay 94</td>
+      <td>52.900403</td>
+      <td>0.628459</td>
     </tr>
     <tr>
-      <th>25</th>
-      <td>mccallum_matt</td>
-      <td>@BrianWilson1967 I'm constantly embarrassed ev...</td>
-      <td>Glasgow, Scotland</td>
-      <td>55.856656</td>
-      <td>-4.243582</td>
+      <th>7</th>
+      <td>jeremy_ion</td>
+      <td>@bo33 Football doesn't have momentum, of course!</td>
+      <td>Fort Belvoir, VA</td>
+      <td>38.728212</td>
+      <td>-77.150983</td>
     </tr>
     <tr>
-      <th>26</th>
-      <td>Alex_GroomSocks</td>
-      <td>Baltimore Ravens FOOTBALL  ‘MARRIED SINCE’  se...</td>
+      <th>8</th>
+      <td>CoachFabianG</td>
+      <td>CoachFabianG Football Training \nQB Locate/Pas...</td>
+      <td>Southfield, MI</td>
+      <td>42.473369</td>
+      <td>-83.221873</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>PineappleBritt</td>
+      <td>The amount of Eagles gear I bought in the last...</td>
+      <td>Phoenix, AZ</td>
+      <td>33.448587</td>
+      <td>-112.077346</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>FootyFansFC</td>
+      <td>Keane and Maguire agree on moment that changed...</td>
+      <td>United Kingdom</td>
+      <td>25.223228</td>
+      <td>55.159493</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Gamerprozao</td>
+      <td>Estamos no Football Manager 2020 https://t.co/...</td>
+      <td>Campinas - SP</td>
+      <td>-22.905560</td>
+      <td>-47.060830</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>fulana_died</td>
+      <td>my sister called me “such a mom” today because...</td>
+      <td>Del Boca Vista</td>
+      <td>33.295670</td>
+      <td>-97.809360</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Nazkelly</td>
+      <td>Wait!\nAm I the only guy that doesn't watch fo...</td>
+      <td>Warri, Delta state</td>
+      <td>5.517000</td>
+      <td>5.750000</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Greatresource</td>
+      <td>@Ojeda4America I knew he was playing football ...</td>
       <td>California, USA</td>
       <td>36.701463</td>
       <td>-118.755997</td>
     </tr>
     <tr>
+      <th>15</th>
+      <td>iqsnx_</td>
+      <td>United fans are in champions league football b...</td>
+      <td>London, England</td>
+      <td>51.507322</td>
+      <td>-0.127647</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>myrichiehaynes</td>
+      <td>now that sports is back....my daily twitter se...</td>
+      <td>Pittsburgh, PA</td>
+      <td>40.441694</td>
+      <td>-79.990086</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>isaacshilooo</td>
+      <td>@skengteta the Prem is so unpredictable and th...</td>
+      <td>Utopia</td>
+      <td>52.361004</td>
+      <td>5.228996</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>oorboaby</td>
+      <td>@bellshillbaker @patronsaintofca Never trust a...</td>
+      <td>Glasgow</td>
+      <td>55.856656</td>
+      <td>-4.243582</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>j_ledsall</td>
+      <td>Would it be fair to say that you would be my J...</td>
+      <td>Oklahoma</td>
+      <td>34.955082</td>
+      <td>-97.268406</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>obeyamark</td>
+      <td>I think the question should be if it was a wro...</td>
+      <td>NIGERIA.</td>
+      <td>9.600036</td>
+      <td>7.999972</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>some__cunt</td>
+      <td>@UberFacts Football*</td>
+      <td>Tesco public toilets</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Scottbb1979</td>
+      <td>@accnetwork No. They chose to remain independe...</td>
+      <td>North Carolina, USA</td>
+      <td>35.672964</td>
+      <td>-79.039292</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Jay_Rad4</td>
+      <td>@Dexerto Playing football or any sport is a wa...</td>
+      <td>Ireland</td>
+      <td>52.865196</td>
+      <td>-7.979460</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Owen_Wba_</td>
+      <td>Liverpool supporting friend: “West Brom will j...</td>
+      <td>Birmingham Yes Birmingham</td>
+      <td>39.168131</td>
+      <td>-94.454779</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>SprtsCardAustin</td>
+      <td>@The_ram31 Anything really. Baseball just star...</td>
+      <td>Omaha, NE</td>
+      <td>41.258732</td>
+      <td>-95.937873</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>leonard_onah</td>
+      <td>@liape_official @xAlfieTHFC Lol,man no offense...</td>
+      <td>greatness</td>
+      <td>51.290021</td>
+      <td>0.199218</td>
+    </tr>
+    <tr>
       <th>27</th>
-      <td>ftbl_Ryan</td>
-      <td>🚨WHATS GOOD FOOTBALL TWITTER BOYS KPOP IS SHIT...</td>
-      <td>kdb is better than pogba</td>
+      <td>mcfcaaron_</td>
+      <td>Every tweet I make that isn’t football related...</td>
+      <td>Future UCL winner| OIL MONEY</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>28</th>
-      <td>SamuelKhan</td>
-      <td>@NFL how about giving #StLouis another shot? I...</td>
-      <td>Kansas, USA</td>
-      <td>38.273120</td>
-      <td>-98.582187</td>
+      <td>iseeituwriteit</td>
+      <td>@848ty @MichaelSalfino @Schreibee I will call ...</td>
+      <td>New Haven, CT</td>
+      <td>41.308214</td>
+      <td>-72.925052</td>
     </tr>
     <tr>
       <th>29</th>
-      <td>SonoBurak</td>
-      <td>It's a day to remember for Galatasaray fans! 🥳...</td>
-      <td>Bucureşti, România</td>
-      <td>44.436141</td>
-      <td>26.102720</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>Mike_wells1973</td>
-      <td>@jasidebottom @IainDuffy @simoncaney @GaryLine...</td>
-      <td>Leeds, West Yorkshire</td>
-      <td>53.794302</td>
-      <td>-1.549102</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>Yung_dreads_713</td>
-      <td>@2K XFL football game coming soon???</td>
-      <td>Houston, TX</td>
-      <td>29.758938</td>
-      <td>-95.367697</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>CartwrightJon</td>
-      <td>@pond_acrossthe They're very excited to have f...</td>
-      <td>'ampshire</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>XimbaZwile</td>
-      <td>@ArsenalBinladen We should win the Europa Leag...</td>
-      <td>Durban, South Africa</td>
-      <td>-29.861825</td>
-      <td>31.009909</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>Timboslicegb17</td>
-      <td>@Mad_Max235 football games are like this somet...</td>
-      <td>Green Bay, WI</td>
-      <td>44.512638</td>
-      <td>-88.012579</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>MVPSamDarnold</td>
-      <td>I'm rooting for St. Louis because they deserve...</td>
-      <td>Sam Darnold's MVP Ceremony</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>chuusbbykgs</td>
-      <td>@LATTECALS i just love it. like whether they a...</td>
-      <td>she/her| infj</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>GenZForPete</td>
-      <td>@afunnnyworld On a football field</td>
+      <td>beingkarmin</td>
+      <td>#WTFcouldAlsoStandFor \nWhere’s The Football? ...</td>
       <td>United States</td>
       <td>39.783730</td>
       <td>-100.445882</td>
     </tr>
     <tr>
+      <th>30</th>
+      <td>sxm_26</td>
+      <td>@Realist_187 @TroopzAFC Feel sorry for Robbie ...</td>
+      <td>Old Trafford</td>
+      <td>53.463110</td>
+      <td>-2.291386</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>coachstrunk30</td>
+      <td>@Tarponsfangal @CoachSwarers @CoachRegalado @t...</td>
+      <td>Quarantined</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>chief_cfc</td>
+      <td>@AFCMax9 @Arsenal Do you really think he'd wan...</td>
+      <td>Stamford Bridge</td>
+      <td>51.481687</td>
+      <td>-0.191964</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>ArjunMorar</td>
+      <td>@wallie17 @mattharding007 @Inp1ainsight @TheAn...</td>
+      <td>Old Trafford</td>
+      <td>53.463110</td>
+      <td>-2.291386</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>GloriaWilfred</td>
+      <td>@Naija_PR The King of football</td>
+      <td>Nigeria</td>
+      <td>9.600036</td>
+      <td>7.999972</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>_Nahomyramos</td>
+      <td>I wanna play football 🤨</td>
+      <td>Houston, TX</td>
+      <td>29.758938</td>
+      <td>-95.367697</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>J_Bailey10</td>
+      <td>An all time Johnny Football quote</td>
+      <td>DG</td>
+      <td>38.883839</td>
+      <td>-95.287456</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>roxyloveslucy</td>
+      <td>@catturd2 This is why he lost his football com...</td>
+      <td>Indiana</td>
+      <td>40.327013</td>
+      <td>-86.174693</td>
+    </tr>
+    <tr>
       <th>38</th>
-      <td>MikeWhittakerH</td>
-      <td>What does Big. Dub actually mean?\n\n45 years ...</td>
-      <td>Loughton &amp; East LDN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>JerseyShoreGAA</td>
+      <td>Some photos from our 1st outing as fully fledg...</td>
+      <td>Monmouth County, NJ, USA</td>
+      <td>40.293232</td>
+      <td>-74.167111</td>
     </tr>
     <tr>
       <th>39</th>
-      <td>LilVickyRaps</td>
-      <td>benny plugs the artists to travel for him &amp;amp...</td>
-      <td>Lafayette, IN</td>
-      <td>40.416702</td>
-      <td>-86.875287</td>
+      <td>PeterJMoss</td>
+      <td>@AZHockeyNut @ThomasDrance @CraigCustance Hava...</td>
+      <td>mom's basement</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>40</th>
-      <td>Sunkash1881</td>
-      <td>@Pierrot1970__ Le Football Circus 🤬  #PSGFCGB</td>
-      <td>France</td>
-      <td>46.603354</td>
-      <td>1.888334</td>
+      <td>shadlx</td>
+      <td>I really like #fridayNightLights but continuit...</td>
+      <td>London, England</td>
+      <td>51.507322</td>
+      <td>-0.127647</td>
     </tr>
     <tr>
       <th>41</th>
-      <td>gerarddaly761</td>
-      <td>@ollyarsenal @ManUtd We are football</td>
-      <td>m.u.f.c</td>
-      <td>46.149872</td>
-      <td>18.326942</td>
+      <td>MrJayWashington</td>
+      <td>I called my 16yr old son to check up on him. H...</td>
+      <td>Los Angeles, CA</td>
+      <td>34.054935</td>
+      <td>-118.244476</td>
     </tr>
     <tr>
       <th>42</th>
-      <td>Davinioooo</td>
-      <td>@HandsomePatsFan @brgridiron @BleacherReport H...</td>
-      <td>The Bull</td>
-      <td>51.592024</td>
-      <td>-10.300734</td>
+      <td>horlah90</td>
+      <td>Is there gonna ever be a competition like that...</td>
+      <td>lagos</td>
+      <td>20.017111</td>
+      <td>103.378253</td>
     </tr>
     <tr>
       <th>43</th>
-      <td>JustinC93629119</td>
-      <td>No football so I'm Watching @GreatDancerTV</td>
-      <td>London</td>
-      <td>51.507322</td>
-      <td>-0.127647</td>
+      <td>RonMFlores</td>
+      <td>@NevadaHoops @DeonteBurton Happy Birthday @Deo...</td>
+      <td>Los Angeles/Las Vegas</td>
+      <td>40.266208</td>
+      <td>-3.536175</td>
     </tr>
     <tr>
       <th>44</th>
-      <td>VFA2020</td>
-      <td>The photos of #RaiseTheStandard - 1st Vienna F...</td>
-      <td>Wien, Österreich</td>
-      <td>48.208354</td>
-      <td>16.372504</td>
+      <td>D_ONE23</td>
+      <td>High key might play fantasy football for some ...</td>
+      <td>SOUTHSIDE DOUBLE R</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>45</th>
-      <td>Paulbyr81184282</td>
-      <td>@JamesEa91417148 @jonty_1988 @RatingTheRaces F...</td>
-      <td>Yorkshire and The Humber, Engl</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nickoydwilson</td>
+      <td>So although I write with my right hand, I do s...</td>
+      <td>Kingston, Jamaica</td>
+      <td>17.971215</td>
+      <td>-76.792813</td>
     </tr>
     <tr>
       <th>46</th>
-      <td>Brian1894platt</td>
-      <td>If you think you can take the piss out of Manc...</td>
-      <td>ENGLAND</td>
-      <td>52.795479</td>
-      <td>-0.540240</td>
+      <td>Tiernancusack21</td>
+      <td>@PaddyAnderson98 No chance lad Eddie Howe suck...</td>
+      <td>Derry</td>
+      <td>54.991942</td>
+      <td>-7.316801</td>
     </tr>
     <tr>
       <th>47</th>
-      <td>_whatthesport</td>
-      <td>Legendary Defender Lucio Deserves Far More Res...</td>
-      <td>London</td>
-      <td>51.507322</td>
-      <td>-0.127647</td>
+      <td>couttsy15</td>
+      <td>@LeeMartinSZN don’t really watch lower league ...</td>
+      <td>in your head</td>
+      <td>-32.304664</td>
+      <td>116.077964</td>
     </tr>
     <tr>
       <th>48</th>
-      <td>poppy_juan</td>
-      <td>Its crazy how life get boring on sundays when ...</td>
-      <td>🇧🇸🇭🇹</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>Aurancia1963</td>
+      <td>@urbangooner My friend, the sleeping GIANT has...</td>
+      <td>Castellón de la Plana, España</td>
+      <td>39.985995</td>
+      <td>-0.037435</td>
     </tr>
     <tr>
       <th>49</th>
-      <td>IamAl3x_o</td>
-      <td>Haha look at the cards damn football in turkey</td>
-      <td>Aristides maillol</td>
-      <td>42.699136</td>
-      <td>2.911403</td>
+      <td>KingsleyJr29</td>
+      <td>@TimGrace1 @RedVic61 @Kotaku What does that ha...</td>
+      <td>Cuyahoga Falls, OH</td>
+      <td>41.134821</td>
+      <td>-81.484809</td>
     </tr>
   </tbody>
 </table>
@@ -16184,307 +16186,363 @@ Done geocoding
   <tbody>
     <tr>
       <th>0</th>
-      <td>blackdontrump</td>
-      <td>@czabe Look at the response from his teammates...</td>
-      <td>Washington,D.C.</td>
-      <td>36.298852</td>
-      <td>-82.359193</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>iKylerM</td>
-      <td>@MolyneuxLuke Tied on goals with Messi playing...</td>
-      <td>United Kingdom</td>
-      <td>25.223228</td>
-      <td>55.159493</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>JoshuaMLaw</td>
-      <td>It's over a year since 10 teenage boys died in...</td>
-      <td>Sao Paulo, Brazil</td>
-      <td>-23.550651</td>
-      <td>-46.633382</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>BetPro360</td>
-      <td>Follow 👉👉👉 @BetPro360 for your free ODDS daily...</td>
-      <td>World of Sport</td>
-      <td>41.906675</td>
-      <td>-87.663052</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Q_mirami</td>
-      <td>I love the XFL. It’s football!</td>
-      <td>Richmond, VA</td>
-      <td>37.538509</td>
-      <td>-77.434280</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>naijasportscrib</td>
-      <td>Nigeria football community mourns the death of...</td>
-      <td>Canada</td>
-      <td>61.066692</td>
-      <td>-107.991707</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>latifaaaaaaah</td>
-      <td>@ASAPtalal always sticking ur tongue out and b...</td>
-      <td>Kuwait</td>
-      <td>29.273396</td>
-      <td>47.497948</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>David_Dein_FC</td>
-      <td>Auba wants CL football. This explain why Artet...</td>
-      <td>Arsenal</td>
-      <td>51.558428</td>
-      <td>-0.105655</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>DrPeppa_23</td>
-      <td>It’s so great to see football back in St. Loui...</td>
-      <td>Winona, MS</td>
-      <td>33.482068</td>
-      <td>-89.728137</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>AFCMet</td>
-      <td>Nicolas Pepe:\n\n6 goals \n8 assists\n\nFor a ...</td>
-      <td>Lewisham, London</td>
-      <td>51.462432</td>
-      <td>-0.010133</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Premierseafoods</td>
-      <td>@BrynLaw What does David do nowadays @BrynLaw ...</td>
-      <td>Riby Street, Grimsby DN31 3HF</td>
-      <td>53.575345</td>
-      <td>-0.067495</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>JCPGATA</td>
-      <td>Mike Dean lays cards on table to give Peter Cr...</td>
-      <td>Jacksonville</td>
-      <td>30.332184</td>
-      <td>-81.655651</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>FloydTweet</td>
-      <td>@jaywev90 @Fadumo_oo That’s been done and they...</td>
-      <td>London</td>
-      <td>51.507322</td>
-      <td>-0.127647</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>rosseyboy08</td>
-      <td>@_IbroxLoyal Let’s all get behind the team and...</td>
-      <td>Glasgow, United Kingdom</td>
-      <td>55.856656</td>
-      <td>-4.243582</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>FranklinCharger</td>
-      <td>We always shout out our football alumni, but s...</td>
-      <td>Franklin, MA</td>
-      <td>42.589621</td>
-      <td>-72.611064</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Or1g1nalG</td>
-      <td>@politicallyho14 @ProudFenianTaig @Record_Spor...</td>
+      <td>jthm80</td>
+      <td>@C71Gareth @AaronFraser37 @PantsShaton It’s wh...</td>
       <td>Scotland</td>
       <td>56.786111</td>
       <td>-4.114052</td>
     </tr>
     <tr>
-      <th>19</th>
-      <td>Markwalton85</td>
-      <td>North east football awards with @GatesheadFC h...</td>
-      <td>Gateshead</td>
-      <td>54.958554</td>
-      <td>-1.605700</td>
+      <th>1</th>
+      <td>ANIVERMA10</td>
+      <td>EPL: Tottenham seal Europa League spot with dr...</td>
+      <td>LUCKNOW</td>
+      <td>26.838100</td>
+      <td>80.934600</td>
     </tr>
     <tr>
-      <th>20</th>
-      <td>theazsportsguru</td>
-      <td>@CoachTalley15 congrats on being named new hea...</td>
-      <td>Glendale,\tArizona</td>
-      <td>33.538985</td>
-      <td>-112.185816</td>
+      <th>2</th>
+      <td>Swimmingsolo1</td>
+      <td>@SharperBeing @HarleyVicQuinn @RexChapman @gtc...</td>
+      <td>Galway, Ireland</td>
+      <td>53.274412</td>
+      <td>-9.049063</td>
     </tr>
     <tr>
-      <th>23</th>
-      <td>efc_guy</td>
-      <td>🚨WHATS GOOD FOOTBALL TWITTER BOYS FORNITE AND ...</td>
-      <td>Wick, England</td>
-      <td>51.453426</td>
-      <td>-2.425321</td>
+      <th>3</th>
+      <td>FergusonMr1</td>
+      <td>@DrWilkinsonSci Enjoy Bill. \nCommiserations o...</td>
+      <td>York/Leeds</td>
+      <td>42.255365</td>
+      <td>-73.902352</td>
     </tr>
     <tr>
-      <th>24</th>
-      <td>OrigiRoIe</td>
-      <td>@ilaughatlewis 🚨WHATS GOOD FOOTBALL TWITTER BO...</td>
-      <td>23-1-0</td>
-      <td>41.757032</td>
-      <td>-85.827845</td>
+      <th>4</th>
+      <td>BWFeldy</td>
+      <td>@HOLLOWAY__52 Bro, I’m pumped for some football!!</td>
+      <td>Southeast Florida</td>
+      <td>57.717972</td>
+      <td>11.887482</td>
     </tr>
     <tr>
-      <th>25</th>
-      <td>mccallum_matt</td>
-      <td>@BrianWilson1967 I'm constantly embarrassed ev...</td>
-      <td>Glasgow, Scotland</td>
-      <td>55.856656</td>
-      <td>-4.243582</td>
+      <th>5</th>
+      <td>TODDJon74925517</td>
+      <td>@Wm_Galloway Jim Harbaugh is the most over pai...</td>
+      <td>Cabot, AR</td>
+      <td>-34.433661</td>
+      <td>-58.726126</td>
     </tr>
     <tr>
-      <th>26</th>
-      <td>Alex_GroomSocks</td>
-      <td>Baltimore Ravens FOOTBALL  ‘MARRIED SINCE’  se...</td>
+      <th>6</th>
+      <td>RobbieAlpz</td>
+      <td>@AdamAizer There is something special about a ...</td>
+      <td>Docking Bay 94</td>
+      <td>52.900403</td>
+      <td>0.628459</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>jeremy_ion</td>
+      <td>@bo33 Football doesn't have momentum, of course!</td>
+      <td>Fort Belvoir, VA</td>
+      <td>38.728212</td>
+      <td>-77.150983</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>CoachFabianG</td>
+      <td>CoachFabianG Football Training \nQB Locate/Pas...</td>
+      <td>Southfield, MI</td>
+      <td>42.473369</td>
+      <td>-83.221873</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>PineappleBritt</td>
+      <td>The amount of Eagles gear I bought in the last...</td>
+      <td>Phoenix, AZ</td>
+      <td>33.448587</td>
+      <td>-112.077346</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>FootyFansFC</td>
+      <td>Keane and Maguire agree on moment that changed...</td>
+      <td>United Kingdom</td>
+      <td>25.223228</td>
+      <td>55.159493</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Gamerprozao</td>
+      <td>Estamos no Football Manager 2020 https://t.co/...</td>
+      <td>Campinas - SP</td>
+      <td>-22.905560</td>
+      <td>-47.060830</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>fulana_died</td>
+      <td>my sister called me “such a mom” today because...</td>
+      <td>Del Boca Vista</td>
+      <td>33.295670</td>
+      <td>-97.809360</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Nazkelly</td>
+      <td>Wait!\nAm I the only guy that doesn't watch fo...</td>
+      <td>Warri, Delta state</td>
+      <td>5.517000</td>
+      <td>5.750000</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Greatresource</td>
+      <td>@Ojeda4America I knew he was playing football ...</td>
       <td>California, USA</td>
       <td>36.701463</td>
       <td>-118.755997</td>
     </tr>
     <tr>
+      <th>15</th>
+      <td>iqsnx_</td>
+      <td>United fans are in champions league football b...</td>
+      <td>London, England</td>
+      <td>51.507322</td>
+      <td>-0.127647</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>myrichiehaynes</td>
+      <td>now that sports is back....my daily twitter se...</td>
+      <td>Pittsburgh, PA</td>
+      <td>40.441694</td>
+      <td>-79.990086</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>isaacshilooo</td>
+      <td>@skengteta the Prem is so unpredictable and th...</td>
+      <td>Utopia</td>
+      <td>52.361004</td>
+      <td>5.228996</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>oorboaby</td>
+      <td>@bellshillbaker @patronsaintofca Never trust a...</td>
+      <td>Glasgow</td>
+      <td>55.856656</td>
+      <td>-4.243582</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>j_ledsall</td>
+      <td>Would it be fair to say that you would be my J...</td>
+      <td>Oklahoma</td>
+      <td>34.955082</td>
+      <td>-97.268406</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>obeyamark</td>
+      <td>I think the question should be if it was a wro...</td>
+      <td>NIGERIA.</td>
+      <td>9.600036</td>
+      <td>7.999972</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Scottbb1979</td>
+      <td>@accnetwork No. They chose to remain independe...</td>
+      <td>North Carolina, USA</td>
+      <td>35.672964</td>
+      <td>-79.039292</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Jay_Rad4</td>
+      <td>@Dexerto Playing football or any sport is a wa...</td>
+      <td>Ireland</td>
+      <td>52.865196</td>
+      <td>-7.979460</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Owen_Wba_</td>
+      <td>Liverpool supporting friend: “West Brom will j...</td>
+      <td>Birmingham Yes Birmingham</td>
+      <td>39.168131</td>
+      <td>-94.454779</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>SprtsCardAustin</td>
+      <td>@The_ram31 Anything really. Baseball just star...</td>
+      <td>Omaha, NE</td>
+      <td>41.258732</td>
+      <td>-95.937873</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>leonard_onah</td>
+      <td>@liape_official @xAlfieTHFC Lol,man no offense...</td>
+      <td>greatness</td>
+      <td>51.290021</td>
+      <td>0.199218</td>
+    </tr>
+    <tr>
       <th>28</th>
-      <td>SamuelKhan</td>
-      <td>@NFL how about giving #StLouis another shot? I...</td>
-      <td>Kansas, USA</td>
-      <td>38.273120</td>
-      <td>-98.582187</td>
+      <td>iseeituwriteit</td>
+      <td>@848ty @MichaelSalfino @Schreibee I will call ...</td>
+      <td>New Haven, CT</td>
+      <td>41.308214</td>
+      <td>-72.925052</td>
     </tr>
     <tr>
       <th>29</th>
-      <td>SonoBurak</td>
-      <td>It's a day to remember for Galatasaray fans! 🥳...</td>
-      <td>Bucureşti, România</td>
-      <td>44.436141</td>
-      <td>26.102720</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>Mike_wells1973</td>
-      <td>@jasidebottom @IainDuffy @simoncaney @GaryLine...</td>
-      <td>Leeds, West Yorkshire</td>
-      <td>53.794302</td>
-      <td>-1.549102</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>Yung_dreads_713</td>
-      <td>@2K XFL football game coming soon???</td>
-      <td>Houston, TX</td>
-      <td>29.758938</td>
-      <td>-95.367697</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>XimbaZwile</td>
-      <td>@ArsenalBinladen We should win the Europa Leag...</td>
-      <td>Durban, South Africa</td>
-      <td>-29.861825</td>
-      <td>31.009909</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>Timboslicegb17</td>
-      <td>@Mad_Max235 football games are like this somet...</td>
-      <td>Green Bay, WI</td>
-      <td>44.512638</td>
-      <td>-88.012579</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>GenZForPete</td>
-      <td>@afunnnyworld On a football field</td>
+      <td>beingkarmin</td>
+      <td>#WTFcouldAlsoStandFor \nWhere’s The Football? ...</td>
       <td>United States</td>
       <td>39.783730</td>
       <td>-100.445882</td>
     </tr>
     <tr>
-      <th>39</th>
-      <td>LilVickyRaps</td>
-      <td>benny plugs the artists to travel for him &amp;amp...</td>
-      <td>Lafayette, IN</td>
-      <td>40.416702</td>
-      <td>-86.875287</td>
+      <th>30</th>
+      <td>sxm_26</td>
+      <td>@Realist_187 @TroopzAFC Feel sorry for Robbie ...</td>
+      <td>Old Trafford</td>
+      <td>53.463110</td>
+      <td>-2.291386</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>chief_cfc</td>
+      <td>@AFCMax9 @Arsenal Do you really think he'd wan...</td>
+      <td>Stamford Bridge</td>
+      <td>51.481687</td>
+      <td>-0.191964</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>ArjunMorar</td>
+      <td>@wallie17 @mattharding007 @Inp1ainsight @TheAn...</td>
+      <td>Old Trafford</td>
+      <td>53.463110</td>
+      <td>-2.291386</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>GloriaWilfred</td>
+      <td>@Naija_PR The King of football</td>
+      <td>Nigeria</td>
+      <td>9.600036</td>
+      <td>7.999972</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>_Nahomyramos</td>
+      <td>I wanna play football 🤨</td>
+      <td>Houston, TX</td>
+      <td>29.758938</td>
+      <td>-95.367697</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>J_Bailey10</td>
+      <td>An all time Johnny Football quote</td>
+      <td>DG</td>
+      <td>38.883839</td>
+      <td>-95.287456</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>roxyloveslucy</td>
+      <td>@catturd2 This is why he lost his football com...</td>
+      <td>Indiana</td>
+      <td>40.327013</td>
+      <td>-86.174693</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>JerseyShoreGAA</td>
+      <td>Some photos from our 1st outing as fully fledg...</td>
+      <td>Monmouth County, NJ, USA</td>
+      <td>40.293232</td>
+      <td>-74.167111</td>
     </tr>
     <tr>
       <th>40</th>
-      <td>Sunkash1881</td>
-      <td>@Pierrot1970__ Le Football Circus 🤬  #PSGFCGB</td>
-      <td>France</td>
-      <td>46.603354</td>
-      <td>1.888334</td>
+      <td>shadlx</td>
+      <td>I really like #fridayNightLights but continuit...</td>
+      <td>London, England</td>
+      <td>51.507322</td>
+      <td>-0.127647</td>
     </tr>
     <tr>
       <th>41</th>
-      <td>gerarddaly761</td>
-      <td>@ollyarsenal @ManUtd We are football</td>
-      <td>m.u.f.c</td>
-      <td>46.149872</td>
-      <td>18.326942</td>
+      <td>MrJayWashington</td>
+      <td>I called my 16yr old son to check up on him. H...</td>
+      <td>Los Angeles, CA</td>
+      <td>34.054935</td>
+      <td>-118.244476</td>
     </tr>
     <tr>
       <th>42</th>
-      <td>Davinioooo</td>
-      <td>@HandsomePatsFan @brgridiron @BleacherReport H...</td>
-      <td>The Bull</td>
-      <td>51.592024</td>
-      <td>-10.300734</td>
+      <td>horlah90</td>
+      <td>Is there gonna ever be a competition like that...</td>
+      <td>lagos</td>
+      <td>20.017111</td>
+      <td>103.378253</td>
     </tr>
     <tr>
       <th>43</th>
-      <td>JustinC93629119</td>
-      <td>No football so I'm Watching @GreatDancerTV</td>
-      <td>London</td>
-      <td>51.507322</td>
-      <td>-0.127647</td>
+      <td>RonMFlores</td>
+      <td>@NevadaHoops @DeonteBurton Happy Birthday @Deo...</td>
+      <td>Los Angeles/Las Vegas</td>
+      <td>40.266208</td>
+      <td>-3.536175</td>
     </tr>
     <tr>
-      <th>44</th>
-      <td>VFA2020</td>
-      <td>The photos of #RaiseTheStandard - 1st Vienna F...</td>
-      <td>Wien, Österreich</td>
-      <td>48.208354</td>
-      <td>16.372504</td>
+      <th>45</th>
+      <td>nickoydwilson</td>
+      <td>So although I write with my right hand, I do s...</td>
+      <td>Kingston, Jamaica</td>
+      <td>17.971215</td>
+      <td>-76.792813</td>
     </tr>
     <tr>
       <th>46</th>
-      <td>Brian1894platt</td>
-      <td>If you think you can take the piss out of Manc...</td>
-      <td>ENGLAND</td>
-      <td>52.795479</td>
-      <td>-0.540240</td>
+      <td>Tiernancusack21</td>
+      <td>@PaddyAnderson98 No chance lad Eddie Howe suck...</td>
+      <td>Derry</td>
+      <td>54.991942</td>
+      <td>-7.316801</td>
     </tr>
     <tr>
       <th>47</th>
-      <td>_whatthesport</td>
-      <td>Legendary Defender Lucio Deserves Far More Res...</td>
-      <td>London</td>
-      <td>51.507322</td>
-      <td>-0.127647</td>
+      <td>couttsy15</td>
+      <td>@LeeMartinSZN don’t really watch lower league ...</td>
+      <td>in your head</td>
+      <td>-32.304664</td>
+      <td>116.077964</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Aurancia1963</td>
+      <td>@urbangooner My friend, the sleeping GIANT has...</td>
+      <td>Castellón de la Plana, España</td>
+      <td>39.985995</td>
+      <td>-0.037435</td>
     </tr>
     <tr>
       <th>49</th>
-      <td>IamAl3x_o</td>
-      <td>Haha look at the cards damn football in turkey</td>
-      <td>Aristides maillol</td>
-      <td>42.699136</td>
-      <td>2.911403</td>
+      <td>KingsleyJr29</td>
+      <td>@TimGrace1 @RedVic61 @Kotaku What does that ha...</td>
+      <td>Cuyahoga Falls, OH</td>
+      <td>41.134821</td>
+      <td>-81.484809</td>
     </tr>
   </tbody>
 </table>
@@ -16658,7 +16716,7 @@ Done geocoding
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,PCFET0NUWVBFIGh0bWw+CjxoZWFkPiAgICAKICAgIDxtZXRhIGh0dHAtZXF1aXY9ImNvbnRlbnQtdHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04IiAvPgogICAgCiAgICAgICAgPHNjcmlwdD4KICAgICAgICAgICAgTF9OT19UT1VDSCA9IGZhbHNlOwogICAgICAgICAgICBMX0RJU0FCTEVfM0QgPSBmYWxzZTsKICAgICAgICA8L3NjcmlwdD4KICAgIAogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjUuMS9kaXN0L2xlYWZsZXQuanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY29kZS5qcXVlcnkuY29tL2pxdWVyeS0xLjEyLjQubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9qcy9ib290c3RyYXAubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9MZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy8yLjAuMi9sZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy5qcyI+PC9zY3JpcHQ+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjUuMS9kaXN0L2xlYWZsZXQuY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vYm9vdHN0cmFwLzMuMi4wL2Nzcy9ib290c3RyYXAubWluLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9jc3MvYm9vdHN0cmFwLXRoZW1lLm1pbi5jc3MiLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9mb250LWF3ZXNvbWUvNC42LjMvY3NzL2ZvbnQtYXdlc29tZS5taW4uY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL0xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLzIuMC4yL2xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL3Jhd2Nkbi5naXRoYWNrLmNvbS9weXRob24tdmlzdWFsaXphdGlvbi9mb2xpdW0vbWFzdGVyL2ZvbGl1bS90ZW1wbGF0ZXMvbGVhZmxldC5hd2Vzb21lLnJvdGF0ZS5jc3MiLz4KICAgIDxzdHlsZT5odG1sLCBib2R5IHt3aWR0aDogMTAwJTtoZWlnaHQ6IDEwMCU7bWFyZ2luOiAwO3BhZGRpbmc6IDA7fTwvc3R5bGU+CiAgICA8c3R5bGU+I21hcCB7cG9zaXRpb246YWJzb2x1dGU7dG9wOjA7Ym90dG9tOjA7cmlnaHQ6MDtsZWZ0OjA7fTwvc3R5bGU+CiAgICAKICAgICAgICAgICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwKICAgICAgICAgICAgICAgIGluaXRpYWwtc2NhbGU9MS4wLCBtYXhpbXVtLXNjYWxlPTEuMCwgdXNlci1zY2FsYWJsZT1ubyIgLz4KICAgICAgICAgICAgPHN0eWxlPgogICAgICAgICAgICAgICAgI21hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSB7CiAgICAgICAgICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlOwogICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAuMCU7CiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxMDAuMCU7CiAgICAgICAgICAgICAgICAgICAgbGVmdDogMC4wJTsKICAgICAgICAgICAgICAgICAgICB0b3A6IDAuMCU7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIDwvc3R5bGU+CiAgICAgICAgCjwvaGVhZD4KPGJvZHk+ICAgIAogICAgCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZvbGl1bS1tYXAiIGlkPSJtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUiID48L2Rpdj4KICAgICAgICAKPC9ib2R5Pgo8c2NyaXB0PiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1ID0gTC5tYXAoCiAgICAgICAgICAgICAgICAibWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1IiwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICBjZW50ZXI6IFszOS44MjgzLCAtOTguNTc5NV0sCiAgICAgICAgICAgICAgICAgICAgY3JzOiBMLkNSUy5FUFNHMzg1NywKICAgICAgICAgICAgICAgICAgICB6b29tOiA0LAogICAgICAgICAgICAgICAgICAgIHpvb21Db250cm9sOiB0cnVlLAogICAgICAgICAgICAgICAgICAgIHByZWZlckNhbnZhczogZmFsc2UsCiAgICAgICAgICAgICAgICAgICAgZGV0ZWN0UmV0aW5hOiB0cnVlLAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICApOwoKICAgICAgICAgICAgCgogICAgICAgIAogICAgCiAgICAgICAgICAgIHZhciB0aWxlX2xheWVyX2RmZDI3YTMyNzIzZTQ1YzY5ZDQ0MGY5NmQ2MjkyNGM2ID0gTC50aWxlTGF5ZXIoCiAgICAgICAgICAgICAgICAiaHR0cHM6Ly9zdGFtZW4tdGlsZXMte3N9LmEuc3NsLmZhc3RseS5uZXQvdGVycmFpbi97en0ve3h9L3t5fS5qcGciLAogICAgICAgICAgICAgICAgeyJhdHRyaWJ1dGlvbiI6ICJNYXAgdGlsZXMgYnkgXHUwMDNjYSBocmVmPVwiaHR0cDovL3N0YW1lbi5jb21cIlx1MDAzZVN0YW1lbiBEZXNpZ25cdTAwM2MvYVx1MDAzZSwgdW5kZXIgXHUwMDNjYSBocmVmPVwiaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvMy4wXCJcdTAwM2VDQyBCWSAzLjBcdTAwM2MvYVx1MDAzZS4gRGF0YSBieSBcdTAwMjZjb3B5OyBcdTAwM2NhIGhyZWY9XCJodHRwOi8vb3BlbnN0cmVldG1hcC5vcmdcIlx1MDAzZU9wZW5TdHJlZXRNYXBcdTAwM2MvYVx1MDAzZSwgdW5kZXIgXHUwMDNjYSBocmVmPVwiaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnktc2EvMy4wXCJcdTAwM2VDQyBCWSBTQVx1MDAzYy9hXHUwMDNlLiIsICJkZXRlY3RSZXRpbmEiOiBmYWxzZSwgIm1heE5hdGl2ZVpvb20iOiAxOCwgIm1heFpvb20iOiAxOCwgIm1pblpvb20iOiAwLCAibm9XcmFwIjogZmFsc2UsICJvcGFjaXR5IjogMSwgInN1YmRvbWFpbnMiOiAiYWJjIiwgInRtcyI6IGZhbHNlfQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9jYzJjNTA3ZmNmMjc0YmRjOTU2ODlhZTJhODhlMWEyZCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzM2LjI5ODg1MTc1LCAtODIuMzU5MTkzMzE0MTA5NV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfZGU1NjdiMTRmYjI2NDVkYmExNzI5MDgwYmFlOTJhYTQgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzczM2QxMDM2NzZjOTQwNTk5ZGMyY2JkODA0NDAwZDVkID0gJChgPGRpdiBpZD0iaHRtbF83MzNkMTAzNjc2Yzk0MDU5OWRjMmNiZDgwNDQwMGQ1ZCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+YmxhY2tkb250cnVtcDogQGN6YWJlIExvb2sgYXQgdGhlIHJlc3BvbnNlIGZyb20gaGlzIHRlYW1tYXRlcy4gSG9ja2V5IGhhcyB0aGUgYmVzdCB0ZWFtIGNhbWFyYWRlcmllIG9mIGFsbCBzcG9ydHMuIEFuZCB0aGlzIGlzIGNvbWluZyBmcm9tIGEgRm9vdGJhbGwgZ3V5LjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9kZTU2N2IxNGZiMjY0NWRiYTE3MjkwODBiYWU5MmFhNC5zZXRDb250ZW50KGh0bWxfNzMzZDEwMzY3NmM5NDA1OTlkYzJjYmQ4MDQ0MDBkNWQpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfY2MyYzUwN2ZjZjI3NGJkYzk1Njg5YWUyYTg4ZTFhMmQuYmluZFBvcHVwKHBvcHVwX2RlNTY3YjE0ZmIyNjQ1ZGJhMTcyOTA4MGJhZTkyYWE0KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzRmOTVhMjFkMzY1MjQ1ODliYmUzMWYwOGQ5NWIzM2Y2ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMjUuMjIzMjI4MywgNTUuMTU5NDkzMzAwODc1NF0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfYzU2ZWJmN2FlZjQxNDVmYWFjNTk0NjIxODc3YTY3ZTIgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzU3OTRlNDdkNjMwZTQ4ODhiMjA5ZjlkOGM2NWE5YWQzID0gJChgPGRpdiBpZD0iaHRtbF81Nzk0ZTQ3ZDYzMGU0ODg4YjIwOWY5ZDhjNjVhOWFkMyIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+aUt5bGVyTTogQE1vbHluZXV4THVrZSBUaWVkIG9uIGdvYWxzIHdpdGggTWVzc2kgcGxheWluZyAxMTggbGVzcyBnYW1lcyB0aGFuIENSNyBoYXMgd293ZWUhIE1lc3NpIGlzIGZhciBiZXR0ZXIgZm9yIG1lIGJ1dCBnb3R0YSByZXNwZWN0IFJvbmFsZG9zIGdyaW5kIGFuZCBkZWRpY2F0aW9uIHRvIGdldCB0byB0aGUgdG9wLiBUaGVzZSAyIGFyZSBvbiBhbm90aGVyIHBsYW5lIG9mIGV4aXN0ZW5jZSB3aGVuIGl0IGNvbWVzIHRvIGZvb3RiYWxsLiBCbGVzc2VkIHRvIGhhdmUgd2l0bmVzc2VkIHRoZW0g4pi677iPPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2M1NmViZjdhZWY0MTQ1ZmFhYzU5NDYyMTg3N2E2N2UyLnNldENvbnRlbnQoaHRtbF81Nzk0ZTQ3ZDYzMGU0ODg4YjIwOWY5ZDhjNjVhOWFkMyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl80Zjk1YTIxZDM2NTI0NTg5YmJlMzFmMDhkOTViMzNmNi5iaW5kUG9wdXAocG9wdXBfYzU2ZWJmN2FlZjQxNDVmYWFjNTk0NjIxODc3YTY3ZTIpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfN2VkYjFiNTRhYzdhNDdiOTkxNTZjOGYxZDBjYTI2ODUgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFstMjMuNTUwNjUwNywgLTQ2LjYzMzM4MjRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzQyZjgxNjBmMDY0NjQzZjE5YzlmY2VlY2M3MzUyYWU3ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9lMDc0ZjQxMWQ5MDk0YzEwODkxMzhlZDkyODFmNWQwYiA9ICQoYDxkaXYgaWQ9Imh0bWxfZTA3NGY0MTFkOTA5NGMxMDg5MTM4ZWQ5MjgxZjVkMGIiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkpvc2h1YU1MYXc6IEl0J3Mgb3ZlciBhIHllYXIgc2luY2UgMTAgdGVlbmFnZSBib3lzIGRpZWQgaW4gYSBmaXJlIGF0IHRoZSBGbGFtZW5nbyB0cmFpbmluZyBncm91bmQgIFRoZWlyIGZhbWlsaWVzJyBmaWdodCBmb3IganVzdGljZSBpcyBzdGlsbCBhIGxvbmcgd2F5IGZyb20gcmVhY2hpbmcgYSBjb25jbHVzaW9uICBGb3IgQGd1YXJkaWFuX3Nwb3J0IHZpYSBAZm9vdGJhbGxfeWVsbG93IGh0dHBzOi8vdC5jby8yT1dkRGgwVjZlPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzQyZjgxNjBmMDY0NjQzZjE5YzlmY2VlY2M3MzUyYWU3LnNldENvbnRlbnQoaHRtbF9lMDc0ZjQxMWQ5MDk0YzEwODkxMzhlZDkyODFmNWQwYik7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl83ZWRiMWI1NGFjN2E0N2I5OTE1NmM4ZjFkMGNhMjY4NS5iaW5kUG9wdXAocG9wdXBfNDJmODE2MGYwNjQ2NDNmMTljOWZjZWVjYzczNTJhZTcpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfMzdhOWM5MTEzOWMwNGI1Yzk3NzcwYWFhNjBlYTU2MjAgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs0MS45MDY2NzUxLCAtODcuNjYzMDUxOF0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfNjg1MjFmOTM5MTk1NGI4ODlhMzI4YzU4NGM4Mzk0MGIgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzRkY2M2MWM2ZWNkZjQxMmJhNWY0MTdjMDE0M2NmYTk1ID0gJChgPGRpdiBpZD0iaHRtbF80ZGNjNjFjNmVjZGY0MTJiYTVmNDE3YzAxNDNjZmE5NSIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+QmV0UHJvMzYwOiBGb2xsb3cg8J+RifCfkYnwn5GJIEBCZXRQcm8zNjAgZm9yIHlvdXIgZnJlZSBPRERTIGRhaWx5IG9yIGNsaWNrIGh0dHBzOi8vdC5jby9iVnNsZnVtUEdyIHRvIGpvaW4gb3VyIFRlbGVncmFtIGNoYW5uZWwgICNkYWlseW9kZHMgI29kZHMgI3RpcHMgI2JldGtpbmduZyAjYmV0OWphICMxeGJldCAjMjJiZXQgI2JldHRpbmd0aXBzICNiZXR0aW5nICNzcG9ydHNiZXR0aW5nICNmb290YmFsbCAjYmV0a2luZyAjYmV0OWphIGh0dHBzOi8vdC5jby9KdzJwYmpZZEUzPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzY4NTIxZjkzOTE5NTRiODg5YTMyOGM1ODRjODM5NDBiLnNldENvbnRlbnQoaHRtbF80ZGNjNjFjNmVjZGY0MTJiYTVmNDE3YzAxNDNjZmE5NSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8zN2E5YzkxMTM5YzA0YjVjOTc3NzBhYWE2MGVhNTYyMC5iaW5kUG9wdXAocG9wdXBfNjg1MjFmOTM5MTk1NGI4ODlhMzI4YzU4NGM4Mzk0MGIpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfODM3NmI1MThiOTQ3NGFhNjg3ZGI4ZGE0ZDRkNTdiZTEgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszNy41Mzg1MDg3LCAtNzcuNDM0MjhdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzY4ZmQ0OWRkNTc3YTQ5ZmJiMWNhNTNmNWQ3MmY0NWFlID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9iZmRkODZlN2E5Zjg0YWE1OTk2NzI1M2Q3M2ZmNmI5MyA9ICQoYDxkaXYgaWQ9Imh0bWxfYmZkZDg2ZTdhOWY4NGFhNTk5NjcyNTNkNzNmZjZiOTMiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPlFfbWlyYW1pOiBJIGxvdmUgdGhlIFhGTC4gSXTigJlzIGZvb3RiYWxsITwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF82OGZkNDlkZDU3N2E0OWZiYjFjYTUzZjVkNzJmNDVhZS5zZXRDb250ZW50KGh0bWxfYmZkZDg2ZTdhOWY4NGFhNTk5NjcyNTNkNzNmZjZiOTMpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfODM3NmI1MThiOTQ3NGFhNjg3ZGI4ZGE0ZDRkNTdiZTEuYmluZFBvcHVwKHBvcHVwXzY4ZmQ0OWRkNTc3YTQ5ZmJiMWNhNTNmNWQ3MmY0NWFlKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzZlNGY0MWJiZTJjYTQyYzg5ZGRiOWM4M2NiMTM4NDI4ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNjEuMDY2NjkyMiwgLTEwNy45OTE3MDcxXSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9mMTMzMzFlMTgyNWY0ZWM3ODQ2YmU1ODY3MjZmNGUyYyA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZmU5Yjc5NjUzMTQ2NDQxZmJhOGRjMDAxODc1MTIwMWEgPSAkKGA8ZGl2IGlkPSJodG1sX2ZlOWI3OTY1MzE0NjQ0MWZiYThkYzAwMTg3NTEyMDFhIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5uYWlqYXNwb3J0c2NyaWI6IE5pZ2VyaWEgZm9vdGJhbGwgY29tbXVuaXR5IG1vdXJucyB0aGUgZGVhdGggb2YgYcKgcGxheWVy4oCmLiBodHRwczovL3QuY28vMmxXOGxaaW9uUSBodHRwczovL3QuY28vVUxrcVJFTExMaDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9mMTMzMzFlMTgyNWY0ZWM3ODQ2YmU1ODY3MjZmNGUyYy5zZXRDb250ZW50KGh0bWxfZmU5Yjc5NjUzMTQ2NDQxZmJhOGRjMDAxODc1MTIwMWEpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNmU0ZjQxYmJlMmNhNDJjODlkZGI5YzgzY2IxMzg0MjguYmluZFBvcHVwKHBvcHVwX2YxMzMzMWUxODI1ZjRlYzc4NDZiZTU4NjcyNmY0ZTJjKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzVmZjQ5N2ViMDhkZDRmZTc5YjFlNTFhZTNkMjk2NzU0ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMjkuMjczMzk2NCwgNDcuNDk3OTQ3Nl0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfOTdhYjUzZTdjNTYyNGRkODkyMTRiNDE1YzE2MjgwNTggPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzA1ZGNlYTdkYWRmMjQ2MDY4MmMxYmIxY2UxMDVkNTU1ID0gJChgPGRpdiBpZD0iaHRtbF8wNWRjZWE3ZGFkZjI0NjA2ODJjMWJiMWNlMTA1ZDU1NSIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+bGF0aWZhYWFhYWFhaDogQEFTQVB0YWxhbCBhbHdheXMgc3RpY2tpbmcgdXIgdG9uZ3VlIG91dCBhbmQgYmVpbmcgbWVhbiB0byBtZSBhbmQgcGxheWluZyBmb290YmFsbCBhbmQgYmVpbmcgbWVhbiB0byBtZSBhbmQgbWFraW5nIHRpa3Rva3MgYW5kIGJlaW5nIG1lYW4gdG8gbWUgOik8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfOTdhYjUzZTdjNTYyNGRkODkyMTRiNDE1YzE2MjgwNTguc2V0Q29udGVudChodG1sXzA1ZGNlYTdkYWRmMjQ2MDY4MmMxYmIxY2UxMDVkNTU1KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzVmZjQ5N2ViMDhkZDRmZTc5YjFlNTFhZTNkMjk2NzU0LmJpbmRQb3B1cChwb3B1cF85N2FiNTNlN2M1NjI0ZGQ4OTIxNGI0MTVjMTYyODA1OCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8yMjIzNjdiOGQ1OWY0MmZmYjA5NDJhM2VhMWQ3NDE1YiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUxLjU1ODQyODQsIC0wLjEwNTY1NTRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzE3MWM3Mjg0YzY5YzQ1YmZhNTY0ODA4M2I2OWY1MmY4ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF83NDY2NDYwNmYyNTY0ZWNhODNhYTkwNGIzNWMxMGNhNCA9ICQoYDxkaXYgaWQ9Imh0bWxfNzQ2NjQ2MDZmMjU2NGVjYTgzYWE5MDRiMzVjMTBjYTQiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkRhdmlkX0RlaW5fRkM6IEF1YmEgd2FudHMgQ0wgZm9vdGJhbGwuIFRoaXMgZXhwbGFpbiB3aHkgQXJ0ZXRhIGlzIHBsYXlpbmcgTGVubyBpbiB0aGUgRUwuIENvbSdvbiBBcnNlbmFsISBXZSBjYW4gZG8gdGhpcyE8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfMTcxYzcyODRjNjljNDViZmE1NjQ4MDgzYjY5ZjUyZjguc2V0Q29udGVudChodG1sXzc0NjY0NjA2ZjI1NjRlY2E4M2FhOTA0YjM1YzEwY2E0KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzIyMjM2N2I4ZDU5ZjQyZmZiMDk0MmEzZWExZDc0MTViLmJpbmRQb3B1cChwb3B1cF8xNzFjNzI4NGM2OWM0NWJmYTU2NDgwODNiNjlmNTJmOCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl85OTY3NDdkN2Y5YmM0NDY5ODEzMzljMzg2MDM4ZGU4MSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzMzLjQ4MjA2NzgsIC04OS43MjgxMzY5XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9jODE5OTcxMDZmMjM0YzJjYmZjN2NjYTRkYzlkZjI3MyA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZmM1ZjBlNTJhYTU3NDdkNmJjYTlkZmE2OWRmZWQ4MGEgPSAkKGA8ZGl2IGlkPSJodG1sX2ZjNWYwZTUyYWE1NzQ3ZDZiY2E5ZGZhNjlkZmVkODBhIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5EclBlcHBhXzIzOiBJdOKAmXMgc28gZ3JlYXQgdG8gc2VlIGZvb3RiYWxsIGJhY2sgaW4gU3QuIExvdWlzIGFnYWluIC48L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfYzgxOTk3MTA2ZjIzNGMyY2JmYzdjY2E0ZGM5ZGYyNzMuc2V0Q29udGVudChodG1sX2ZjNWYwZTUyYWE1NzQ3ZDZiY2E5ZGZhNjlkZmVkODBhKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzk5Njc0N2Q3ZjliYzQ0Njk4MTMzOWMzODYwMzhkZTgxLmJpbmRQb3B1cChwb3B1cF9jODE5OTcxMDZmMjM0YzJjYmZjN2NjYTRkYzlkZjI3MykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8xNDU1NjM5YzJkN2Q0MTg2YTY3N2E0MzBkODQ1MzM1MiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUxLjQ2MjQzMjUsIC0wLjAxMDEzMzFdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzM2MDMwY2ZlMDMzYjQ2N2NhOTEyNDcyOTBjNjcwNDlmID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9hMzNhNTU2ZGJkMDM0MDNkYTg4MWU1NjZiNzBiNzk5ZSA9ICQoYDxkaXYgaWQ9Imh0bWxfYTMzYTU1NmRiZDAzNDAzZGE4ODFlNTY2YjcwYjc5OWUiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkFGQ01ldDogTmljb2xhcyBQZXBlOiAgNiBnb2FscyAgOCBhc3Npc3RzICBGb3IgYSBmaXJzdCBzZWFzb24gaW4gRW5nbGlzaCBmb290YmFsbCB0byBoYXZlIDE0RytBIGlzIHByZXR0eSBkZWNlbnQuPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzM2MDMwY2ZlMDMzYjQ2N2NhOTEyNDcyOTBjNjcwNDlmLnNldENvbnRlbnQoaHRtbF9hMzNhNTU2ZGJkMDM0MDNkYTg4MWU1NjZiNzBiNzk5ZSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8xNDU1NjM5YzJkN2Q0MTg2YTY3N2E0MzBkODQ1MzM1Mi5iaW5kUG9wdXAocG9wdXBfMzYwMzBjZmUwMzNiNDY3Y2E5MTI0NzI5MGM2NzA0OWYpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfZDczNzM4MWI1NTA4NGFmMmIxZThmZmIxM2I0ZDczNzIgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs1My41NzUzNDUzLCAtMC4wNjc0OTQ3XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF83NTFmYzBhZjE3YTE0NjlhOTUyMzdiNjFkNDE2ZjRhMyA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZTBiNDEzNjFmYTkzNGE1NGJkZjNhMzllYzIyZTMzZjMgPSAkKGA8ZGl2IGlkPSJodG1sX2UwYjQxMzYxZmE5MzRhNTRiZGYzYTM5ZWMyMmUzM2YzIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5QcmVtaWVyc2VhZm9vZHM6IEBCcnluTGF3IFdoYXQgZG9lcyBEYXZpZCBkbyBub3dhZGF5cyBAQnJ5bkxhdyBwbGVhc2U/IERvZXMgaGUgaGF2ZSBhIGpvYiBvciBpcyBoZSB3ZWFsdGh5IGVub3VnaCBub3QgdG8gaGF2ZSB0byB3b3JrIGFueW1vcmU/IFNoYW1lIHdlIG5ldmVyIHNlZSBoaW0gYXJvdW5kIHRoZSBmb290YmFsbCBzY2VuZSBhbnltb3JlLjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF83NTFmYzBhZjE3YTE0NjlhOTUyMzdiNjFkNDE2ZjRhMy5zZXRDb250ZW50KGh0bWxfZTBiNDEzNjFmYTkzNGE1NGJkZjNhMzllYzIyZTMzZjMpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfZDczNzM4MWI1NTA4NGFmMmIxZThmZmIxM2I0ZDczNzIuYmluZFBvcHVwKHBvcHVwXzc1MWZjMGFmMTdhMTQ2OWE5NTIzN2I2MWQ0MTZmNGEzKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzlhMWY0ZmZmOGY2ZDQ2NzBhYTU5YTUzZmVkMGMwN2VmID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzAuMzMyMTgzOCwgLTgxLjY1NTY1MV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfMGNjZTU0ZGJhOGRmNDcwM2EzNzYzZjk1YmIxNzg5YWMgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2M0YTEzZTdiODU4MTRlMTY5MTJjMzQ5NDZjYmFmZGFjID0gJChgPGRpdiBpZD0iaHRtbF9jNGExM2U3Yjg1ODE0ZTE2OTEyYzM0OTQ2Y2JhZmRhYyIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+SkNQR0FUQTogTWlrZSBEZWFuIGxheXMgY2FyZHMgb24gdGFibGUgdG8gZ2l2ZSBQZXRlciBDcm91Y2ggYSByZWZlcmVlJ3MgaW5zaWdodCB8IEJhcnJ5IEdsZW5kZW5uaW5nOiBPZmZpY2lhbCBoYXMgYXR0cmFjdGVkIHRoZSBpcmUgb2Ygc3VwcG9ydGVycyBidXQgc2hvd3MgaGlzIGh1bWFuIHNpZGUgb24gZm9ybWVyIHN0cmlrZXLigJlzIHBvZGNhc3QsIGFzIGhlIG5lYXJzIGZpbmFsIHdoaXN0bGUgQSBtYW4gd2hvIHNlZW1z4oCmIGh0dHBzOi8vdC5jby9POFFNbWR6NUdvICNGb290YmFsbCAjUmVmZXJlZXMgaHR0cHM6Ly90LmNvL09BNlNqc01TRGo8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfMGNjZTU0ZGJhOGRmNDcwM2EzNzYzZjk1YmIxNzg5YWMuc2V0Q29udGVudChodG1sX2M0YTEzZTdiODU4MTRlMTY5MTJjMzQ5NDZjYmFmZGFjKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzlhMWY0ZmZmOGY2ZDQ2NzBhYTU5YTUzZmVkMGMwN2VmLmJpbmRQb3B1cChwb3B1cF8wY2NlNTRkYmE4ZGY0NzAzYTM3NjNmOTViYjE3ODlhYykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl84Y2M4NGJhNWI5YmU0MzI2YmFmNzliYzI0MTk2MzE0YiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUxLjUwNzMyMTksIC0wLjEyNzY0NzRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzQ1OGYxM2Q4YTNiNjQ4N2Y4ZjhkODYxYzFjNzcwYmFlID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8wZDFmNDE3N2RlNTQ0NTg3YTdhZTdkNzkyYTJlMmJjMyA9ICQoYDxkaXYgaWQ9Imh0bWxfMGQxZjQxNzdkZTU0NDU4N2E3YWU3ZDc5MmEyZTJiYzMiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkZsb3lkVHdlZXQ6IEBqYXl3ZXY5MCBARmFkdW1vX29vIFRoYXTigJlzIGJlZW4gZG9uZSBhbmQgdGhleSBlbmRlZCB1cCByZXZlcnRpbmcgYmFjayB0byBhIHRyYWRpdGlvbmFsIGZvb3RiYWxsIGNhbGVuZGFyLiBZb3UgYXNrZWQgYWJvdXQgdGhlIHBheWluZyBwdWJsaWMsIHRoYXTigJlzIHBheWluZyBwdWJsaWMuIE5vdCBzdXJlIG1vcmUgeW91IHdhbnQ8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNDU4ZjEzZDhhM2I2NDg3ZjhmOGQ4NjFjMWM3NzBiYWUuc2V0Q29udGVudChodG1sXzBkMWY0MTc3ZGU1NDQ1ODdhN2FlN2Q3OTJhMmUyYmMzKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzhjYzg0YmE1YjliZTQzMjZiYWY3OWJjMjQxOTYzMTRiLmJpbmRQb3B1cChwb3B1cF80NThmMTNkOGEzYjY0ODdmOGY4ZDg2MWMxYzc3MGJhZSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8wMWViNzE3N2Q4OTU0YjQzODQ1NjhjMTU3MDAyYTA4MiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzU1Ljg1NjY1NiwgLTQuMjQzNTgxN10sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfMWY3MDZjMGJjOGE5NDJkY2I2ZWRiNDk0ZTZmM2Q0ODkgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzllYjc4YjBhY2MyNDQwM2JhNTcwMTZlMDgwZTFlZDExID0gJChgPGRpdiBpZD0iaHRtbF85ZWI3OGIwYWNjMjQ0MDNiYTU3MDE2ZTA4MGUxZWQxMSIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+cm9zc2V5Ym95MDg6IEBfSWJyb3hMb3lhbCBMZXTigJlzIGFsbCBnZXQgYmVoaW5kIHRoZSB0ZWFtIGFuZCBhbGwgbG9vayBmb3J3YXJkIHRvIEJyYWdhLiBXZSBhcmUgc3RpbGwgaW4gcmVidWlsZGluZyBtb2RlIGl0IHdhcyBhbHdheXMgbm90IGdvaW5nIHRvIGJlIGVhc3kgd2UgbmVlZCBhbm90aGVyIGdvb2QgY2VudGVyIGhhbGYgYXMgbWlzdGFrZXMgaGFzIGNvc3QgdXMgZGVhcmx5IGF0IHRoZSBiYWNrLiBXZSBhcmUgdGhlIG1vc3Qgc3VjY2Vzc2Z1bCB0ZWFtIGluIGZvb3RiYWxsIGxldOKAmXMgbm90IGZvcmdldCB0aGF0IFdBVFA8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfMWY3MDZjMGJjOGE5NDJkY2I2ZWRiNDk0ZTZmM2Q0ODkuc2V0Q29udGVudChodG1sXzllYjc4YjBhY2MyNDQwM2JhNTcwMTZlMDgwZTFlZDExKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzAxZWI3MTc3ZDg5NTRiNDM4NDU2OGMxNTcwMDJhMDgyLmJpbmRQb3B1cChwb3B1cF8xZjcwNmMwYmM4YTk0MmRjYjZlZGI0OTRlNmYzZDQ4OSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9kMDNiYzBlNTA5ZDI0OTNjYTM0NGExOWQ4Nzc3ODcyZCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzQyLjU4OTYyMDUsIC03Mi42MTEwNjQ1XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF82M2U4MDI4YzQ5NGY0YzFmYmEzYjRkNDc3NjZlN2Y3OSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfOGNlODcwY2U3ZWYyNDdiMWE1OGYxYzVlZjIwYjk4MGYgPSAkKGA8ZGl2IGlkPSJodG1sXzhjZTg3MGNlN2VmMjQ3YjFhNThmMWM1ZWYyMGI5ODBmIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5GcmFua2xpbkNoYXJnZXI6IFdlIGFsd2F5cyBzaG91dCBvdXQgb3VyIGZvb3RiYWxsIGFsdW1uaSwgYnV0IHNldmVyYWwgQ2hlZXIgQWx1bW5pIGp1c3QgZmluaXNoZWQgMXN0IHBsYWNlIGFuZCBuYW1lZCBncmFuZCBjaGFtcGlvbnMhIEBGSFNjaGVlcl8gaHR0cHM6Ly90LmNvL0ZhSGg1S3pZUW48L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNjNlODAyOGM0OTRmNGMxZmJhM2I0ZDQ3NzY2ZTdmNzkuc2V0Q29udGVudChodG1sXzhjZTg3MGNlN2VmMjQ3YjFhNThmMWM1ZWYyMGI5ODBmKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2QwM2JjMGU1MDlkMjQ5M2NhMzQ0YTE5ZDg3Nzc4NzJkLmJpbmRQb3B1cChwb3B1cF82M2U4MDI4YzQ5NGY0YzFmYmEzYjRkNDc3NjZlN2Y3OSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl84MmFlZDk2MTUzYjA0ZjgzYjRjYWZjODViOWQ3ZjU1MSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzU2Ljc4NjExMTIsIC00LjExNDA1MThdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzZmMjQ1ZWFjYjNkZjRlZWE5Y2EzOTA5MzUyMjU3MDIxID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF85NmFkOGYyNjI5MGI0NTY0YmY2NWIzMWE3MmUwOWQ0YiA9ICQoYDxkaXYgaWQ9Imh0bWxfOTZhZDhmMjYyOTBiNDU2NGJmNjViMzFhNzJlMDlkNGIiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPk9yMWcxbmFsRzogQHBvbGl0aWNhbGx5aG8xNCBAUHJvdWRGZW5pYW5UYWlnIEBSZWNvcmRfU3BvcnQgQERhaWx5X1JlY29yZCBTdGljayB0byBwb2xpdGljcy4gQWx0aG91Z2ggbWF5YmUgeW91ciBrbm93bGVkZ2Ugb24gdGhhdCBpcyB0aGUgc2FtZSBhcyBpdCBpcyBvbiB0aGUgZm9vdGJhbGwg8J+klDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF82ZjI0NWVhY2IzZGY0ZWVhOWNhMzkwOTM1MjI1NzAyMS5zZXRDb250ZW50KGh0bWxfOTZhZDhmMjYyOTBiNDU2NGJmNjViMzFhNzJlMDlkNGIpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfODJhZWQ5NjE1M2IwNGY4M2I0Y2FmYzg1YjlkN2Y1NTEuYmluZFBvcHVwKHBvcHVwXzZmMjQ1ZWFjYjNkZjRlZWE5Y2EzOTA5MzUyMjU3MDIxKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2IxMjI3NzBmNmNjNzQwZmJiZWNhOGRkMDAxNTk1YWQzID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNTQuOTU4NTUzNSwgLTEuNjA1NzAwM10sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfNjJkYmYzZThlNTZjNGM3Nzk3ZGNhOTIyNzVlNjU5YmEgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2IxZjAxYmQxNDEyNjQ4ZWE4ODA0MmJhMWY3ZGJlM2EwID0gJChgPGRpdiBpZD0iaHRtbF9iMWYwMWJkMTQxMjY0OGVhODgwNDJiYTFmN2RiZTNhMCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+TWFya3dhbHRvbjg1OiBOb3J0aCBlYXN0IGZvb3RiYWxsIGF3YXJkcyB3aXRoIEBHYXRlc2hlYWRGQyBodHRwczovL3QuY28vemFBeTB3Q1BoaTwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF82MmRiZjNlOGU1NmM0Yzc3OTdkY2E5MjI3NWU2NTliYS5zZXRDb250ZW50KGh0bWxfYjFmMDFiZDE0MTI2NDhlYTg4MDQyYmExZjdkYmUzYTApOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYjEyMjc3MGY2Y2M3NDBmYmJlY2E4ZGQwMDE1OTVhZDMuYmluZFBvcHVwKHBvcHVwXzYyZGJmM2U4ZTU2YzRjNzc5N2RjYTkyMjc1ZTY1OWJhKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2FiOTliMmFkMDUwNTQ1ZjdiZDQyNjQ0ZDdlMDdiMWJmID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzMuNTM4OTg1NCwgLTExMi4xODU4MTU3XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9mYzNiYjEwOWFkNDc0NmM4YjM2Y2MyMjM3MjhjNWNjNyA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZGZhMWE0NTFiMTIwNDU4ZTkwOTE2MDUxZjBlODUwNTAgPSAkKGA8ZGl2IGlkPSJodG1sX2RmYTFhNDUxYjEyMDQ1OGU5MDkxNjA1MWYwZTg1MDUwIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij50aGVhenNwb3J0c2d1cnU6IEBDb2FjaFRhbGxleTE1IGNvbmdyYXRzIG9uIGJlaW5nIG5hbWVkIG5ldyBoZWFkICNGb290YmFsbCBjb2FjaCBhdCAjQ29wcGVyQ2FueW9uIGhpZ2ggc2Nob29sLjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9mYzNiYjEwOWFkNDc0NmM4YjM2Y2MyMjM3MjhjNWNjNy5zZXRDb250ZW50KGh0bWxfZGZhMWE0NTFiMTIwNDU4ZTkwOTE2MDUxZjBlODUwNTApOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYWI5OWIyYWQwNTA1NDVmN2JkNDI2NDRkN2UwN2IxYmYuYmluZFBvcHVwKHBvcHVwX2ZjM2JiMTA5YWQ0NzQ2YzhiMzZjYzIyMzcyOGM1Y2M3KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzdiMWU4MTQ1YzcwMTRhYTc4YWEyYTIyNzYxZTkxN2Q1ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNTEuNDUzNDI2NCwgLTIuNDI1MzIxMl0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfYzNiOGI3ZmMyYTNlNGMyNDg3MzNiYThhZTk3YzgyODYgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzc2Mjk4ZjBhMWE2ODRiMzk5OGJiMzA4YjRiYTNlZjdlID0gJChgPGRpdiBpZD0iaHRtbF83NjI5OGYwYTFhNjg0YjM5OThiYjMwOGI0YmEzZWY3ZSIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+ZWZjX2d1eTog8J+aqFdIQVRTIEdPT0QgRk9PVEJBTEwgVFdJVFRFUiBCT1lTIEZPUk5JVEUgQU5EIEtQT1AgSVMgU0hJVCBBTkQgSVRTIFRIQVQgVElNRSBBR0FJTiBUTyBHQUlOIEEgQklHIEZPTExPV0lORyBPTiBZT1VSIEFDQ09VTlQgU08gRk9MTE9XIEVWRVJZT05FIFdITyBMSUtFUyBUSElTIFRXRUVUIEFORCBXQVRDSCBUSEUgRk9MTE9XRVJTIEZMT1cgSU4gMTAwJSBXT1JLU/CfmqggICAjR2FpblNaTjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9jM2I4YjdmYzJhM2U0YzI0ODczM2JhOGFlOTdjODI4Ni5zZXRDb250ZW50KGh0bWxfNzYyOThmMGExYTY4NGIzOTk4YmIzMDhiNGJhM2VmN2UpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfN2IxZTgxNDVjNzAxNGFhNzhhYTJhMjI3NjFlOTE3ZDUuYmluZFBvcHVwKHBvcHVwX2MzYjhiN2ZjMmEzZTRjMjQ4NzMzYmE4YWU5N2M4Mjg2KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2UxNzgwZGZkMWU5YTQ1OWU4NDI4MWRiNjAwYmZkZDA5ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNDEuNzU3MDMxNywgLTg1LjgyNzg0NV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfYzQzOTAzZjExNTIwNGRmYjlmMDVkM2VlOTliNGMwYzMgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzA5ZTFjY2Q2NmMyNDQwZWVhOTllYTk3MWViOWUyZGZjID0gJChgPGRpdiBpZD0iaHRtbF8wOWUxY2NkNjZjMjQ0MGVlYTk5ZWE5NzFlYjllMmRmYyIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+T3JpZ2lSb0llOiBAaWxhdWdoYXRsZXdpcyDwn5qoV0hBVFMgR09PRCBGT09UQkFMTCBUV0lUVEVSIEJPWVMgRk9STklURSBBTkQgS1BPUCBJUyBTSElUIEFORCBJVFMgVEhBVCBUSU1FIEFHQUlOIFRPIEdBSU4gQSBCSUcgRk9MTE9XSU5HIE9OIFlPVVIgQUNDT1VOVCBTTyBGT0xMT1cgRVZFUllPTkUgV0hPIExJS0VTIFRISVMgVFdFRVQgQU5EIFdBVENIIFRIRSBGT0xMT1dFUlMgRkxPVyBJTiAxMDAlIFdPUktT8J+aqCAgICNHYWluU1pOPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2M0MzkwM2YxMTUyMDRkZmI5ZjA1ZDNlZTk5YjRjMGMzLnNldENvbnRlbnQoaHRtbF8wOWUxY2NkNjZjMjQ0MGVlYTk5ZWE5NzFlYjllMmRmYyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9lMTc4MGRmZDFlOWE0NTllODQyODFkYjYwMGJmZGQwOS5iaW5kUG9wdXAocG9wdXBfYzQzOTAzZjExNTIwNGRmYjlmMDVkM2VlOTliNGMwYzMpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfODliYjljMjJlY2VhNGRmMWE0NGE0NjQwMzEyZjViNzUgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs1NS44NTY2NTYsIC00LjI0MzU4MTddLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2M0NjRiNmU5Y2E1MDRlOWE5MDUxZmFjM2NkYzYxNTJmID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF80YzIzZmJkYTUxZGY0Mzc4ODU4N2JlZjZhMjE5ZjhlOSA9ICQoYDxkaXYgaWQ9Imh0bWxfNGMyM2ZiZGE1MWRmNDM3ODg1ODdiZWY2YTIxOWY4ZTkiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPm1jY2FsbHVtX21hdHQ6IEBCcmlhbldpbHNvbjE5NjcgSSdtIGNvbnN0YW50bHkgZW1iYXJyYXNzZWQgZXZlcnkgdGltZSB5b3Ugb3BlbiB5b3VyIG1vdXRoIHRoYXQgeW91IHNpdCBvbiB0aGUgYm9hcmQgb2YgbXkgZm9vdGJhbGwgY2x1Yi4gWW91ciBhIHJlbGljIG9mIHRoZSBlbnRpdGxlZCBwYXN0IGFuZCBubyBsb25nZXIgcmVsZXZhbnQuIFBsZWFzZSBqdXN0IGZlY2sgb2ZmIGFuZCB3aGVuIHlvdSBnZXQgdGhlcmUuIEZlY2sgb2ZmIGEgd2VlIGJpdCBtb3JlPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2M0NjRiNmU5Y2E1MDRlOWE5MDUxZmFjM2NkYzYxNTJmLnNldENvbnRlbnQoaHRtbF80YzIzZmJkYTUxZGY0Mzc4ODU4N2JlZjZhMjE5ZjhlOSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl84OWJiOWMyMmVjZWE0ZGYxYTQ0YTQ2NDAzMTJmNWI3NS5iaW5kUG9wdXAocG9wdXBfYzQ2NGI2ZTljYTUwNGU5YTkwNTFmYWMzY2RjNjE1MmYpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfMDk0MmZjMTY3MmJiNGVlZDhmNDA3ODhhZTIxMDNjMmQgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszNi43MDE0NjMxLCAtMTE4Ljc1NTk5NzRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzlhOWVmOGI3ZDdiZDQ3NzliZDA1MzE3NjMyZDdiYjAwID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9mYzkwZTA5YmU0ZTE0NTA2YTIxNDU0ZTcyMzYwYjYwYSA9ICQoYDxkaXYgaWQ9Imh0bWxfZmM5MGUwOWJlNGUxNDUwNmEyMTQ1NGU3MjM2MGI2MGEiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkFsZXhfR3Jvb21Tb2NrczogQmFsdGltb3JlIFJhdmVucyBGT09UQkFMTCAg4oCYTUFSUklFRCBTSU5DReKAmSAgc2V0IG9mIDIgTWF0Y2hpbmcgVGVlcyBmb3IgcGFydGllcywgdGFpbGdhdGluZywgZ2FtZSBkYXkgaHR0cHM6Ly90LmNvLzlvZ0l2eWFaSm8gI0V0c3kgI0dyb29tU29ja3MgI1lvdXJOZmxUZWFtIGh0dHBzOi8vdC5jby9wcDRnMjR6VE5JPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzlhOWVmOGI3ZDdiZDQ3NzliZDA1MzE3NjMyZDdiYjAwLnNldENvbnRlbnQoaHRtbF9mYzkwZTA5YmU0ZTE0NTA2YTIxNDU0ZTcyMzYwYjYwYSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8wOTQyZmMxNjcyYmI0ZWVkOGY0MDc4OGFlMjEwM2MyZC5iaW5kUG9wdXAocG9wdXBfOWE5ZWY4YjdkN2JkNDc3OWJkMDUzMTc2MzJkN2JiMDApCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfNGU1Y2FhZTc0MTk2NDMwY2JmMzQ4NmUyNDQzY2I3MTUgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszOC4yNzMxMiwgLTk4LjU4MjE4NzJdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzA5NmE1MjU3MGFmMzRlM2FhNzMzMTM5MGViMWNjMTk2ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8yNjcxYjRjNDcwMTY0MmE5OTE5MTlmMTYwZTgyZmRlNyA9ICQoYDxkaXYgaWQ9Imh0bWxfMjY3MWI0YzQ3MDE2NDJhOTkxOTE5ZjE2MGU4MmZkZTciIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPlNhbXVlbEtoYW46IEBORkwgaG93IGFib3V0IGdpdmluZyAjU3RMb3VpcyBhbm90aGVyIHNob3Q/IEl0J3Mgc3RpbGwgYSBmb290YmFsbCB0b3duLjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF8wOTZhNTI1NzBhZjM0ZTNhYTczMzEzOTBlYjFjYzE5Ni5zZXRDb250ZW50KGh0bWxfMjY3MWI0YzQ3MDE2NDJhOTkxOTE5ZjE2MGU4MmZkZTcpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNGU1Y2FhZTc0MTk2NDMwY2JmMzQ4NmUyNDQzY2I3MTUuYmluZFBvcHVwKHBvcHVwXzA5NmE1MjU3MGFmMzRlM2FhNzMzMTM5MGViMWNjMTk2KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzJjMWE2NDk4Y2UyNzQyMWFiYTkyODZmNzUzYWU2NjY5ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNDQuNDM2MTQxNCwgMjYuMTAyNzIwMl0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfZTg1ZDUzNjkzN2I2NGFlMWFjMTA0YzdlNTEyNmU4ZjcgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzM1NDkyN2M0NTk3YTQ1NDQ4OTdmZTUyNTg0MGVhMGM0ID0gJChgPGRpdiBpZD0iaHRtbF8zNTQ5MjdjNDU5N2E0NTQ0ODk3ZmU1MjU4NDBlYTBjNCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+U29ub0J1cmFrOiBJdCdzIGEgZGF5IHRvIHJlbWVtYmVyIGZvciBHYWxhdGFzYXJheSBmYW5zISDwn6Wz8J+HufCfh7cgIEluIG9uZSBvZiBmb290YmFsbCdzIG1vc3QgcGFzc2lvbmF0ZSBkZXJiaWVzLCB0aGV5IHdvbiBhdCByaXZhbHMgQEZlbmVyYmFoY2VfRU4gZm9yIHRoZSBmaXJzdCB0aW1lIGluIDIxIHllYXJzISDwn5GPICAgQ29uZ3JhdHVsYXRpb25zICNHYWxhdGFzYXJheVNLPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2U4NWQ1MzY5MzdiNjRhZTFhYzEwNGM3ZTUxMjZlOGY3LnNldENvbnRlbnQoaHRtbF8zNTQ5MjdjNDU5N2E0NTQ0ODk3ZmU1MjU4NDBlYTBjNCk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8yYzFhNjQ5OGNlMjc0MjFhYmE5Mjg2Zjc1M2FlNjY2OS5iaW5kUG9wdXAocG9wdXBfZTg1ZDUzNjkzN2I2NGFlMWFjMTA0YzdlNTEyNmU4ZjcpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfN2JiNGQ5ODkwYjZmNGUzN2I3YjZmYTBhNzdiOTUxYjIgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs1My43OTQzMDIxLCAtMS41NDkxMDE4XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9hZTJmOTdmY2UzZmU0YTUzYWJjNTk5OGE0MTk1NmJlNSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZDViZmY2N2E4OGVhNGE4ZDhlMDExM2ZjY2ZhNjVhN2IgPSAkKGA8ZGl2IGlkPSJodG1sX2Q1YmZmNjdhODhlYTRhOGQ4ZTAxMTNmY2NmYTY1YTdiIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5NaWtlX3dlbGxzMTk3MzogQGphc2lkZWJvdHRvbSBASWFpbkR1ZmZ5IEBzaW1vbmNhbmV5IEBHYXJ5TGluZWtlciBASWFuV3JpZ2h0MCBEb27igJl0IHRoaW5rIGl0IGlzIG1hdGUuIEnigJl2ZSBzZWVuIGNsaXBzIG9uIHRoaXMgZm9ydW0gb2Ygb3RoZXIgY291bnRyaWVzIHRoYXQgc2VlbSB0byBiZSBhYmxlIHRvIHVzZSBhcyBpbnRlbmRlZCBhbmQgbGV0IHRoZSBnYW1lIGZsb3cuIFBlcnNvbmFsbHkgSSBsb3ZlIHRoYXQgZm9vdGJhbGwgaXMgdGhlIHNhbWUgaW4gdGhlIFdDIGZpbmFsIGFzIGl0IGlzIHdpdGgganVtcGVycyBpbiB0aGUgcGFyay4gSSBsaWtlIHRoZSBpbnN0YW50IGpveSBhbmQgdGhlIHNwb250YW5laXR5LjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9hZTJmOTdmY2UzZmU0YTUzYWJjNTk5OGE0MTk1NmJlNS5zZXRDb250ZW50KGh0bWxfZDViZmY2N2E4OGVhNGE4ZDhlMDExM2ZjY2ZhNjVhN2IpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfN2JiNGQ5ODkwYjZmNGUzN2I3YjZmYTBhNzdiOTUxYjIuYmluZFBvcHVwKHBvcHVwX2FlMmY5N2ZjZTNmZTRhNTNhYmM1OTk4YTQxOTU2YmU1KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2MxYmNlN2RkZTZlMTQwMmM4YmU2YzU4YmY0YjA0YzEwID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMjkuNzU4OTM4MiwgLTk1LjM2NzY5NzRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzJmMWI0NDJmY2Q1OTQwMGI4ZDQwZjk4NDA1NzlhZTRjID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF81NDQ1MWE2YjhiZWU0MTU5YWJlZTc0OWNkYjYzNTNjMSA9ICQoYDxkaXYgaWQ9Imh0bWxfNTQ0NTFhNmI4YmVlNDE1OWFiZWU3NDljZGI2MzUzYzEiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPll1bmdfZHJlYWRzXzcxMzogQDJLIFhGTCBmb290YmFsbCBnYW1lIGNvbWluZyBzb29uPz8/PC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzJmMWI0NDJmY2Q1OTQwMGI4ZDQwZjk4NDA1NzlhZTRjLnNldENvbnRlbnQoaHRtbF81NDQ1MWE2YjhiZWU0MTU5YWJlZTc0OWNkYjYzNTNjMSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9jMWJjZTdkZGU2ZTE0MDJjOGJlNmM1OGJmNGIwNGMxMC5iaW5kUG9wdXAocG9wdXBfMmYxYjQ0MmZjZDU5NDAwYjhkNDBmOTg0MDU3OWFlNGMpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfOWNhNTFmZmQ1ZTI2NDcwZmI5ZWYwNWNlYzFjZWUzMzQgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFstMjkuODYxODI1LCAzMS4wMDk5MDldLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzhkYWEwYzY1ODE4NTQ5ZGI4ZmZjNDhiYTJjYTYxNWJjID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF84NjUxNjljOTFkZjk0ZmIzOTRjM2E5NjcwMTBjMTEzMSA9ICQoYDxkaXYgaWQ9Imh0bWxfODY1MTY5YzkxZGY5NGZiMzk0YzNhOTY3MDEwYzExMzEiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPlhpbWJhWndpbGU6IEBBcnNlbmFsQmlubGFkZW4gV2Ugc2hvdWxkIHdpbiB0aGUgRXVyb3BhIExlYWd1ZSBtYW4uIEl0J2xsIHJlYWxseSBnYWx2YW5pemUgdGhlIHRlYW0uIEZpcnN0IHRoZSBndWFyYW50ZWUgb2YgVUNMIGZvb3RiYWxsIGFuZCBpdCdsbCBoYXZlIHRoZSBzYW1lIGVmZmVjdCBXZW5nZXLigJlzIDIwMTQgRkEgY3VwIHdpbiBoYWQuIEFsbW9zdCBwcm9wZWxsZWQgdXMgdG8gYSBsZWFndWUgdGl0bGUgaWYgb25seSBHaXJvdWQgZGlkbid0IGdvIG9uIHRoYXQgaG9ycmlibGUgZHJvdWdodCBpbiAyMDE1LzE2Lmw8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfOGRhYTBjNjU4MTg1NDlkYjhmZmM0OGJhMmNhNjE1YmMuc2V0Q29udGVudChodG1sXzg2NTE2OWM5MWRmOTRmYjM5NGMzYTk2NzAxMGMxMTMxKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzljYTUxZmZkNWUyNjQ3MGZiOWVmMDVjZWMxY2VlMzM0LmJpbmRQb3B1cChwb3B1cF84ZGFhMGM2NTgxODU0OWRiOGZmYzQ4YmEyY2E2MTViYykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8xNjNlOTdmNTkxOWY0MjA2ODIyOWUxNDFmZjQ0MjNlZSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzQ0LjUxMjYzNzksIC04OC4wMTI1Nzk0XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9lMWRhYTY2MDc3NDA0ZTRiYTNhZGNjNWNhMWViZjYwNyA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfNzUzNjczNjVjNDRhNGRmYmI2MTRiYWY1YmY5ODA0NTQgPSAkKGA8ZGl2IGlkPSJodG1sXzc1MzY3MzY1YzQ0YTRkZmJiNjE0YmFmNWJmOTgwNDU0IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5UaW1ib3NsaWNlZ2IxNzogQE1hZF9NYXgyMzUgZm9vdGJhbGwgZ2FtZXMgYXJlIGxpa2UgdGhpcyBzb21ldGltZXMgYWxzbyBndWVzcyB0aGV5IHBhcnR5IHRvIGhhcmQgbGFzdCBuaWdodDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9lMWRhYTY2MDc3NDA0ZTRiYTNhZGNjNWNhMWViZjYwNy5zZXRDb250ZW50KGh0bWxfNzUzNjczNjVjNDRhNGRmYmI2MTRiYWY1YmY5ODA0NTQpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfMTYzZTk3ZjU5MTlmNDIwNjgyMjllMTQxZmY0NDIzZWUuYmluZFBvcHVwKHBvcHVwX2UxZGFhNjYwNzc0MDRlNGJhM2FkY2M1Y2ExZWJmNjA3KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzg1ZjIzMTcyOThjODRkZTJiMjVjODI1ZmI4ZDRjZTBjID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzkuNzgzNzMwNCwgLTEwMC40NDU4ODI1XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF80Y2NlNWE1ZWIxN2I0ZDIzOTVhMTRhNGFkZWJkMjM5NyA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZWE4NDYxZGFiMjNkNGI0NGFhNjQyYjY2ZWQ3YTAxOWUgPSAkKGA8ZGl2IGlkPSJodG1sX2VhODQ2MWRhYjIzZDRiNDRhYTY0MmI2NmVkN2EwMTllIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5HZW5aRm9yUGV0ZTogQGFmdW5ubnl3b3JsZCBPbiBhIGZvb3RiYWxsIGZpZWxkPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzRjY2U1YTVlYjE3YjRkMjM5NWExNGE0YWRlYmQyMzk3LnNldENvbnRlbnQoaHRtbF9lYTg0NjFkYWIyM2Q0YjQ0YWE2NDJiNjZlZDdhMDE5ZSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl84NWYyMzE3Mjk4Yzg0ZGUyYjI1YzgyNWZiOGQ0Y2UwYy5iaW5kUG9wdXAocG9wdXBfNGNjZTVhNWViMTdiNGQyMzk1YTE0YTRhZGViZDIzOTcpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfNDdlZmFlYzFiNTA4NGZjOWJmODdiZDIxN2Q1M2E2Y2YgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs0MC40MTY3MDIyLCAtODYuODc1Mjg2OV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfZTY1ZTZlMGRmMGMwNDBhNmFmMThlMWYxN2FlYzg1MDcgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzU3NjRlYWU4YzVmMTQ4NmI5ZmE2NTJlMWY1NjQ1Y2U4ID0gJChgPGRpdiBpZD0iaHRtbF81NzY0ZWFlOGM1ZjE0ODZiOWZhNjUyZTFmNTY0NWNlOCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+TGlsVmlja3lSYXBzOiBiZW5ueSBwbHVncyB0aGUgYXJ0aXN0cyB0byB0cmF2ZWwgZm9yIGhpbSAmYW1wOyB3aXRoIHJhZGlvIHBsYXkgaGUgZmluYWxseSBoYXMgYSB2YWxlbnRpbmUgIGltYWdpbmUgdGhlIGNyb3dkcyBsaWZ0IG1lIHVwIGFzIGhpcyB0b3BhbmdhIHdpdGggYSBmb290YmFsbCBzaXplIGZvcnR1bmUgY29va2llIHdpdGggYSByaW5nIHBvcCAmYW1wOyBhIHByb3Bvc2FsIGZvciBhIDQwLDAwMCBndWVzdCBzaW11bGF0aW9uIHdlZGRpbmcgJmFtcDsgaGUgY2FuY2VscyB0aGUgc2hvdyAmYW1wOyBsYXVuY2hlcyBvbiBuZXRmbGl4ITwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9lNjVlNmUwZGYwYzA0MGE2YWYxOGUxZjE3YWVjODUwNy5zZXRDb250ZW50KGh0bWxfNTc2NGVhZThjNWYxNDg2YjlmYTY1MmUxZjU2NDVjZTgpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNDdlZmFlYzFiNTA4NGZjOWJmODdiZDIxN2Q1M2E2Y2YuYmluZFBvcHVwKHBvcHVwX2U2NWU2ZTBkZjBjMDQwYTZhZjE4ZTFmMTdhZWM4NTA3KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzYzZGE4NjE4NWJmYjQ4YTBiYWVjZjdmMzA5ODE3YTI4ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNDYuNjAzMzU0LCAxLjg4ODMzMzVdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2JhY2M5ZTU3MzBlMzQzNDk4ZmVkNmE1ZjI2ZjAzMGJlID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8xZWIyMGMxMGIyMjc0ODMxOTIwYTdkZmNlNGE2ZDAzYSA9ICQoYDxkaXYgaWQ9Imh0bWxfMWViMjBjMTBiMjI3NDgzMTkyMGE3ZGZjZTRhNmQwM2EiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPlN1bmthc2gxODgxOiBAUGllcnJvdDE5NzBfXyBMZSBGb290YmFsbCBDaXJjdXMg8J+krCAgI1BTR0ZDR0I8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfYmFjYzllNTczMGUzNDM0OThmZWQ2YTVmMjZmMDMwYmUuc2V0Q29udGVudChodG1sXzFlYjIwYzEwYjIyNzQ4MzE5MjBhN2RmY2U0YTZkMDNhKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzYzZGE4NjE4NWJmYjQ4YTBiYWVjZjdmMzA5ODE3YTI4LmJpbmRQb3B1cChwb3B1cF9iYWNjOWU1NzMwZTM0MzQ5OGZlZDZhNWYyNmYwMzBiZSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9kMTA4MDE2MzU2ZDc0Mzk1ODg1Y2U1ZjM0NjJiYzUzZSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzQ2LjE0OTg3MjEsIDE4LjMyNjk0MjJdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzhlYTdmYzU0MDEwMzQzMGI5YzY0MTEwZjk0NTdlMGJmID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9iMzI5ZGY4ZWY1NDk0NzRiYmUxYjU0YjQxODk2OGI4MiA9ICQoYDxkaXYgaWQ9Imh0bWxfYjMyOWRmOGVmNTQ5NDc0YmJlMWI1NGI0MTg5NjhiODIiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPmdlcmFyZGRhbHk3NjE6IEBvbGx5YXJzZW5hbCBATWFuVXRkIFdlIGFyZSBmb290YmFsbDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF84ZWE3ZmM1NDAxMDM0MzBiOWM2NDExMGY5NDU3ZTBiZi5zZXRDb250ZW50KGh0bWxfYjMyOWRmOGVmNTQ5NDc0YmJlMWI1NGI0MTg5NjhiODIpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfZDEwODAxNjM1NmQ3NDM5NTg4NWNlNWYzNDYyYmM1M2UuYmluZFBvcHVwKHBvcHVwXzhlYTdmYzU0MDEwMzQzMGI5YzY0MTEwZjk0NTdlMGJmKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2FhMzEwZWY0MDA4MTQzNDY4YzMyOGNjMDI4NDE5YTc5ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNTEuNTkyMDI0NDUsIC0xMC4zMDA3MzQxODg5MDIxXSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9mNjUwZjFlYTNiODY0Zjk3YjdkNzUwNDIwZmIyOTEwYyA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfMGU4OGY5NDdlODU1NGFmYzhlNjVhNGJhMmI2ZTNlYzggPSAkKGA8ZGl2IGlkPSJodG1sXzBlODhmOTQ3ZTg1NTRhZmM4ZTY1YTRiYTJiNmUzZWM4IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5EYXZpbmlvb29vOiBASGFuZHNvbWVQYXRzRmFuIEBicmdyaWRpcm9uIEBCbGVhY2hlclJlcG9ydCBIZSBnZXRzIHBhaWQgbWlsbGlvbnMgdG8gcGxheSBmb290YmFsbCB3aGlsZSB5b3UgZ2V0IHBhaWQgcGVubmllcyB0byBkbyB3b3JrIHRoYXQgeW91IGhhdGUuIFdobydzIHJlYWxseSB0aGUgbG9zZXI8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfZjY1MGYxZWEzYjg2NGY5N2I3ZDc1MDQyMGZiMjkxMGMuc2V0Q29udGVudChodG1sXzBlODhmOTQ3ZTg1NTRhZmM4ZTY1YTRiYTJiNmUzZWM4KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2FhMzEwZWY0MDA4MTQzNDY4YzMyOGNjMDI4NDE5YTc5LmJpbmRQb3B1cChwb3B1cF9mNjUwZjFlYTNiODY0Zjk3YjdkNzUwNDIwZmIyOTEwYykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8xNWM0NzQ1NmRhNjc0ZWI5YTRjODhlMTc5OTNkNGJhOCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUxLjUwNzMyMTksIC0wLjEyNzY0NzRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2Y5MDM3ZTg0NTVkYTQzYTJiOTI4NWU0Y2EyNTcxYTAwID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9lYTU3OWNmYzhmNGI0MmFhYjY0NTE2MDgyNzNmZDM0YiA9ICQoYDxkaXYgaWQ9Imh0bWxfZWE1NzljZmM4ZjRiNDJhYWI2NDUxNjA4MjczZmQzNGIiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkp1c3RpbkM5MzYyOTExOTogTm8gZm9vdGJhbGwgc28gSSdtIFdhdGNoaW5nIEBHcmVhdERhbmNlclRWPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2Y5MDM3ZTg0NTVkYTQzYTJiOTI4NWU0Y2EyNTcxYTAwLnNldENvbnRlbnQoaHRtbF9lYTU3OWNmYzhmNGI0MmFhYjY0NTE2MDgyNzNmZDM0Yik7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8xNWM0NzQ1NmRhNjc0ZWI5YTRjODhlMTc5OTNkNGJhOC5iaW5kUG9wdXAocG9wdXBfZjkwMzdlODQ1NWRhNDNhMmI5Mjg1ZTRjYTI1NzFhMDApCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfNjkxMmUyNTI5Yzc5NDkxNWIxNDE1YTNhMzg3MGY0OTggPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs0OC4yMDgzNTM3LCAxNi4zNzI1MDQyXSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwX2NjODkyNWJkNDQwZDRhMTdiMGMxNDZlN2JmOTk5NGE1KTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF85ZTk2MTc3YjkzZDQ0M2M1OGIyNTg5N2UzNGRmMDc4ZSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfODZlYjU5ZmZjNTFkNGJlNzhlY2Y3ODQ0YTRjOTg2MzEgPSAkKGA8ZGl2IGlkPSJodG1sXzg2ZWI1OWZmYzUxZDRiZTc4ZWNmNzg0NGE0Yzk4NjMxIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5WRkEyMDIwOiBUaGUgcGhvdG9zIG9mICNSYWlzZVRoZVN0YW5kYXJkIC0gMXN0IFZpZW5uYSBGb290YmFsbCBBc3NlbWJseSBhcmUgbm93IG9ubGluZSEgIEdvIHRvIHRoZSBAVmllbm5hVmlraW5ncyBmYWNlYm9vayBwYWdlIG9yIHZpc2l0IGh0dHBzOi8vdC5jby9zYXo1NUthYjc2IHRvIGJyb3dzZSB0aHJvdWdoIGFsbCB0aGUgcGljdHVyZXMuICAg8J+TuCDCqe+4jyBAa2luZ29ma2ljazIgJmFtcDsgI0hhbm5lc0ppcmdhbCAgICNSVFMgI1JUU2Zvb3RiYWxsICNDbGluaWNzQW5kQ2FtcHMgaHR0cHM6Ly90LmNvL1JNeWVEV2g1cmo8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfOWU5NjE3N2I5M2Q0NDNjNThiMjU4OTdlMzRkZjA3OGUuc2V0Q29udGVudChodG1sXzg2ZWI1OWZmYzUxZDRiZTc4ZWNmNzg0NGE0Yzk4NjMxKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzY5MTJlMjUyOWM3OTQ5MTViMTQxNWEzYTM4NzBmNDk4LmJpbmRQb3B1cChwb3B1cF85ZTk2MTc3YjkzZDQ0M2M1OGIyNTg5N2UzNGRmMDc4ZSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl83NTNmMWJkYThmNTQ0ZGVkYTViNDRiMmZhNTcxNWJmMiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUyLjc5NTQ3OTEsIC0wLjU0MDI0MDI4NjYxNzQzMl0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF9jYzg5MjViZDQ0MGQ0YTE3YjBjMTQ2ZTdiZjk5OTRhNSk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfYjc1OThhMDg5N2IzNDRlMDkyMTE0MzlkNmQyMzg4MWMgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2UwZWYwZGNiODU2ZTRlZGFiYWViZDk1NGY2ZTkxYjhjID0gJChgPGRpdiBpZD0iaHRtbF9lMGVmMGRjYjg1NmU0ZWRhYmFlYmQ5NTRmNmU5MWI4YyIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+QnJpYW4xODk0cGxhdHQ6IElmIHlvdSB0aGluayB5b3UgY2FuIHRha2UgdGhlIHBpc3Mgb3V0IG9mIE1hbmNoZXN0ZXIgQ2l0eSBmb290YmFsbCBjbHViIGJldHRlciB0aGFuIHdlIGNhbiB0YWtlIHRoZSBwaXNzIG91dCBvZiBvdXJzZWx2ZXMgeW91IG5lZWQgdG8gdXAgeW91ciBnYW1lIENUSUQ8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfYjc1OThhMDg5N2IzNDRlMDkyMTE0MzlkNmQyMzg4MWMuc2V0Q29udGVudChodG1sX2UwZWYwZGNiODU2ZTRlZGFiYWViZDk1NGY2ZTkxYjhjKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzc1M2YxYmRhOGY1NDRkZWRhNWI0NGIyZmE1NzE1YmYyLmJpbmRQb3B1cChwb3B1cF9iNzU5OGEwODk3YjM0NGUwOTIxMTQzOWQ2ZDIzODgxYykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl80N2E4MzhiMmRmMTg0MTY3ODU1ZjJkOGFkNjBjYWZiMiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUxLjUwNzMyMTksIC0wLjEyNzY0NzRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2RmYTFmNTZhODNmYjQyNWViZjUyZDYwNmEwZWM3MWViID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8xZTc0NDMzM2QzNDU0YzBlODNiOTBkNzQ3N2E1MDk2MCA9ICQoYDxkaXYgaWQ9Imh0bWxfMWU3NDQzMzNkMzQ1NGMwZTgzYjkwZDc0NzdhNTA5NjAiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPl93aGF0dGhlc3BvcnQ6IExlZ2VuZGFyeSBEZWZlbmRlciBMdWNpbyBEZXNlcnZlcyBGYXIgTW9yZSBSZXNwZWN0IEFmdGVyIFJldGlyaW5nIFdpdGggTGl0dGxlIEZhbmZhcmUgIGh0dHBzOi8vdC5jby9iT3BWVTBoSVhtICNmb290YmFsbCAjd2hhdHRoZXNwb3J0ICNwcmVtaWVybGVhZ3VlICNFUEwgI0VuZ2xhbmQgICNDaGFtcGlvbnNsZWFndWUgI0V1cm9wYWxlYWd1ZSAjQXJzZW5hbCAjQ2hlbHNlYSAjTWFuVXRkICNMRkMgI0ZDYmFyY2Vsb25hICNyZWFsbWFkcmlkPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2RmYTFmNTZhODNmYjQyNWViZjUyZDYwNmEwZWM3MWViLnNldENvbnRlbnQoaHRtbF8xZTc0NDMzM2QzNDU0YzBlODNiOTBkNzQ3N2E1MDk2MCk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl80N2E4MzhiMmRmMTg0MTY3ODU1ZjJkOGFkNjBjYWZiMi5iaW5kUG9wdXAocG9wdXBfZGZhMWY1NmE4M2ZiNDI1ZWJmNTJkNjA2YTBlYzcxZWIpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfYTY2N2I3MGM1NWYwNGU0NTlkMGQxN2YzNjZhNjM0YjkgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs0Mi42OTkxMzYzLCAyLjkxMTQwMzJdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfY2M4OTI1YmQ0NDBkNGExN2IwYzE0NmU3YmY5OTk0YTUpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2Y2MzYxNzQ4NTU5MjQyZjZiMzkzODRmODE3YTlmZWU3ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9kNjc5NmQ2MjAzMWU0ZjdkOWNkZjVjMGM1NDg4NjE0MCA9ICQoYDxkaXYgaWQ9Imh0bWxfZDY3OTZkNjIwMzFlNGY3ZDljZGY1YzBjNTQ4ODYxNDAiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPklhbUFsM3hfbzogSGFoYSBsb29rIGF0IHRoZSBjYXJkcyBkYW1uIGZvb3RiYWxsIGluIHR1cmtleTwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9mNjM2MTc0ODU1OTI0MmY2YjM5Mzg0ZjgxN2E5ZmVlNy5zZXRDb250ZW50KGh0bWxfZDY3OTZkNjIwMzFlNGY3ZDljZGY1YzBjNTQ4ODYxNDApOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYTY2N2I3MGM1NWYwNGU0NTlkMGQxN2YzNjZhNjM0YjkuYmluZFBvcHVwKHBvcHVwX2Y2MzYxNzQ4NTU5MjQyZjZiMzkzODRmODE3YTlmZWU3KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKPC9zY3JpcHQ+" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,PCFET0NUWVBFIGh0bWw+CjxoZWFkPiAgICAKICAgIDxtZXRhIGh0dHAtZXF1aXY9ImNvbnRlbnQtdHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04IiAvPgogICAgCiAgICAgICAgPHNjcmlwdD4KICAgICAgICAgICAgTF9OT19UT1VDSCA9IGZhbHNlOwogICAgICAgICAgICBMX0RJU0FCTEVfM0QgPSBmYWxzZTsKICAgICAgICA8L3NjcmlwdD4KICAgIAogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjUuMS9kaXN0L2xlYWZsZXQuanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY29kZS5qcXVlcnkuY29tL2pxdWVyeS0xLjEyLjQubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9qcy9ib290c3RyYXAubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9MZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy8yLjAuMi9sZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy5qcyI+PC9zY3JpcHQ+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjUuMS9kaXN0L2xlYWZsZXQuY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vYm9vdHN0cmFwLzMuMi4wL2Nzcy9ib290c3RyYXAubWluLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9jc3MvYm9vdHN0cmFwLXRoZW1lLm1pbi5jc3MiLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9mb250LWF3ZXNvbWUvNC42LjMvY3NzL2ZvbnQtYXdlc29tZS5taW4uY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL0xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLzIuMC4yL2xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL3Jhd2Nkbi5naXRoYWNrLmNvbS9weXRob24tdmlzdWFsaXphdGlvbi9mb2xpdW0vbWFzdGVyL2ZvbGl1bS90ZW1wbGF0ZXMvbGVhZmxldC5hd2Vzb21lLnJvdGF0ZS5jc3MiLz4KICAgIDxzdHlsZT5odG1sLCBib2R5IHt3aWR0aDogMTAwJTtoZWlnaHQ6IDEwMCU7bWFyZ2luOiAwO3BhZGRpbmc6IDA7fTwvc3R5bGU+CiAgICA8c3R5bGU+I21hcCB7cG9zaXRpb246YWJzb2x1dGU7dG9wOjA7Ym90dG9tOjA7cmlnaHQ6MDtsZWZ0OjA7fTwvc3R5bGU+CiAgICAKICAgICAgICAgICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwKICAgICAgICAgICAgICAgIGluaXRpYWwtc2NhbGU9MS4wLCBtYXhpbXVtLXNjYWxlPTEuMCwgdXNlci1zY2FsYWJsZT1ubyIgLz4KICAgICAgICAgICAgPHN0eWxlPgogICAgICAgICAgICAgICAgI21hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyB7CiAgICAgICAgICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlOwogICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAuMCU7CiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxMDAuMCU7CiAgICAgICAgICAgICAgICAgICAgbGVmdDogMC4wJTsKICAgICAgICAgICAgICAgICAgICB0b3A6IDAuMCU7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIDwvc3R5bGU+CiAgICAgICAgCjwvaGVhZD4KPGJvZHk+ICAgIAogICAgCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZvbGl1bS1tYXAiIGlkPSJtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMiID48L2Rpdj4KICAgICAgICAKPC9ib2R5Pgo8c2NyaXB0PiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzID0gTC5tYXAoCiAgICAgICAgICAgICAgICAibWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzIiwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICBjZW50ZXI6IFszOS44MjgzLCAtOTguNTc5NV0sCiAgICAgICAgICAgICAgICAgICAgY3JzOiBMLkNSUy5FUFNHMzg1NywKICAgICAgICAgICAgICAgICAgICB6b29tOiA0LAogICAgICAgICAgICAgICAgICAgIHpvb21Db250cm9sOiB0cnVlLAogICAgICAgICAgICAgICAgICAgIHByZWZlckNhbnZhczogZmFsc2UsCiAgICAgICAgICAgICAgICAgICAgZGV0ZWN0UmV0aW5hOiB0cnVlLAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICApOwoKICAgICAgICAgICAgCgogICAgICAgIAogICAgCiAgICAgICAgICAgIHZhciB0aWxlX2xheWVyXzliZWJlOWVhZTA3MzQyMWFhZGZiNGJmNjgyNjJjMTI0ID0gTC50aWxlTGF5ZXIoCiAgICAgICAgICAgICAgICAiaHR0cHM6Ly9zdGFtZW4tdGlsZXMte3N9LmEuc3NsLmZhc3RseS5uZXQvdGVycmFpbi97en0ve3h9L3t5fS5qcGciLAogICAgICAgICAgICAgICAgeyJhdHRyaWJ1dGlvbiI6ICJNYXAgdGlsZXMgYnkgXHUwMDNjYSBocmVmPVwiaHR0cDovL3N0YW1lbi5jb21cIlx1MDAzZVN0YW1lbiBEZXNpZ25cdTAwM2MvYVx1MDAzZSwgdW5kZXIgXHUwMDNjYSBocmVmPVwiaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvMy4wXCJcdTAwM2VDQyBCWSAzLjBcdTAwM2MvYVx1MDAzZS4gRGF0YSBieSBcdTAwMjZjb3B5OyBcdTAwM2NhIGhyZWY9XCJodHRwOi8vb3BlbnN0cmVldG1hcC5vcmdcIlx1MDAzZU9wZW5TdHJlZXRNYXBcdTAwM2MvYVx1MDAzZSwgdW5kZXIgXHUwMDNjYSBocmVmPVwiaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnktc2EvMy4wXCJcdTAwM2VDQyBCWSBTQVx1MDAzYy9hXHUwMDNlLiIsICJkZXRlY3RSZXRpbmEiOiBmYWxzZSwgIm1heE5hdGl2ZVpvb20iOiAxOCwgIm1heFpvb20iOiAxOCwgIm1pblpvb20iOiAwLCAibm9XcmFwIjogZmFsc2UsICJvcGFjaXR5IjogMSwgInN1YmRvbWFpbnMiOiAiYWJjIiwgInRtcyI6IGZhbHNlfQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl84OThjOTE3ZmQ2ZmY0ZGQ0OGM0MzY4YmU0MWQ0MjU3YyA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzU2Ljc4NjExMTIsIC00LjExNDA1MThdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzExZTY0NGI1MTY3NzQxYzM5MDQ3ZmEzMzA2YzQ0ZGM3ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9lMTM1YTViNjJmZTY0ZGVlYTdmZjc1MDEzYzI5ZGFiOSA9ICQoYDxkaXYgaWQ9Imh0bWxfZTEzNWE1YjYyZmU2NGRlZWE3ZmY3NTAxM2MyOWRhYjkiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPmp0aG04MDogQEM3MUdhcmV0aCBAQWFyb25GcmFzZXIzNyBAUGFudHNTaGF0b24gSXTigJlzIHdoYXQgd2UgYWxsIGRvLiBDYW7igJl0IGJlYXQgYSBTYXR1cmRheSBhdCB0aGUgZm9vdGJhbGwuIFJvYmJpZSB3aWxsIGJ1aWxkIGEgZmFyIGJldHRlciB0ZWFtIHRoYW4gQ0wgKGFsbCBoaXMgZmF1bHQpIGRpZC48L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfMTFlNjQ0YjUxNjc3NDFjMzkwNDdmYTMzMDZjNDRkYzcuc2V0Q29udGVudChodG1sX2UxMzVhNWI2MmZlNjRkZWVhN2ZmNzUwMTNjMjlkYWI5KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzg5OGM5MTdmZDZmZjRkZDQ4YzQzNjhiZTQxZDQyNTdjLmJpbmRQb3B1cChwb3B1cF8xMWU2NDRiNTE2Nzc0MWMzOTA0N2ZhMzMwNmM0NGRjNykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl8yNDAxZmY1NmMwZWI0MTg3OTU0N2VjZWYxNzZhZjk3MCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzI2LjgzODEsIDgwLjkzNDYwMDFdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2U0NTNkNjI0YmU1MDQwN2Q5N2ViZTNkYjgyMzYzMzkxID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF83MzYwMjczMzA1MTM0NjkwYTNlOGFjMWE4MWU5NWM1NiA9ICQoYDxkaXYgaWQ9Imh0bWxfNzM2MDI3MzMwNTEzNDY5MGEzZThhYzFhODFlOTVjNTYiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkFOSVZFUk1BMTA6IEVQTDogVG90dGVuaGFtIHNlYWwgRXVyb3BhIExlYWd1ZSBzcG90IHdpdGggZHJhdyBhdCBQYWxhY2UgfCBGb290YmFsbCBOZXdzIOKAkyBUaW1lcyBvZsKgSW5kaWEgaHR0cHM6Ly90LmNvL3dJQmluUUF2M1k8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfZTQ1M2Q2MjRiZTUwNDA3ZDk3ZWJlM2RiODIzNjMzOTEuc2V0Q29udGVudChodG1sXzczNjAyNzMzMDUxMzQ2OTBhM2U4YWMxYTgxZTk1YzU2KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzI0MDFmZjU2YzBlYjQxODc5NTQ3ZWNlZjE3NmFmOTcwLmJpbmRQb3B1cChwb3B1cF9lNDUzZDYyNGJlNTA0MDdkOTdlYmUzZGI4MjM2MzM5MSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl83YzNhMTAyYjNjYWI0ZGMzYjU0YjgzODE0MTlmNzk1OCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUzLjI3NDQxMjIsIC05LjA0OTA2MzJdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzc1MjkxZTVhN2Y1NjQwYTRhM2IwMjFjMTA2YjYwMzVlID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF84NGQxZjc2NTMzODA0MWQyYjQ0YTIxMDJhZDRhYTQ2OCA9ICQoYDxkaXYgaWQ9Imh0bWxfODRkMWY3NjUzMzgwNDFkMmI0NGEyMTAyYWQ0YWE0NjgiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPlN3aW1taW5nc29sbzE6IEBTaGFycGVyQmVpbmcgQEhhcmxleVZpY1F1aW5uIEBSZXhDaGFwbWFuIEBndGNvbndheTNkIE5vLCB0aGUgb3RoZXIgY291bnRyeSBpcyBjYWxsZWQgSXJlbGFuZC4gICBPdXIgZm9vdGJhbGwgdGVhbSBpcyBjYWxsZWQgIlJlcHVibGljIG9mIElyZWxhbmQiIHRvIGRpc3Rpbmd1aXNoIGl0IGZyb20gdGhlIG90aGVyIElyaXNoIHRlYW0uICBCdXQgb3VyIFJ1Z2J5IHRlYW0gaXMgIklyZWxhbmQiIGJlY2F1c2UgcGxheWVycyBjb21lIGZyb20gYm90aCBqdXJpc2RpY3Rpb25zLjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF83NTI5MWU1YTdmNTY0MGE0YTNiMDIxYzEwNmI2MDM1ZS5zZXRDb250ZW50KGh0bWxfODRkMWY3NjUzMzgwNDFkMmI0NGEyMTAyYWQ0YWE0NjgpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfN2MzYTEwMmIzY2FiNGRjM2I1NGI4MzgxNDE5Zjc5NTguYmluZFBvcHVwKHBvcHVwXzc1MjkxZTVhN2Y1NjQwYTRhM2IwMjFjMTA2YjYwMzVlKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2EwZGZkNTIxZDMzNzQxZWI5MWRiMDIwOTQ3YTkzMzVlID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNDIuMjU1MzY1MSwgLTczLjkwMjM1MThdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzM1MTliMDRmZjgzMzRlZTE5N2ZjZWJiNzc2ZGRlYTU1ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8xMGZkZjA1ZjljOGQ0YWYyODQ1NGYyNmFmMzFmNGRjZiA9ICQoYDxkaXYgaWQ9Imh0bWxfMTBmZGYwNWY5YzhkNGFmMjg0NTRmMjZhZjMxZjRkY2YiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkZlcmd1c29uTXIxOiBARHJXaWxraW5zb25TY2kgRW5qb3kgQmlsbC4gIENvbW1pc2VyYXRpb25zIG9uIHRoZSBmb290YmFsbCBvdXRjb21lIHRvZGF5LjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF8zNTE5YjA0ZmY4MzM0ZWUxOTdmY2ViYjc3NmRkZWE1NS5zZXRDb250ZW50KGh0bWxfMTBmZGYwNWY5YzhkNGFmMjg0NTRmMjZhZjMxZjRkY2YpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYTBkZmQ1MjFkMzM3NDFlYjkxZGIwMjA5NDdhOTMzNWUuYmluZFBvcHVwKHBvcHVwXzM1MTliMDRmZjgzMzRlZTE5N2ZjZWJiNzc2ZGRlYTU1KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzQyYzU4MjM0ZGNmMjRkMGI4MTdiMjAxY2IzZmRlYTAxID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNTcuNzE3OTcyLCAxMS44ODc0ODE5XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF80NzNiZWRmNzI5Nzc0NTVmOTIzMmRjNTA5OTg4YjBlZSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfMjlkMjU5MDU2ZTgwNGRkOGIxNWU4OTE1MDc3ODQyYTAgPSAkKGA8ZGl2IGlkPSJodG1sXzI5ZDI1OTA1NmU4MDRkZDhiMTVlODkxNTA3Nzg0MmEwIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5CV0ZlbGR5OiBASE9MTE9XQVlfXzUyIEJybywgSeKAmW0gcHVtcGVkIGZvciBzb21lIGZvb3RiYWxsISE8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNDczYmVkZjcyOTc3NDU1ZjkyMzJkYzUwOTk4OGIwZWUuc2V0Q29udGVudChodG1sXzI5ZDI1OTA1NmU4MDRkZDhiMTVlODkxNTA3Nzg0MmEwKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzQyYzU4MjM0ZGNmMjRkMGI4MTdiMjAxY2IzZmRlYTAxLmJpbmRQb3B1cChwb3B1cF80NzNiZWRmNzI5Nzc0NTVmOTIzMmRjNTA5OTg4YjBlZSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9iYzIzODY1NmJmZjc0ZWIxYmRjYWZiZmJmZDNmOWU3OSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWy0zNC40MzM2NjA2LCAtNTguNzI2MTI1N10sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfY2Q2YTI1NjkzMmVkNDg4NTk5MDE3OTcwMGQzMmRkMjMgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2JmODZkYmE5NmRmYjRjOTJiYzgxMDcwNjY3Y2MzNTdjID0gJChgPGRpdiBpZD0iaHRtbF9iZjg2ZGJhOTZkZmI0YzkyYmM4MTA3MDY2N2NjMzU3YyIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+VE9EREpvbjc0OTI1NTE3OiBAV21fR2FsbG93YXkgSmltIEhhcmJhdWdoIGlzIHRoZSBtb3N0IG92ZXIgcGFpZCBjb2FjaCBpbiBjb2xsZWdlIGZvb3RiYWxsLiBIZSBjYW7igJl0IGJlYXQgQWxhYmFtYSBvciBPaGlvIFN0YXRlIGFuZCBNaWNoaWdhbiBoYXNu4oCZdCB3b24gYSB0aXRsZSBzaW5jZSAxOTk3LiBIZSBhY2N1c2VkIEJhbWEgb2YgcnVubmluZyB1cCB0aGUgc2NvcmUgaW4gbGFzdCB5ZWFycyBib3dsIGdhbWUuIFdlIHJhbiB0aGUgYmFsbCBhbGwgNHRoIHF1YXJ0ZXIgJmFtcDsgdGhleSBjb3VsZG7igJl0IHN0b3AgdXMuIFN0b3AgY3J5aW5nISEhPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2NkNmEyNTY5MzJlZDQ4ODU5OTAxNzk3MDBkMzJkZDIzLnNldENvbnRlbnQoaHRtbF9iZjg2ZGJhOTZkZmI0YzkyYmM4MTA3MDY2N2NjMzU3Yyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9iYzIzODY1NmJmZjc0ZWIxYmRjYWZiZmJmZDNmOWU3OS5iaW5kUG9wdXAocG9wdXBfY2Q2YTI1NjkzMmVkNDg4NTk5MDE3OTcwMGQzMmRkMjMpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfZTljOGI4YWE0MGFhNGY0YThhMDJjNWY3OGNlMDE0NzAgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs1Mi45MDA0MDMxLCAwLjYyODQ1OTVdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzY3MGE2MzM0MjVhNDRkNTE4OGJmOGNkZDFlOWI1YmFiID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8yMTE4ODc3ZjA1ZGQ0N2ExYTM5ZGU4ODgxZjEyNmFhMCA9ICQoYDxkaXYgaWQ9Imh0bWxfMjExODg3N2YwNWRkNDdhMWEzOWRlODg4MWYxMjZhYTAiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPlJvYmJpZUFscHo6IEBBZGFtQWl6ZXIgVGhlcmUgaXMgc29tZXRoaW5nIHNwZWNpYWwgYWJvdXQgYSBiaWcgY29sbGVnZSBmb290YmFsbCBnYW1lIG9uIGEgU2F0dXJkYXkgbmlnaHQgdGhhdCBpcyBub3QgbWF0Y2hlZCBhbnl3aGVyZSBlbHNlIGh0dHBzOi8vdC5jby93ZlpwaU1wWTFuPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzY3MGE2MzM0MjVhNDRkNTE4OGJmOGNkZDFlOWI1YmFiLnNldENvbnRlbnQoaHRtbF8yMTE4ODc3ZjA1ZGQ0N2ExYTM5ZGU4ODgxZjEyNmFhMCk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9lOWM4YjhhYTQwYWE0ZjRhOGEwMmM1Zjc4Y2UwMTQ3MC5iaW5kUG9wdXAocG9wdXBfNjcwYTYzMzQyNWE0NGQ1MTg4YmY4Y2RkMWU5YjViYWIpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfYzgzOTljMTVlMDFlNGRlMGJhMmNjY2VlOGE0YzY2ZjQgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszOC43MjgyMTIyNSwgLTc3LjE1MDk4MjkxMjk1ODhdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2FjMjhhZDViMjc4MTQzNjY5YzQwNmYzNTMzZGQ1Mzk4ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9lMzA0ZjAwZmM0NTM0YzYzYThjOGM4MDQ1MGExNmZiMiA9ICQoYDxkaXYgaWQ9Imh0bWxfZTMwNGYwMGZjNDUzNGM2M2E4YzhjODA0NTBhMTZmYjIiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPmplcmVteV9pb246IEBibzMzIEZvb3RiYWxsIGRvZXNuJ3QgaGF2ZSBtb21lbnR1bSwgb2YgY291cnNlITwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9hYzI4YWQ1YjI3ODE0MzY2OWM0MDZmMzUzM2RkNTM5OC5zZXRDb250ZW50KGh0bWxfZTMwNGYwMGZjNDUzNGM2M2E4YzhjODA0NTBhMTZmYjIpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYzgzOTljMTVlMDFlNGRlMGJhMmNjY2VlOGE0YzY2ZjQuYmluZFBvcHVwKHBvcHVwX2FjMjhhZDViMjc4MTQzNjY5YzQwNmYzNTMzZGQ1Mzk4KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzMyMzA0NTc2ZDBmZDRhM2I4NjdjZDUyZTRmZTM3YTIwID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNDIuNDczMzY4OSwgLTgzLjIyMTg3MzFdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2UyNDgwNzk2NzQ2NTQwMmM4MjdlN2VlNDFhZjUyMDZiID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF85NzJiYzE1MmE3OWY0MjEwOWQxMjEzZjUxNWM3YTNmNSA9ICQoYDxkaXYgaWQ9Imh0bWxfOTcyYmMxNTJhNzlmNDIxMDlkMTIxM2Y1MTVjN2EzZjUiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkNvYWNoRmFiaWFuRzogQ29hY2hGYWJpYW5HIEZvb3RiYWxsIFRyYWluaW5nICBRQiBMb2NhdGUvUGFzcyBEcmlsbCBodHRwczovL3QuY28vTkpFdUpVREhTWCBodHRwczovL3QuY28vekFHWDJkZWpWajwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9lMjQ4MDc5Njc0NjU0MDJjODI3ZTdlZTQxYWY1MjA2Yi5zZXRDb250ZW50KGh0bWxfOTcyYmMxNTJhNzlmNDIxMDlkMTIxM2Y1MTVjN2EzZjUpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfMzIzMDQ1NzZkMGZkNGEzYjg2N2NkNTJlNGZlMzdhMjAuYmluZFBvcHVwKHBvcHVwX2UyNDgwNzk2NzQ2NTQwMmM4MjdlN2VlNDFhZjUyMDZiKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzA0MzE5ODBjYWQzOTRiZGU5OTJhNDc1MmYxZDI2ZTY2ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzMuNDQ4NTg2NiwgLTExMi4wNzczNDU2XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF80NjI4NWU0MjA2Mjg0ODc5YThmZjAyOTRhMzA0YmJkNiA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZmZiZTA4MWNiNGZjNGQzYzg1ZGY0ODY3MWM0YWMwYTYgPSAkKGA8ZGl2IGlkPSJodG1sX2ZmYmUwODFjYjRmYzRkM2M4NWRmNDg2NzFjNGFjMGE2IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5QaW5lYXBwbGVCcml0dDogVGhlIGFtb3VudCBvZiBFYWdsZXMgZ2VhciBJIGJvdWdodCBpbiB0aGUgbGFzdCB3ZWVrIGlzIHZlcnkgZXhjaXRpbmcuIENhbuKAmXQgd2FpdCBmb3IgZm9vdGJhbGwgc2Vhc29uIPCfmKvwn5irPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzQ2Mjg1ZTQyMDYyODQ4NzlhOGZmMDI5NGEzMDRiYmQ2LnNldENvbnRlbnQoaHRtbF9mZmJlMDgxY2I0ZmM0ZDNjODVkZjQ4NjcxYzRhYzBhNik7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8wNDMxOTgwY2FkMzk0YmRlOTkyYTQ3NTJmMWQyNmU2Ni5iaW5kUG9wdXAocG9wdXBfNDYyODVlNDIwNjI4NDg3OWE4ZmYwMjk0YTMwNGJiZDYpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfM2U4ZDRjYmUyNDZkNDVjZTlhMTVkZDhmZGFiOWYzM2IgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFsyNS4yMjMyMjgzLCA1NS4xNTk0OTMzMDA4NzU0XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9lZTNiMTBiNjZlZWE0ODM1YjBjM2I3ODZkZGQ1ZDQ3YSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfOGU1ZWQ4YzAwYzMwNDRkYTg5MTI5ZTU0NWJiZGEyZDQgPSAkKGA8ZGl2IGlkPSJodG1sXzhlNWVkOGMwMGMzMDQ0ZGE4OTEyOWU1NDViYmRhMmQ0IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5Gb290eUZhbnNGQzogS2VhbmUgYW5kIE1hZ3VpcmUgYWdyZWUgb24gbW9tZW50IHRoYXQgY2hhbmdlZCBNYW4gVXRkJ3Mgc2Vhc29uIGh0dHBzOi8vdC5jby9aSmtZdGF0eVVCICNGT09UQkFMTDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9lZTNiMTBiNjZlZWE0ODM1YjBjM2I3ODZkZGQ1ZDQ3YS5zZXRDb250ZW50KGh0bWxfOGU1ZWQ4YzAwYzMwNDRkYTg5MTI5ZTU0NWJiZGEyZDQpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfM2U4ZDRjYmUyNDZkNDVjZTlhMTVkZDhmZGFiOWYzM2IuYmluZFBvcHVwKHBvcHVwX2VlM2IxMGI2NmVlYTQ4MzViMGMzYjc4NmRkZDVkNDdhKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2E0YTFhOTU5ZTBiYjQ1YWI4ZGQ3OTg3YTU5Nzk2ZTFkID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbLTIyLjkwNTU2LCAtNDcuMDYwODNdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzJmOGYyYmFhMTEzYTRlNTBhZmZhNmM5YjI4MGRiNGEyID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8yNzc5M2EyOTgxNWU0ZGZiYjIzN2I1MWIzMjZlZjJjMSA9ICQoYDxkaXYgaWQ9Imh0bWxfMjc3OTNhMjk4MTVlNGRmYmIyMzdiNTFiMzI2ZWYyYzEiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkdhbWVycHJvemFvOiBFc3RhbW9zIG5vIEZvb3RiYWxsIE1hbmFnZXIgMjAyMCBodHRwczovL3QuY28vWUxCOUFnaWxjdDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF8yZjhmMmJhYTExM2E0ZTUwYWZmYTZjOWIyODBkYjRhMi5zZXRDb250ZW50KGh0bWxfMjc3OTNhMjk4MTVlNGRmYmIyMzdiNTFiMzI2ZWYyYzEpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYTRhMWE5NTllMGJiNDVhYjhkZDc5ODdhNTk3OTZlMWQuYmluZFBvcHVwKHBvcHVwXzJmOGYyYmFhMTEzYTRlNTBhZmZhNmM5YjI4MGRiNGEyKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzkyOTI0NWU2ZWQ5ZTQzOWZhOWIzOWI4YzNmZGE0OGM2ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzMuMjk1NjcwMywgLTk3LjgwOTM1OTddLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2U3OWVhMmVlOGJjZjRmNTdiMzk5ZTA4MTVlMjk2NTk4ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF9kNjEyZmQ5NzRhYTc0MTc3OGVmYmU0NjhmMmM4OWY2YyA9ICQoYDxkaXYgaWQ9Imh0bWxfZDYxMmZkOTc0YWE3NDE3NzhlZmJlNDY4ZjJjODlmNmMiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPmZ1bGFuYV9kaWVkOiBteSBzaXN0ZXIgY2FsbGVkIG1lIOKAnHN1Y2ggYSBtb23igJ0gdG9kYXkgYmVjYXVzZSBJIGZvdW5kIG91dCBhYm91dCBhbmQgbm93IGxpa2UgYSBmb290YmFsbCBwbGF5ZXIgYmVjYXVzZSBoZSB3YXMgb24gYSBuZXR3b3JrIHRlbGV2aXNpb24gc2hvdyBhbmQuLi4uLkkganVzdC4uLi4uaGF2ZSBub3RoaW5nIHRvIHNheSBpbiByZXR1cm4gYmVjYXVzZSBzaGXigJlzIHJpZ2h0IGFuZCBJIGhhdmUgYmVlbiBvZmZpY2lhbGx5IHJvYXN0ZWQ8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfZTc5ZWEyZWU4YmNmNGY1N2IzOTllMDgxNWUyOTY1OTguc2V0Q29udGVudChodG1sX2Q2MTJmZDk3NGFhNzQxNzc4ZWZiZTQ2OGYyYzg5ZjZjKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzkyOTI0NWU2ZWQ5ZTQzOWZhOWIzOWI4YzNmZGE0OGM2LmJpbmRQb3B1cChwb3B1cF9lNzllYTJlZThiY2Y0ZjU3YjM5OWUwODE1ZTI5NjU5OCkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl80YjdiYTg1MDU1Zjg0YWQ0YjExMGNjNzdmMzcxY2IwYiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUuNTE3LCA1Ljc1XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9jNjRkNWQwNWY1MjM0YjdlYjYwYTQwNTgyOWRhMjVmNCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfMzI1MjE3ZDA5NTM5NDVmZDgyYTEwMThkMmQ4NGRjMzMgPSAkKGA8ZGl2IGlkPSJodG1sXzMyNTIxN2QwOTUzOTQ1ZmQ4MmExMDE4ZDJkODRkYzMzIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5OYXprZWxseTogV2FpdCEgQW0gSSB0aGUgb25seSBndXkgdGhhdCBkb2Vzbid0IHdhdGNoIGZvb3RiYWxsPyBXZWxsIEkga25vdyBpdCdzIGtpbmRhIHdlaXJkLCB5b3UgZG9uJ3QgbmVlZCB0byByZW1pbmQgbWXwn6So8J+atjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9jNjRkNWQwNWY1MjM0YjdlYjYwYTQwNTgyOWRhMjVmNC5zZXRDb250ZW50KGh0bWxfMzI1MjE3ZDA5NTM5NDVmZDgyYTEwMThkMmQ4NGRjMzMpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNGI3YmE4NTA1NWY4NGFkNGIxMTBjYzc3ZjM3MWNiMGIuYmluZFBvcHVwKHBvcHVwX2M2NGQ1ZDA1ZjUyMzRiN2ViNjBhNDA1ODI5ZGEyNWY0KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzgxODNmNTQwZmU3NjQ2N2M4ZTFhYzkwNmIzZTIwODczID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzYuNzAxNDYzMSwgLTExOC43NTU5OTc0XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF8wMTgxMzdhN2MyMDQ0MWRiYWVjMjU3NzExOWFlMTYxOSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfNTgyYTk1YzAzMjM1NDMyNzhmZDJhMTBlY2ZhNjg5ZjQgPSAkKGA8ZGl2IGlkPSJodG1sXzU4MmE5NWMwMzIzNTQzMjc4ZmQyYTEwZWNmYTY4OWY0IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5HcmVhdHJlc291cmNlOiBAT2plZGE0QW1lcmljYSBJIGtuZXcgaGUgd2FzIHBsYXlpbmcgZm9vdGJhbGwgd2l0aG91dCBhIGhlbG1ldC4gSGUgaXMgbm90IGFsbCB0aGVyZS48L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfMDE4MTM3YTdjMjA0NDFkYmFlYzI1NzcxMTlhZTE2MTkuc2V0Q29udGVudChodG1sXzU4MmE5NWMwMzIzNTQzMjc4ZmQyYTEwZWNmYTY4OWY0KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzgxODNmNTQwZmU3NjQ2N2M4ZTFhYzkwNmIzZTIwODczLmJpbmRQb3B1cChwb3B1cF8wMTgxMzdhN2MyMDQ0MWRiYWVjMjU3NzExOWFlMTYxOSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9iYmUzYzkyNWI4ODQ0ZDUwODU5YTI0ZTZjM2QwNDMyNyA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUxLjUwNzMyMTksIC0wLjEyNzY0NzRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzc0YTdlMmM2ODM1ZjQ1ZDNhZThjNGIyMWUxZmUzYTU2ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8xZWE1Y2EyNjJlYTY0OGM5YWRlNjk5ZjhkN2EzOTExMSA9ICQoYDxkaXYgaWQ9Imh0bWxfMWVhNWNhMjYyZWE2NDhjOWFkZTY5OWY4ZDdhMzkxMTEiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPmlxc254XzogVW5pdGVkIGZhbnMgYXJlIGluIGNoYW1waW9ucyBsZWFndWUgZm9vdGJhbGwgYnV0IGl04oCZcyBBcnNlbmFsIHdobyBhcmUgOHRoIGJ0dyB0aGV54oCZcmUgZml4YXRlZCBvbj8gSXNpdCBjcmFjayBiYWJ5PzwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF83NGE3ZTJjNjgzNWY0NWQzYWU4YzRiMjFlMWZlM2E1Ni5zZXRDb250ZW50KGh0bWxfMWVhNWNhMjYyZWE2NDhjOWFkZTY5OWY4ZDdhMzkxMTEpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYmJlM2M5MjViODg0NGQ1MDg1OWEyNGU2YzNkMDQzMjcuYmluZFBvcHVwKHBvcHVwXzc0YTdlMmM2ODM1ZjQ1ZDNhZThjNGIyMWUxZmUzYTU2KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzIyODFjODM0NmRlNjRkMjc4ZWNkNTRjMzNiMzljMTE1ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNDAuNDQxNjk0MSwgLTc5Ljk5MDA4NjFdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwX2YzMGY5Y2EzMjE1NDQ4MTI5NzFiNGI1MTllY2JiZThhID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8zNGU1ZWEwNWY3YzM0MmI1YjQ4YzgzMDAxZWU5MWM3NSA9ICQoYDxkaXYgaWQ9Imh0bWxfMzRlNWVhMDVmN2MzNDJiNWI0OGM4MzAwMWVlOTFjNzUiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPm15cmljaGllaGF5bmVzOiBub3cgdGhhdCBzcG9ydHMgaXMgYmFjay4uLi5teSBkYWlseSB0d2l0dGVyIHNlYXJjaCBpcyAiUGl0dHNidXJnaCAtc3BvcnRzIC1iYXNlYmFsbCAtZm9vdGJhbGwgLWhvY2tleSAtcGlyYXRlcyAtc3RlZWxlcnMgLXBlbmd1aW5zIC1hcmVuYSAtcHJlZ2FtZSAtcGxheW9mZnMiPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2YzMGY5Y2EzMjE1NDQ4MTI5NzFiNGI1MTllY2JiZThhLnNldENvbnRlbnQoaHRtbF8zNGU1ZWEwNWY3YzM0MmI1YjQ4YzgzMDAxZWU5MWM3NSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8yMjgxYzgzNDZkZTY0ZDI3OGVjZDU0YzMzYjM5YzExNS5iaW5kUG9wdXAocG9wdXBfZjMwZjljYTMyMTU0NDgxMjk3MWI0YjUxOWVjYmJlOGEpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfZmE5MWZlMmZiMGUyNDQxZWE5ZWMzMTUyMzdhNDQ3Y2QgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs1Mi4zNjEwMDQwNSwgNS4yMjg5OTYzMzg0MTE2M10sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfYzE5ZGQ2YmRkZTc3NDczYzg2ZDZjMzgwMmVkMjJmMjcgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzNiNmJmNWU1MzMwMTQzYTFiNDU5MWE1MzBlZDcwMDQ5ID0gJChgPGRpdiBpZD0iaHRtbF8zYjZiZjVlNTMzMDE0M2ExYjQ1OTFhNTMwZWQ3MDA0OSIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+aXNhYWNzaGlsb29vOiBAc2tlbmd0ZXRhIHRoZSBQcmVtIGlzIHNvIHVucHJlZGljdGFibGUgYW5kIHRoYXQgaW4gaXRzZWxmIGFscmVhZHkgc2hvd3MgeW91IHRoYXQgdGhlcmUgaXMgdmFyaW91cyB0YWN0aWNhbCBzZXR1cHMsIHRlbXBvcyBldGMuIFRoZSBhYmlsaXR5IHRvIGRvIGl0IGluIHRoZSBQcmVtIGluIGl0c2VsZiBpcyBhIGJpZyBhY2NvbXBsaXNobWVudC4gRXVyb3BlYW4gZm9vdGJhbGwgaXMgbm90IGFzIGltcG9ydGFudCB0YWN0aWNhbCB3aXNlIGFzIGl0IHdhcyBpbiB0aGUgcGFzdCwgZG9pbmcgaXQgb3ZlciAzODwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF9jMTlkZDZiZGRlNzc0NzNjODZkNmMzODAyZWQyMmYyNy5zZXRDb250ZW50KGh0bWxfM2I2YmY1ZTUzMzAxNDNhMWI0NTkxYTUzMGVkNzAwNDkpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfZmE5MWZlMmZiMGUyNDQxZWE5ZWMzMTUyMzdhNDQ3Y2QuYmluZFBvcHVwKHBvcHVwX2MxOWRkNmJkZGU3NzQ3M2M4NmQ2YzM4MDJlZDIyZjI3KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2M2MmYwYjY0YzYxMzQ5ODA5MWRkYjEzYmZlYTliNTE2ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNTUuODU2NjU2LCAtNC4yNDM1ODE3XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF8xNTc1NzJiY2U4NzA0NTUwYTY4NzM4YWVjZTIxOTgxNiA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfYzdhZmFjYjA1NmMyNDNlNjk4NWQ4MjA2NjM3MGEwOWIgPSAkKGA8ZGl2IGlkPSJodG1sX2M3YWZhY2IwNTZjMjQzZTY5ODVkODIwNjYzNzBhMDliIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5vb3Jib2FieTogQGJlbGxzaGlsbGJha2VyIEBwYXRyb25zYWludG9mY2EgTmV2ZXIgdHJ1c3QgYSBtYW4gd2hvIGNhbuKAmXQgZGVjaWRlIHdoYXQgZm9vdGJhbGwgdGVhbSBoZSBzdXBwb3J0cy4uLi4gaXMgaXQgbXkgaW1hZ2luYXRpb24gb3IgaGFzIEdHIGZsaXJ0ZWQgd2l0aCBib3RoIERVRkMgYW5kIENlbHRpYyBkb3duIHRoZSB5ZWFycz88L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfMTU3NTcyYmNlODcwNDU1MGE2ODczOGFlY2UyMTk4MTYuc2V0Q29udGVudChodG1sX2M3YWZhY2IwNTZjMjQzZTY5ODVkODIwNjYzNzBhMDliKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2M2MmYwYjY0YzYxMzQ5ODA5MWRkYjEzYmZlYTliNTE2LmJpbmRQb3B1cChwb3B1cF8xNTc1NzJiY2U4NzA0NTUwYTY4NzM4YWVjZTIxOTgxNikKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl82ZWM2ZWYxMWNmZTE0YjJhODE3NTM0ZGEwZGQ4MTNlNSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzM0Ljk1NTA4MTcsIC05Ny4yNjg0MDYzXSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF83YzI5OThjYzNiOGI0Zjg1YTdmMTEyZDBjOGFiODFiYiA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfMGRhZmZjYjRkMGRiNDE1OWI4NDBjOGNhYThkN2Y1ZWMgPSAkKGA8ZGl2IGlkPSJodG1sXzBkYWZmY2I0ZDBkYjQxNTliODQwYzhjYWE4ZDdmNWVjIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5qX2xlZHNhbGw6IFdvdWxkIGl0IGJlIGZhaXIgdG8gc2F5IHRoYXQgeW91IHdvdWxkIGJlIG15IEpKIFdhdHQgb2YgRm9vdGJhbGwgKEkgZG9uJ3Qgd2F0Y2ggYmFzZWJhbGwpPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzdjMjk5OGNjM2I4YjRmODVhN2YxMTJkMGM4YWI4MWJiLnNldENvbnRlbnQoaHRtbF8wZGFmZmNiNGQwZGI0MTU5Yjg0MGM4Y2FhOGQ3ZjVlYyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl82ZWM2ZWYxMWNmZTE0YjJhODE3NTM0ZGEwZGQ4MTNlNS5iaW5kUG9wdXAocG9wdXBfN2MyOTk4Y2MzYjhiNGY4NWE3ZjExMmQwYzhhYjgxYmIpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfNjg2ODkyOTIzN2JmNGIzZmE4NWJjNzM5ZmMyODViOTggPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs5LjYwMDAzNTksIDcuOTk5OTcyMV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfN2QzNWVjYzZmNDUyNDZhZTgwOTNjZDU5OWE1MmJiZDcgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzA3MzgxMjg4YjljYzQzZjg5ZDY4ZjFjMDhkZmQ4ZTJkID0gJChgPGRpdiBpZD0iaHRtbF8wNzM4MTI4OGI5Y2M0M2Y4OWQ2OGYxYzA4ZGZkOGUyZCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+b2JleWFtYXJrOiBJIHRoaW5rIHRoZSBxdWVzdGlvbiBzaG91bGQgYmUgaWYgaXQgd2FzIGEgd3JvbmcgY2FsbCBvciBub3QuIFBlbmFsdGllcyBhcmUgcGFydCBvZiBmb290YmFsbC4gSXQncyBub3QgYSBtYWRlIHVwIHN0dWZmLiAgQW5kIHdoZW4gYSB0ZWFtIHBsYXlzIGEgbG90IG1vcmUgY2xvc2VyIHRvL2luIHRoZSBvcHBvc2l0aW9uIGJveCwgeW91IGV4cGVjdCB0aGVtIHRvIGdldCBmb3VsZWQuPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzdkMzVlY2M2ZjQ1MjQ2YWU4MDkzY2Q1OTlhNTJiYmQ3LnNldENvbnRlbnQoaHRtbF8wNzM4MTI4OGI5Y2M0M2Y4OWQ2OGYxYzA4ZGZkOGUyZCk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl82ODY4OTI5MjM3YmY0YjNmYTg1YmM3MzlmYzI4NWI5OC5iaW5kUG9wdXAocG9wdXBfN2QzNWVjYzZmNDUyNDZhZTgwOTNjZDU5OWE1MmJiZDcpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfZGI3NjMwZmFiZjcwNDczYjlhZGFjNDZiNGIxN2RmZGQgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszNS42NzI5NjM5LCAtNzkuMDM5MjkxOV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfOGI4ZDMzZDBhOWM4NGZiYWJlZjQ2YjE1ZGRmYWYwY2IgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sX2ZjOWUyMGFhNjk3ZTQ3MWU4YmViZDA3NGJhYzgyNGYyID0gJChgPGRpdiBpZD0iaHRtbF9mYzllMjBhYTY5N2U0NzFlOGJlYmQwNzRiYWM4MjRmMiIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+U2NvdHRiYjE5Nzk6IEBhY2NuZXR3b3JrIE5vLiBUaGV5IGNob3NlIHRvIHJlbWFpbiBpbmRlcGVuZGVudCBvZiBhIGNvbmZlcmVuY2UgaW4gZm9vdGJhbGwuIFRoYXTigJlzIHRoZWlyIGJlZCwgbGV0IHRoZW0gbGllIGluIGl0LjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF84YjhkMzNkMGE5Yzg0ZmJhYmVmNDZiMTVkZGZhZjBjYi5zZXRDb250ZW50KGh0bWxfZmM5ZTIwYWE2OTdlNDcxZThiZWJkMDc0YmFjODI0ZjIpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfZGI3NjMwZmFiZjcwNDczYjlhZGFjNDZiNGIxN2RmZGQuYmluZFBvcHVwKHBvcHVwXzhiOGQzM2QwYTljODRmYmFiZWY0NmIxNWRkZmFmMGNiKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzU4MmU5ZWNhOGI3ZTQ5YWU4OTA2M2I3OTEzNGYxMWU2ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNTIuODY1MTk2LCAtNy45Nzk0NTk5XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF8xNzM2Zjc4NzQyYWU0MTE3ODNkNGQyN2I3Y2YxN2VlMCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfZDE4NTgzMzVjZjAyNDk5ZjhhMGM3N2U2MDZlYTk3MjcgPSAkKGA8ZGl2IGlkPSJodG1sX2QxODU4MzM1Y2YwMjQ5OWY4YTBjNzdlNjA2ZWE5NzI3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5KYXlfUmFkNDogQERleGVydG8gUGxheWluZyBmb290YmFsbCBvciBhbnkgc3BvcnQgaXMgYSB3YXN0ZSBvZiB0aW1lIGlmIHUgZG9u4oCZdCBnbyBhbnl3aGVyZSB3aXRoIGl0LCBqdXN0IGxpa2UgZ2FtaW5nLjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF8xNzM2Zjc4NzQyYWU0MTE3ODNkNGQyN2I3Y2YxN2VlMC5zZXRDb250ZW50KGh0bWxfZDE4NTgzMzVjZjAyNDk5ZjhhMGM3N2U2MDZlYTk3MjcpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNTgyZTllY2E4YjdlNDlhZTg5MDYzYjc5MTM0ZjExZTYuYmluZFBvcHVwKHBvcHVwXzE3MzZmNzg3NDJhZTQxMTc4M2Q0ZDI3YjdjZjE3ZWUwKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2UzNzYyNGU0NzQ4ZTRiYjlhOWRiZDA4ZjNkNmIyMjc4ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzkuMTY4MTMxMzUsIC05NC40NTQ3Nzg4Mzc1NDQyXSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9kZmM0NjgwODljYjg0YzA4OWNkOTBjZmNjNGM3NmNkNyA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfYjQ5YTRmZDc2NDlhNGM2YjkyZTM3OTE1YmVmMTk5NDMgPSAkKGA8ZGl2IGlkPSJodG1sX2I0OWE0ZmQ3NjQ5YTRjNmI5MmUzNzkxNWJlZjE5OTQzIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5Pd2VuX1diYV86IExpdmVycG9vbCBzdXBwb3J0aW5nIGZyaWVuZDog4oCcV2VzdCBCcm9tIHdpbGwganVzdCBnbyBiYWNrIGRvd27igJ0gIE5vbiBmb290YmFsbCBzdXBwb3J0aW5nIGZyaWVuZDog4oCcV2VzdCBCcm9tIGFyZSBzaGl04oCdICBNZSByYW5kb21seTog4oCcWWVhaCwgZXJtLCB3ZWxsIHlvdSB3YXRjaCwgd2XigJlsbCBiZSBjaGFtcGlvbnMgb2YgRW5nbGFuZCBpbiAyIHllYXJz4oCdICAg8J+YgvCfmILwn5iC8J+kpvCfj7vigI3imYLvuI88L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfZGZjNDY4MDg5Y2I4NGMwODljZDkwY2ZjYzRjNzZjZDcuc2V0Q29udGVudChodG1sX2I0OWE0ZmQ3NjQ5YTRjNmI5MmUzNzkxNWJlZjE5OTQzKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2UzNzYyNGU0NzQ4ZTRiYjlhOWRiZDA4ZjNkNmIyMjc4LmJpbmRQb3B1cChwb3B1cF9kZmM0NjgwODljYjg0YzA4OWNkOTBjZmNjNGM3NmNkNykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9lMmY3YWYwNzM5ZDA0OGM3YjgyN2FiMzE2NjRjMTU3NCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzQxLjI1ODczMTcsIC05NS45Mzc4NzMyXSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF9jN2ZiYWE3MmRhMzM0NmM2YTc3Y2I3OTEwMjNjNDhhNCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfODQyMGRkMTQyYmE1NDgxYzg3YjI4ZGMyODI5NGI3MzcgPSAkKGA8ZGl2IGlkPSJodG1sXzg0MjBkZDE0MmJhNTQ4MWM4N2IyOGRjMjgyOTRiNzM3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5TcHJ0c0NhcmRBdXN0aW46IEBUaGVfcmFtMzEgQW55dGhpbmcgcmVhbGx5LiBCYXNlYmFsbCBqdXN0IHN0YXJ0ZWQgZ2V0dGluZyBpbnRvLCBsb29raW5nIGZvciBtb3N0bHkgYmlnZ2VyIG5hbWUgc3R1ZmYuIEZvb3RiYWxsIGFuZCBiYXNrZXRiYWxsLCBhbnl0aGluZy4gRE0gaWYgeW91IGhhdmUgaXRlbXMgcGxzIPCfkY3wn4+8PC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwX2M3ZmJhYTcyZGEzMzQ2YzZhNzdjYjc5MTAyM2M0OGE0LnNldENvbnRlbnQoaHRtbF84NDIwZGQxNDJiYTU0ODFjODdiMjhkYzI4Mjk0YjczNyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9lMmY3YWYwNzM5ZDA0OGM3YjgyN2FiMzE2NjRjMTU3NC5iaW5kUG9wdXAocG9wdXBfYzdmYmFhNzJkYTMzNDZjNmE3N2NiNzkxMDIzYzQ4YTQpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfNmFkYWNiYTQ2NjYxNDdkYjk3M2Y5MDkzNDk1NGY5NGIgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs1MS4yOTAwMjA2LCAwLjE5OTIxNzddLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzNlMWU3ZTQ2NmU1YzQzNGE5ODg1NWZjNDc3MWMxMjU3ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF83Njk2YTUyZGFhNmU0YjA3YjMzZTU4MDEyZWRhYzU3MyA9ICQoYDxkaXYgaWQ9Imh0bWxfNzY5NmE1MmRhYTZlNGIwN2IzM2U1ODAxMmVkYWM1NzMiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPmxlb25hcmRfb25haDogQGxpYXBlX29mZmljaWFsIEB4QWxmaWVUSEZDIExvbCxtYW4gbm8gb2ZmZW5zZSBidXQgeW91IGtub3cgbGl0dGxlIG9yIG5vdGhpbmcgYWJvdXQgZm9vdGJhbGwgaWYgeW91IGRvbuKAmXQgc2VlIHdoYXQgUmFzaGZvcmQgZG9lcyBpbiB0aGF0IHRlYW3wn5iCLi4ubm9uIG9mIHRoZSBndXlzIHlvdSBqdXN0IGxpc3RlZCBoYXZlIGJldHRlciBleWUgZm9yIHVwIHRocm91Z2ggYmFsbHMgdGhhbiBSYXNoZm9yZCBhbmQgaGXigJlzIGJldHRlciBhdCBsb25nIHJhbmdlIHBhc3MgdGhhbiBldmVyeW9uZSB5b3UganVzdCBtZW50aW9uZWQ8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfM2UxZTdlNDY2ZTVjNDM0YTk4ODU1ZmM0NzcxYzEyNTcuc2V0Q29udGVudChodG1sXzc2OTZhNTJkYWE2ZTRiMDdiMzNlNTgwMTJlZGFjNTczKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzZhZGFjYmE0NjY2MTQ3ZGI5NzNmOTA5MzQ5NTRmOTRiLmJpbmRQb3B1cChwb3B1cF8zZTFlN2U0NjZlNWM0MzRhOTg4NTVmYzQ3NzFjMTI1NykKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9jNDYyOTRhYjUwZDM0YWU0OTg5YzM5MzRkMTJhMTQ5ZSA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzQxLjMwODIxMzgsIC03Mi45MjUwNTE4XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF83YTcwNDEyNWQ2ZDk0MDMwOTFjYzhkNmFhMDJlZDQwZSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfYzk1MTk5ZDNlNzVkNGNiNWJjYzExOTgwY2VmOGNkMTcgPSAkKGA8ZGl2IGlkPSJodG1sX2M5NTE5OWQzZTc1ZDRjYjViY2MxMTk4MGNlZjhjZDE3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5pc2VlaXR1d3JpdGVpdDogQDg0OHR5IEBNaWNoYWVsU2FsZmlubyBAU2NocmVpYmVlIEkgd2lsbCBjYWxsIGl0IG5vdyBTYW4gRnJhbmNpc2NvLCBTZWF0dGxlLCBBcml6b25hLCBMQS4uLnByZXNlYXNvbiBjYWxsIGJ1dCB0aGlzIGlzIHRoZSB0b3VnaGVzdCBkaXZpc2lvbiBpbiBmb290YmFsbOKApiBBcml6b25hIG1pZ2h0IHN1cnByaXNlIGJ1dCBpdOKAmXMgZ29pbmcgdG8gdGFrZSAxMSBnYW1lcyB0byB3aW4gdGhlIGNvbmZlcmVuY2XigKYgVGhlIG9ubHkgdGVhbSB0aGF0IGhhcyBzdWZmZXJlZCBpbiB0aGUgb2ZmLXNlYXNvbiBpcyBMQSBldmVyeWJvZHkgZWxzZeKAmXMgdXBncmFkZWQ8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfN2E3MDQxMjVkNmQ5NDAzMDkxY2M4ZDZhYTAyZWQ0MGUuc2V0Q29udGVudChodG1sX2M5NTE5OWQzZTc1ZDRjYjViY2MxMTk4MGNlZjhjZDE3KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2M0NjI5NGFiNTBkMzRhZTQ5ODljMzkzNGQxMmExNDllLmJpbmRQb3B1cChwb3B1cF83YTcwNDEyNWQ2ZDk0MDMwOTFjYzhkNmFhMDJlZDQwZSkKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9kZjEzOGY3ZGUwMjc0YTZhODU5MjY3NmY1N2VlMjA4YyA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzM5Ljc4MzczMDQsIC0xMDAuNDQ1ODgyNV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfYmIxYTVkMWUzMWYxNGZhMzk3ODVlM2VkZjVmMjU1ZmYgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzk0YzUzYTJiODk2MDRiN2JiNGI3NTI4OWMwOTY3YjljID0gJChgPGRpdiBpZD0iaHRtbF85NGM1M2EyYjg5NjA0YjdiYjRiNzUyODljMDk2N2I5YyIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+YmVpbmdrYXJtaW46ICNXVEZjb3VsZEFsc29TdGFuZEZvciAgV2hlcmXigJlzIFRoZSBGb290YmFsbD8gaHR0cHM6Ly90LmNvL05zSk9lcjcxQUQ8L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfYmIxYTVkMWUzMWYxNGZhMzk3ODVlM2VkZjVmMjU1ZmYuc2V0Q29udGVudChodG1sXzk0YzUzYTJiODk2MDRiN2JiNGI3NTI4OWMwOTY3YjljKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2RmMTM4ZjdkZTAyNzRhNmE4NTkyNjc2ZjU3ZWUyMDhjLmJpbmRQb3B1cChwb3B1cF9iYjFhNWQxZTMxZjE0ZmEzOTc4NWUzZWRmNWYyNTVmZikKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9iODFkYzE0YzQyMDU0Yzk3ODM3N2U0OTM1OGJkY2E4ZCA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzUzLjQ2MzEwOTU1LCAtMi4yOTEzODY0ODUwNTQ1NF0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfNmQ4OTY2ZDdhMzlmNDFiYTllNWI3NTk2NDc5ZjhmNWUgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzdjZDJiMDUwODZhZjQyNjY4YWEwNTg0YjRkYmFlMjg2ID0gJChgPGRpdiBpZD0iaHRtbF83Y2QyYjA1MDg2YWY0MjY2OGFhMDU4NGI0ZGJhZTI4NiIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+c3htXzI2OiBAUmVhbGlzdF8xODcgQFRyb29wekFGQyBGZWVsIHNvcnJ5IGZvciBSb2JiaWUgaGF2aW5nIHRvIHB1dCB1cCB3aXRoIGNsb3ducyBsaWtlIHRyb29weiBhbmQgZHQsIGtub3cgbm90aGluZyBhYm91dCBmb290YmFsbDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF82ZDg5NjZkN2EzOWY0MWJhOWU1Yjc1OTY0NzlmOGY1ZS5zZXRDb250ZW50KGh0bWxfN2NkMmIwNTA4NmFmNDI2NjhhYTA1ODRiNGRiYWUyODYpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYjgxZGMxNGM0MjA1NGM5NzgzNzdlNDkzNThiZGNhOGQuYmluZFBvcHVwKHBvcHVwXzZkODk2NmQ3YTM5ZjQxYmE5ZTViNzU5NjQ3OWY4ZjVlKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzc0NDRkZGM1MTE4MTRjNjViYzRkNmIwZTZlNTFjMmI5ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNTEuNDgxNjg2NSwgLTAuMTkxOTYzNjY0NDIxMTA0XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF85OWY2ZjU3NWU0Yjc0MzA5YmIxOTliMzI0NmM3MDRhMCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfYmQ4NDMyZWU5YWJmNGVhZDg0YzdkNjgwNDgzNzg4NzkgPSAkKGA8ZGl2IGlkPSJodG1sX2JkODQzMmVlOWFiZjRlYWQ4NGM3ZDY4MDQ4Mzc4ODc5IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5jaGllZl9jZmM6IEBBRkNNYXg5IEBBcnNlbmFsIERvIHlvdSByZWFsbHkgdGhpbmsgaGUnZCB3YW50IHRvIGpvaW4gIGEgY2x1YiBpbiA4dGggdGhhdCBtaWdodCBub3QgaGF2ZSBhbnkgRXVyb3BlYW4gZm9vdGJhbGw/PC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzk5ZjZmNTc1ZTRiNzQzMDliYjE5OWIzMjQ2YzcwNGEwLnNldENvbnRlbnQoaHRtbF9iZDg0MzJlZTlhYmY0ZWFkODRjN2Q2ODA0ODM3ODg3OSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl83NDQ0ZGRjNTExODE0YzY1YmM0ZDZiMGU2ZTUxYzJiOS5iaW5kUG9wdXAocG9wdXBfOTlmNmY1NzVlNGI3NDMwOWJiMTk5YjMyNDZjNzA0YTApCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfYWZiNTc3MjI5YjQ2NDFhYzllMTNlOTVkYzdlNTgxYmYgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs1My40NjMxMDk1NSwgLTIuMjkxMzg2NDg1MDU0NTRdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzY4NzgzMjE0NzEwMzRhMDg4MTM1NGM0MjJlOTYxM2Y4ID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF82ZTk3NzY2YWQzNmQ0NDlkOThiMDExNTBlYzMzNzkxNSA9ICQoYDxkaXYgaWQ9Imh0bWxfNmU5Nzc2NmFkMzZkNDQ5ZDk4YjAxMTUwZWMzMzc5MTUiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkFyanVuTW9yYXI6IEB3YWxsaWUxNyBAbWF0dGhhcmRpbmcwMDcgQElucDFhaW5zaWdodCBAVGhlQW5maWVsZFdyYXAgeW91J3JlIHJpZ2h0IGl0IHdhcywgYnV0IHRoZXkgYnJva2UgYXdheSBmcm9tIHRoZSBmb290YmFsbCBsZWFndWUgYW5kIGV2ZXJ5b25lIGNvbnNpZGVycyB0aGUgcHJlbWllciBsZWFndWUgZGlmZmVyZW50IHRvIHRoZSBmaXJzdCBkaXZpc2lvbi4gTGl2ZXJwb29sIGFyZSBzdGlsbCAxOSB0aW1lcyBjaGFtcGlvbiwgYnV0IG9ubHkgMSB0aW1lIHByZW0gY2hhbXBpb24uIHdlIGFyZSAxMyB0aW1lcyBwcmVtIGNoYW1waW9uLCBiYXJjbGF5cyBvciBub3QgZG9lc250IGNoYW5nZSB0aGF0PC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzY4NzgzMjE0NzEwMzRhMDg4MTM1NGM0MjJlOTYxM2Y4LnNldENvbnRlbnQoaHRtbF82ZTk3NzY2YWQzNmQ0NDlkOThiMDExNTBlYzMzNzkxNSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9hZmI1NzcyMjliNDY0MWFjOWUxM2U5NWRjN2U1ODFiZi5iaW5kUG9wdXAocG9wdXBfNjg3ODMyMTQ3MTAzNGEwODgxMzU0YzQyMmU5NjEzZjgpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfOGFiZjYzOWY5M2Q4NGI1ODlhYjMzZmFlYTFkZGFiNWQgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs5LjYwMDAzNTksIDcuOTk5OTcyMV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfODdkNDRlNzA1NDhhNDVjM2FhZTQ4MTYzNTUwMTIyYjMgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzYwMWZkY2I0MWU3ZDRlZmJiZWMxODgxMGY5ZjIzODM0ID0gJChgPGRpdiBpZD0iaHRtbF82MDFmZGNiNDFlN2Q0ZWZiYmVjMTg4MTBmOWYyMzgzNCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+R2xvcmlhV2lsZnJlZDogQE5haWphX1BSIFRoZSBLaW5nIG9mIGZvb3RiYWxsPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzg3ZDQ0ZTcwNTQ4YTQ1YzNhYWU0ODE2MzU1MDEyMmIzLnNldENvbnRlbnQoaHRtbF82MDFmZGNiNDFlN2Q0ZWZiYmVjMTg4MTBmOWYyMzgzNCk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl84YWJmNjM5ZjkzZDg0YjU4OWFiMzNmYWVhMWRkYWI1ZC5iaW5kUG9wdXAocG9wdXBfODdkNDRlNzA1NDhhNDVjM2FhZTQ4MTYzNTUwMTIyYjMpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfYjA2NTQ4NmYyMjc3NDc3Zjk4YTRjMzY1MjRmYjRlNWMgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFsyOS43NTg5MzgyLCAtOTUuMzY3Njk3NF0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfMTA1NTU0MDI3NzQ2NDk0NmEyYmQwMzVhMDU2MjBjNWEgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzJiNTI2NGI3NTlkNTRjYjA5NWE4ODk0YzM0ZjIxZjgwID0gJChgPGRpdiBpZD0iaHRtbF8yYjUyNjRiNzU5ZDU0Y2IwOTVhODg5NGMzNGYyMWY4MCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+X05haG9teXJhbW9zOiBJIHdhbm5hIHBsYXkgZm9vdGJhbGwg8J+kqDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF8xMDU1NTQwMjc3NDY0OTQ2YTJiZDAzNWEwNTYyMGM1YS5zZXRDb250ZW50KGh0bWxfMmI1MjY0Yjc1OWQ1NGNiMDk1YTg4OTRjMzRmMjFmODApOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYjA2NTQ4NmYyMjc3NDc3Zjk4YTRjMzY1MjRmYjRlNWMuYmluZFBvcHVwKHBvcHVwXzEwNTU1NDAyNzc0NjQ5NDZhMmJkMDM1YTA1NjIwYzVhKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2FmYTIwZDU1ODc4NjRlMjc4MTU4YTgyZDY2YjMzZGZjID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMzguODgzODM5MiwgLTk1LjI4NzQ1NTldLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzdkOTg3ODVmM2RlYTRlYjZiMWZjYTEwNGUyYzAzNjFhID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF85MzkxYzM0NjBlMzg0ZThhOWE4ZmVjYzQxZDNmY2JkYyA9ICQoYDxkaXYgaWQ9Imh0bWxfOTM5MWMzNDYwZTM4NGU4YTlhOGZlY2M0MWQzZmNiZGMiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPkpfQmFpbGV5MTA6IEFuIGFsbCB0aW1lIEpvaG5ueSBGb290YmFsbCBxdW90ZTwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF83ZDk4Nzg1ZjNkZWE0ZWI2YjFmY2ExMDRlMmMwMzYxYS5zZXRDb250ZW50KGh0bWxfOTM5MWMzNDYwZTM4NGU4YTlhOGZlY2M0MWQzZmNiZGMpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfYWZhMjBkNTU4Nzg2NGUyNzgxNThhODJkNjZiMzNkZmMuYmluZFBvcHVwKHBvcHVwXzdkOTg3ODVmM2RlYTRlYjZiMWZjYTEwNGUyYzAzNjFhKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzA0MjAyNzllNGU1NzQ1MmU5M2JjMTU4MzNjY2NjNDgxID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNDAuMzI3MDEyNywgLTg2LjE3NDY5MzNdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzQwYzU1MTdjYjQzMjQ5MTI5NTgzMmE4NjM4NzYxMDRmID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF80Mzg4NzliMjkxODU0ZmVmOTlkYWRmZDg0NThjMzAzZCA9ICQoYDxkaXYgaWQ9Imh0bWxfNDM4ODc5YjI5MTg1NGZlZjk5ZGFkZmQ4NDU4YzMwM2QiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPnJveHlsb3Zlc2x1Y3k6IEBjYXR0dXJkMiBUaGlzIGlzIHdoeSBoZSBsb3N0IGhpcyBmb290YmFsbCBjb21tZW50YXRvciBqb2IgYSBmZXcgeWVhcnMgYWdvLiBIZeKAmXMgYSBwYXRyaW90LiDwn5Kq8J+Pu/Cfh7rwn4e4PC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzQwYzU1MTdjYjQzMjQ5MTI5NTgzMmE4NjM4NzYxMDRmLnNldENvbnRlbnQoaHRtbF80Mzg4NzliMjkxODU0ZmVmOTlkYWRmZDg0NThjMzAzZCk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8wNDIwMjc5ZTRlNTc0NTJlOTNiYzE1ODMzY2NjYzQ4MS5iaW5kUG9wdXAocG9wdXBfNDBjNTUxN2NiNDMyNDkxMjk1ODMyYTg2Mzg3NjEwNGYpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfMGE4YTVmYTBlODYzNDA1NmEwNzUyY2M1MmIzYjMwYmQgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs0MC4yOTMyMzE5LCAtNzQuMTY3MTExNF0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfM2IxYmM5MGU5YmNiNGY4NjhjOWIyMGUyZTFhZmVhZjIgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzdjMjg0YTZhMWIxYzRiOGY5NTA1ODk1NjAxMDM2ODE0ID0gJChgPGRpdiBpZD0iaHRtbF83YzI4NGE2YTFiMWM0YjhmOTUwNTg5NTYwMTAzNjgxNCIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+SmVyc2V5U2hvcmVHQUE6IFNvbWUgcGhvdG9zIGZyb20gb3VyIDFzdCBvdXRpbmcgYXMgZnVsbHkgZmxlZGdlZCAjR2FlbGljRm9vdGJhbGwgVGVhbSBpbiB0aGUgcGhpbGFkZWxwaGlhZ2FhIERpdmlzaW9uIfCfj5DimJjvuI/wn4e68J+HuCBKb2luIHVzICZhbXA7IHBsYXkgR2FlbGljIEZvb3RiYWxsICZhbXA7ICNIdXJsaW5nLyNDYW1vZ2llIGF0IHRoZSAjSmVyc2V5U2hvcmUsIG5ldyBwbGF5ZXJzIHdlbGNvbWUgYXMgd2UgZ3JvdyBJcmlzaOKApiBodHRwczovL3QuY28vT0lOME9YOVliZDwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF8zYjFiYzkwZTliY2I0Zjg2OGM5YjIwZTJlMWFmZWFmMi5zZXRDb250ZW50KGh0bWxfN2MyODRhNmExYjFjNGI4Zjk1MDU4OTU2MDEwMzY4MTQpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfMGE4YTVmYTBlODYzNDA1NmEwNzUyY2M1MmIzYjMwYmQuYmluZFBvcHVwKHBvcHVwXzNiMWJjOTBlOWJjYjRmODY4YzliMjBlMmUxYWZlYWYyKQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzA5ZWRkZTFiNWI1YzRlY2RhMGY4MGYxMzI3NDkwY2I0ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbNTEuNTA3MzIxOSwgLTAuMTI3NjQ3NF0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfMWY5NWM1Y2NmZjg0NDZjNjliODliMjFkYzhjZTc4ZmYgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzYzNzdlNjM0ODMwYTRmMzNhZDVhZjViMmNhOTMwODhmID0gJChgPGRpdiBpZD0iaHRtbF82Mzc3ZTYzNDgzMGE0ZjMzYWQ1YWY1YjJjYTkzMDg4ZiIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+c2hhZGx4OiBJIHJlYWxseSBsaWtlICNmcmlkYXlOaWdodExpZ2h0cyBidXQgY29udGludWl0eSBpcyBub3QgaXRzIHN0cm9uZyBwb2ludC4gTWVycml3ZXRoZXIgaGFkIGFiYW5kb25lZCBmb290YmFsbCBmb3IgeWVhcnMgd2hlbiB3ZSBtZXQgaGltLCBieSBzZWFzb24gNSBoZSBoYXMgYmVlbiBwbGF5aW5nIGZvb3RiYWxsIGFsbCBoaXMgbGlmZS4gSW4gc2Vhc29uIDQgQmVja3nigJlzIGZhdGhlcuKAmXMgbmV3IHdpZmUgaXMgaW4gYW5vdGhlciBzdGF0ZSwgYnkgc2Vhc29uIDUgdGhleSBhcmUgaW4gRGlsbG9uPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzFmOTVjNWNjZmY4NDQ2YzY5Yjg5YjIxZGM4Y2U3OGZmLnNldENvbnRlbnQoaHRtbF82Mzc3ZTYzNDgzMGE0ZjMzYWQ1YWY1YjJjYTkzMDg4Zik7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl8wOWVkZGUxYjViNWM0ZWNkYTBmODBmMTMyNzQ5MGNiNC5iaW5kUG9wdXAocG9wdXBfMWY5NWM1Y2NmZjg0NDZjNjliODliMjFkYzhjZTc4ZmYpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfNDQxMTZhNjIyZWYzNGQ3YmE1OWU5Y2FmMjQ2Y2NiZGEgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszNC4wNTQ5MzUsIC0xMTguMjQ0NDc2XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF85NTUxMDU3MjE3NWQ0YjczYWZlMTVmMGE1YTk4ZmVkNiA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfN2NjYWVkNDBjNzhhNDIzYzg0OTg4MGI3Y2EwMTRlZjEgPSAkKGA8ZGl2IGlkPSJodG1sXzdjY2FlZDQwYzc4YTQyM2M4NDk4ODBiN2NhMDE0ZWYxIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5NckpheVdhc2hpbmd0b246IEkgY2FsbGVkIG15IDE2eXIgb2xkIHNvbiB0byBjaGVjayB1cCBvbiBoaW0uIEhlJ2QgYmVlbiBiYWNrIGluIGZvb3RiYWxsIHByYWN0aWNlIGZvciBhIGZldyB3ZWVrcyBidXQgaGUgdG9sZCBtZSB0aGV5IGp1c3QgY2FuY2VsbGVkIGl0IGZvciB0aGUgc3VtbWVyLjwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF85NTUxMDU3MjE3NWQ0YjczYWZlMTVmMGE1YTk4ZmVkNi5zZXRDb250ZW50KGh0bWxfN2NjYWVkNDBjNzhhNDIzYzg0OTg4MGI3Y2EwMTRlZjEpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfNDQxMTZhNjIyZWYzNGQ3YmE1OWU5Y2FmMjQ2Y2NiZGEuYmluZFBvcHVwKHBvcHVwXzk1NTEwNTcyMTc1ZDRiNzNhZmUxNWYwYTVhOThmZWQ2KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyX2UyY2M0YjcwYzkyMTQ3ZTI4ZDAzMzAxOTUzMTdlYTI5ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMjAuMDE3MTEwOSwgMTAzLjM3ODI1M10sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfNWQ2OWI0ZTAxNjY3NDYxMWIwOWI2YzA2MDM0MmM3NjMgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzM5MmViODZkMThkNjQyZTc5Yzk0NzMzMjg5NDcxMWQxID0gJChgPGRpdiBpZD0iaHRtbF8zOTJlYjg2ZDE4ZDY0MmU3OWM5NDczMzI4OTQ3MTFkMSIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+aG9ybGFoOTA6IElzIHRoZXJlIGdvbm5hIGV2ZXIgYmUgYSBjb21wZXRpdGlvbiBsaWtlIHRoYXQgb2YgUm9uYWxkbyBhbmQgTWVzc2kgaW4gZm9vdGJhbGwgYWdhaW4/PC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzVkNjliNGUwMTY2NzQ2MTFiMDliNmMwNjAzNDJjNzYzLnNldENvbnRlbnQoaHRtbF8zOTJlYjg2ZDE4ZDY0MmU3OWM5NDczMzI4OTQ3MTFkMSk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9lMmNjNGI3MGM5MjE0N2UyOGQwMzMwMTk1MzE3ZWEyOS5iaW5kUG9wdXAocG9wdXBfNWQ2OWI0ZTAxNjY3NDYxMWIwOWI2YzA2MDM0MmM3NjMpCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfMDRiYmEzZGU0ZDU5NDQyYjg1NzBhMGQ5OTUxM2ZiMmYgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFs0MC4yNjYyMDgzLCAtMy41MzYxNzQ4XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF8xZTQ3NDhmNjM4ZTQ0NTQ0OGE0Y2UwOWU5NzA3ZWZlOSA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfMWU5YTZkOTZhYzc3NDg1ZmJjMzQxZDdkMTIxMTk1MjkgPSAkKGA8ZGl2IGlkPSJodG1sXzFlOWE2ZDk2YWM3NzQ4NWZiYzM0MWQ3ZDEyMTE5NTI5IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5Sb25NRmxvcmVzOiBATmV2YWRhSG9vcHMgQERlb250ZUJ1cnRvbiBIYXBweSBCaXJ0aGRheSBARGVvbnRlQnVydG9uLiBHbGFkIHlvdSBuZXZlciB0b29rIG15IGFkdmljZSB0byBwbGF5IGZvb3RiYWxsIHdoZW4gSSB1c2VkIHRvIGJ1c3QgeW91ciBiYWxscy4g8J+YhTwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF8xZTQ3NDhmNjM4ZTQ0NTQ0OGE0Y2UwOWU5NzA3ZWZlOS5zZXRDb250ZW50KGh0bWxfMWU5YTZkOTZhYzc3NDg1ZmJjMzQxZDdkMTIxMTk1MjkpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfMDRiYmEzZGU0ZDU5NDQyYjg1NzBhMGQ5OTUxM2ZiMmYuYmluZFBvcHVwKHBvcHVwXzFlNDc0OGY2MzhlNDQ1NDQ4YTRjZTA5ZTk3MDdlZmU5KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzRkZDczZThlYzIwODRkYjE5YmFjMjQ2YWQxYTZlMjczID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbMTcuOTcxMjE0OCwgLTc2Ljc5MjgxMjhdLAogICAgICAgICAgICAgICAge30KICAgICAgICAgICAgKS5hZGRUbyhtYXBfM2I3ZTY5MTYwM2YyNGNhNDk4ODA0MmI5OTdhMzJiMDMpOwogICAgICAgIAogICAgCiAgICAgICAgdmFyIHBvcHVwXzQ5ZDgzMzZjZjkxODRhMTU4Mjc2ZGE2MTg4Zjg0MGYyID0gTC5wb3B1cCh7Im1heFdpZHRoIjogIjEwMCUifSk7CgogICAgICAgIAogICAgICAgICAgICB2YXIgaHRtbF8xYTdiZThiYWZlNjQ0YjE4OWU2MjQ0YmYzNzdhY2QzMyA9ICQoYDxkaXYgaWQ9Imh0bWxfMWE3YmU4YmFmZTY0NGIxODllNjI0NGJmMzc3YWNkMzMiIHN0eWxlPSJ3aWR0aDogMTAwLjAlOyBoZWlnaHQ6IDEwMC4wJTsiPm5pY2tveWR3aWxzb246IFNvIGFsdGhvdWdoIEkgd3JpdGUgd2l0aCBteSByaWdodCBoYW5kLCBJIGRvIHNvbWUgdGFza3MgdGhhdCB3b3VsZCBub3JtYWxseSBiZSBkb25lIGJ5IGEgcmlnaHQtaGFuZGVkIHBlcnNvbiB3aXRoIG15IGxlZnQgaGFuZC4gSSBhbHNvIGtpY2sgYSBmb290YmFsbCB3aXRoIG15IGxlZnQgZm9vdC4gQXBwYXJlbnRseSwgdGhhdOKAmXMgY2FsbGVkIGNyb3NzLWRvbWluYW5jZS48L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNDlkODMzNmNmOTE4NGExNTgyNzZkYTYxODhmODQwZjIuc2V0Q29udGVudChodG1sXzFhN2JlOGJhZmU2NDRiMTg5ZTYyNDRiZjM3N2FjZDMzKTsKICAgICAgICAKCiAgICAgICAgbWFya2VyXzRkZDczZThlYzIwODRkYjE5YmFjMjQ2YWQxYTZlMjczLmJpbmRQb3B1cChwb3B1cF80OWQ4MzM2Y2Y5MTg0YTE1ODI3NmRhNjE4OGY4NDBmMikKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9lNjY0ZWQ0YTYwMzg0NzBjOTJmMGQ4MWQ0Nzg0NTQzMiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzU0Ljk5MTk0MjEsIC03LjMxNjgwMV0sCiAgICAgICAgICAgICAgICB7fQogICAgICAgICAgICApLmFkZFRvKG1hcF8zYjdlNjkxNjAzZjI0Y2E0OTg4MDQyYjk5N2EzMmIwMyk7CiAgICAgICAgCiAgICAKICAgICAgICB2YXIgcG9wdXBfODIyMWI1Nzc5YWQ4NDQzOWE1ZDRiNzMzZWNmYzUzZDcgPSBMLnBvcHVwKHsibWF4V2lkdGgiOiAiMTAwJSJ9KTsKCiAgICAgICAgCiAgICAgICAgICAgIHZhciBodG1sXzdiYzNkYjdmMmY4ODQxZjY4YTQ5NWEzOWNiODgwYzFmID0gJChgPGRpdiBpZD0iaHRtbF83YmMzZGI3ZjJmODg0MWY2OGE0OTVhMzljYjg4MGMxZiIgc3R5bGU9IndpZHRoOiAxMDAuMCU7IGhlaWdodDogMTAwLjAlOyI+VGllcm5hbmN1c2FjazIxOiBAUGFkZHlBbmRlcnNvbjk4IE5vIGNoYW5jZSBsYWQgRWRkaWUgSG93ZSBzdWNrcywgaGUgcGxheXMgZ29vZCBmb290YmFsbCBidXQgY29uY2VkZXMgZmFyIHRvbyBtYW55IGdvYWxzIGFuZCBoZeKAmXMgc3BlbnQgbW9uZXkgYXdmdWxseSBvbiBTb2xhbmtlIGFuZCBhIGZldyBvdGhlciAyMG0gcGxheWVyczwvZGl2PmApWzBdOwogICAgICAgICAgICBwb3B1cF84MjIxYjU3NzlhZDg0NDM5YTVkNGI3MzNlY2ZjNTNkNy5zZXRDb250ZW50KGh0bWxfN2JjM2RiN2YyZjg4NDFmNjhhNDk1YTM5Y2I4ODBjMWYpOwogICAgICAgIAoKICAgICAgICBtYXJrZXJfZTY2NGVkNGE2MDM4NDcwYzkyZjBkODFkNDc4NDU0MzIuYmluZFBvcHVwKHBvcHVwXzgyMjFiNTc3OWFkODQ0MzlhNWQ0YjczM2VjZmM1M2Q3KQogICAgICAgIDsKCiAgICAgICAgCiAgICAKICAgIAogICAgICAgICAgICB2YXIgbWFya2VyXzc0MjQ1ZTNkNjc1OTQzOGE4YTljOTA3NTdkMjkwYWQ1ID0gTC5tYXJrZXIoCiAgICAgICAgICAgICAgICBbLTMyLjMwNDY2MzgsIDExNi4wNzc5NjQyXSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF8wYzBhNzk0OTQxOGM0ZmRiOGFmMTI1MTg3YmY2ZmE0MCA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfNjYyZWQ2OTVkY2M2NDQxZWJjZmMyNTcyOGY3ZDZkZmMgPSAkKGA8ZGl2IGlkPSJodG1sXzY2MmVkNjk1ZGNjNjQ0MWViY2ZjMjU3MjhmN2Q2ZGZjIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5jb3V0dHN5MTU6IEBMZWVNYXJ0aW5TWk4gZG9u4oCZdCByZWFsbHkgd2F0Y2ggbG93ZXIgbGVhZ3VlIGZvb3RiYWxsIGJ1dCBkb2VzIGhlIGdldCBhIGdhbWUgPyB4PC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzBjMGE3OTQ5NDE4YzRmZGI4YWYxMjUxODdiZjZmYTQwLnNldENvbnRlbnQoaHRtbF82NjJlZDY5NWRjYzY0NDFlYmNmYzI1NzI4ZjdkNmRmYyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl83NDI0NWUzZDY3NTk0MzhhOGE5YzkwNzU3ZDI5MGFkNS5iaW5kUG9wdXAocG9wdXBfMGMwYTc5NDk0MThjNGZkYjhhZjEyNTE4N2JmNmZhNDApCiAgICAgICAgOwoKICAgICAgICAKICAgIAogICAgCiAgICAgICAgICAgIHZhciBtYXJrZXJfZWNkZGM3YTU0YjZhNDM3M2E1NDY5YzZiMDU1MDc2OGYgPSBMLm1hcmtlcigKICAgICAgICAgICAgICAgIFszOS45ODU5OTUzLCAtMC4wMzc0MzUzXSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF81YmZlZmYxOThkYTc0YzVjYThkMDdiMjZlMTkyYmMyMiA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfNDVkNmRhMDQzMjY4NGEyMmI1YWRiMjlmMjU2NTBkYTYgPSAkKGA8ZGl2IGlkPSJodG1sXzQ1ZDZkYTA0MzI2ODRhMjJiNWFkYjI5ZjI1NjUwZGE2IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5BdXJhbmNpYTE5NjM6IEB1cmJhbmdvb25lciBNeSBmcmllbmQsIHRoZSBzbGVlcGluZyBHSUFOVCBoYXMgcmlzZWQgYWdhaW4uICBPdXIgbG92ZWQgdGVhbSBAQ0RfQ2FzdGVsbG9uIGhhdmUgZmluYWxseSByZWFjaGVkIHRoZSAybmQgU3BhbmlzaCBmb290YmFsbCBkaXZpc2lvbi48L2Rpdj5gKVswXTsKICAgICAgICAgICAgcG9wdXBfNWJmZWZmMTk4ZGE3NGM1Y2E4ZDA3YjI2ZTE5MmJjMjIuc2V0Q29udGVudChodG1sXzQ1ZDZkYTA0MzI2ODRhMjJiNWFkYjI5ZjI1NjUwZGE2KTsKICAgICAgICAKCiAgICAgICAgbWFya2VyX2VjZGRjN2E1NGI2YTQzNzNhNTQ2OWM2YjA1NTA3NjhmLmJpbmRQb3B1cChwb3B1cF81YmZlZmYxOThkYTc0YzVjYThkMDdiMjZlMTkyYmMyMikKICAgICAgICA7CgogICAgICAgIAogICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcmtlcl9iMjhkNjRjZGIxZDE0MTk5ODZiNWIzMDljZGEyMTE2NiA9IEwubWFya2VyKAogICAgICAgICAgICAgICAgWzQxLjEzNDgyMTMsIC04MS40ODQ4MDg2XSwKICAgICAgICAgICAgICAgIHt9CiAgICAgICAgICAgICkuYWRkVG8obWFwXzNiN2U2OTE2MDNmMjRjYTQ5ODgwNDJiOTk3YTMyYjAzKTsKICAgICAgICAKICAgIAogICAgICAgIHZhciBwb3B1cF84ZDhiYWMzYmVhNDI0NTQwYWE2YTJmYzc4NjNiYTNlYiA9IEwucG9wdXAoeyJtYXhXaWR0aCI6ICIxMDAlIn0pOwoKICAgICAgICAKICAgICAgICAgICAgdmFyIGh0bWxfNGM4YTBkNzUxMDE0NDAyOGE2MTQ0MTFhODA1Mjk1MzcgPSAkKGA8ZGl2IGlkPSJodG1sXzRjOGEwZDc1MTAxNDQwMjhhNjE0NDExYTgwNTI5NTM3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij5LaW5nc2xleUpyMjk6IEBUaW1HcmFjZTEgQFJlZFZpYzYxIEBLb3Rha3UgV2hhdCBkb2VzIHRoYXQgaGF2ZSB0byBkbyB3aXRoIGFueXRoaW5nPyBJIGhvcGUgd2hlbiB5b3UgaGF2ZSBhIGRhdWdodGVyIGFuZCBzaGUgcGxheXMgZm9vdGJhbGwgb3Igd2hhdCBldmVyIHNwb3J0IHNoZeKAmXMgbm90IGdvb2QgYW5kIEkgaG9wZSB5b3UgdGVsbCBoZXIgdGhhdCBidXQgSSBrbm93IHlvdSB3b27igJl0IGJlY2F1c2UgeW91IHdvbuKAmXQgaGF2ZSB0aGUgYmFsbHMgdG8gdGVsbCB5b3VyIGNoaWxkIHRoYXQuPC9kaXY+YClbMF07CiAgICAgICAgICAgIHBvcHVwXzhkOGJhYzNiZWE0MjQ1NDBhYTZhMmZjNzg2M2JhM2ViLnNldENvbnRlbnQoaHRtbF80YzhhMGQ3NTEwMTQ0MDI4YTYxNDQxMWE4MDUyOTUzNyk7CiAgICAgICAgCgogICAgICAgIG1hcmtlcl9iMjhkNjRjZGIxZDE0MTk5ODZiNWIzMDljZGEyMTE2Ni5iaW5kUG9wdXAocG9wdXBfOGQ4YmFjM2JlYTQyNDU0MGFhNmEyZmM3ODYzYmEzZWIpCiAgICAgICAgOwoKICAgICAgICAKICAgIAo8L3NjcmlwdD4=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
 </div>
 
 </div>
@@ -16836,7 +16894,7 @@ Done geocoding
         <span class="bp">self</span><span class="o">.</span><span class="n">counts_dict</span><span class="p">[</span><span class="s1">&#39;locations&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># tweet with location</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">tweets_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tweet_data</span><span class="p">)</span>  <span class="c1"># store the tweet</span>
         <span class="n">clear_output</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{status.user.screen_name}</span><span class="s1">: </span><span class="si">{tweet_data[&quot;text&quot;]}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">status</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">screen_name</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">tweet_data</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 
         <span class="c1"># if TWEET_LIMIT is reached, return False to terminate streaming</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">counts_dict</span><span class="p">[</span><span class="s1">&#39;locations&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">TWEET_LIMIT</span>
@@ -16856,15 +16914,15 @@ Done geocoding
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="More-Info">More Info<a class="anchor-link" href="#More-Info">&#182;</a></h1><ul>
-<li>See <strong>Lesson 12</strong> in <a href="https://learning.oreilly.com/videos/python-fundamentals/9780135917411"><strong>Python Fundamentals LiveLessons</strong> here on Safari Online Learning</a></li>
-<li>See <strong>Chapter 12</strong> in <a href="https://learning.oreilly.com/library/view/python-for-programmers/9780135231364/"><strong>Python for Programmers</strong> on Safari Online Learning</a></li>
-<li>See Chapter 13 in <strong>Intro Python for Computer Science and Data Science</strong> on <a href="https://www.vitalsource.com/products/intro-to-python-for-computer-science-and-data-paul-j-deitel-harvey-deitel-v9780135404812">VitalSource.com</a> or <a href="https://redshelf.com/book/1157786/intro-to-python-for-computer-science-and-data-science-1157786-9780135404812-paul-j-deitel-harvey-deitel">RedShelf.com</a></li>
+<li>See Lesson 12 in <a href="https://learning.oreilly.com/videos/python-fundamentals/9780135917411"><strong>Python Fundamentals LiveLessons</strong> here on O'Reilly Online Learning</a></li>
+<li>See Chapter 12 in <a href="https://learning.oreilly.com/library/view/python-for-programmers/9780135231364/"><strong>Python for Programmers</strong> on O'Reilly Online Learning</a></li>
+<li>See Chapter 13 in <a href="https://learning.oreilly.com/library/view/intro-to-python/9780135404799/"><strong>Intro Python for Computer Science and Data Science</strong> on O'Reilly Online Learning</a></li>
 <li>Interested in a print book? Check out:</li>
 </ul>
 <table>
 <thead><tr>
-<th style="text-align:left">Python for Programmers</th>
-<th style="text-align:left">Intro to Python for Computer<br>Science and Data Science</th>
+<th style="text-align:left">Python for Programmers<br>(640-page professional book)</th>
+<th style="text-align:left">Intro to Python for Computer<br>Science and Data Science<br>(880-page college textbook)</th>
 </tr>
 </thead>
 <tbody>
