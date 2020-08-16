@@ -19,6 +19,8 @@ June 16, 2020: https://learning.oreilly.com/live-training/courses/python-data-sc
 
 July 28, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920444305/
 
+August 18, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920457855/
+
 I'll keep this repository up-to-date with any changes I make for future presentations. 
 
 **These files are for your personal use and may not be redistributed or reposted.**
