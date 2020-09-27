@@ -1,25 +1,26 @@
 # PythonDataScienceFullThrottle
 Downloads for my [Safari Online Learning](https://learning.oreilly.com) live training course **Python Data Science Full Throttle: Introductory Artificial Intelligence (AI), Big Data and Cloud Case Studies**
 
-July 30, 2019: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289173/
+September 29, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920410720/
 
-August 26, 2019: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920305996/
-
-December 17, 2019: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920322481/
-
-January 21, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920358213/
-
-March 17, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920373117/
-
-April 28, 2020: 
-
-May 19, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920389675/
-
-June 16, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920436126/
+August 18, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920457855/
 
 July 28, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920444305/
 
-August 18, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920457855/
+June 16, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920436126/
+
+May 19, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920389675/
+
+March 17, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920373117/
+
+January 21, 2020: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920358213/
+
+December 17, 2019: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920322481/
+
+August 26, 2019: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920305996/
+
+July 30, 2019: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289173/
+
 
 I'll keep this repository up-to-date with any changes I make for future presentations. 
 
