@@ -13094,10 +13094,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Objectives">Objectives<a class="anchor-link" href="#Objectives">&#182;</a></h1><ul>
 <li>Develop a <strong>traveler’s companion language translator app</strong>, using Python to weave together a <strong>mashup</strong> of the <strong>Watson Speech to Text</strong>, <strong>Language Translator</strong> and <strong>Text to Speech</strong> services</li>
-<li>See Watson’s range of <strong>free Lite tier services</strong></li>
-<li><strong>Watson services demos</strong></li>
 <li><strong>Cognitive computing</strong> and how you can incorporate it into your applications</li>
-<li>Check out additional resources, such as <strong>IBM Watson Redbooks</strong> that will help you jump start your custom Watson application development</li>
 </ul>
 
 </div>
@@ -13123,7 +13120,6 @@ div#notebook {
 <li>IBM researchers trained Watson using <strong>machine-learning</strong> and <strong>reinforcement-learning</strong> techniques <a href="https://www.aaai.org/Magazine/Watson/watson.php">[3]</a> </li>
 </ul>
 </li>
-<li><strong>“No credit card required” policy</strong> and <strong>free Lite tier</strong> make it easy to <strong>experiment with Watson</strong></li>
 <li><a href="https://learning.oreilly.com/library/view/Python+for+Programmers,+First+Edition/9780135231364/ch13.xhtml#ch13lev1sec1">View our table showing many ways in which organizations are using Watson</a></li>
 </ul>
 
@@ -13172,7 +13168,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="13.2-IBM-Cloud-Account-and-Cloud-Console">13.2 IBM Cloud Account and Cloud Console<a class="anchor-link" href="#13.2-IBM-Cloud-Account-and-Cloud-Console">&#182;</a></h1><ul>
 <li>Provides access <strong>Watson’s services</strong> (both free and paid)</li>
-<li><strong>No credit card required</strong></li>
+<li><strong>“No credit card required” policy</strong> and <strong>free Lite tier</strong> make it easy to <strong>experiment with Watson</strong></li>
 <li>Lite tier <strong>limits your use</strong> for experimentation</li>
 <li><strong>Paid tiers</strong> for <strong>commercial applications</strong></li>
 <li><a href="https://cloud.ibm.com/docs/services/watson?topic=watson-about#about"><strong>Sign up</strong></a></li>
@@ -13225,7 +13221,7 @@ div#notebook {
 <h3 id="Modules-We&#8217;ll-Need-for-Audio-Recording-and-Playback-(2-of-2)">Modules We&#8217;ll Need for Audio Recording and Playback (2 of 2)<a class="anchor-link" href="#Modules-We&#8217;ll-Need-for-Audio-Recording-and-Playback-(2-of-2)">&#182;</a></h3>
 <pre><code>pip install pyaudio
 pip install pydub</code></pre>
-<p><strong>Mac users</strong> might first need to execute**</p>
+<p><strong>Mac users</strong> might first need to execute</p>
 <blockquote><p><code>conda install -c conda-forge portaudio</code></p>
 </blockquote>
 
@@ -13309,19 +13305,23 @@ pip install pydub</code></pre>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="13.6.3-SimpleLanguageTranslator.py-Script-Walkthrough">13.6.3 <code>SimpleLanguageTranslator.py</code> Script Walkthrough<a class="anchor-link" href="#13.6.3-SimpleLanguageTranslator.py-Script-Walkthrough">&#182;</a></h1><ul>
-<li>The script is divided into <strong>10 steps</strong>
-<strong>Processing the English question</strong> 
-<strong>Step 1:</strong> Prompt for then <strong>record English speech</strong> into an audio file<br>
-<strong>Step 2:</strong> <strong>Transcribe</strong> the English speech to <strong>English text</strong><br>
-<strong>Step 3:</strong> <strong>Translate</strong> the English text into Spanish text<br>
-<strong>Step 4:</strong> <strong>Synthesize</strong> the Spanish text into <strong>Spanish speech</strong> and save it into an audio file<br>
-<strong>Step 5:</strong> <strong>Play</strong> the Spanish <strong>audio</strong> file<br>
-<strong>Processing the Spanish response</strong><br>
-<strong>Step 6:</strong> Prompt for then <strong>record Spanish speech</strong> into an audio file<br>
-<strong>Step 7:</strong> <strong>Transcribe</strong> the Spanish speech to <strong>Spanish text</strong><br>
-<strong>Step 8:</strong> <strong>Translate</strong> the Spanish text into English text<br>
-<strong>Step 9:</strong> <strong>Synthesize</strong> the English text into <strong>English speech</strong> and save it into an audio file<br>
-<strong>Step 10:</strong> <strong>Play</strong> the English <strong>audio</strong></li>
+<li>The script is divided into <strong>10 steps</strong></li>
+<li><strong>Processing the English question</strong> <ul>
+<li><strong>Step 1:</strong> Prompt for then <strong>record English speech</strong> into an audio file  </li>
+<li><strong>Step 2:</strong> <strong>Transcribe</strong> the English speech to <strong>English text</strong>  </li>
+<li><strong>Step 3:</strong> <strong>Translate</strong> the English text into Spanish text  </li>
+<li><strong>Step 4:</strong> <strong>Synthesize</strong> the Spanish text into <strong>Spanish speech</strong> and save it into an audio file  </li>
+<li><strong>Step 5:</strong> <strong>Play</strong> the Spanish <strong>audio</strong> file  </li>
+</ul>
+</li>
+<li><strong>Processing the Spanish response</strong>  <ul>
+<li><strong>Step 6:</strong> Prompt for then <strong>record Spanish speech</strong> into an audio file  </li>
+<li><strong>Step 7:</strong> <strong>Transcribe</strong> the Spanish speech to <strong>Spanish text</strong>  </li>
+<li><strong>Step 8:</strong> <strong>Translate</strong> the Spanish text into English text  </li>
+<li><strong>Step 9:</strong> <strong>Synthesize</strong> the English text into <strong>English speech</strong> and save it into an audio file  </li>
+<li><strong>Step 10:</strong> <strong>Play</strong> the English <strong>audio</strong></li>
+</ul>
+</li>
 </ul>
 
 </div>
