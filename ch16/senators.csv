@@ -1,24 +1,24 @@
 State,Name,Party,TwitterHandle,TwitterID
 AL,Richard Shelby,R,SenShelby,21111098
-AL,Doug Jomes,D,SenDougJones,941080085121175552
+AL,Tommy Tuberville,R,TTuberville,110798061
 AK,Lisa Murkowski,R,lisamurkowski,18061669
 AK,Dan Sullivan,R,SenDanSullivan,2891210047
-AZ,Martha McSally,R,SenMcSallyAZ,2964949642
+AZ,Mark Kelly,D,SenMarkKelly,1324926274888888320
 AZ,Kyrsten Sinema,D,SenatorSinema,1080844782
 AR,Tom Cotton,R,SenTomCotton,968650362
 AR,John Boozman,R,JohnBoozman,5558312
 CA,Dianne Feinstein,D,SenFeinstein,476256944
 CA,Kamala Harris,D,SenKamalaHarris,803694179079458816
 CO,Michael Bennet,D,SenBennetCO,224285242
-CO,Cory Gardner,R,SenCoryGardner,235217558
+CO,John Hickenlooper,D,Hickenlooper,117839957
 CT,Christopher Murphy,D,ChrisMurphyCT,150078976
 CT,Richard Blumenthal,D,SenBlumenthal,278124059
 DE,Tom Carper,D,SenatorCarper,249787913
 DE,Chris Coons,D,ChrisCoons,15324851
 FL,Rick Scott ,R,SenRickScott,131546062
 FL,Marco Rubio,R,marcorubio,15745368
-GA,David Perdue,R,SenDavidPerdue,2863210809
-GA,Johnny Isakson,R,SenatorIsakson,78403308
+GA,Jon Ossoff,D,ossoff,2863210809
+GA,Raphael Warnock,D,ReverendWarnock,1221242033530195970
 HI,Brian Schatz,D,brianschatz,47747074
 HI,Mazie Hirono,D,maziehirono,92186819
 ID,Mike Crapo,R,MikeCrapo,600463589
@@ -29,7 +29,7 @@ IN,Mike Braun ,R,SenatorBraun,1080870981877534720
 IN,Todd Young,R,SenToddYoung,234128524
 IA,Chuck Grassley,R,ChuckGrassley,10615232
 IA,Joni Ernst,R,joniernst,1383059977
-KS,Pat Roberts,R,SenPatRoberts,75364211
+KS,Roger Marshall,R,RogerMarshallMD,1240107944
 KS,Jerry Moran,R,JerryMoran,18632666
 KY,Mitch McConnell,R,SenateMajLdr,1249982359
 KY,Rand Paul,R,RandPaul,216881337
@@ -60,7 +60,7 @@ NH,Maggie Hassan,D,SenatorHassan,946549322
 NJ,Cory Booker,D,CoryBooker,15808765
 NJ,Bob Menendez,D,SenatorMenendez,18695134
 NM,Martin Heinrich,D,MartinHeinrich,1099199839
-NM,Tom Udall,D,SenatorTomUdall,60828944
+NM,Ben Ray Luján,D,benraylujan,91125308
 NY,Chuck Schumer,D,SenSchumer,17494010
 NY,Kirsten Gillibrand,D,SenGillibrand,72198806
 NC,Richard Burr,R,SenatorBurr,21157904
@@ -81,7 +81,7 @@ SC,Lindsey Graham,R,LindseyGrahamSC,432895323
 SC,Tim Scott,R,SenatorTimScott,217543151
 SD,Mike Rounds,R,SenatorRounds,2955485182
 SD,John Thune,R,SenJohnThune,296361085
-TN,Lamar Alexander,R,SenAlexander,76649729
+TN,Bill Hagerty,R,BillHagertyTN,1152598802873880576
 TN,Marsha Blackburn ,R,MarshaBlackburn,278145569
 TX,John Cornyn,R,JohnCornyn,13218102
 TX,Ted Cruz,R,SenTedCruz,1074480192
@@ -97,5 +97,5 @@ WV,Shelley Moore Capito,R,SenCapito,193794406
 WV,Joe Manchin,D,Sen_JoeManchin,234374703
 WI,Tammy Baldwin,D,SenatorBaldwin,1074518754
 WI,Ron Johnson,R,SenRonJohnson,233737858
-WY,Mike Enzi,R,SenatorEnzi,291756142
+WY,Cynthia Lummis,R,CynthiaMLummis,1136711154435207168
 WY,John Barrasso,R,SenJohnBarrasso,202206694
