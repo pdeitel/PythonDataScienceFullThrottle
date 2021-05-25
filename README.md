@@ -1,6 +1,8 @@
 # PythonDataScienceFullThrottle
 Downloads for my [Safari Online Learning](https://learning.oreilly.com) live training course **Python Data Science Full Throttle: Introductory Artificial Intelligence (AI), Big Data and Cloud Case Studies**
 
+May 25, 2021: https://learning.oreilly.com/attend/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920054006/
+
 April 27, 2021: https://learning.oreilly.com/attend/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920052503/
 
 February 23, 2021: https://learning.oreilly.com/live-training/courses/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920051482/
