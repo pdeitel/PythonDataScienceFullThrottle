@@ -4,7 +4,6 @@
 from ibm_watson import SpeechToTextV1
 from ibm_watson import LanguageTranslatorV3
 from ibm_watson import TextToSpeechV1
-from ibm_cloud_sdk_core.authenticators import IAMAuthenticator # *** NEW
 import keys  # contains your API keys for accessing Watson services
 import pyaudio  # used to record from mic
 import pydub  # used to load a WAV file
@@ -57,15 +56,11 @@ def run_translator():
 def speech_to_text(file_name, model_id):
     """Use Watson Speech to Text to convert audio file to text."""
     # create Watson Speech to Text client 
-    authenticator = IAMAuthenticator(keys.speech_to_text_key) # *** NEW
-    stt = SpeechToTextV1(authenticator=authenticator) # *** NEW
-    #stt.set_service_url('https://stream.watsonplatform.net/speech-to-text/api') # *** NEW
-    #stt = SpeechToTextV1(iam_apikey=keys.speech_to_text_key)
+    stt = SpeechToTextV1(iam_apikey=keys.speech_to_text_key)
 
     # open the audio file 
     with open(file_name, 'rb') as audio_file:
         # pass the file to Watson for transcription
-        # *** NEW -- I had to downgrade PyJWT using "pip install PyJWT==1.7.1" due to a known issue: https://github.com/watson-developer-cloud/assistant-dialog-skill-analysis/issues/37
         result = stt.recognize(audio=audio_file,
             content_type='audio/wav', model=model_id).get_result()
         
@@ -95,11 +90,8 @@ def translate(text_to_translate, model):
     """Use Watson Language Translator to translate English to Spanish 
        (en-es) or Spanish to English (es-en) as specified by model."""
     # create Watson Translator client
-    authenticator = IAMAuthenticator(keys.translate_key) # *** NEW
     language_translator = LanguageTranslatorV3(version='2018-05-31',
-        authenticator=authenticator) # *** NEW
-#    language_translator = LanguageTranslatorV3(version='2018-05-31',
-#        iam_apikey=keys.translate_key)
+        iam_apikey=keys.translate_key)
 
     # perform the translation
     translated_text = language_translator.translate(
@@ -122,10 +114,7 @@ def text_to_speech(text_to_speak, voice_to_use, file_name):
     """Use Watson Text to Speech to convert text to specified voice
        and save to a WAV file."""
     # create Text to Speech client
-    authenticator = IAMAuthenticator(keys.text_to_speech_key) # *** NEW
-    tts = TextToSpeechV1(authenticator=authenticator)
-    tts.set_service_url('https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/ba13d94c-4517-44bb-a437-fd5c99f5dfdf') # *** NEW
-    #tts = TextToSpeechV1(iam_apikey=keys.text_to_speech_key)
+    tts = TextToSpeechV1(iam_apikey=keys.text_to_speech_key)
 
     # open file and write the synthesized audio content into the file
     with open(file_name, 'wb') as audio_file:
@@ -137,7 +126,7 @@ def record_audio(file_name):
     FRAME_RATE = 44100  # number of frames per second
     CHUNK = 1024  # number of frames read at a time
     FORMAT = pyaudio.paInt16  # each frame is a 16-bit (2-byte) integer
-    CHANNELS = 1  # 2 samples per frame -- *** MODIFIED TO 1
+    CHANNELS = 2  # 2 samples per frame
     SECONDS = 5  # total recording time
  
     recorder = pyaudio.PyAudio()  # opens/closes audio streams
