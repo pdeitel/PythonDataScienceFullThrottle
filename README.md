@@ -5,24 +5,18 @@ Downloads for my [Safari Online Learning](https://learning.oreilly.com) live tra
 These are the actual commands I used to set up a fresh environment last week:
  
 * This creates a custom environment named pydsftjuly21—you can choose any name  you like:
- 
-'''
-conda create --name pydsftjuly21
-'''
+
+> conda create --name pydsftjuly21
 
 * This activates the environment you just created—change the name if you used a different name above:
 
-'''
-conda activate pydsftjuly21
-'''
+> conda activate pydsftjuly21
 
 * The following two commands install most of what you need for the content from ch11, ch12, ch13, ch14, ch15 and a good chunk of ch16 that I covered yesterday—if you’re working from our books or videos, you might need to subsequently install a few other packages:
  
-'''
-conda install jupyterlab nodejs ipympl textblob wordcloud spacy tweepy geopy folium scikit-learn tensorflow matplotlib seaborn pymongo dnspython numpy pandas imageio pyaudio pydub
+> conda install jupyterlab nodejs ipympl textblob wordcloud spacy tweepy geopy folium scikit-learn tensorflow matplotlib seaborn pymongo dnspython numpy pandas imageio pyaudio pydub
  
-pip install dweepy pubnub ibm-watson tweet-preprocessor
-'''
+> pip install dweepy pubnub ibm-watson tweet-preprocessor
  
 The pip command above is needed because a few packages are not available through the conda repository.
  
