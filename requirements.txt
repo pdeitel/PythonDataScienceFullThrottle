@@ -8,7 +8,7 @@ geopy==1.22.0
 ibm-watson==4.5.0
 imageio==2.8.0
 ipython==7.15.0
-jupyterlab==3
+jupyterlab==3.0.17
 matplotlib==3.2.1
 nltk
 numpy==1.18.5
