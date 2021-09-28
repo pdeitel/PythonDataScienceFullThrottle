@@ -2,15 +2,15 @@
 Downloads for my [Safari Online Learning](https://learning.oreilly.com) live training course **Python Data Science Full Throttle: Introductory Artificial Intelligence (AI), Big Data and Cloud Case Studies**
 
 # Setting Up a Custom Conda Environment
-These are the actual commands I used to set up a fresh environment last week:
+These are the actual commands I used to set up a fresh environment:
  
-* This creates a custom environment named pydsftjuly21—you can choose any name  you like:
+* This creates a custom environment named pydsft — you can choose any name  you like:
 
-> conda create --name pydsftjuly21
+> conda create --name pydsft
 
 * This activates the environment you just created—change the name if you used a different name above:
 
-> conda activate pydsftjuly21
+> conda activate pydsft
 
 * The following two commands install most of what you need for the content from ch11, ch12, ch13, ch14, ch15 and a good chunk of ch16 that I covered yesterday—if you’re working from our books or videos, you might need to subsequently install a few other packages:
  
@@ -20,9 +20,9 @@ These are the actual commands I used to set up a fresh environment last week:
  
 The pip command above is needed because a few packages are not available through the conda repository.
  
-The YML files sometimes work and sometimes don’t. I created that quickly yesterday from my Mac and it could well include stuff that’s Mac specific.
-
 # Past Course Links (accessible only if you were registered for that course)
+September 28, 2021: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920059475/
+
 July 27, 2021: https://learning.oreilly.com/attend/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920056748/
 
 June 22, 2021: https://learning.oreilly.com/attend/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920054946/
