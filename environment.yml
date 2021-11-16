@@ -1,10 +1,9 @@
-name: py38dsftJuly21
+name: pydsft
 channels:
   - conda-forge
   - defaults
 dependencies:
   - dnspython=2.1.0
-  - geopy=2.2.0
   - imageio=2.9.0
   - ipython=7.25.0
   - ipywidgets=7.6.3
@@ -25,15 +24,17 @@ dependencies:
   - sqlite=3.36.0
   - statsmodels=0.12.2
   - tensorflow
-  - textblob=0.15.3
-  - tweepy=3.10.0
   - widgetsnbextension=3.5.1
-  - wordcloud=1.8.1
   - pip:
     - dweepy==0.3.0
     - en-core-web-lg==3.0.0
     - en-core-web-md==3.1.0
     - en-core-web-sm==3.0.0
     - folium==0.12.1
+    - geopy==2.2.0
     - pubnub==5.0.1
+    - pydub==0.25.1
+    - textblob>=0.17.0
+    - tweepy==4.3.0
     - tweet-preprocessor==0.6.0
+    - wordcloud==1.8.1
