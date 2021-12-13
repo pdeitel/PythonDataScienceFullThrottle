@@ -5,16 +5,16 @@ import tweepy
 from tweetutilities import get_tweet_content
 from IPython.display import clear_output
 
-class LocationListener(tweepy.StreamListener):
+class LocationListener(tweepy.Stream):
     """Handles incoming Tweet stream to get location data."""
 
-    def __init__(self, api, counts_dict, tweets_list, topic, limit=10):
+    def __init__(self, key, secret, token, token_secret, counts_dict, tweets_list, topic, limit=10):
         """Configure the LocationListener."""
         self.tweets_list = tweets_list
         self.counts_dict = counts_dict
         self.topic = topic
         self.TWEET_LIMIT = limit
-        super().__init__(api)  # call superclass's init
+        super().__init__(key, secret, token, token_secret) # call superclass's init
 
     def on_status(self, status):
         """Called when Twitter pushes a new tweet to you."""
@@ -35,12 +35,13 @@ class LocationListener(tweepy.StreamListener):
         self.counts_dict['locations'] += 1  # tweet with location
         self.tweets_list.append(tweet_data)  # store the tweet
         clear_output()
-        print(f'{status.user.screen_name}: {tweet_data["text"]}\n')
+        print(f'{self.counts_dict["locations"]}: {status.user.screen_name}: {tweet_data["text"]}\n')
 
         # if TWEET_LIMIT is reached, return False to terminate streaming
-        return self.counts_dict['locations'] < self.TWEET_LIMIT
+        if self.counts_dict['locations'] == self.TWEET_LIMIT:
+            self.disconnect()
 
-
+            
 
 ##########################################################################
 # (C) Copyright 2019 by Deitel & Associates, Inc. and                    #
