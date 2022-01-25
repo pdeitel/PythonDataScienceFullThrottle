@@ -11,7 +11,7 @@ ipython==7.16.3
 jupyterlab==3.0.17
 matplotlib==3.2.1
 nltk
-numpy==1.18.5
+numpy==1.21
 pandas==1.0.4
 pip==21.1
 pubnub==4.5.2
