@@ -1,16 +1,16 @@
 # tweetlistener.py
-"""tweepy.StreamListener subclass that processes tweets as they arrive."""
+"""tweepy.Stream subclass that processes tweets as they arrive."""
 import tweepy
 from textblob import TextBlob
 
-class TweetListener(tweepy.StreamListener):
+class TweetListener(tweepy.Stream):
     """Handles incoming Tweet stream."""
 
-    def __init__(self, api, limit=10):
+    def __init__(self, key, secret, token, token_secret, limit=10):
         """Create instance variables for tracking number of tweets."""
         self.tweet_count = 0
         self.TWEET_LIMIT = limit
-        super().__init__(api)  # call superclass's init
+        super().__init__(key, secret, token, token_secret)  # call superclass's init
 
     def on_connect(self):
         """Called when your connection attempt is successful, enabling 
@@ -21,7 +21,7 @@ class TweetListener(tweepy.StreamListener):
         """Called when Twitter pushes a new tweet to you."""
         # get the tweet text
         try:  
-            tweet_text = status.extended_tweet.full_text
+            tweet_text = status.extended_tweet["full_text"]
         except: 
             tweet_text = status.text
 
@@ -30,13 +30,18 @@ class TweetListener(tweepy.StreamListener):
         print(f'     Status: {tweet_text}')
 
         if status.lang != 'en' and status.lang != 'und':
-            print(f' Translated: {TextBlob(tweet_text).translate()}')
+            try:
+                print(f' Translated: {TextBlob(tweet_text).translate()}')
+            except:
+                print('TextBlob was unable to translate tweet')
 
         print()
         self.tweet_count += 1  # track number of tweets processed
 
-        # if TWEET_LIMIT is reached, return False to terminate streaming
-        return self.tweet_count < self.TWEET_LIMIT
+        # if TWEET_LIMIT is reached, terminate streaming
+        if self.tweet_count == self.TWEET_LIMIT:
+            self.disconnect()
+
 
 ##########################################################################
 # (C) Copyright 2019 by Deitel & Associates, Inc. and                    #

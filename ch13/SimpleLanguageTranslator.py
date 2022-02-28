@@ -124,7 +124,7 @@ def text_to_speech(text_to_speak, voice_to_use, file_name):
     # create Text to Speech client
     authenticator = IAMAuthenticator(keys.text_to_speech_key) # *** NEW
     tts = TextToSpeechV1(authenticator=authenticator)
-    tts.set_service_url('https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/ba13d94c-4517-44bb-a437-fd5c99f5dfdf') # *** NEW
+    #tts.set_service_url('https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/ba13d94c-4517-44bb-a437-fd5c99f5dfdf') # *** NEW
     #tts = TextToSpeechV1(iam_apikey=keys.text_to_speech_key)
 
     # open file and write the synthesized audio content into the file

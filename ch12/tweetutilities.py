@@ -1,6 +1,7 @@
 # tweetutilities.py
 """Utility functions for interacting with Tweepy objects."""
 from geopy import OpenMapQuest
+import geopy
 import keys
 from textblob import TextBlob 
 import time 
@@ -27,7 +28,10 @@ def print_tweets(tweets):
             print(f'{tweet.text}\n')
         elif 'und' not in tweet.lang:  # translate to English first
             print(f'\n  ORIGINAL: {tweet.text}')
-            print(f'TRANSLATED: {TextBlob(tweet.text).translate()}\n')
+            try:
+                print(f'TRANSLATED: {TextBlob(tweet.text).translate()}\n')
+            except:
+                print(f'Translation failed')
 
 def get_tweet_content(tweet, location=False):
     """Return dictionary with data from tweet (a Status object)."""
@@ -36,7 +40,7 @@ def get_tweet_content(tweet, location=False):
 
     # get the tweet's text
     try:  
-        fields['text'] = tweet.extended_tweet.full_text
+        fields['text'] = tweet.extended_tweet["full_text"]
     except: 
         fields['text'] = tweet.text
 
@@ -59,7 +63,8 @@ def get_geocodes(tweet_list):
             try:  # get coordinates for tweet['location']
                 geo_location = geo.geocode(tweet['location'])
                 processed = True
-            except:  # timed out, so wait before trying again
+            except geopy.exc.GeopyError as e:  # timed out, so wait before trying again
+                print(e)
                 print('OpenMapQuest service timed out. Waiting.')
                 time.sleep(delay)
                 delay += .1

@@ -7,10 +7,10 @@ import sys
 from textblob import TextBlob
 import tweepy
 
-class SentimentListener(tweepy.StreamListener):
+class SentimentListener(tweepy.Stream):
     """Handles incoming Tweet stream."""
 
-    def __init__(self, api, sentiment_dict, topic, limit=10):
+    def __init__(self, key, secret, token, token_secret, sentiment_dict, topic, limit=10):
         """Configure the SentimentListener."""
         self.sentiment_dict = sentiment_dict
         self.tweet_count = 0
@@ -19,13 +19,13 @@ class SentimentListener(tweepy.StreamListener):
 
         # set tweet-preprocessor to remove URLs/reserved words
         p.set_options(p.OPT.URL, p.OPT.RESERVED) 
-        super().__init__(api)  # call superclass's init
+        super().__init__(key, secret, token, token_secret)  # call superclass's init
 
     def on_status(self, status):
         """Called when Twitter pushes a new tweet to you."""
         # get the tweet's text
         try:  
-            tweet_text = status.extended_tweet.full_text
+            tweet_text = status.extended_tweet["full_text"]
         except: 
             tweet_text = status.text
 
@@ -41,10 +41,10 @@ class SentimentListener(tweepy.StreamListener):
 
         # update self.sentiment_dict with the polarity
         blob = TextBlob(tweet_text)
-        if blob.sentiment.polarity > 0:
+        if blob.sentiment.polarity > 0.2:
             sentiment = '+'
             self.sentiment_dict['positive'] += 1 
-        elif blob.sentiment.polarity == 0:
+        elif -0.2 <= blob.sentiment.polarity <= 0.2:
             sentiment = ' '
             self.sentiment_dict['neutral'] += 1 
         else:
@@ -57,34 +57,36 @@ class SentimentListener(tweepy.StreamListener):
         self.tweet_count += 1  # track number of tweets processed
 
         # if TWEET_LIMIT is reached, return False to terminate streaming
-        return self.tweet_count < self.TWEET_LIMIT
-
+        if self.tweet_count == self.TWEET_LIMIT:
+            self.disconnect()
+            
+    
 def main():
     # configure the OAuthHandler
-    auth = tweepy.OAuthHandler(keys.consumer_key, keys.consumer_secret)
-    auth.set_access_token(keys.access_token, keys.access_token_secret)
+    #auth = tweepy.OAuthHandler(keys.consumer_key, keys.consumer_secret)
+    #auth.set_access_token(keys.access_token, keys.access_token_secret)
 
     # get the API object
-    api = tweepy.API(auth, wait_on_rate_limit=True, 
-                     wait_on_rate_limit_notify=True)
+    #api = tweepy.API(auth, wait_on_rate_limit=True)
                  
     # create the StreamListener subclass object
     search_key = sys.argv[1]
     limit = int(sys.argv[2])  # number of tweets to tally
     sentiment_dict = {'positive': 0, 'neutral': 0, 'negative': 0}
-    sentiment_listener = SentimentListener(api, 
-        sentiment_dict, search_key, limit)
+    sentiment_listener = SentimentListener(keys.consumer_key, keys.consumer_secret, 
+        keys.access_token, keys.access_token_secret, sentiment_dict, search_key, limit)
 
     # set up Stream 
-    stream = tweepy.Stream(auth=api.auth, listener=sentiment_listener)
+    #stream = tweepy.Stream(auth=api.auth, listener=sentiment_listener)
 
     # start filtering English tweets containing search_key
-    stream.filter(track=[search_key], languages=['en'], is_async=False)  
+    sentiment_listener.filter(track=[search_key], languages=['en'])  
 
     print(f'Tweet sentiment for "{search_key}"')
     print('Positive:', sentiment_dict['positive'])
     print(' Neutral:', sentiment_dict['neutral'])
     print('Negative:', sentiment_dict['negative'])
+    
 
 # call main if this file is executed as a script
 if __name__ == '__main__':
