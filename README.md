@@ -21,6 +21,8 @@ These are the actual commands I used to set up a fresh environment:
 The pip command above is needed because a few packages are not available through the conda repository.
  
 # Past Course Links (accessible only if you were registered for that course)
+March 22, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-ai-big-data-and-cloud-case-studies/0636920289197/0636920068414/
+
 February 28, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-ai-big-data-and-cloud-case-studies/0636920289197/0636920066757/
 
 January 25, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-ai-big-data-and-cloud-case-studies/0636920289197/0636920064476/
