@@ -24,7 +24,7 @@ The `pip` command is needed because a few packages are not available through the
 April 26, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-ai-big-data-and-cloud-case-studies/0636920289197/0636920069717/
 
 March 22, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-ai-big-data-and-cloud-case-studies/0636920289197/0636920068414/
-
+ 
 February 28, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-ai-big-data-and-cloud-case-studies/0636920289197/0636920066757/
 
 January 25, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-ai-big-data-and-cloud-case-studies/0636920289197/0636920064476/
@@ -85,7 +85,7 @@ If you have any questions, open an issue in the Issues tab or email us: deitel a
 Copyright 2019 by Deitel & Associates, Inc. and Pearson Education, Inc. All Rights Reserved. 
 
 # Setup for Executing the Examples
-The notebooks contain links to my videos and book on safari where I discuss setup issues. 
+The notebooks contain links to my videos and book on O'Reilly Online Learning where I discuss setup issues. 
 
 # Our Books on Which These Examples Are Based
 The content of this course is based on our book <a href=https://amzn.to/2Kd8dQk target="_blank">Python for Programmers</a>, which is a subset of our book <a href=https://amzn.to/2KfCptN target="_blank">Intro to Python for Computer Science and Data Science: Learning to Program with AI, Big Data and the Cloud.</a>
