@@ -6,6 +6,7 @@ import pandas as pd
 import random 
 import seaborn as sns
 import sys
+import uuid
 
 from pubnub.callbacks import SubscribeCallback
 from pubnub.enums import PNStatusCategory
@@ -56,15 +57,11 @@ if __name__ == '__main__':
     sns.set_style('whitegrid')  # white background with gray grid lines
     figure = plt.figure('Stock Prices')  # Figure for animation
 
-    # configure and start animation that calls function update
-    stock_animation = animation.FuncAnimation(
-        figure, update, repeat=False, interval=33)
-    plt.show(block=False)  # display window
-
     # set up pubnub-market-orders sensor stream key
     config = PNConfiguration()
     config.subscribe_key = 'sub-c-4377ab04-f100-11e3-bffd-02ee2ddab7fe'
- 
+    config.uuid = 'UUID_DeitelHeartbeatUnitTest' # new requirement in SDK 6.x
+    
     # create PubNub client and register a SubscribeCallback
     pubnub = PubNub(config) 
     pubnub.add_listener(
@@ -73,7 +70,10 @@ if __name__ == '__main__':
         
     # subscribe to pubnub-sensor-network channel and begin streaming
     pubnub.subscribe().channels('pubnub-market-orders').execute()
-    
+
+    # configure and start animation that calls function update
+    stock_animation = animation.FuncAnimation(
+        figure, update, repeat=False, interval=33)
     plt.show()  # keeps graph on screen until you dismiss its window
 
 #**************************************************************************

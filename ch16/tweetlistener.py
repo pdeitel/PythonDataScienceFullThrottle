@@ -35,7 +35,6 @@ class TweetListener(tweepy.Stream):
         # if TWEET_LIMIT is reached, return False to terminate streaming
         if self.tweet_count == self.TWEET_LIMIT:
             self.disconnect()
-        #return self.tweet_count < self.TWEET_LIMIT
     
     def on_exception(self, status):
         print(f'Error: {status}')

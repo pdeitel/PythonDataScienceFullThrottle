@@ -1,7 +1,9 @@
 # tweetlistener.py
 """tweepy.Stream subclass that processes tweets as they arrive."""
 import tweepy
-from textblob import TextBlob
+from deep_translator import GoogleTranslator
+from deep_translator import single_detection
+#from textblob import TextBlob
 
 class TweetListener(tweepy.Stream):
     """Handles incoming Tweet stream."""
@@ -31,9 +33,9 @@ class TweetListener(tweepy.Stream):
 
         if status.lang != 'en' and status.lang != 'und':
             try:
-                print(f' Translated: {TextBlob(tweet_text).translate()}')
+                print(f' Translated: {single_detection(tweet_text, api_key=keys.deep_translator_key)}')
             except:
-                print('TextBlob was unable to translate tweet')
+                print('Unable to translate tweet')
 
         print()
         self.tweet_count += 1  # track number of tweets processed

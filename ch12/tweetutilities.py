@@ -3,7 +3,8 @@
 from geopy import OpenMapQuest
 import geopy
 import keys
-from textblob import TextBlob 
+from deep_translator import GoogleTranslator
+from deep_translator import single_detection
 import time 
 import tweepy
 
@@ -29,7 +30,7 @@ def print_tweets(tweets):
         elif 'und' not in tweet.lang:  # translate to English first
             print(f'\n  ORIGINAL: {tweet.text}')
             try:
-                print(f'TRANSLATED: {TextBlob(tweet.text).translate()}\n')
+                print(f'TRANSLATED: {single_detection(tweet_text, api_key=keys.deep_translator_key)}\n')
             except:
                 print(f'Translation failed')
 
