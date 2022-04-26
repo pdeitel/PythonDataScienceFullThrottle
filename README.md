@@ -1,25 +1,25 @@
 # PythonDataScienceFullThrottle
-Downloads for my [Safari Online Learning](https://learning.oreilly.com) live training course **Python Data Science Full Throttle: Introductory Artificial Intelligence (AI), Big Data and Cloud Case Studies**
+Downloads for my [O'Reilly Online Learning](https://learning.oreilly.com) live training course **Python Data Science Full Throttle: Introductory Artificial Intelligence (AI), Big Data and Cloud Case Studies**
 
 # Setting Up a Custom Conda Environment
-These are the actual commands I used to set up a fresh environment:
- 
-* This creates a custom environment named pydsft — you can choose any name  you like:
+These are the commands I used to set up a fresh environment. They create a custom environment named `pydsft` — you can choose any name you like:
+
+* Create the custom environment
 
 > conda create --name pydsft
 
-* This activates the environment you just created—change the name if you used a different name above:
+* Activate the environment you just created
 
 > conda activate pydsft
 
-* The following two commands install most of what you need for the content from ch11, ch12, ch13, ch14, ch15 and a good chunk of ch16 that I covered yesterday—if you’re working from our books or videos, you might need to subsequently install a few other packages:
+* The following two commands install most of what you need for the content from ch11, ch12, ch13, ch14, ch15 and a good chunk of ch16—if you’re working from our books or videos, you might need to subsequently install a few other packages. **NOTE: You might want to install one package at a time from the following command as it can take a significant amount of time to resolve all the interdependencies if you do it all at once.**
  
-> conda install jupyterlab nodejs ipympl textblob wordcloud spacy tweepy geopy folium scikit-learn tensorflow matplotlib seaborn pymongo dnspython numpy pandas imageio pyaudio pydub
+> conda install nodejs jupyterlab ipympl wordcloud spacy tweepy geopy folium scikit-learn tensorflow matplotlib seaborn pymongo dnspython imageio pyaudio pydub 
+
+> pip install -U dweepy pubnub ibm-watson tweet-preprocessor textblob deep_translator
  
-> pip install dweepy pubnub ibm-watson tweet-preprocessor
- 
-The pip command above is needed because a few packages are not available through the conda repository.
- 
+The `pip` command is needed because a few packages are not available through the `conda` repository. If any package install fails with `conda` on Windows, use `pip` to install it. 
+
 # Past Course Links (accessible only if you were registered for that course)
 April 26, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-ai-big-data-and-cloud-case-studies/0636920289197/0636920069717/
 
