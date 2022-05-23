@@ -3,8 +3,6 @@
 from geopy import OpenMapQuest
 import geopy
 import keys
-from deep_translator import GoogleTranslator
-from deep_translator import single_detection
 import time 
 import tweepy
 
@@ -24,15 +22,7 @@ def print_tweets(tweets):
     English, translate the text with TextBlob."""
     for tweet in tweets:
         print(f'{tweet.user.screen_name}:', end=' ')
-    
-        if 'en' in tweet.lang:
-            print(f'{tweet.text}\n')
-        elif 'und' not in tweet.lang:  # translate to English first
-            print(f'\n  ORIGINAL: {tweet.text}')
-            try:
-                print(f'TRANSLATED: {single_detection(tweet_text, api_key=keys.deep_translator_key)}\n')
-            except:
-                print(f'Translation failed')
+        print(f'{tweet.text}\n')
 
 def get_tweet_content(tweet, location=False):
     """Return dictionary with data from tweet (a Status object)."""
