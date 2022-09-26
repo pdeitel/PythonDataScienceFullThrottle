@@ -4,15 +4,15 @@ import json
 import tweepy
 from IPython.display import clear_output
 
-class TweetListener(tweepy.Stream):
+class TweetListener(tweepy.StreamingClient):
     """Handles incoming Tweet stream."""
 
-    def __init__(self, key, secret, token, token_secret, database, limit=10000):
+    def __init__(self, bearer_token, database, limit=10000):
         """Create instance variables for tracking number of tweets."""
         self.db = database
         self.tweet_count = 0
         self.TWEET_LIMIT = limit  # 10,000 by default
-        super().__init__(key, secret, token, token_secret)  # call superclass's init
+        super().__init__(bearer_token, wait_on_rate_limit=True)  
 
     def on_connect(self):
         """Called when your connection attempt is successful, enabling 
@@ -25,12 +25,13 @@ class TweetListener(tweepy.Stream):
         json_data = json.loads(data)  # convert string to JSON
         self.db.tweets.insert_one(json_data)  # store in tweets collection
         clear_output()  # ADDED: show one tweet at a time in Jupyter Notebook
+
         try:
-            print(f'    Screen name: {json_data["user"]["name"]}') 
-            print(f'     Created at: {json_data["created_at"]}')         
+            print(f'    Screen name: {json_data["includes"]["users"][0]["username"]}') 
+            print(f'     Created at: {json_data["data"]["created_at"][:10]}')         
             print(f'Tweets received: {self.tweet_count}')    
         except:
-            print("Key 'user' missing")
+            print("Twitter response missing a requested field")
 
         # if TWEET_LIMIT is reached, return False to terminate streaming
         if self.tweet_count == self.TWEET_LIMIT:

@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
     # set up pubnub-market-orders sensor stream key
     config = PNConfiguration()
-    config.subscribe_key = 'sub-c-4377ab04-f100-11e3-bffd-02ee2ddab7fe'
+    config.subscribe_key = 'sub-c-99084bc5-1844-4e1c-82ca-a01b18166ca8'
     config.uuid = 'UUID_DeitelHeartbeatUnitTest' # new requirement in SDK 6.x
     
     # create PubNub client and register a SubscribeCallback
