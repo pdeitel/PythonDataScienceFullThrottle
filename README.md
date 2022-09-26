@@ -1,4 +1,6 @@
 # PythonDataScienceFullThrottle
+All Twitter examples are now updated to the Twitter V2 APIs.
+
 Downloads for my [O'Reilly Online Learning](https://learning.oreilly.com) live training course **Python Data Science Full Throttle: Introductory Artificial Intelligence (AI), Big Data and Cloud Case Studies**
 
 # Setting Up a Custom Conda Environment
