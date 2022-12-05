@@ -23,6 +23,8 @@ These are the commands I used to set up a fresh environment. They create a custo
 The `pip` command is needed because a few packages are not available through the `conda` repository. If any package install fails with `conda` on Windows, use `pip` to install it. 
 
 # Past Course Links (accessible only if you were registered for that course)
+October 31, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920078689/
+
 September 27, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920078295/
 
 August 11, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920075331/
