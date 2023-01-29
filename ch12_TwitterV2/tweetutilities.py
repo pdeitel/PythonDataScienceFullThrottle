@@ -1,6 +1,8 @@
 # tweetutilities.py
 """Utility functions for interacting with Tweepy objects."""
-from deep_translator import GoogleTranslator
+import deepl
+#from deep_translator import GoogleTranslator
+from geopy import ArcGIS
 from geopy import OpenMapQuest
 import keys
 import time 
@@ -8,19 +10,21 @@ import tweepy
 
 def print_tweets(tweets):
     # translator to autodetect source language and return English
-    translator = GoogleTranslator(source='auto', target='en')
+    # translator = GoogleTranslator(source='auto', target='en')
+    translator = deepl.Translator(keys.deepL_key)
     
     """For each tweet in tweets, display the username of the sender
     and tweet text. If the language is not English, translate the text 
     with Deep Translator."""
     for tweet, user in zip(tweets.data, tweets.includes['users']):
         print(f'{user.username}:', end=' ')
-
+        #print(f'{tweet.text}\n')
         if 'en' in tweet.lang:
             print(f'{tweet.text}\n')
         elif 'und' not in tweet.lang: # translate to English first
             print(f'\n  ORIGINAL: {tweet.text}')
-            print(f'TRANSLATED: {translator.translate(tweet.text)}\n')
+            result = translator.translate_text(tweet.text, target_lang='en-us')
+            print(f'TRANSLATED: {result.text}\n')
 
 def get_tweet_content(response):
     """Return dictionary with data from tweet."""
@@ -35,7 +39,8 @@ def get_geocodes(tweet_list):
     """Get the latitude and longitude for each tweet's location.
     Returns the number of tweets with invalid location data."""
     print('Getting coordinates for tweet locations...')
-    geo = OpenMapQuest(api_key=keys.mapquest_key)  # geocoder
+#    geo = OpenMapQuest(api_key=keys.mapquest_key)  # geocoder
+    geo = ArcGIS()  # geocoder
     bad_locations = 0  
 
     for tweet in tweet_list:
@@ -46,7 +51,7 @@ def get_geocodes(tweet_list):
                 geo_location = geo.geocode(tweet['location'])
                 processed = True
             except:  # timed out, so wait before trying again
-                print('OpenMapQuest service timed out. Waiting.')
+                print('Service timed out. Waiting.')
                 time.sleep(delay)
                 delay += .1
 
