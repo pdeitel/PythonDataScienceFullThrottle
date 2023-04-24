@@ -73,7 +73,7 @@ if __name__ == '__main__':
 
     # configure and start animation that calls function update
     stock_animation = animation.FuncAnimation(
-        figure, update, repeat=False, interval=33)
+        figure, update, frames=1000, repeat=False, interval=33)
     plt.show()  # keeps graph on screen until you dismiss its window
 
 #**************************************************************************

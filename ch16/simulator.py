@@ -14,7 +14,7 @@ MAX_TEMP_CHANGE = 2
 NUMBER_OF_MESSAGES = int(sys.argv[1]) 
 MESSAGE_DELAY = int(sys.argv[2])
 
-dweeter = 'temperature-simulator-deitel-python'  # provide a unique name
+dweeter = 'temperature-simulator-deitel-python-paul'  # provide a unique name
 thermostat = {'Location': 'Boston, MA, USA',
               'Temperature': 20, 
               'LowTempWarning': False,
