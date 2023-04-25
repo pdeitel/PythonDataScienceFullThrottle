@@ -30,7 +30,7 @@ dependencies:
     - folium
     - geopy
     - ibm-watson
-    - mastodon
+    - mastodon.py
     - pubnub
     - pydub
     - textblob
