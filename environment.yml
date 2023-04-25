@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - dnspytho
+  - dnspython
   - imageio
   - ipython
   - ipywidgets
