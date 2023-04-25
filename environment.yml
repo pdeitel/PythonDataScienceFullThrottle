@@ -27,9 +27,6 @@ dependencies:
   - pip:
     - deepl
     - dweepy
-    - en-core-web-lg
-    - en-core-web-md
-    - en-core-web-sm
     - folium
     - geopy
     - ibm-watson
