@@ -1,10 +1,26 @@
 # PythonDataScienceFullThrottle
-All Twitter examples are now updated to the Twitter V2 APIs.
 
-Downloads for my [O'Reilly Online Learning](https://learning.oreilly.com) live training course **Python Data Science Full Throttle: Introductory Artificial Intelligence (AI), Big Data and Cloud Case Studies**
+Repository for my [O'Reilly Online Learning](https://learning.oreilly.com) live training course **Python Data Science Full Throttle: Introductory Artificial Intelligence (AI), Big Data and Cloud Case Studies**
 
-# Setting Up a Custom Conda Environment
-These are the commands I used to set up a fresh environment. They create a custom environment named `pydsft` — you can choose any name you like:
+All the Twitter examples are updated to the Twitter V2 APIs. However, Twitter in March 2023, Twitter changed the API access levels. Now, you cannot use most of the examples without having enterprise API access, which is a **minimum of US$42000 per month.** Twitter has hired a new CEO and we are hoping to see changes to the API levels in the future. 
+
+In the meantime, for this course, I will use the Mastodon open-source federated social media network for the data mining social media examples. 
+
+
+# Running the Code Examples
+The easiest way to run most of the code examples is to use the Dockerfile to create a Docker container. 
+
+From the folder containing the Dockerfile, run the command: 
+> `docker build -t deitelpydsft .`
+ 
+From the root folder of this course's examples, run the `deitelpydsft` Docker container with the following command:
+> docker run --rm -p 8888:8888 -p 4040:4040 -it --user root \
+>    -v .:/home/jovyan/work deitelpydsft start.sh jupyter lab
+
+Your command-line window will show you the URL to use to access the notebooks in your web browser.
+
+# Custom Conda Environment
+Rather than using Docker, you can set up a custom Anaconda environment on your local computer. These are the commands I used. They create a custom environment named `pydsft` — you can choose any name you like:
 
 * Create the custom environment
 
@@ -18,11 +34,14 @@ These are the commands I used to set up a fresh environment. They create a custo
  
 > conda install nodejs jupyterlab ipympl wordcloud spacy tweepy geopy folium scikit-learn tensorflow matplotlib seaborn pymongo dnspython imageio pyaudio pydub 
 
-> pip install -U dweepy pubnub ibm-watson tweet-preprocessor textblob deep_translator
+> pip install -U dweepy pubnub ibm-watson tweet-preprocessor textblob deep_translator deepL 
  
 The `pip` command is needed because a few packages are not available through the `conda` repository. If any package install fails with `conda` on Windows, use `pip` to install it. 
 
 # Past Course Links (accessible only if you were registered for that course)
+May 25, 2022:
+https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920088246/
+
 December 8, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920078752/
 
 October 31, 2022: https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920078689/
