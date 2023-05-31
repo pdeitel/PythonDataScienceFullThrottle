@@ -7,7 +7,7 @@ folium==0.11.0
 geopy==1.22.0
 ibm-watson==4.5.0
 imageio==2.8.0
-ipython==7.16.3
+ipython==8.10.0
 jupyterlab==3.0.17
 matplotlib==3.2.1
 nltk
