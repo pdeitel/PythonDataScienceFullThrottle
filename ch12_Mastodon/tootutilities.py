@@ -39,12 +39,19 @@ def print_toot(toot):
         print(f'ORIGINAL: ')
         display(HTML(f'<div style="padding-left: 0.5in;">{toot.content}</div>'))
 
+        # remove HTML
+        soup = BeautifulSoup(toot.content, 'html.parser') 
+        content = soup.get_text() # remove all HTML/CSS tags and commands
+        
         # translate content
-        result = translator.translate_text(toot.content, target_lang='en-us')
+        try:
+            result = translator.translate_text(content, target_lang='en-us')
+            text = profanity.censor(result.text)
+        except:
+            text = 'toot was empty'   
 
         # render HTML version of toot in an HTML div indented 0.5 inches
         print(f'TRANSLATED: ')
-        text = profanity.censor(result.text)
         display(HTML(f'<div style="padding-left: 0.5in;">{text}</div>'))
         
 def print_toots(toots):

@@ -2,7 +2,7 @@
 
 Repository for my [O'Reilly Online Learning](https://learning.oreilly.com) live training course **Python Data Science Full Throttle: Introductory Artificial Intelligence (AI), Big Data and Cloud Case Studies**
 
-All the Twitter examples are updated to the Twitter V2 APIs. However, Twitter in March 2023, Twitter changed the API access levels. Now, you cannot use most of the examples without having enterprise API access, which is a **minimum of US$42000 per month.** Twitter has hired a new CEO and we are hoping to see changes to the API levels in the future. 
+All the Twitter examples are updated to the Twitter V2 APIs. **However**, in March 2023, Twitter changed the API access levels. Now, you cannot use most of the examples without having **pro** (US$5000/month) or **enterprise** (US$42000/month) API access. **Twitter has hired a new CEO and we are hoping to see changes to the API levels in the future.**
 
 In the meantime, for this course, I will use the Mastodon open-source federated social media network for the data mining social media examples. 
 
@@ -36,9 +36,14 @@ Rather than using Docker, you can set up a custom Anaconda environment on your l
 
 > pip install -U dweepy pubnub ibm-watson tweet-preprocessor textblob deep_translator deepL 
  
-The `pip` command is needed because a few packages are not available through the `conda` repository. If any package install fails with `conda` on Windows, use `pip` to install it. 
+The `pip` command is needed because a few packages are not available through the `conda` repository. 
+
+If any package install fails with `conda` on Windows, use `pip` to install it. 
 
 # Past Course Links (accessible only if you were registered for that course)
+June 22, 2022:
+https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920088548/
+
 May 25, 2022:
 https://learning.oreilly.com/live-events/python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies/0636920289197/0636920088246/
 
