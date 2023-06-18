@@ -1,6 +1,0 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-jupyterlab>=2.1.1
-python>=3.6.7
-tensorboard>=1.13.1
-tensorflow>=1.15.2
