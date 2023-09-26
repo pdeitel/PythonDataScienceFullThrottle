@@ -51,7 +51,6 @@ def update(frame_number):
     axes = sns.barplot(
         data=companies_df, x='company', y='price', palette='cool') 
     axes.set(xlabel='Company', ylabel='Price')  
-    plt.tight_layout()
 
 if __name__ == '__main__':
     sns.set_style('whitegrid')  # white background with gray grid lines
@@ -74,6 +73,7 @@ if __name__ == '__main__':
     # configure and start animation that calls function update
     stock_animation = animation.FuncAnimation(
         figure, update, frames=1000, repeat=False, interval=33)
+    plt.tight_layout()
     plt.show()  # keeps graph on screen until you dismiss its window
 
 #**************************************************************************
