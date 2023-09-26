@@ -34,7 +34,9 @@ RUN pip install --upgrade \
     'pubnub' \
     'textblob' \
     'wordcloud' \
-    'dweepy' 
+    'dweepy' \
+    'sounddevice' \
+    
 
 # download data required by textblob and spacy
 RUN python -m textblob.download_corpora && \
