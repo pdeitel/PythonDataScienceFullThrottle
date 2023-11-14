@@ -35,7 +35,7 @@ RUN pip install --upgrade \
     'textblob' \
     'wordcloud' \
     'dweepy' \
-    'sounddevice' \
+    'sounddevice' 
     
 
 # download data required by textblob and spacy
