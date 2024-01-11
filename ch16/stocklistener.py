@@ -6,12 +6,15 @@ import pandas as pd
 import random 
 import seaborn as sns
 import sys
-import uuid
+import keys
 
 from pubnub.callbacks import SubscribeCallback
 from pubnub.enums import PNStatusCategory
 from pubnub.pnconfiguration import PNConfiguration
 from pubnub.pubnub import PubNub
+
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 companies = ['Apple', 'Bespin Gas', 'Elerium', 'Google', 'Linen Cloth']
 
@@ -19,8 +22,8 @@ companies = ['Apple', 'Bespin Gas', 'Elerium', 'Google', 'Linen Cloth']
 companies_df = pd.DataFrame(
     {'company': companies, 'price' : [0, 0, 0, 0, 0]})
  
-class SensorSubscriberCallback(SubscribeCallback):
-    """SensorSubscriberCallback receives messages from PubNub."""
+class StockSubscriberCallback(SubscribeCallback):
+    """StockSubscriberCallback receives messages from PubNub."""
     def __init__(self, df, limit=1000):
         """Create instance variables for tracking number of tweets."""
         self.df = df  # DataFrame to store last stock prices
@@ -59,12 +62,12 @@ if __name__ == '__main__':
     # set up pubnub-market-orders sensor stream key
     config = PNConfiguration()
     config.subscribe_key = 'sub-c-99084bc5-1844-4e1c-82ca-a01b18166ca8'
-    config.uuid = 'UUID_DeitelHeartbeatUnitTest' # new requirement in SDK 6.x
+    config.user_id = keys.pubnub_user_id # new requirement in SDK 6.x
     
     # create PubNub client and register a SubscribeCallback
     pubnub = PubNub(config) 
     pubnub.add_listener(
-        SensorSubscriberCallback(df=companies_df, 
+        StockSubscriberCallback(df=companies_df, 
             limit=int(sys.argv[1] if len(sys.argv) > 1 else 1000)))
         
     # subscribe to pubnub-sensor-network channel and begin streaming
