@@ -53,11 +53,27 @@ if __name__ == '__main__':
         api_base_url='https://mastodon.social',
         to_file='deitel_stream_hashtags_credentials.secret'
     )
-    
+
     # create Mastodon client objects for making API calls then log in
-    mastodon = Mastodon(client_id='deitel_stream_hashtags_credentials.secret')
-    access_token = mastodon.log_in(keys_mastodon.usr, keys_mastodon.pwd, 
-        to_file='deitel_stream_hashtags_credentials.secret')
+    #mastodon = Mastodon(client_id='deitel_stream_hashtags_credentials.secret')
+    mastodon = Mastodon(
+        client_id='deitel_stream_hashtags_credentials.secret',
+        api_base_url='https://mastodon.social'
+    )
+
+    # have user log in
+    auth_url = mastodon.auth_request_url(scopes=['read', 'write'])
+    print(f"Please visit this URL and authorize the app: {auth_url}")
+    code = input("Enter the authorization code: ")
+    
+    # log into mastodon API
+    access_token_str = mastodon.log_in(
+        code=code,
+        scopes=['read'], # can include read, write, follow, push
+        to_file='usercred.secret'
+    )    
+#    access_token = mastodon.log_in(keys_mastodon.usr, keys_mastodon.pwd, 
+#        to_file='deitel_stream_hashtags_credentials.secret')
     
     toot_limit = int(sys.argv[1])  # get maximum number of toots
     client_socket = socket.socket()  # create a socket 
