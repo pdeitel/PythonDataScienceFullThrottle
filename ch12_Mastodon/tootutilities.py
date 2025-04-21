@@ -10,7 +10,7 @@ import requests
 import socket
 import time 
 from urllib.parse import urlparse
-from IPython.core.display import display, HTML
+from IPython.display import display, HTML
 
 # load censored words list
 profanity.load_censor_words()
@@ -139,7 +139,7 @@ def get_geocodes(toot_list):
                 print('Service timed out. Waiting.')
                 time.sleep(delay)
                 delay += .1
-
+        print(f'{geo_location=}')
         if geo_location:  
             toot['latitude'] = geo_location.latitude
             toot['longitude'] = geo_location.longitude
